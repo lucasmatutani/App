@@ -1,0 +1,21 @@
+.btn-voltar{
+    margin: 0 0 20px 0;
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.container-logo {
+    text-align: center;
+    background-color: #314B7C;
+    padding: 40px 0;
+}
+
+footer{
+    text-align: center;
+    padding: 50px 0px;
+    background-color: #314B7C;
+    font-size: 0.8em;
+    color: #fff
+}
