@@ -20,11 +20,11 @@ footer {
     color: #fff;
     width: 100%;
     bottom: 0;
-    position: fixed;
 }
 
 .container-testes {
-    padding: 100px;
+    margin: auto;
+    padding: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
