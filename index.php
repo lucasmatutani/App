@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
@@ -17,7 +15,7 @@
         <img class="img-logo" src="./assets/img/logo-focustrade.jpeg" alt="">
 
         <nav class="menu" style="padding: 60px 0;">
-            <a class="btn-login" href="./login/index.html">Login</a>
+            <a class="btn-login" href="./login/index.php">Login</a>
             <a class="btn-site" href="https://focustrade.com.br/">Conheça nosso site</a>
         </nav>
         <nav class="menu-sociais" style="padding: 60px 0;">
@@ -28,7 +26,7 @@
         </nav>
     </section>
     <section class="container-carrossel" style="margin-bottom: 0;">
-            <a id="aId"><img id="id"></a>
+        <a id="aId"><img id="id"></a>
     </section>
 
 

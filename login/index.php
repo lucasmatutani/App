@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Login Focus Trade</title>
 </head>
+
 <body style="margin: 0;">
-    <a class="btn-voltar" href="../index.html"><i class="fa-solid fa-backward">Voltar</i></a>
+    <a class="btn-voltar" href="../index.php"><i class="fa-solid fa-backward">Voltar</i></a>
     <div class="container-logo">
         <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
     </div>
@@ -15,7 +18,7 @@
         <div class="card">
             <div class="container-email">
                 <label>Email</label> <br>
-                <input type="text" name="Email" id="">    
+                <input type="text" name="Email" id="">
             </div>
             <div class="container-senha">
                 <label>Senha</label> <br>
@@ -23,7 +26,7 @@
             </div>
             <div class="container-entrar">
                 <button class="button" style="margin-bottom: 10px;">
-                    <a href="../testes/index.html">Entrar</a>
+                    <a href="../testes/index.php">Entrar</a>
                 </button>
                 <a href="#">Cadastre-se</a>
             </div>
@@ -34,7 +37,7 @@
 </body>
 <footer>
     © 2021 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-
+    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
 </footer>
+
 </html>
