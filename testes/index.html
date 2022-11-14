@@ -15,7 +15,7 @@
     </div>
     <div class="container-testes">
 
-        <!-- <div class="first-column">
+        <div class="first-column">
             <div class="dropdown">
                 <a href="" class="btn btn2">Categoria de teste</a>
                 <div class="dropdown-content">
@@ -63,19 +63,19 @@
                     <a href="#">Teste 2</a>
                     <a href="#">Teste 3</a>
                 </div>
-            </div> -->
+            </div>
 
-        <div class="dropdown" style="margin-top: 100px;">
-            <a href="" class="btn btn2">Categoria de teste</a>
-            <div class="dropdown-content">
-                <a href="#">Teste 1</a>
-                <a href="#">Teste 2</a>
-                <a href="#">Teste 3</a>
+            <div class="dropdown" style="margin-top: 100px;">
+                <a href="" class="btn btn2">Categoria de teste</a>
+                <div class="dropdown-content">
+                    <a href="#">Teste 1</a>
+                    <a href="#">Teste 2</a>
+                    <a href="#">Teste 3</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- </div> -->
+    </div>
 
 </body>
 <footer>
@@ -85,3 +85,135 @@
 
 
 </html>
+
+<style>
+    .btn-voltar {
+        margin: 0 0 20px 0;
+        position: absolute;
+        z-index: 999;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .container-logo {
+        text-align: center;
+        background-color: #314B7C;
+        padding: 40px 0;
+    }
+
+    footer {
+        text-align: center;
+        padding: 50px 0px;
+        background-color: #314B7C;
+        font-size: 0.8em;
+        color: #fff;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .container-testes {
+        padding: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .first-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown {
+        position: relative;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        text-align: center;
+        left: 5%;
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+        color: #000;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #314B7C;
+        color: #fff;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .dropdown:hover {
+        cursor: pointer;
+    }
+
+    .btn2::before {
+        width: 100%;
+        height: 0%;
+    }
+
+    .btn2:hover {
+        color: #fff;
+    }
+
+    .btn2:hover::before {
+        height: 100%;
+    }
+
+    .btn {
+        position: relative;
+        display: block;
+        color: #000;
+        font-size: 14px;
+        font-family: "montserrat";
+        text-decoration: none;
+        border: 2px solid #314B7C;
+        border-radius: 15px;
+        padding: 15px 60px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease;
+        width: 100px;
+    }
+
+    .btn::before {
+        background: #314B7C;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
