@@ -20,7 +20,7 @@ footer {
     color: #fff;
     width: 100%;
     bottom: 0;
-    left: 0;
+    position: absolute;
 }
 
 .container-testes {
@@ -49,6 +49,16 @@ footer {
 .dropdown {
     position: relative;
     text-align: center;
+}
+
+.btn-teste img {
+    display: flex;
+    flex-direction: row;
+    max-width: 150px;
+    position: absolute;
+    right: 60%;
+    bottom: -70%;
+    z-index: 999;
 }
 
 .dropdown-content {

@@ -18,7 +18,10 @@
 
         <div class="first-column">
             <div class="dropdown">
-                <a href="" class="btn btn2">Categoria de teste</a>
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
                 <div class="dropdown-content">
                     <a href="#">Teste 1</a>
                     <a href="#">Teste 2</a>
