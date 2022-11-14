@@ -367,7 +367,7 @@
     </div>
 
     <div class="resultados">
-        <form method="POST" action="./connection.php" name="form">
+        <form method="POST" action="./teste-comportamental.php" name="form">
             <h3 style="color: red;">SEUS RESULTADOS :</h3>
             <div class="container-resultados">
                 <label for="aguia">Águia %</label>
