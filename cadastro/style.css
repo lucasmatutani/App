@@ -1,0 +1,74 @@
+a {
+  text-decoration: none;
+}
+
+.btn-voltar {
+  margin: 0 0 20px 0;
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.container-logo {
+  text-align: center;
+  background-color: #314b7c;
+}
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  box-shadow: 1px 1px 5px #ccc;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin: 59px 0px;
+}
+
+.container-nome {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-empresa {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-email {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-senha {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.confirme-senha {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-logo {
+  padding: 20px 0px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #314b7c;
+  font-size: 0.8em;
+  color: #fff;
+}
