@@ -9,7 +9,7 @@
 </head>
 
 <body style="margin: 0;">
-    <a class="btn-voltar" href="../index.html"><i class="fa-solid fa-backward">Voltar</i></a>
+    <a class="btn-voltar" href="../index.php"><i class="fa-solid fa-backward">Voltar</i></a>
     <div class="container-logo">
         <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
     </div>
@@ -26,7 +26,7 @@
             </div>
             <div class="container-entrar">
                 <button class="button" style="margin-bottom: 10px;">
-                    <a href="../testes/index.html">Entrar</a>
+                    <a href="../testes/index.php">Entrar</a>
                 </button>
                 <a href="#">Cadastre-se</a>
             </div>
@@ -36,10 +36,8 @@
 
 </body>
 <footer>
-    <?php
-    // utf8_encode("© 2021 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-    // Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP");
-    ?>
+    © 2021 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
+    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
 </footer>
 
 </html>

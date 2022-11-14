@@ -15,7 +15,7 @@
         <img class="img-logo" src="./assets/img/logo-focustrade.jpeg" alt="">
 
         <nav class="menu" style="padding: 60px 0;">
-            <a class="btn-login" href="./login/index.html">Login</a>
+            <a class="btn-login" href="./login/index.php">Login</a>
             <a class="btn-site" href="https://focustrade.com.br/">Conheça nosso site</a>
         </nav>
         <nav class="menu-sociais" style="padding: 60px 0;">

@@ -10,7 +10,7 @@
 
 <body style="margin: 0;">
 
-    <a class="btn-voltar" href="../login/index.html"><i class="fa-solid fa-backward">Voltar</i></a>
+    <a class="btn-voltar" href="../login/index.php"><i class="fa-solid fa-backward">Voltar</i></a>
     <div class="container-logo">
         <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
     </div>

@@ -1,8 +1,8 @@
 <?php
-$servername = "mysql.focustrade.com.br";
-$database = "focustrade02";
-$username = "focustrade02";
-$password = "m4q2w9u3";
+$servername = "mysql11-farm1.kinghost.net";
+$database = "focustradeead";
+$username = "focustradeead";
+$password = "RvdllN22Dg8O";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
