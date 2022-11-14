@@ -14,11 +14,11 @@
     <section class="container-header">
         <img class="img-logo" src="./assets/img/logo-focustrade.jpeg" alt="">
 
-        <nav class="menu" style="padding: 60px 0;">
+        <nav class="menu">
             <a class="btn-login" href="./login/index.php">Login</a>
             <a class="btn-site" href="https://focustrade.com.br/">Conheça nosso site</a>
         </nav>
-        <nav class="menu-sociais" style="padding: 60px 0;">
+        <nav class="menu-sociais">
             <a href="https://www.linkedin.com/company/focustrade/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/focustradeconsult/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.youtube.com/channel/UC6aPR_tSPjtVFmi3-81pdBw"><i class="fa-brands fa-youtube"></i></a>
