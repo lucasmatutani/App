@@ -19,7 +19,7 @@
         <div class="first-column">
             <div class="dropdown">
                 <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" alt="">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
@@ -31,7 +31,7 @@
 
             <div class="dropdown" style="margin-top: 180px;">
                 <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" alt="">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
@@ -45,7 +45,7 @@
         <div class="second-column">
             <div class="dropdown">
                 <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" alt="">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
@@ -57,7 +57,7 @@
 
             <div class="dropdown" style="margin-top: 180px;">
                 <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" alt="">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
@@ -71,7 +71,7 @@
         <div class="third-column">
             <div class="dropdown">
                 <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" alt="">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
@@ -83,7 +83,7 @@
 
             <div class="dropdown" style="margin-top: 180px;">
                 <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" alt="">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
@@ -97,6 +97,7 @@
     </div>
 
 </body>
+
 <footer>
     © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
     Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP

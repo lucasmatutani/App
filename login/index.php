@@ -25,10 +25,10 @@
                 <input type="password" name="Senha">
             </div>
             <div class="container-entrar">
-                <button class="button" style="margin-bottom: 10px;">
-                    <a href="../testes/index.php">Entrar</a>
-                </button>
-                <a href="#">Cadastre-se</a>
+                <div class="middle">
+                    <a href="../testes/index.php" class="btn btn2">Entrar</a>
+                </div>
+                <a href="#" style="font-size: 0.8em;">Cadastre-se</a>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
 
 </body>
 <footer>
-    © 2021 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
+    © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
     Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
 </footer>
 
