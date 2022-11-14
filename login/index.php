@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Login Focus Trade</title>
@@ -35,9 +36,10 @@
 
 </body>
 <footer>
-    © 2021 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-
+    <?php
+    utf8_encode("© 2021 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
+    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP");
+    ?>
 </footer>
 
 </html>
