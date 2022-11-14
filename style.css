@@ -8,7 +8,7 @@
   width: 15%;
 }
 
-.btn-login{
+.btn-login {
   background-color: #314b7c;
   padding: 13px;
   border-radius: 5px;
@@ -17,11 +17,11 @@
   margin-right: 40px;
 }
 
-.btn-login:hover{
+.btn-login:hover {
   background-color: #040f24;
 }
 
-.btn-site{
+.btn-site {
   background-color: #314b7c;
   padding: 13px;
   border-radius: 5px;
@@ -29,15 +29,15 @@
   font-size: 1.6em;
 }
 
-.btn-site:hover{
+.btn-site:hover {
   background-color: #040f24;
 }
 
-.menu-sociais{
+.menu-sociais {
   font-size: 2em;
 }
 
-.menu-sociais a{
+.menu-sociais a {
   color: #314b7c;
   margin-right: 8px;
 }
@@ -53,4 +53,8 @@ footer {
   background-color: #314b7c;
   font-size: 0.8em;
   color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
