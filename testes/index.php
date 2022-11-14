@@ -29,8 +29,11 @@
                 </div>
             </div>
 
-            <div class="dropdown" style="margin-top: 100px;">
-                <a href="" class="btn btn2">Categoria de teste</a>
+            <div class="dropdown" style="margin-top: 180px;">
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
                 <div class="dropdown-content">
                     <a href="#">Teste 1</a>
                     <a href="#">Teste 2</a>
@@ -41,7 +44,10 @@
 
         <div class="second-column">
             <div class="dropdown">
-                <a href="" class="btn btn2">Categoria de teste</a>
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
                 <div class="dropdown-content">
                     <a href="#">Teste 1</a>
                     <a href="#">Teste 2</a>
@@ -49,8 +55,11 @@
                 </div>
             </div>
 
-            <div class="dropdown" style="margin-top: 100px;">
-                <a href="" class="btn btn2">Categoria de teste</a>
+            <div class="dropdown" style="margin-top: 180px;">
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
                 <div class="dropdown-content">
                     <a href="#">Teste 1</a>
                     <a href="#">Teste 2</a>
@@ -61,7 +70,10 @@
 
         <div class="third-column">
             <div class="dropdown">
-                <a href="" class="btn btn2">Categoria de teste</a>
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
                 <div class="dropdown-content">
                     <a href="#">Teste 1</a>
                     <a href="#">Teste 2</a>
@@ -69,8 +81,11 @@
                 </div>
             </div>
 
-            <div class="dropdown" style="margin-top: 100px;">
-                <a href="" class="btn btn2">Categoria de teste</a>
+            <div class="dropdown" style="margin-top: 180px;">
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
                 <div class="dropdown-content">
                     <a href="#">Teste 1</a>
                     <a href="#">Teste 2</a>
