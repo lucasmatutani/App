@@ -103,7 +103,7 @@ footer {
     font-size: 14px;
     font-family: "montserrat";
     text-decoration: none;
-    border: 2px solid #314B7C;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 15px 60px;
     text-transform: uppercase;
