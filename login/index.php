@@ -5,34 +5,33 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
     <title>Login Focus Trade</title>
 </head>
 
-<body style="margin: 0;">
-    <a class="btn-voltar" href="../index.php"><i class="fa-solid fa-backward">Voltar</i></a>
-    <div class="container-logo">
+<body style="margin: 0; font-family: 'Montserrat;' , sans-serif;">
+    <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+    <div class="container-login">
         <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
-    </div>
-
-    <form action="" class="container-form">
-        <div class="card">
-            <div class="container-email">
-                <label>Email</label> <br>
-                <input type="text" name="Email" id="">
-            </div>
-            <div class="container-senha">
-                <label>Senha</label> <br>
-                <input type="password" name="Senha">
-            </div>
-            <div class="container-entrar">
-                <div class="middle">
-                    <a href="../testes/index.php" class="btn btn2">Entrar</a>
+        <form action="" class="container-form">
+            <div class="card">
+                <div class="container-email">
+                    <input type="text" name="Email" id="" placeholder="Email" style="font-size: 0.8em;">
                 </div>
-                <a href="#" style="font-size: 0.8em;">Cadastre-se</a>
+                <div class="container-senha">
+                    <input type="password" name="Senha" placeholder="Senha" style="font-size: 0.8em;">
+                </div>
+                <div class="container-entrar">
+                    <div class="middle">
+                        <a href="../testes/index.php" class="btn btn2">Entrar</a>
+                    </div>
+                    <p style="margin: 0; font-size: 0.6em; color: rgb(103, 100, 100);">Não tem uma conta?</p>
+                    <a href="../cadastro/index.php" style="font-size: 0.6em;">Cadastre-se</a>
+                </div>
             </div>
-        </div>
-
+    </div>
     </form>
+    <img class="img-fundo" src="../assets/img/img-palestra2.png" alt="">
 
 </body>
 <footer>

@@ -1,13 +1,18 @@
+body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
 
 .btn-voltar {
-    margin: 0 0 20px 0;
+    margin: 0 0 0 20px;
     position: absolute;
     z-index: 999;
     color: #fff;
     margin-top: 20px;
+    font-size: 1.5em;
 }
 
 .container-logo {
@@ -15,10 +20,26 @@ a {
     background-color: #314B7C;
 }
 
+.img-fundo {
+    position: relative;
+    width: 100%;
+}
+
+.container-login {
+    position: relative;
+    left: 30%;
+}
+
+.container-login img {
+    left: 8%;
+    margin-top: 80px;
+}
+
 .container-form {
     width: 40%;
-    margin: auto;
     padding: 147px 0;
+    position: absolute;
+    z-index: 999;
 }
 
 .card {
@@ -28,9 +49,14 @@ a {
     padding: 30px;
     border-radius: 15px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 59px 0px;
     font-size: 1.5em;
+    top: 90%;
+    left: 27%;
+    position: absolute;
+    z-index: 999;
 }
 
 .card input {
@@ -51,6 +77,9 @@ a {
 
 .img-logo {
     padding: 20px 0px;
+    position: absolute;
+    z-index: 999;
+    width: 22%;
 }
 
 footer {
@@ -79,14 +108,16 @@ footer {
     color: #000;
     text-decoration: none;
     margin: 30px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
     border-radius: 100px;
-    padding: 14px 40px;
+    padding: 14px 100px;
     text-transform: uppercase;
     overflow: hidden;
     transition: 1s all ease;
     transform: translate(-1%, -1%);
-    font-size: 0.8em;
+    font-size: 0.6em;
+    color: rgb(149, 145, 145);
+    font-weight: 800;
 }
 
 .btn::before {

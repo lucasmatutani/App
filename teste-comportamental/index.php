@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <a class="btn-voltar" href="https://focustrade.com.br/"><i class="fa-solid fa-backward">Voltar</i></a>
+    <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-header">
         <div class="containerTitulo">
             <img src="../assets/img/logo-focustrade.jpeg" alt="logo">

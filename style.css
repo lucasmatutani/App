@@ -15,41 +15,51 @@
   border-radius: 50px;
 }
 
+.menu {
+  font-size: 0.7em;
+  font-weight: 800;
+  color: #314b7c;
+}
+
+.menu a {
+  color: #314b7c;
+}
+
 .btn-login {
-  background-color: #314b7c;
-  padding: 13px;
-  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 21px 43px;
+  border-radius: 100px;
   color: #fff;
   font-size: 1.6em;
   margin-right: 40px;
 }
 
 .btn-login:hover {
-  background-color: #040f24;
+  background-color: #314b7c;
+  color: #fff;
 }
 
 .btn-site {
-  background-color: #314b7c;
-  padding: 13px;
-  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 21px 38px;
+  border-radius: 100px;
   color: #fff;
   font-size: 1.6em;
 }
 
 .btn-site:hover {
-  background-color: #040f24;
+  background-color: #314b7c;
+  color: #fff;
 }
 
 .menu-sociais {
   font-size: 2em;
 }
 
-.menu-sociais a {
-  color: #314b7c;
-  margin-right: 8px;
-  background-color: rgb(208, 200, 200);
-  border-radius: 50%;
-  padding: 10px;
+.menu-sociais img {
+  max-width: 100px;
 }
 
 .container-carrossel img {
