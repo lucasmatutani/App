@@ -31,9 +31,8 @@
             </div>
     </div>
     </form>
-    <img class="img-fundo" src="../assets/img/img-palestra2.png" alt="">
-
 </body>
+
 <footer>
     © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
     Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP

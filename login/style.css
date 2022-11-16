@@ -20,9 +20,14 @@ a {
     background-color: #314B7C;
 }
 
-.img-fundo {
-    position: relative;
-    width: 100%;
+body {
+    /* position: relative;
+    width: 100%; */
+    background: url('../assets/img/img-palestra2.png') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container-login {
@@ -83,6 +88,7 @@ a {
 }
 
 footer {
+    position: absolute;
     text-align: center;
     padding: 50px 0px;
     background-color: #314B7C;
