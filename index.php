@@ -44,7 +44,7 @@
     function slide1() {
         document.getElementById('id').src = "./assets/img/img-palestra1.png";
         setTimeout("slide2()", 3000)
-        document.getElementById('aId').href = "link1.html"
+        document.getElementById('aId').href = "link.html"
     }
 
     function slide2() {
