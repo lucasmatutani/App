@@ -15,14 +15,7 @@ a {
     font-size: 1.5em;
 }
 
-.container-logo {
-    text-align: center;
-    background-color: #314B7C;
-}
-
 body {
-    /* position: relative;
-    width: 100%; */
     background: url('../assets/img/img-palestra2.png') center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -31,14 +24,18 @@ body {
 }
 
 .container-login {
-    position: relative;
-    left: 30%;
+    /* position: relative;
+    left: 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
 }
 
-.container-login img {
+/* .container-login img {
     left: 8%;
     margin-top: 80px;
-}
+} */
 
 .container-form {
     width: 40%;
@@ -90,12 +87,12 @@ body {
 footer {
     position: absolute;
     text-align: center;
-    padding: 50px 0px;
+    padding: 30px 0px;
     background-color: #314B7C;
     font-size: 0.8em;
     color: #fff;
     width: 100%;
-    bottom: 0;
+    bottom: -40px;
     left: 0;
 }
 

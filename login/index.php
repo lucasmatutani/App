@@ -29,8 +29,8 @@
                     <a href="../cadastro/index.php" style="font-size: 0.6em;">Cadastre-se</a>
                 </div>
             </div>
+        </form>
     </div>
-    </form>
 </body>
 
 <footer>
