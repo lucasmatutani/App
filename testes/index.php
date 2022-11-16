@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Testes</title>
 </head>
 
-<body style="margin: 0;font-family: 'Montserrat;' , sans-serif;">
+<body style="margin: 0; font-family: 'Ubuntu', sans-serif;">
 
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-logo">

@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Focus Trade</title>
 </head>
 
-<body onLoad="slide1()" style="font-family: 'Montserrat;', sans-serif;">
+<body onLoad="slide1()" style="font-family: 'Ubuntu' , sans-serif;">
     <section class=" container-header">
         <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="">
 
