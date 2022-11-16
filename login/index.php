@@ -17,9 +17,11 @@
             <div class="card">
                 <div class="container-email">
                     <input type="text" name="Email" id="" placeholder="Email" style="font-size: 0.8em;">
+                    <span></span>
                 </div>
                 <div class="container-senha">
                     <input type="password" name="Senha" placeholder="Senha" style="font-size: 0.8em;">
+                    <span></span>
                 </div>
                 <div class="container-entrar">
                     <div class="middle">
@@ -33,9 +35,9 @@
     </div>
 </body>
 
-<footer>
+<!-- <footer>
     © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
     Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-</footer>
+</footer> -->
 
 </html>
