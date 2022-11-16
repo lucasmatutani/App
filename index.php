@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
     <title>Focus Trade</title>
 </head>
 
 
-<body onLoad="slide1()">
-    <section class="container-header">
-        <img class="img-logo" src="./assets/img/logo-focustrade.jpeg" alt="">
+<body onLoad="slide1()" style="font-family: 'Montserrat;', sans-serif;">
+    <section class=" container-header">
+        <img class="img-logo" src="./assets/img/logo-branco.png" alt="">
 
         <nav class="menu">
-            <a class="btn-login" href="./login/index.php">Login</a>
-            <a class="btn-site" href="https://focustrade.com.br/">Conheça nosso site</a>
+            <a class="btn-login" href="./login/index.php">LOGIN</a>
+            <a class="btn-site" href="https://focustrade.com.br/">CONHEÇA O NOSSO SITE</a>
         </nav>
         <nav class="menu-sociais">
-            <a href="https://www.linkedin.com/company/focustrade/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/focustradeconsult/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UC6aPR_tSPjtVFmi3-81pdBw"><i class="fa-brands fa-youtube"></i></a>
-
+            <a href="https://www.linkedin.com/company/focustrade/"><img src="./assets/img/logo-linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/focustradeconsult/"><img src="./assets/img/logo-instagram.png" alt=""></i></a>
+            <a href="https://www.youtube.com/channel/UC6aPR_tSPjtVFmi3-81pdBw"><img src="./assets/img/logo-youtube.png" alt=""></i></a>
         </nav>
     </section>
     <section class="container-carrossel" style="margin-bottom: 0;">
@@ -42,19 +42,19 @@
 
 <script type="text/javascript">
     function slide1() {
-        document.getElementById('id').src = "./assets/img/img-palestra.jpg";
+        document.getElementById('id').src = "./assets/img/img-palestra1.png";
         setTimeout("slide2()", 3000)
         document.getElementById('aId').href = "link1.html"
     }
 
     function slide2() {
-        document.getElementById('id').src = "./assets/img/palestra-img.png";
+        document.getElementById('id').src = "./assets/img/img-palestra2.png";
         setTimeout("slide3()", 3000)
         document.getElementById('aId').href = "link2.html"
     }
 
     function slide3() {
-        document.getElementById('id').src = "./assets/img/img-pessoas.jpg";
+        document.getElementById('id').src = "./assets/img/img-palestra3.png";
         setTimeout("slide1()", 3000)
         document.getElementById('aId').href = "link3.html"
     }

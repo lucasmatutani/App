@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
     <title>Cadastro</title>
 </head>
 
-<body>
-    <a class="btn-voltar" href="../index.html"><i class="fa-solid fa-backward">Voltar</i></a>
+<body style="font-family: 'Montserrat;', sans-serif;">
+    <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <section class="container-header">
         <div class="container-logo">
             <img src="../assets/img/logo-branco.png" alt="" class="img-logo">
