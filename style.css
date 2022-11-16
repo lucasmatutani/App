@@ -1,11 +1,18 @@
 .container-header {
+  position: absolute;
   display: flex;
   justify-content: space-around;
-  padding: 25px 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
 }
 
 .img-logo {
-  width: 15%;
+  width: 25%;
+  bottom: 70%;
+  border-radius: 50px;
 }
 
 .btn-login {
@@ -40,6 +47,9 @@
 .menu-sociais a {
   color: #314b7c;
   margin-right: 8px;
+  background-color: rgb(208, 200, 200);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .container-carrossel img {
