@@ -23,30 +23,31 @@
     <section class="container-cadastro">
         <div class="card">
             <div class="container-nome">
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome">
+                <input type="text" name="nome" placeholder="Nome Completo">
             </div>
 
             <div class="container-empresa">
-                <label for="empresa">Empresa</label>
-                <input type="text" name="empresa">
+
+                <input type="text" name="empresa" placeholder="Empresa">
             </div>
 
             <div class="container-email">
-                <label for="email">E-mail</label>
-                <input type="text" name="email">
+
+                <input type="text" name="email" placeholder="E-mail">
             </div>
 
             <div class="container-senha">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="">
+
+                <input type="password" name="senha" id="" placeholder="Senha">
             </div>
             <div class="confirme-senha">
 
-                <label for="confirmeSenha">Confirme sua senha</label>
-                <input type="password" name="confirmeSenha" id="">
+
+                <input type="password" name="confirmeSenha" id="" placeholder="Confirme sua senha">
             </div>
-            <button class="button"><span>Enviar </span></button>
+            <div class="middle">
+                <a href="../testes/index.php" class="btn btn2">Entrar</a>
+            </div>
         </div>
         </div>
 
@@ -55,10 +56,10 @@
     </section>
 </body>
 
-<footer>
+<!-- <footer>
     © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
     Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
 
-</footer>
+</footer> -->
 
 </html>
