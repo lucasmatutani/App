@@ -24,9 +24,7 @@
                     <span></span>
                 </div>
                 <div class="container-entrar">
-                    <div class="middle">
-                        <a href="../testes/index.php" class="btn btn2">Entrar</a>
-                    </div>
+                    <a href="../testes/index.php" class="btn btn2">Entrar</a>
                 </div>
             </div>
         </form>

@@ -10,7 +10,6 @@
     <title>Focus Trade</title>
 </head>
 
-
 <body onLoad="slide1()" style="font-family: 'Montserrat;', sans-serif;">
     <section class=" container-header">
         <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="">
