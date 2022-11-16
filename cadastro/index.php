@@ -45,7 +45,9 @@
 
                 <input type="password" name="confirmeSenha" id="" placeholder="Confirme sua senha">
             </div>
-            <button class="button"><span>Enviar </span></button>
+            <div class="middle">
+                <a href="../testes/index.php" class="btn btn2">Entrar</a>
+            </div>
         </div>
         </div>
 
