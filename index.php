@@ -13,17 +13,17 @@
 
 <body onLoad="slide1()" style="font-family: 'Montserrat;', sans-serif;">
     <section class=" container-header">
-        <img class="img-logo" src="./assets/img/logo-branco.png" alt="">
+        <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="">
 
         <nav class="menu">
             <a class="btn-login" href="./login/index.php">LOGIN</a>
-            <a class="btn-site" href="https://focustrade.com.br/">CONHEÇA O NOSSO SITE</a>
         </nav>
         <nav class="menu-sociais">
             <a href="https://www.linkedin.com/company/focustrade/"><img src="./assets/img/logo-linkedin.png" alt=""></a>
             <a href="https://www.instagram.com/focustradeconsult/"><img src="./assets/img/logo-instagram.png" alt=""></i></a>
             <a href="https://www.youtube.com/channel/UC6aPR_tSPjtVFmi3-81pdBw"><img src="./assets/img/logo-youtube.png" alt=""></i></a>
         </nav>
+        <a class="btn-site" href="https://focustrade.com.br/">www.focustrade.com.br</a>
     </section>
     <section class="container-carrossel" style="margin-bottom: 0;">
         <a id="aId"><img id="id"></a>

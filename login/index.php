@@ -27,8 +27,6 @@
                     <div class="middle">
                         <a href="../testes/index.php" class="btn btn2">Entrar</a>
                     </div>
-                    <p style="margin: 0; font-size: 0.6em; color: rgb(103, 100, 100);">Não tem uma conta?</p>
-                    <a href="../cadastro/index.php" style="font-size: 0.6em;">Cadastre-se</a>
                 </div>
             </div>
         </form>
