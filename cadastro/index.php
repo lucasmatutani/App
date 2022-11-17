@@ -16,7 +16,7 @@
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
 
     <section class="container-cadastro">
-        <form method="POST" action="cadastro.php">
+        <form method="POST" action="./cadastro.php">
             <div class="cadastro-infos">
                 <div class="card-infos">
                     <input type="text" name="nome" placeholder="Nome Completo" required autofocus>
