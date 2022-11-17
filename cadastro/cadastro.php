@@ -1,4 +1,5 @@
 <?php
+include_once "../includes/connection.php";
 
 $nome = $_REQUEST['nome'];
 $email = $_REQUEST['email'];
