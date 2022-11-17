@@ -20,10 +20,10 @@ session_start();
         <form method="POST" name="login" action="valida.php" class="container-form">
             <div class="card">
                 <div class="container-email">
-                    <input type="text" name="Email" id="" placeholder="Email" style="font-size: 0.8em;">
+                    <input type="text" name="email" placeholder="Email" style="font-size: 0.8em;">
                 </div>
                 <div class="container-senha">
-                    <input type="password" name="Senha" placeholder="Senha" style="font-size: 0.8em;">
+                    <input type="password" name="senha" placeholder="Senha" style="font-size: 0.8em;">
                 </div>
                 <div class="container-entrar">
                     <a href="javascript:login.submit()" class="btn btn2">Entrar</a>

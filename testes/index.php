@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

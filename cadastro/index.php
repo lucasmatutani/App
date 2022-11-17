@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
+    exit;
+}
+if ($_SESSION['usuarioEmail'] != "admin") {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN COMO ADMIN!";
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,7 +34,7 @@
                     <input type="text" name="email" placeholder="E-mail" required>
                     <input type="text" name="empresa" placeholder="Empresa" required>
                     <input type="text" name="senha" id="" placeholder="Senha" required>
-                    <input type="text" name="grupo" placeholder="Grupo (opcional)" required>
+                    <input type="text" name="grupo" placeholder="Grupo (opcional)">
                 </div>
                 <div class="card-testes">
 

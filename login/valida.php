@@ -4,31 +4,25 @@ session_start();
 include_once "../includes/connection.php";
 
 //O campo usuário e senha preenchido entra no if para validar
-if ((isset($_POST['email'])) && (isset($_POST['senha']))) {
-    $usuario = mysqli_real_escape_string($conn, $_POST['email']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection
-    $senha = mysqli_real_escape_string($conn, $_POST['senha']);
-    $senha = md5($senha);
+if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
+    $usuario = mysqli_real_escape_string($conn, $_REQUEST['email']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection
+    $senha = mysqli_real_escape_string($conn, $_REQUEST['senha']);
+    $senha = $senha;
 
     //Buscar na tabela usuario o usuário que corresponde com os dados digitado no formulário
     $result_usuario = "SELECT * FROM usuarios WHERE email = '$usuario' && senha = '$senha' LIMIT 1";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
     $resultado = mysqli_fetch_assoc($resultado_usuario);
-
     //Encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
     if (isset($resultado)) {
-        $_SESSION['usuarioId'] = $resultado['id'];
         $_SESSION['usuarioNome'] = $resultado['nome'];
         // $_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
         $_SESSION['usuarioEmail'] = $resultado['email'];
-        // if ($_SESSION['usuarioNiveisAcessoId'] == "1") {
-        //     header("Location: administrativo.php");
-        // } 
-        // elseif ($_SESSION['usuarioNiveisAcessoId'] == "2") {
-        //     header("Location: colaborador.php");
-        // } 
-        // else {
-        header("Location: testes/index.php");
-        // }
+        if ($resultado['email'] == "admin") {
+            header("Location: ../cadastro");
+            exit;
+        }
+        header("Location: ../testes");
         //Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
         //redireciona o usuario para a página de login
     } else {
