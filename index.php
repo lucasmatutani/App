@@ -24,10 +24,6 @@
         </nav>
         <a class="btn-site" href="https://focustrade.com.br/">www.focustrade.com.br</a>
     </section>
-    <section class="container-carrossel" style="margin-bottom: 0;">
-        <a id="aId"><img id="id"></a>
-    </section>
-
 
 </body>
 
@@ -38,23 +34,3 @@
 </footer> -->
 
 </html>
-
-<script type="text/javascript">
-    function slide1() {
-        document.getElementById('id').src = "./assets/img/img-palestra1.png";
-        setTimeout("slide2()", 3000)
-        document.getElementById('aId').href = "link1.html"
-    }
-
-    function slide2() {
-        document.getElementById('id').src = "./assets/img/img-palestra2.png";
-        setTimeout("slide3()", 3000)
-        document.getElementById('aId').href = "link2.html"
-    }
-
-    function slide3() {
-        document.getElementById('id').src = "./assets/img/img-palestra3.png";
-        setTimeout("slide1()", 3000)
-        document.getElementById('aId').href = "link3.html"
-    }
-</script>

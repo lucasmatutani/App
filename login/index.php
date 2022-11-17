@@ -1,3 +1,7 @@
+<?php
+//Inicializado primeira a sessão para posteriormente recuperar valores das variáveis globais. 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,27 +17,37 @@
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-login">
         <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
-        <form action="" class="container-form">
+        <form method="POST" name="login" action="valida.php" class="container-form">
             <div class="card">
                 <div class="container-email">
                     <input type="text" name="Email" id="" placeholder="Email" style="font-size: 0.8em;">
-                    <span></span>
                 </div>
                 <div class="container-senha">
                     <input type="password" name="Senha" placeholder="Senha" style="font-size: 0.8em;">
-                    <span></span>
                 </div>
                 <div class="container-entrar">
-                    <a href="../testes/index.php" class="btn btn2">Entrar</a>
+                    <a href="javascript:login.submit()" class="btn btn2">Entrar</a>
                 </div>
+                <p style="display: hidden; text-align: center; color: red; font-size: 0.6em;">
+                    <?php
+                    //Recuperando o valor da variável global, os erro de login.
+                    if (isset($_SESSION['loginErro'])) {
+                        echo $_SESSION['loginErro'];
+                        unset($_SESSION['loginErro']);
+                    }
+                    ?>
+                    <?php
+                    //Recuperando o valor da variável global, deslogado com sucesso.
+                    if (isset($_SESSION['logindeslogado'])) {
+                        echo $_SESSION['logindeslogado'];
+                        unset($_SESSION['logindeslogado']);
+                    }
+                    ?>
+                </p>
             </div>
         </form>
     </div>
 </body>
 
-<!-- <footer>
-    © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-</footer> -->
 
 </html>

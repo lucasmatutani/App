@@ -1,3 +1,11 @@
+body {
+  background: url("./assets/img/img-fundo-home.png") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .container-header {
   position: absolute;
   display: flex;
@@ -26,10 +34,10 @@
 .btn-login {
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  padding: 21px 43px;
+  padding: 25px 47px;
   border-radius: 100px;
   color: #fff;
-  font-size: 1.9em;
+  font-size: 2em;
 }
 
 .btn-login:hover {
