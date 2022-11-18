@@ -10,6 +10,7 @@ session_start();
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <title>Login Focus Trade</title>
 </head>
 

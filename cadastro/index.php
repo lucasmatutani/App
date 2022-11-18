@@ -20,6 +20,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     <link rel="stylesheet" href="../assets/css/reset.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <title>Cadastro</title>
 </head>
 
