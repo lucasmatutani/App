@@ -1,0 +1,179 @@
+.img-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-3d {
+  top: 0;
+  left: 0;
+  transition: all 0.15s linear 0s;
+  display: block;
+  margin: auto;
+  width: 150px;
+  background-color: #314b7c;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: -6px 6px 0 #404040;
+  text-decoration: none;
+}
+.btn-3d:hover {
+  top: 3px;
+  left: -3px;
+  box-shadow: -3px 3px 0 #404040;
+}
+.btn-3d:hover::after {
+  top: 1px;
+  left: -2px;
+  width: 4px;
+  height: 4px;
+}
+.btn-3d:hover::before {
+  bottom: -2px;
+  right: 1px;
+  width: 4px;
+  height: 4px;
+}
+.btn-3d::after {
+  transition: all 0.15s linear 0s;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: #404040;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.btn-3d::before {
+  transition: all 0.15s linear 0s;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #404040;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+a.btn-3d {
+  position: relative;
+}
+a:active.btn-3d {
+  top: 6px;
+  left: -6px;
+  box-shadow: none;
+}
+a:active.btn-3d:before {
+  bottom: 1px;
+  right: 1px;
+}
+a:active.btn-3d:after {
+  top: 1px;
+  left: 1px;
+}
+a.btn-3d i {
+  display: block;
+  background: #314b7c;
+  font-family: "open_sansregular";
+  padding: 15px;
+  z-index: 2;
+  position: inherit;
+  font-style: normal;
+}
+
+.btn-3d2 {
+  top: 0;
+  left: 0;
+  transition: all 0.15s linear 0s;
+  display: block;
+  margin: auto;
+  width: 150px;
+  background-color: #314b7c;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: -6px 6px 0 #404040;
+  text-decoration: none;
+}
+.btn-3d2:hover {
+  top: 3px;
+  left: -3px;
+  box-shadow: -3px 3px 0 #404040;
+}
+.btn-3d2:hover::after {
+  top: 1px;
+  left: -2px;
+  width: 4px;
+  height: 4px;
+}
+.btn-3d2:hover::before {
+  bottom: -2px;
+  right: 1px;
+  width: 4px;
+  height: 4px;
+}
+.btn-3d2::after {
+  transition: all 0.15s linear 0s;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: #404040;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.btn-3d2::before {
+  transition: all 0.15s linear 0s;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #404040;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+a.btn-3d2 {
+  position: relative;
+}
+a:active.btn-3d2 {
+  top: 6px;
+  left: -6px;
+  box-shadow: none;
+}
+a:active.btn-3d2:before {
+  bottom: 1px;
+  right: 1px;
+}
+a:active.btn-3d2:after {
+  top: 1px;
+  left: 1px;
+}
+a.btn-3d2 i {
+  display: block;
+  background: #314b7c;
+  font-family: "open_sansregular";
+  padding: 15px;
+  z-index: 2;
+  position: inherit;
+  font-style: normal;
+}
+
+.container-card {
+  display: flex;
+  box-shadow: 1px 1px 5px #ccc;
+  background-color: #fff;
+  padding: 50px 50px;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  font-size: 1.5em;
+  z-index: 999;
+}
