@@ -17,7 +17,7 @@ session_start();
 <body style="margin: 0; font-family: 'Ubuntu', sans-serif;">
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px; min-width: 300px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-login">
-        <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
+        <img class="img-logo" src="../assets/img/logo-sem-fundo-azul.png" alt="">
         <form method="POST" name="login" action="valida.php" class="container-form">
             <div class="card">
                 <div class="container-email">

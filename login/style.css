@@ -1,5 +1,5 @@
 body {
-    background: url('../assets/img/img-palestra2.png') center center no-repeat fixed;
+    background: url('../assets/img/img-fundo3.png') center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,6 +19,10 @@ a {
     font-size: 1.5em;
 }
 
+.img-logo {
+    width: 20%;
+    min-width: 300px;
+}
 
 .container-login {
     display: flex;
