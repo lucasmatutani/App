@@ -11,7 +11,7 @@
     <title>Focus Trade</title>
 </head>
 
-<body onLoad="slide1()" style="font-family: 'Ubuntu' , sans-serif;">
+<body style="font-family: 'Ubuntu' , sans-serif;">
     <section class=" container-header">
         <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="">
 

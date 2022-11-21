@@ -21,7 +21,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
 
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-logo">
-        <img class="img-logo" src="../assets/img/logo-branco.png" alt="">
+        <img class="img-logo" src="../assets/img/logo-sem-fundo-azul.png" alt="">
     </div>
     <div class="container-testes">
 

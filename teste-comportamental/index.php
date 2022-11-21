@@ -22,7 +22,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-header">
         <div class="containerTitulo">
-            <img src="../assets/img/logo-focustrade.jpeg" alt="logo">
+            <img src="../assets/img/logo-focustrade.jpeg" alt="logo" style="min-width: 300px;">
             <h1> AVALIAÇÃO DE PERFIL COMPORTAMENTAL</h1>
             <h2> Em cada uma das 25 questões a seguir, escolha uma alternativa e marque-a no espaço
                 correspondente.</h2>

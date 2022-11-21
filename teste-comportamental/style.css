@@ -18,17 +18,6 @@
     text-align: center;
 }
 
-.img {
-    background-color: #314B7C;
-    display: flex;
-    ;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 15px 0px;
-
-}
-
 .containerPerguntas {
     display: flex;
     flex-direction: row;
