@@ -1,5 +1,5 @@
 body {
-    background: url('../assets/img/img-fundo-testes.png') center center no-repeat fixed;
+    background: url('../assets/img/img-fundo1.png') center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,6 +18,11 @@ body {
 .container-logo {
     text-align: center;
     padding-top: 40px;
+}
+
+.img-logo {
+    width: 25%;
+    min-width: 300px;
 }
 
 footer {

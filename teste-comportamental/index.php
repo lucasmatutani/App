@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <title>AVALIAÇÃO DE PERFIL COMPORTAMENTAL</title>
 </head>
 
@@ -14,7 +22,7 @@
     <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-header">
         <div class="containerTitulo">
-            <img src="../assets/img/logo-focustrade.jpeg" alt="logo">
+            <img src="../assets/img/logo-focustrade.jpeg" alt="logo" style="min-width: 300px;">
             <h1> AVALIAÇÃO DE PERFIL COMPORTAMENTAL</h1>
             <h2> Em cada uma das 25 questões a seguir, escolha uma alternativa e marque-a no espaço
                 correspondente.</h2>
