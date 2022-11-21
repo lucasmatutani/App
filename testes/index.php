@@ -1,4 +1,6 @@
 <?php
+$arrTestes = ['1' => 'teste_comportamental', '2' => 'teste_representacional', '3' => 'teste_conquiste_clientes'];
+
 session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
