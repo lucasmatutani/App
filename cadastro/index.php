@@ -38,7 +38,45 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                     <input type="text" name="grupo" placeholder="Grupo (opcional)">
                 </div>
                 <div class="card-testes">
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Teste Representacional</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="representacional" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="representacional" value="2">
+                        </div>
+                    </div>
 
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Teste Comportamental</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="comportamental" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="comportamental" value="2">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Teste Conquiste Clientes</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="conquiste_clientes" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="conquiste_clientes" value="2">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Teste Aida</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="aida" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="aida" value="2">
+                        </div>
+                    </div>
                 </div>
             </div>
             <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">Cadastrar</a>
