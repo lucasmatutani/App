@@ -25,7 +25,7 @@ $txt16 = $_REQUEST['txt16'];
 echo ($nm1 . $txt1 . $txt2 . $txt3 . $txt4 . $nm2 . $txt5 . $txt6 . $txt7 . $txt8 . $nm3 . $txt9 . $txt10 . $txt11 . $txt12 . $nm4 . $txt13 . $txt14 . $txt15 . $txt16);
 exit;
 
-$sql = "INSERT INTO teste_aida (id, nm1, txt1, txt2, txt3, txt4, nm2, txt5, txt6, txt7, txt8, nm3, txt9,txt10, txt11, txt12, nm4, txt13, txt14, txt15, txt16) VALUES (1, '$nm1', '$txt1', '$txt2', '$txt3', '$txt4', '$nm2', '$txt5', '$txt6', '$txt7', '$txt8', '$nm3', '$txt9', '$txt10', '$txt11', '$txt12', '$nm4' '$txt13', '$txt14', '$txt15', '$txt16')";
+$sql = "INSERT INTO teste_aida (nm1, txt1, txt2, txt3, txt4, nm2, txt5, txt6, txt7, txt8, nm3, txt9, txt10, txt11, txt12, nm4, txt13, txt14, txt15, txt16) VALUES ('$nm1', '$txt1', '$txt2', '$txt3', '$txt4', '$nm2', '$txt5', '$txt6', '$txt7', '$txt8', '$nm3', '$txt9', '$txt10', '$txt11', '$txt12', '$nm4' '$txt13', '$txt14', '$txt15', '$txt16')";
 
 if (mysqli_query($conn, $sql)) {
     echo "respostas gravadas com sucesso";
