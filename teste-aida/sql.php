@@ -1,5 +1,5 @@
 <?php
-include_once  "../connection.php";
+include_once  "../includes/connection.php";
 
 $nm1 = $_REQUEST['nm1'];
 $txt1 = $_REQUEST['txt1'];
