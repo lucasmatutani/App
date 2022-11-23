@@ -1,6 +1,4 @@
 <?php
-$arrTestes = ['1' => 'teste_comportamental', '2' => 'teste_representacional', '3' => 'teste_conquiste_clientes'];
-
 session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
@@ -34,9 +32,15 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
+                    <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Teste <br> Comportamental</a>
+                    <?php endif; ?>
+                    <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Teste <br> Representacional</a>
+                    <?php endif; ?>
+                    <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Aida</a>
+                    <?php endif; ?>
                 </div>
             </div>
 
@@ -46,14 +50,16 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
+                    <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Conquiste <br> Clientes</a>
+                    <?php endif; ?>
                     <a href="#">Teste 2</a>
                     <a href="#">Teste 3</a>
                 </div>
             </div>
         </div>
 
-        <div class="second-column">
+        <!-- <div class="second-column">
             <div class="dropdown">
                 <div class="btn-teste">
                     <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
@@ -102,8 +108,8 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <a href="#">Teste 2</a>
                     <a href="#">Teste 3</a>
                 </div>
-            </div>
-        </div>
+            </div> -->
+    </div>
 
     </div>
 

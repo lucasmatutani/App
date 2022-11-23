@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
+.container-cadastro {
+  padding-top: 200px;
+}
+
 a {
   text-decoration: none;
 }
@@ -58,11 +62,22 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 59px 0px;
+  overflow: auto;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  position: relative;
+  top: 30%;
 }
 
 #cadastrar {
   position: relative;
-  left: 50%;
+  left: 45%;
   padding: 20px;
   border-radius: 50px;
   font-size: 1em;

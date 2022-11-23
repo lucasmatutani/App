@@ -16,12 +16,24 @@
 
     <div class="container-card">
 
-        <a href="../cadastro/" class="btn-3d" title="Cadastro de usuário">
+        <a href="../cadastro/" class="btn-3d" title="Cadastro de usuário" target="_blank">
             <i class="icon icon-cube"> Cadastro de usuário</i>
         </a>
 
+        <a href="../testes/" class="btn-3d" title="Cadastro de usuário" target="_blank">
+            <i class="icon icon-cube">Testes</i>
+        </a>
+
+        <a href="#" class="btn-3d" title="Cadastro de usuário" target="_blank">
+            <i class="icon icon-cube">Resposta Teste AIDA</i>
+        </a>
+
+        <a href="#" class="btn-3d" title="Cadastro de usuário" target="_blank">
+            <i class="icon icon-cube">Resposta Teste Spin</i>
+        </a>
+
         <div class="container-Banco">
-            <a href="https://mysql11-farm1.kinghost.net/login.php?phpMyAdmin=25d443d67ebbd8774f7cbc5e5f9600bd0774d66d" class="btn-3d2" title="Banco de Dados">
+            <a href="https://mysql11-farm1.kinghost.net/login.php?phpMyAdmin=25d443d67ebbd8774f7cbc5e5f9600bd0774d66d" target="_blank" class="btn-3d" title="Banco de Dados">
                 <i class="icon icon-cube"> Banco de Dados</i>
             </a>
         </div>

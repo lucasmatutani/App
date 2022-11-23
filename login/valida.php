@@ -18,8 +18,13 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['usuarioNome'] = $resultado['nome'];
         // $_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
         $_SESSION['usuarioEmail'] = $resultado['email'];
+        $_SESSION['comportamental'] = $resultado['comportamental'];
+        $_SESSION['representacional'] = $resultado['representacional'];
+        $_SESSION['aida'] = $resultado['aida'];
+        $_SESSION['conquiste_clientes'] = $resultado['conquiste_clientes'];
+
         if ($resultado['email'] == "admin") {
-            header("Location: ../cadastro");
+            header("Location: ../admin");
             exit;
         }
         header("Location: ../testes");
