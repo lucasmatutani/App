@@ -1,0 +1,119 @@
+.img-logo {
+  width: 23%;
+}
+
+.container-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.container-prod {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.container-prod button {
+  border: none;
+  background-color: #fff;
+  font-size: 1.5em;
+}
+
+.border {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.container-resposta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-atencao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-atencao label {
+  min-width: 100px;
+}
+
+.container-interesse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-interesse label {
+  min-width: 100px;
+}
+
+.container-desejo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-desejo label {
+  min-width: 100px;
+}
+
+.container-acao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-acao label {
+  min-width: 100px;
+}
+
+.container-feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-feedback label {
+  min-width: 100px;
+}
+
+input {
+  margin: 20px;
+}
+
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-voltar {
+  background-color: #314b7c;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.btn-submit {
+  background-color: #314b7c;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
