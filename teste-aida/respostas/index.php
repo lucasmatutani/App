@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./repostas.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Respostas A I D A</title>
 </head>
 
@@ -13,7 +13,7 @@
 
     <form action="">
         <div class="container-titulo">
-            <img class="img-logo" class="img-logo" src="../assets/img/logo-aida-sem-fundo.png" alt="">
+            <img class="img-logo" class="img-logo" src="../../assets/img/logo-aida-sem-fundo.png" alt="">
             <h1 class="h1-equipe">Equipe...</h1>
         </div>
         <div class="container-prod">
