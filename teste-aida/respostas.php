@@ -29,7 +29,7 @@
 
             <div class="container-atencao">
                 <label for="">ATENÇÃO</label>
-                <textarea name="atencao" id="" cols="130" rows="10"></textarea>
+                <textarea readonly name="atencao" id="" cols="130" rows="10"></textarea>
             </div>
             <div class="btns-radios">
                 <input type="radio" name="atencao" id="">
@@ -43,7 +43,7 @@
 
             <div class="container-interesse">
                 <label for="">INTERESSE</label>
-                <textarea name="interesse" id="" cols="130" rows="10"></textarea>
+                <textarea readonly name="interesse" id="" cols="130" rows="10"></textarea>
             </div>
             <div class="btns-radios">
                 <input type="radio" name="interesse" id="">
@@ -56,7 +56,7 @@
 
             <div class="container-desejo">
                 <label for="">DESEJO</label>
-                <textarea name="desejo" id="" cols="130" rows="10"></textarea>
+                <textarea readonly name="desejo" id="" cols="130" rows="10"></textarea>
             </div>
             <div class="btns-radios">
                 <input type="radio" name="desejo" id="">
@@ -69,7 +69,7 @@
 
             <div class="container-acao">
                 <label for="">AÇÃO</label>
-                <textarea name="acao" id="" cols="130" rows="10"></textarea>
+                <textarea readonly name="acao" id="" cols="130" rows="10"></textarea>
             </div>
             <div class="btns-radios">
                 <input type="radio" name="acao" id="">
@@ -82,7 +82,7 @@
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback" id="" cols="130" rows="10" -></textarea>
+                <textarea readonly name="feedback" id="" cols="130" rows="10" -></textarea>
             </div>
 
         </div>
