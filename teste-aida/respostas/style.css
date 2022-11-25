@@ -16,6 +16,10 @@
   margin-bottom: 10px;
 }
 
+.container-prod h2:hover {
+  cursor: pointer;
+}
+
 .container-prod button {
   border: none;
   background-color: #fff;

@@ -58,3 +58,26 @@ table {
 .table-text {
   width: 10%;
 }
+
+.container-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.container-submit input {
+  height: 40px;
+  background-color: #314b7c;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.container-submit input::placeholder {
+  color: #fff;
+}
+
+#submit:hover {
+  background-color: #0f1623;
+  cursor: pointer;
+}

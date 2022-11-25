@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,112 +35,113 @@
         <div class="container-table">
 
             <div class="container">
-                <input type="text" name="nm1" id="" placeholder="Insira o nome do produto aqui">
+                <input type="text" name="nm1" id="" placeholder="Insira o nome do produto aqui" required>
                 <table style="margin: 0;" cellspacing="30">
 
 
                     <tr>
                         <th class="table-text">A</th>
-                        <th><textarea name="txt1"></textarea></th>
+                        <th><textarea name="txt1" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">I</th>
-                        <th><textarea name="txt2"></textarea></th>
+                        <th><textarea name="txt2" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">D</th>
-                        <th><textarea name="txt3"></textarea></th>
+                        <th><textarea name="txt3" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">A</th>
-                        <th><textarea name="txt4"></textarea></th>
+                        <th><textarea name="txt4" required></textarea></th>
                     </tr>
 
                 </table>
             </div>
 
             <div class="container">
-                <input type="text" name="nm2" id="" placeholder="Insira o nome do produto aqui">
+                <input type="text" name="nm2" id="" placeholder="Insira o nome do produto aqui" required>
                 <table cellspacing="40">
                     <tr>
                         <th class="table-text">A</th>
-                        <th><textarea name="txt5"></textarea></th>
+                        <th><textarea name="txt5" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">I</th>
-                        <th><textarea name="txt6"></textarea></th>
+                        <th><textarea name="txt6" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">D</th>
-                        <th><textarea name="txt7"></textarea></th>
+                        <th><textarea name="txt7" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">A</th>
-                        <th><textarea name="txt8"></textarea></th>
+                        <th><textarea name="txt8" required></textarea></th>
                     </tr>
                     <tr>
                 </table>
             </div>
 
             <div class="container">
-                <input type="text" name="nm3" id="" placeholder="Insira o nome do produto aqui">
+                <input type="text" name="nm3" id="" placeholder="Insira o nome do produto aqui" required>
                 <table cellspacing="40">
                     <tr>
                         <th class="table-text">A</th>
-                        <th><textarea name="txt9"></textarea></th>
+                        <th><textarea name="txt9" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">I</th>
-                        <th><textarea name="txt10"></textarea></th>
+                        <th><textarea name="txt10" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">D</th>
-                        <th><textarea name="txt11"></textarea></th>
+                        <th><textarea name="txt11" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">A</th>
-                        <th><textarea name="txt12"></textarea></th>
+                        <th><textarea name="txt12" required></textarea></th>
                     </tr>
                 </table>
             </div>
 
             <div class="container">
                 <table cellspacing="40">
-                    <input type="text" name="nm4" id="" placeholder="Insira o nome do produto aqui">
+                    <input type="text" name="nm4" id="" placeholder="Insira o nome do produto aqui" required>
                     <tr>
                         <th class="table-text">A</th>
-                        <th><textarea name="txt13"></textarea></th>
+                        <th><textarea name="txt13" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">I</th>
-                        <th><textarea name="txt14"></textarea></th>
+                        <th><textarea name="txt14" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">D</th>
-                        <th><textarea name="txt15"></textarea></th>
+                        <th><textarea name="txt15" required></textarea></th>
                     </tr>
                     <tr>
 
                         <th class="table-text">A</th>
-                        <th><textarea name="txt16"></textarea></th>
+                        <th><textarea name="txt16" required></textarea></th>
                     </tr>
                 </table>
             </div>
         </div>
-
-        <input type="submit" name="" id="">
-
+        <div class="container-submit">
+            <input type="text" style="margin-right: 30px;" name="grupo" placeholder="Nome do Grupo" required>
+            <input type="submit" name="" id="submit">
+        </div>
     </form>
 </body>
 

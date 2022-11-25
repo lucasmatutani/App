@@ -1,4 +1,15 @@
-<?php include_once "../includes/connection.php"; ?>
+<?php
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
+    exit;
+}
+if ($_SESSION['usuarioEmail'] != "admin") {
+    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN COMO ADMIN!";
+    exit;
+}
+?>
+<?php include_once "../../includes/connection.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,40 +33,35 @@
 
     <form action="">
         <div class="container-table">
-            <?php if ($bd && $_REQUEST["type"] == "form") :
-                $query = "select teste_aida,
-                s.nome as nome_seguradora,
-                l.nome as nome_plano,
-                dolar,
-                s.id as id_seguradora,
-                l.id as id_plano,
-                l.cobertura_medica,
-                l.cobertura_bagagem,
-                l.desconto_familiar,
-                idade_adicional,
-                preco_fam2,
-                preco_fam5
-                from seguro_preco p, seguro_seguradora s, seguro_plano l, seguro_cambio d
-                where
-                l.id_mercado = $origem and
-                s.id = l.id_seguradora and
-                l.id = p.id_plano and
-                s.id = d.id_seguradora and
-                dias=$dias ";
+            <?php if ($conn) :
+                $query = "select * from teste_aida";
+                if ($res = mysqli_query($conn, $query)) :
+                    while ($col = $res->fetch_field())
+                        $colName[] = $col->name;
+                    while ($row = mysqli_fetch_array($res)) :
             ?>
-                <table cellpadding="30">
-                    <tr style="text-align: left;">
+                        <table cellpadding="30">
+                            <tr style="text-align: left;">
+                                <th class="th-nm1" id="grupo" style="width: 100%;"><?php echo $row['grupo']; ?></th>
+                                <th style="font-size: 0.8em;"><a class="btn-editar" href="javascript:void(0)" onclick='editar(<?= json_encode($row); ?>)'>editar</a></th>
+                                <th class="th-nmr1">10</th>
+                            </tr>
 
-                        <th class="th-nm1" style="width: 100%;">Focus Trade</th>
-
-                        <th style="font-size: 1em;"> <a class="btn-editar" href="">editar</a> </th>
-                        <th class="th-nmr1">10</th>
-                    </tr>
-
-                </table>
+                        </table>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
     </form>
 </body>
 
 </html>
+
+<script>
+    function editar($row) {
+        localStorage.removeItem('grupo_escolhido');
+        localStorage['grupo_escolhido'] = JSON.stringify($row);
+
+        window.location.href = 'http://localhost/app/teste-aida/respostas/';
+    }
+</script>
