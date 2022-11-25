@@ -1,0 +1,136 @@
+.container-banner {
+    padding: 15px 0px;
+}
+
+.img {
+    margin: auto;
+    display: block;
+
+}
+
+.container-titulo {
+    text-align: center;
+}
+
+.container-tabela {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin: 40px 40px;
+
+}
+
+.container-tabela div {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-tabela p {
+    margin-top: 30px;
+}
+
+.container-perguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.container-perguntas label {
+    margin-top: 4px;
+}
+
+.container-perguntas input {
+    padding: 1px 1px;
+    width: 40px;
+}
+
+.perguntas-1a5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.perguntas-6a10 {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold 15px arial, sans-serif;
+    text-shadow: none;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.botao:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+#botao-enviar {
+    background: #0066A2;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin: 10px;
+}
+
+#botao-enviar:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.resultados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.resultados input {
+    width: 5%;
+}
+
+.container-infos {
+    margin-top: 20px;
+}
+
+.container-infos input {
+    width: 20%;
+}
+
+#botao-enviar {
+    width: 20%;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #314B7C;
+    font-size: 0.8em;
+    color: #fff;
+    padding: 40px 0;
+}
+
+@media (max-width: 750px) {
+    .container-infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resultados input {
+        margin-bottom: 15px;
+    }
+}
