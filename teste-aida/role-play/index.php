@@ -36,7 +36,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
             <?php if ($conn) :
                 $query = "select * from teste_aida";
                 if ($res = mysqli_query($conn, $query)) :
-                    while ($row = mysqli_fetch_array($res)) :
+                    while ($row = $res->fetch_array(MYSQLI_ASSOC)) :
             ?>
                         <table cellpadding="30">
                             <tr style="text-align: left;">
