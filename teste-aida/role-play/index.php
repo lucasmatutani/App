@@ -36,8 +36,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
             <?php if ($conn) :
                 $query = "select * from teste_aida";
                 if ($res = mysqli_query($conn, $query)) :
-                    while ($col = $res->fetch_field())
-                        $colName[] = $col->name;
                     while ($row = mysqli_fetch_array($res)) :
             ?>
                         <table cellpadding="30">
