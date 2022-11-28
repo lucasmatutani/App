@@ -27,6 +27,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     <form action="./respostas.php" method="POST">
         <input type="hidden" id="user_id" name="user_id" value="">
         <input type="hidden" id="valor_total" name="valor_total" value="">
+        <input type="hidden" id="radio_total" name="radio_totl" value="">
 
         <div class="container-titulo">
             <img class="img-logo" class="img-logo" src="../../assets/img/logo-aida-sem-fundo.png" alt="">
@@ -386,5 +387,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
         var somaTotal = (((naoImp + parcImp + imp) * 100) / 1600).toFixed();
         var somaTotalNumber = parseInt(somaTotal);
         document.getElementById("valor_total").value = somaTotalNumber;
+        document.getElementById("radio_total").value = total;
+
     };
 </script>

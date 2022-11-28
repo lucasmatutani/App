@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/app/includes/connection.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "includes/connection.php";
 
 $user_id = $_POST['user_id'];
 $valor_total = $_POST['valor_total'];
