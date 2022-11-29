@@ -27,7 +27,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     <form action="./respostas.php" method="POST">
         <input type="hidden" id="user_id" name="user_id" value="">
         <input type="hidden" id="valor_total" name="valor_total" value="">
-        <input type="hidden" id="radio_total" name="radio_totl" value="">
+        <input type="hidden" id="radio_total" name="radio_total" value="">
 
         <div class="container-titulo">
             <img class="img-logo" class="img-logo" src="../../assets/img/logo-aida-sem-fundo.png" alt="">
