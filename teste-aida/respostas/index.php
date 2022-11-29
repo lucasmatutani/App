@@ -99,7 +99,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback1" id="" cols="130" rows="10" -></textarea>
+                <textarea name="feedback1" id="feedback1" cols="130" rows="10" -></textarea>
             </div>
 
 
@@ -162,7 +162,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback2" id="" cols="130" rows="10" -></textarea>
+                <textarea name="feedback2" id="feedback2" cols="130" rows="10" -></textarea>
             </div>
 
 
@@ -225,7 +225,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback3" id="" cols="130" rows="10" -></textarea>
+                <textarea name="feedback3" id="feedback3" cols="130" rows="10" -></textarea>
             </div>
 
         </div>
@@ -287,7 +287,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback4" id="" cols="130" rows="10" -></textarea>
+                <textarea name="feedback4" id="feedback4" cols="130" rows="10" -></textarea>
             </div>
 
         </div>
@@ -306,6 +306,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
 <script>
     arrGrupo = $.parseJSON(localStorage.getItem("grupo_escolhido"));
+    console.log(arrGrupo);
     document.getElementById('user_id').value = arrGrupo["id"];
     $("#equipe").html(arrGrupo["grupo"]);
     $("#prod1").html(arrGrupo["nm1"]);
@@ -328,6 +329,19 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     $("#txt14").html(arrGrupo["txt14"]);
     $("#txt15").html(arrGrupo["txt15"]);
     $("#txt16").html(arrGrupo["txt16"]);
+    $("#feedback1").html(arrGrupo['feedback1']);
+    $("#feedback2").html(arrGrupo['feedback2']);
+    $("#feedback3").html(arrGrupo['feedback3']);
+    $("#feedback4").html(arrGrupo['feedback4']);
+
+    var input = document.getElementsByTagName('input');
+    arrRadioTotal = arrGrupo["radio_total"].split("");
+    for (i = 0; i < 16; i++) {
+        if (arrRadioTotal[i] == input[i].value) {
+            input[i].checked;
+            console.log(input[i].value);
+        }
+    }
 
     container1 = document.getElementById('container1');
     container2 = document.getElementById('container2');
@@ -366,8 +380,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
         $("#btn-enviar").show();
     }
 
-    var input = document.getElementsByTagName('input');
-
     function registrar() {
         document.getElementById("result").innerHTML = "";
         for (i = 0; i < 48; i++) {
@@ -381,7 +393,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
         num3 = (total.match(new RegExp("3", "g")) || []).length;
 
         var naoImp = num1 * 100;
-        var parcImp = num2 * 50
+        var parcImp = num2 * 50;
+        rtyujiop
         var imp = num3 * 0;
 
         var somaTotal = (((naoImp + parcImp + imp) * 100) / 1600).toFixed();
