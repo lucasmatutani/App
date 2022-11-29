@@ -388,6 +388,5 @@ if ($_SESSION['usuarioEmail'] != "admin") {
         var somaTotalNumber = parseInt(somaTotal);
         document.getElementById("valor_total").value = somaTotalNumber;
         document.getElementById("radio_total").value = total;
-
     };
 </script>
