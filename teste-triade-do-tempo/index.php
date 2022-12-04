@@ -28,11 +28,11 @@
                 <p>1 - Costumo ir a eventos, mesmo sem ter muita vontade, para <br> agradar meu chefe, meus amigos ou minha familia.</p>
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio1" id="">
-                        <input type="radio" name="radio1" id="">
-                        <input type="radio" name="radio1" id="">
-                        <input type="radio" name="radio1" id="">
-                        <input type="radio" name="radio1" id="">
+                        <input type="radio" name="radio1" value="1" id="">
+                        <input type="radio" name="radio1" value="2" id="">
+                        <input type="radio" name="radio1" value="3" id="">
+                        <input type="radio" name="radio1" value="4" id="">
+                        <input type="radio" name="radio1" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -46,11 +46,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio2" id="">
-                        <input type="radio" name="radio2" id="">
-                        <input type="radio" name="radio2" id="">
-                        <input type="radio" name="radio2" id="">
-                        <input type="radio" name="radio2" id="">
+                        <input type="radio" name="radio2" value="1" id="">
+                        <input type="radio" name="radio2" value="2" id="">
+                        <input type="radio" name="radio2" value="3" id="">
+                        <input type="radio" name="radio2" value="4" id="">
+                        <input type="radio" name="radio2" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -65,11 +65,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio3" id="">
-                        <input type="radio" name="radio3" id="">
-                        <input type="radio" name="radio3" id="">
-                        <input type="radio" name="radio3" id="">
-                        <input type="radio" name="radio3" id="">
+                        <input type="radio" name="radio3" value="1" id="">
+                        <input type="radio" name="radio3" value="2" id="">
+                        <input type="radio" name="radio3" value="3" id="">
+                        <input type="radio" name="radio3" value="4" id="">
+                        <input type="radio" name="radio3" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -84,11 +84,11 @@
                 <p>
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio4" id="">
-                        <input type="radio" name="radio4" id="">
-                        <input type="radio" name="radio4" id="">
-                        <input type="radio" name="radio4" id="">
-                        <input type="radio" name="radio4" id="">
+                        <input type="radio" name="radio4" value="1" id="">
+                        <input type="radio" name="radio4" value="2" id="">
+                        <input type="radio" name="radio4" value="3" id="">
+                        <input type="radio" name="radio4" value="4" id="">
+                        <input type="radio" name="radio4" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -103,11 +103,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio5" id="">
-                        <input type="radio" name="radio5" id="">
-                        <input type="radio" name="radio5" id="">
-                        <input type="radio" name="radio5" id="">
-                        <input type="radio" name="radio5" id="">
+                        <input type="radio" name="radio5" value="1" id="">
+                        <input type="radio" name="radio5" value="2" id="">
+                        <input type="radio" name="radio5" value="3" id="">
+                        <input type="radio" name="radio5" value="4" id="">
+                        <input type="radio" name="radio5" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -122,11 +122,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio6" id="">
-                        <input type="radio" name="radio6" id="">
-                        <input type="radio" name="radio6" id="">
-                        <input type="radio" name="radio6" id="">
-                        <input type="radio" name="radio6" id="">
+                        <input type="radio" name="radio6" value="1" id="">
+                        <input type="radio" name="radio6" value="2" id="">
+                        <input type="radio" name="radio6" value="3" id="">
+                        <input type="radio" name="radio6" value="4" id="">
+                        <input type="radio" name="radio6" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -141,11 +141,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio7" id="">
-                        <input type="radio" name="radio7" id="">
-                        <input type="radio" name="radio7" id="">
-                        <input type="radio" name="radio7" id="">
-                        <input type="radio" name="radio7" id="">
+                        <input type="radio" name="radio7" value="1" id="">
+                        <input type="radio" name="radio7" value="2" id="">
+                        <input type="radio" name="radio7" value="3" id="">
+                        <input type="radio" name="radio7" value="4" id="">
+                        <input type="radio" name="radio7" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -160,11 +160,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio8" id="">
-                        <input type="radio" name="radio8" id="">
-                        <input type="radio" name="radio8" id="">
-                        <input type="radio" name="radio8" id="">
-                        <input type="radio" name="radio8" id="">
+                        <input type="radio" name="radio8" value="1" id="">
+                        <input type="radio" name="radio8" value="2" id="">
+                        <input type="radio" name="radio8" value="3" id="">
+                        <input type="radio" name="radio8" value="4" id="">
+                        <input type="radio" name="radio8" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -179,11 +179,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio9" id="">
-                        <input type="radio" name="radio9" id="">
-                        <input type="radio" name="radio9" id="">
-                        <input type="radio" name="radio9" id="">
-                        <input type="radio" name="radio9" id="">
+                        <input type="radio" name="radio9" value="1" id="">
+                        <input type="radio" name="radio9" value="2" id="">
+                        <input type="radio" name="radio9" value="3" id="">
+                        <input type="radio" name="radio9" value="4" id="">
+                        <input type="radio" name="radio9" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -201,11 +201,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio10" id="">
-                        <input type="radio" name="radio10" id="">
-                        <input type="radio" name="radio10" id="">
-                        <input type="radio" name="radio10" id="">
-                        <input type="radio" name="radio10" id="">
+                        <input type="radio" name="radio10" value="1" id="">
+                        <input type="radio" name="radio10" value="2" id="">
+                        <input type="radio" name="radio10" value="3" id="">
+                        <input type="radio" name="radio10" value="4" id="">
+                        <input type="radio" name="radio10" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -220,11 +220,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio11" id="">
-                        <input type="radio" name="radio11" id="">
-                        <input type="radio" name="radio11" id="">
-                        <input type="radio" name="radio11" id="">
-                        <input type="radio" name="radio11" id="">
+                        <input type="radio" name="radio11" value="1" id="">
+                        <input type="radio" name="radio11" value="2" id="">
+                        <input type="radio" name="radio11" value="3" id="">
+                        <input type="radio" name="radio11" value="4" id="">
+                        <input type="radio" name="radio11" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -239,11 +239,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio12" id="">
-                        <input type="radio" name="radio12" id="">
-                        <input type="radio" name="radio12" id="">
-                        <input type="radio" name="radio12" id="">
-                        <input type="radio" name="radio12" id="">
+                        <input type="radio" name="radio12" value="1" id="">
+                        <input type="radio" name="radio12" value="2" id="">
+                        <input type="radio" name="radio12" value="3" id="">
+                        <input type="radio" name="radio12" value="4" id="">
+                        <input type="radio" name="radio12" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -258,11 +258,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio13" id="">
-                        <input type="radio" name="radio13" id="">
-                        <input type="radio" name="radio13" id="">
-                        <input type="radio" name="radio13" id="">
-                        <input type="radio" name="radio13" id="">
+                        <input type="radio" name="radio13" value="1" id="">
+                        <input type="radio" name="radio13" value="2" id="">
+                        <input type="radio" name="radio13" value="3" id="">
+                        <input type="radio" name="radio13" value="4" id="">
+                        <input type="radio" name="radio13" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -277,11 +277,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio14" id="">
-                        <input type="radio" name="radio14" id="">
-                        <input type="radio" name="radio14" id="">
-                        <input type="radio" name="radio14" id="">
-                        <input type="radio" name="radio14" id="">
+                        <input type="radio" name="radio14" value="1" id="">
+                        <input type="radio" name="radio14" value="2" id="">
+                        <input type="radio" name="radio14" value="3" id="">
+                        <input type="radio" name="radio14" value="4" id="">
+                        <input type="radio" name="radio14" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -296,11 +296,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio15" id="">
-                        <input type="radio" name="radio15" id="">
-                        <input type="radio" name="radio15" id="">
-                        <input type="radio" name="radio15" id="">
-                        <input type="radio" name="radio15" id="">
+                        <input type="radio" name="radio15" value="1" id="">
+                        <input type="radio" name="radio15" value="2" id="">
+                        <input type="radio" name="radio15" value="3" id="">
+                        <input type="radio" name="radio15" value="4" id="">
+                        <input type="radio" name="radio15" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -315,11 +315,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio16" id="">
-                        <input type="radio" name="radio16" id="">
-                        <input type="radio" name="radio16" id="">
-                        <input type="radio" name="radio16" id="">
-                        <input type="radio" name="radio16" id="">
+                        <input type="radio" name="radio16" value="1" id="">
+                        <input type="radio" name="radio16" value="2" id="">
+                        <input type="radio" name="radio16" value="3" id="">
+                        <input type="radio" name="radio16" value="4" id="">
+                        <input type="radio" name="radio16" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -334,11 +334,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio17" id="">
-                        <input type="radio" name="radio17" id="">
-                        <input type="radio" name="radio17" id="">
-                        <input type="radio" name="radio17" id="">
-                        <input type="radio" name="radio17" id="">
+                        <input type="radio" name="radio17" value="1" id="">
+                        <input type="radio" name="radio17" value="2" id="">
+                        <input type="radio" name="radio17" value="3" id="">
+                        <input type="radio" name="radio17" value="4" id="">
+                        <input type="radio" name="radio17" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
@@ -353,11 +353,11 @@
 
                 <div class="container-radios">
                     <div class="container-input">
-                        <input type="radio" name="radio18" id="">
-                        <input type="radio" name="radio18" id="">
-                        <input type="radio" name="radio18" id="">
-                        <input type="radio" name="radio18" id="">
-                        <input type="radio" name="radio18" id="">
+                        <input type="radio" name="radio18" value="1" id="">
+                        <input type="radio" name="radio18" value="2" id="">
+                        <input type="radio" name="radio18" value="3" id="">
+                        <input type="radio" name="radio18" value="4" id="">
+                        <input type="radio" name="radio18" value="5" id="">
                     </div>
                     <div class="container-label">
                         <label for="">1</label>
