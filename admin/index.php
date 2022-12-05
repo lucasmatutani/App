@@ -24,7 +24,7 @@
             <i class="icon icon-cube">Testes</i>
         </a>
 
-        <a href="#" class="btn-3d" title="Cadastro de usuário" target="_blank">
+        <a href="../teste-aida/role-play/" class="btn-3d" title="Cadastro de usuário" target="_blank">
             <i class="icon icon-cube">Resposta Teste AIDA</i>
         </a>
 
