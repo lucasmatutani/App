@@ -266,7 +266,7 @@
         </div>
 
 
-        <input type="submit">
+        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
     </form>
 </body>
 
