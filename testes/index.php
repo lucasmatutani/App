@@ -33,10 +33,10 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 </div>
                 <div class="dropdown-content">
                     <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Teste <br> Comportamental</a>
+                        <a href="#">Comportamental</a>
                     <?php endif; ?>
                     <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Teste <br> Representacional</a>
+                        <a href="#">Representacional</a>
                     <?php endif; ?>
                     <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                         <a href="#">Aida</a>
@@ -53,52 +53,34 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                         <a href="#">Conquiste <br> Clientes</a>
                     <?php endif; ?>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
+                    <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Spin</a>
+                    <?php endif; ?>
+                    <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Método Cesar</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="second-column">
+        <div class="second-column">
             <div class="dropdown">
                 <div class="btn-teste">
                     <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
                 </div>
                 <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
+                    <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Petscan do Cliente</a>
+                    <?php endif; ?>
+                    <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                        <a href="#">Tríade do Tempo</a>
+                    <?php endif; ?>
+                    <!-- <a href="#">Teste 3</a> -->
                 </div>
             </div>
 
-            <div class="dropdown" style="margin-top: 180px;">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="third-column">
-            <div class="dropdown">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown" style="margin-top: 180px;">
+            <!-- <div class="dropdown" style="margin-top: 180px;">
                 <div class="btn-teste">
                     <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
                     <a href="" class="btn btn2">Categoria de teste</a>
@@ -109,7 +91,33 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <a href="#">Teste 3</a>
                 </div>
             </div> -->
-    </div>
+        </div>
+
+        <!-- <div class="third-column">
+            <div class="dropdown">
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Teste 1</a>
+                    <a href="#">Teste 2</a>
+                    <a href="#">Teste 3</a>
+                </div>
+            </div>
+
+            <div class="dropdown" style="margin-top: 180px;">
+                <div class="btn-teste">
+                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
+                    <a href="" class="btn btn2">Categoria de teste</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Teste 1</a>
+                    <a href="#">Teste 2</a>
+                    <a href="#">Teste 3</a>
+                </div>
+            </div>
+        </div> -->
 
     </div>
 
