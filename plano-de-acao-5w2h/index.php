@@ -56,7 +56,7 @@
             <div></div>
             <div></div>
             <div></div>
-            <div class="subgrid">
+            <div class="subgrid" style="background-color: #314B7C; color:#fff">
                 <div>20</div>
                 <div>40</div>
                 <div>60</div>

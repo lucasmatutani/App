@@ -30,18 +30,14 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  background-color: #314b7c;
+  color: #fff;
 }
 
 .subgrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
-/* .container-pergunta div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
 
 #botao-enviar {
   background: #0066a2;
