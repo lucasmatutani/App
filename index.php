@@ -16,7 +16,7 @@
         <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="">
 
         <nav class="menu">
-            <a class="btn-login" href="./login/index.php">LOGIN</a>
+            <a class="btn-login" href="./login/index.php" style="color: #fff;">LOGIN</a>
         </nav>
         <nav class="menu-sociais">
             <a href="https://www.linkedin.com/company/focustrade/" target="_blank"><img src="./assets/img/logo-linkedin.png"></a>
