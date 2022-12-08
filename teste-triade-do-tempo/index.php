@@ -21,7 +21,7 @@
         <p>4 Quase sempre</p>
         <p>5 Sempre</p>
     </div>
-    <form action="">
+    <form action="./sql.php" method="POST">
 
         <div class="container-pergunta">
             <div>
@@ -369,7 +369,89 @@
                 </div>
             </div>
         </div>
+        <div class="container-btn">
+            <button class="botao" type="button" onclick="gravarResp()">
+                Gravar Respostas
+            </button>
+        </div>
+        <div class="container-respostas">
+            <label for="">Importância %</label>
+            <input name="importancia" id="importancia" type="text">
+            <label for="">Urgência %</label>
+            <input name="urgencia" id="urgencia" type="text">
+            <label for="">Circunstância %</label>
+            <input name="circunstancia" id="circunstancia" type="text">
+        </div>
+        <input class="btn-submit" type="submit">
+        <div id="grupoA" style="display: none;"></div>
+        <div id="grupoB" style="display: none;"></div>
+        <div id="grupoC" style="display: none;"></div>
+        <div id="total" style="display: none;"></div>
     </form>
 </body>
 
 </html>
+
+<script>
+    function gravarResp() {
+        document.getElementById("grupoA").innerHTML = "";
+        document.getElementById("grupoB").innerHTML = "";
+        document.getElementById("grupoC").innerHTML = "";
+        document.getElementById("total").innerHTML = "";
+        var input = document.getElementsByTagName('input');
+
+        for (i = 0; i < 90; i++) {
+            if (input[i].checked) {
+                total = document.getElementById("total").innerHTML += input[i].value;
+
+                if (input[i].name == "radio1" || input[i].name == "radio3" || input[i].name == "radio6" || input[i].name == "radio9" || input[i].name == "radio12" || input[i].name == "radio15") {
+                    grupoA = document.getElementById("grupoA").innerHTML += input[i].value;
+                }
+
+                if (input[i].name == "radio4" || input[i].name == "radio7" || input[i].name == "radio10" || input[i].name == "radio11" || input[i].name == "radio14" || input[i].name == "radio17") {
+                    grupoB = document.getElementById("grupoB").innerHTML += input[i].value;
+                }
+
+                if (input[i].name == "radio2" || input[i].name == "radio5" || input[i].name == "radio8" || input[i].name == "radio13" || input[i].name == "radio16" || input[i].name == "radio18") {
+                    grupoC = document.getElementById("grupoC").innerHTML += input[i].value;
+                }
+            }
+        }
+
+        toNumberTotal = parseInt(total);
+        arrTotal = Array.from(String(toNumberTotal), Number);
+        var somaTotal = 0;
+        for (var i = 0; i < arrTotal.length; i++) {
+            somaTotal += arrTotal[i];
+        }
+
+        toNumberGrupoA = parseInt(grupoA);
+        arrGrupoA = Array.from(String(toNumberGrupoA), Number);
+        var somaGrupoA = 0;
+        for (var i = 0; i < arrGrupoA.length; i++) {
+            somaGrupoA += arrGrupoA[i];
+        }
+
+        toNumberGrupoB = parseInt(grupoB);
+        arrGrupoB = Array.from(String(toNumberGrupoB), Number);
+        var somaGrupoB = 0;
+        for (var i = 0; i < arrGrupoB.length; i++) {
+            somaGrupoB += arrGrupoB[i];
+        }
+
+        toNumberGrupoC = parseInt(grupoC);
+        arrGrupoC = Array.from(String(toNumberGrupoC), Number);
+        var somaGrupoC = 0;
+        for (var i = 0; i < arrGrupoC.length; i++) {
+            somaGrupoC += arrGrupoC[i];
+        }
+
+        importancia = ((somaGrupoB / somaTotal) * 100).toFixed();
+        urgencia = ((somaGrupoC / somaTotal) * 100).toFixed();
+        circunstancia = ((somaGrupoA / somaTotal) * 100).toFixed();
+
+        document.getElementById("importancia").value = importancia;
+        document.getElementById("urgencia").value = urgencia;
+        document.getElementById("circunstancia").value = circunstancia;
+    }
+</script>

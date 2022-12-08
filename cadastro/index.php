@@ -43,8 +43,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="representacional" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="representacional" value="2">
                         </div>
                     </div>
 
@@ -53,8 +51,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="comportamental" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="comportamental" value="2">
                         </div>
                     </div>
 
@@ -63,8 +59,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="conquiste_clientes" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="conquiste_clientes" value="2">
                         </div>
                     </div>
 
@@ -73,8 +67,38 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="aida" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="aida" value="2">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Teste Spin</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="spin" value="1">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Método Cesar</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="metodo-cesar" value="1">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Petscan do Cliente</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="petscan" value="1">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Tríade do Tempo</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="triade" value="1">
                         </div>
                     </div>
                 </div>
