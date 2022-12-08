@@ -33,26 +33,32 @@
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
             <p>3. 6 ações que você se compromete a realizar no dia de amanhã: </p>
-            <h6>1<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-            <h6>2<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-            <h6>3<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-            <h6>4<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-            <h6>5<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-            <h6>6<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+            <div class="container-txt">
+                <div>
+                    <h6>1-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                    <h6>2-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                    <h6>3-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                </div>
+                <div>
+                    <h6>4-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                    <h6>5-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                    <h6>6-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                </div>
+            </div>
 
             <p>3.1. Numa escala de 0 a 10, quanto você acredita que essas ações contribuirão para um dia produtivo amanhã? </p>
             <div class="container-radios">
                 <div class="container-input">
-                    <input type="radio" name="radio1" value="radio1" id="">
-                    <input type="radio" name="radio2" value="radio2" id="">
-                    <input type="radio" name="radio3" value="radio3" id="">
-                    <input type="radio" name="radio4" value="radio4" id="">
-                    <input type="radio" name="radio5" value="radio5" id="">
-                    <input type="radio" name="radio6" value="radio6" id="">
-                    <input type="radio" name="radio7" value="radio7" id="">
-                    <input type="radio" name="radio8" value="radio8" id="">
-                    <input type="radio" name="radio9" value="radio9" id="">
-                    <input type="radio" name="radio10" value="radio10" id="">
+                    <input type="radio" name="questao3" value="radio1" id="">
+                    <input type="radio" name="questao3" value="radio2" id="">
+                    <input type="radio" name="questao3" value="radio3" id="">
+                    <input type="radio" name="questao3" value="radio4" id="">
+                    <input type="radio" name="questao3" value="radio5" id="">
+                    <input type="radio" name="questao3" value="radio6" id="">
+                    <input type="radio" name="questao3" value="radio7" id="">
+                    <input type="radio" name="questao3" value="radio8" id="">
+                    <input type="radio" name="questao3" value="radio9" id="">
+                    <input type="radio" name="questao3" value="radio10" id="">
                 </div>
 
                 <div class="container-label">
@@ -81,6 +87,8 @@
 
             <p>Considerando o papel de líder, o que você conclui do dia de hoje?</p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
+
+            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
 
         </div>
     </form>
