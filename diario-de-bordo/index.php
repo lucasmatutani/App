@@ -20,13 +20,13 @@
             <p>1. Por que valeu a pena trabalhar e liderar no dia de hoje? </p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
-            <p>1.1. Que ideia você pode ter hoje para contribuir para a construção de um ambiente melhor de se viver, trabalhar e servir no tempo presente?</p>
+            <p>1.1. Que ideia você pode ter hoje para contribuir para a construção de um<br> ambiente melhor de se viver, trabalhar e servir no tempo presente?</p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
             <p> Como você pode colocar isso em prática? </p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
-            <p>2. Se você pudesse voltar no tempo e tivesse o poder de modificar algum acontecimento no dia de hoje, o que você faria de diferente? </p>
+            <p>2. Se você pudesse voltar no tempo e tivesse o poder de modificar algum<br> acontecimento no dia de hoje, o que você faria de diferente? </p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
             <p>3. 6 ações que você se compromete a realizar no dia de amanhã: </p>
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <p>3.1. Numa escala de 0 a 10, quanto você acredita que essas ações contribuirão para um dia produtivo amanhã? </p>
+            <p>3.1. Numa escala de 0 a 10, quanto você acredita que essas ações contribuirão para um<br> dia produtivo amanhã? </p>
             <div class="container-radios">
                 <div class="container-input">
                     <input type="radio" name="questao3" value="radio1" id="">
@@ -79,10 +79,10 @@
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
 
-            <p>4. GRATIDÃO: agradeça por 3 acontecimentos, emoções ou fatos positivos, sentimentos ou conquistas do dia de hoje.</p>
+            <p>4. GRATIDÃO: agradeça por 3 acontecimentos, emoções ou fatos positivos,<br> sentimentos ou conquistas do dia de hoje.</p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
-            <p>5.1. Quais foram os aprendizados que você teve ao fazer o seu diário de bordo no dia de hoje? </p>
+            <p>5.1. Quais foram os aprendizados que você teve ao fazer o seu diário de<br> bordo no dia de hoje? </p>
             <textarea name="" id="" cols="50" rows="10"></textarea>
 
             <p>Considerando o papel de líder, o que você conclui do dia de hoje?</p>
