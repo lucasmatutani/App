@@ -12,7 +12,7 @@ $observacoes = $_REQUEST['observacoes'];
 
 $data = $conn->query('SELECT * FROM teste_metodo_cesar');
 $linha = mysqli_fetch_assoc($data);
-if ($linha['usuario_id'] == $usuario_id) {
+if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "UPDATE teste_metodo_cesar set caso='$case', confianca='$confianca', empatia='$empatia', seguranca='$seguranca', aparencia='$aparencia', resposta='$resposta', observacoes='$observacoes' WHERE usuario_id= $usuario_id";
 } else {
     $sql = "INSERT INTO teste_metodo_cesar (caso, confianca, empatia, seguranca, aparencia, resposta, observacoes, usuario_id) VALUES ('$case', '$confianca', '$empatia', '$seguranca', '$aparencia', '$resposta', '$observacoes' , '$usuario_id')";

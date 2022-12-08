@@ -12,7 +12,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/532ecf1f07.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <title>AVALIAÇÃO DE PERFIL COMPORTAMENTAL</title>
@@ -387,14 +387,14 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 <label for="lobo">Lobo %</label>
                 <input type="text" name="lobo" id="lobo" readonly style="width: 50px; height: 30px;">
             </div>
-            <div class="container-infos">
+            <!-- <div class="container-infos">
                 <label for="nome">Nome e Sobrenome</label>
                 <input type="text" name="nome" id="nome" required style="height: 30px;">
                 <label for="nome">Empresa</label>
                 <input type="text" name="empresa" id="empresa" required style="height: 30px;">
                 <label for="nome">Email</label>
                 <input type="text" placeholder="Opcional" name="email" id="email" style="height: 30px;">
-            </div>
+            </div> -->
             <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
         </form>
     </div>
