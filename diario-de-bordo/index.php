@@ -1,3 +1,14 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+$usuario_id = $_SESSION['usuarioId'];
+
+$data = $conn->query("SELECT * FROM diario_de_bordo WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,50 +26,52 @@
         <h1>Diário de Bordo</h1>
     </div>
 
-    <form action="">
+    <form action="./sql.php" method="POST">
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+
         <div class="container-perguntas">
             <p>1. Por que valeu a pena trabalhar e liderar no dia de hoje? </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg1" id="perg1" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg1'] ?></textarea>
 
             <p>1.1. Que ideia você pode ter hoje para contribuir para a construção de um<br> ambiente melhor de se viver, trabalhar e servir no tempo presente?</p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg2" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg2'] ?></textarea>
 
             <p> Como você pode colocar isso em prática? </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg3" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg3'] ?></textarea>
 
             <p>2. Se você pudesse voltar no tempo e tivesse o poder de modificar algum<br> acontecimento no dia de hoje, o que você faria de diferente? </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg4" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg4'] ?></textarea>
 
             <p>3. 6 ações que você se compromete a realizar no dia de amanhã: </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg5" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg5'] ?></textarea>
 
             <p>3. 6 ações que você se compromete a realizar no dia de amanhã: </p>
             <div class="container-txt">
                 <div>
-                    <h6>1-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-                    <h6>2-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-                    <h6>3-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                    <h6>1-<textarea name="perg6" id="" cols="20" rows="1"><?php if (!empty($linha)) echo $linha['perg6'] ?></textarea></h6>
+                    <h6>2-<textarea name="perg7" id="" cols="20" rows="1"><?php if (!empty($linha)) echo $linha['perg7'] ?></textarea></h6>
+                    <h6>3-<textarea name="perg8" id="" cols="20" rows="1"><?php if (!empty($linha)) echo $linha['perg8'] ?></textarea></h6>
                 </div>
                 <div>
-                    <h6>4-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-                    <h6>5-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
-                    <h6>6-<textarea name="" id="" cols="20" rows="1"></textarea></h6>
+                    <h6>4-<textarea name="perg9" id="" cols="20" rows="1"><?php if (!empty($linha)) echo $linha['perg9'] ?></textarea></h6>
+                    <h6>5-<textarea name="perg10" id="" cols="20" rows="1"><?php if (!empty($linha)) echo $linha['perg10'] ?></textarea></h6>
+                    <h6>6-<textarea name="perg11" id="" cols="20" rows="1"><?php if (!empty($linha)) echo $linha['perg11'] ?></textarea></h6>
                 </div>
             </div>
 
             <p>3.1. Numa escala de 0 a 10, quanto você acredita que essas ações contribuirão para um<br> dia produtivo amanhã? </p>
             <div class="container-radios">
                 <div class="container-input">
-                    <input type="radio" name="questao3" value="radio1" id="">
-                    <input type="radio" name="questao3" value="radio2" id="">
-                    <input type="radio" name="questao3" value="radio3" id="">
-                    <input type="radio" name="questao3" value="radio4" id="">
-                    <input type="radio" name="questao3" value="radio5" id="">
-                    <input type="radio" name="questao3" value="radio6" id="">
-                    <input type="radio" name="questao3" value="radio7" id="">
-                    <input type="radio" name="questao3" value="radio8" id="">
-                    <input type="radio" name="questao3" value="radio9" id="">
-                    <input type="radio" name="questao3" value="radio10" id="">
+                    <input type="radio" name="quest_radio" value="1" id="">
+                    <input type="radio" name="quest_radio" value="2" id="">
+                    <input type="radio" name="quest_radio" value="3" id="">
+                    <input type="radio" name="quest_radio" value="4" id="">
+                    <input type="radio" name="quest_radio" value="5" id="">
+                    <input type="radio" name="quest_radio" value="6" id="">
+                    <input type="radio" name="quest_radio" value="7" id="">
+                    <input type="radio" name="quest_radio" value="8" id="">
+                    <input type="radio" name="quest_radio" value="9" id="">
+                    <input type="radio" name="quest_radio" value="10" id="">
                 </div>
 
                 <div class="container-label">
@@ -76,17 +89,17 @@
             </div>
 
             <p> Com quais argumentos você confirma sua nota? </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg12" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg12'] ?></textarea>
 
 
             <p>4. GRATIDÃO: agradeça por 3 acontecimentos, emoções ou fatos positivos,<br> sentimentos ou conquistas do dia de hoje.</p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg13" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg13'] ?></textarea>
 
             <p>5.1. Quais foram os aprendizados que você teve ao fazer o seu diário de<br> bordo no dia de hoje? </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg14" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg14'] ?></textarea>
 
             <p>Considerando o papel de líder, o que você conclui do dia de hoje?</p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <textarea name="perg15" id="" cols="50" rows="10"><?php if (!empty($linha)) echo $linha['perg15'] ?></textarea>
 
             <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
 
