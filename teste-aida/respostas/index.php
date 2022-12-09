@@ -302,7 +302,7 @@ if (!empty($data)) {
         </div>
 
         <div class="container-btn" style="margin-top: 20px;">
-            <a class="btn-voltar" href="http://focustradeapp.com.br/teste-aida/">Voltar</a>
+            <a class="btn-voltar" href="http://focustradeapp.com.br/teste-aida/role-play">Voltar</a>
             <input value="ENVIAR" id="botao-enviar" type="submit" onclick="registrar()" id="btn-enviar">
         </div>
 
