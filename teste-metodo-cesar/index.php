@@ -105,7 +105,10 @@ $query = "SELECT * FROM teste_metodo_cesar WHERE usuario_id = $usuario_id";
                 <h1>Observações</h1>
                 <textarea name="observacoes" id="" cols="30" rows="10"></textarea>
             </div>
-            <input id="botao-enviar" type="submit" value="ENVIAR">
+
+            <div class="btn-enviar">
+                <input id="botao-enviar" type="submit" value="ENVIAR">
+            </div>
         </form>
 </body>
 

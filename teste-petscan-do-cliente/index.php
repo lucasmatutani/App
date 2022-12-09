@@ -277,8 +277,9 @@ if (!empty($data)) {
             </div>
         </div>
 
-
-        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        <div class="btn-enviar">
+            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        </div>
     </form>
 </body>
 
