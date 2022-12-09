@@ -101,6 +101,22 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                             <input type="radio" name="triade" value="1">
                         </div>
                     </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Plano de Ação</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="plano_de_acao_5w2h" value="1">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Diario de Bordo</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="diario_de_bordo" value="1">
+                        </div>
+                    </div>
                 </div>
             </div>
             <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">Cadastrar</a>
