@@ -60,10 +60,10 @@ footer {
     flex-direction: column;
 }
 
-.dropdown {
+/* .dropdown {
     position: relative;
     text-align: left;
-}
+} */
 
 .btn-teste img {
     display: flex;
