@@ -60,7 +60,10 @@ if (!empty($data)) {
             <h1>Observações</h1>
             <textarea name="observacoes" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['observacoes'] ?></textarea>
         </div>
-        <input id="botao-enviar" type="submit" value="ENVIAR">
+
+        <div class="btn-enviar">
+            <input id="botao-enviar" type="submit" value="ENVIAR">
+        </div>
     </form>
 </body>
 
