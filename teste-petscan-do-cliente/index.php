@@ -284,3 +284,9 @@ if (!empty($data)) {
 </body>
 
 </html>
+
+<script>
+    window.addEventListener("load", (event) => {
+        alert("UTILIZE NO MODO PAISAGEM");
+    });
+</script>
