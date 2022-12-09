@@ -37,11 +37,12 @@ a {
   display: flex;
   box-shadow: 1px 1px 5px #ccc;
   background-color: #fff;
-  padding: 50px 50px;
+  padding: 50px 50px 0 50px;
   border-radius: 15px;
   flex-direction: column;
   align-items: center;
   margin: 59px 0px;
+  height: 300px;
 }
 
 .card-infos input {

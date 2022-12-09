@@ -29,6 +29,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
     <section class="container-cadastro">
         <form method="POST" action="./cadastro.php">
+
             <div class="cadastro-infos">
                 <div class="card-infos">
                     <input type="text" name="nome" placeholder="Nome Completo" required autofocus>
@@ -37,12 +38,15 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                     <input type="text" name="senha" id="" placeholder="Senha" required>
                     <input type="text" name="grupo" placeholder="Grupo (opcional)">
                 </div>
+
                 <div class="card-testes">
                     <div class="container-row">
                         <p style="margin-right: 15px;">Teste Representacional</p>
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="representacional" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="representacional" value="0">
                         </div>
                     </div>
 
@@ -51,6 +55,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="comportamental" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="comportamental" value="0">
                         </div>
                     </div>
 
@@ -59,6 +65,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="conquiste_clientes" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="conquiste_clientes" value="0">
                         </div>
                     </div>
 
@@ -67,6 +75,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="aida" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="aida" value="0">
                         </div>
                     </div>
 
@@ -75,6 +85,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="spin" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="spin" value="0">
                         </div>
                     </div>
 
@@ -83,6 +95,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="metodo-cesar" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="metodo-cesar" value="0">
                         </div>
                     </div>
 
@@ -91,6 +105,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="petscan" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="petscan" value="0">
                         </div>
                     </div>
 
@@ -99,6 +115,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="triade" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="triade" value="0">
                         </div>
                     </div>
 
@@ -107,6 +125,8 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="plano_de_acao_5w2h" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="plano_de_acao_5w2h" value="0">
                         </div>
                     </div>
 
@@ -115,20 +135,17 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         <div class="input">
                             <label for="">SIM</label>
                             <input type="radio" name="diario_de_bordo" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="diario_de_bordo" value="0">
                         </div>
                     </div>
                 </div>
             </div>
-            <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">Cadastrar</a>
+            <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
         </form>
     </section>
 </body>
 
 
-<!-- <footer>
-    © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-
-</footer> -->
 
 </html>

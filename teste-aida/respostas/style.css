@@ -115,9 +115,20 @@ a {
   border-radius: 20px;
 }
 
-.btn-submit {
-  background-color: #314b7c;
+#botao-enviar {
+  background: #314b7c;
+  border: none;
+  border-radius: 50px;
   color: #fff;
   padding: 10px 50px;
-  border-radius: 20px;
+}
+
+#botao-enviar:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: green;
+  cursor: pointer;
 }

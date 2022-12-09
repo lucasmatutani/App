@@ -18,6 +18,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>Respostas A I D A</title>
 </head>
@@ -294,11 +295,10 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
         <div class="container-btn" style="margin-top: 20px;">
             <a class="btn-voltar" href="">Voltar</a>
-            <input style="display: none;" class="btn-submit" type="submit" onclick="registrar()" id="btn-enviar">
+            <input value="ENVIAR" id="botao-enviar" type="submit" onclick="registrar()" id="btn-enviar">
         </div>
 
     </form>
-    <button class="btn-enviar" onclick="registrar()">Registrar Respostas</button>
     <div id="result"></div>
 </body>
 

@@ -4,7 +4,6 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "includes/connection.php";
 $user_id = $_POST['user_id'];
 $valor_total = $_POST['valor_total'];
 $radio_total = $_POST['radio_total'];
-echo "RADIO TOTAL :::" . $radio_total;
 $feedback1 = $_REQUEST['feedback1'];
 $feedback2 = $_REQUEST['feedback2'];
 $feedback3 = $_REQUEST['feedback3'];
