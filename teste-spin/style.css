@@ -67,3 +67,16 @@ th {
 .container-table-titulo tr {
   border: 2px solid #000;
 }
+
+#botao-enviar {
+  background: #0066a2;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px;
+}
+
+#botao-enviar:hover {
+  background-color: green;
+  cursor: pointer;
+}

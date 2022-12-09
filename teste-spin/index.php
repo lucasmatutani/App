@@ -81,6 +81,7 @@
                 <textarea name="" id="" cols="20" rows="20"></textarea>
             </div>
         </div>
+        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
     </form>
 </body>
 
