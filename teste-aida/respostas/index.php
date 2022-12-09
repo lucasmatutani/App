@@ -1,4 +1,5 @@
 <?php
+include_once "../../includes/connection.php";
 session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
@@ -8,6 +9,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
 if ($_SESSION['usuarioEmail'] != "admin") {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN COMO ADMIN!";
     exit;
+}
+
+$usuario_id = $_SESSION['usuarioId'];
+
+$data = $conn->query("SELECT * FROM teste_aida WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
 }
 ?>
 <!DOCTYPE html>
@@ -24,9 +32,9 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 </head>
 
 <body>
-
     <form action="./respostas.php" method="POST">
-        <input type="hidden" id="user_id" name="user_id" value="">
+
+        <input type="hidden" id="usuario_id" name="usuario_id" value="<?php $usuario_id ?>">
         <input type="hidden" id="valor_total" name="valor_total" value="">
         <input type="hidden" id="radio_total" name="radio_total" value="">
 
@@ -47,7 +55,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-atencao">
                 <label for="">ATENÇÃO</label>
-                <textarea readonly name="atencao" id="txt1" cols="130" rows="10"></textarea>
+                <textarea readonly name="atencao" id="txt1" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['atencao']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-atencao1" id="">
@@ -61,7 +69,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-interesse">
                 <label for="">INTERESSE</label>
-                <textarea readonly name="interesse" id="txt2" cols="130" rows="10"></textarea>
+                <textarea readonly name="interesse" id="txt2" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['interesse']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-interesse1" id="">
@@ -74,7 +82,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-desejo">
                 <label for="">DESEJO</label>
-                <textarea readonly name="desejo" id="txt3" cols="130" rows="10"></textarea>
+                <textarea readonly name="desejo" id="txt3" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['desejo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-desejo1" id="">
@@ -87,7 +95,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-acao">
                 <label for="">AÇÃO</label>
-                <textarea readonly name="acao" id="txt4" cols="130" rows="10"></textarea>
+                <textarea readonly name="acao" id="txt4" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['acao']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-acao1" id="">
@@ -100,7 +108,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback1" id="feedback1" cols="130" rows="10" -></textarea>
+                <textarea name="feedback1" id="feedback1" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['feedback1']; ?></textarea>
             </div>
 
 
@@ -110,7 +118,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-atencao">
                 <label for="">ATENÇÃO</label>
-                <textarea readonly name="atencao" id="txt5" cols="130" rows="10"></textarea>
+                <textarea readonly name="atencao2" id="txt5" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['atencao2']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-atencao2" id="">
@@ -124,7 +132,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-interesse">
                 <label for="">INTERESSE</label>
-                <textarea readonly name="interesse" id="txt6" cols="130" rows="10"></textarea>
+                <textarea readonly name="interesse" id="txt6" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-interesse2" id="">
@@ -137,7 +145,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-desejo">
                 <label for="">DESEJO</label>
-                <textarea readonly name="desejo" id="txt7" cols="130" rows="10"></textarea>
+                <textarea readonly name="desejo" id="txt7" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-desejo2" id="">
@@ -150,7 +158,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-acao">
                 <label for="">AÇÃO</label>
-                <textarea readonly name="acao" id="txt8" cols="130" rows="10"></textarea>
+                <textarea readonly name="acao" id="txt8" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-acao2" id="">
@@ -163,7 +171,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback2" id="feedback2" cols="130" rows="10" -></textarea>
+                <textarea name="feedback2" id="feedback2" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
 
 
@@ -173,7 +181,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-atencao">
                 <label for="">ATENÇÃO</label>
-                <textarea readonly name="atencao" id="txt9" cols="130" rows="10"></textarea>
+                <textarea readonly name="atencao" id="txt9" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-atencao3" id="">
@@ -187,7 +195,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-interesse">
                 <label for="">INTERESSE</label>
-                <textarea readonly name="interesse" id="txt10" cols="130" rows="10"></textarea>
+                <textarea readonly name="interesse" id="txt10" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-interesse3" id="">
@@ -200,7 +208,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-desejo">
                 <label for="">DESEJO</label>
-                <textarea readonly name="desejo" id="txt11" cols="130" rows="10"></textarea>
+                <textarea readonly name="desejo" id="txt11" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-desejo3" id="">
@@ -213,7 +221,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-acao">
                 <label for="">AÇÃO</label>
-                <textarea readonly name="acao" id="txt12" cols="130" rows="10"></textarea>
+                <textarea readonly name="acao" id="txt12" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-acao3" id="">
@@ -226,7 +234,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback3" id="feedback3" cols="130" rows="10" -></textarea>
+                <textarea name="feedback3" id="feedback3" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
 
         </div>
@@ -235,7 +243,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-atencao">
                 <label for="">ATENÇÃO</label>
-                <textarea readonly name="atencao" id="txt13" cols="130" rows="10"></textarea>
+                <textarea readonly name="atencao" id="txt13" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-atencao4" id="">
@@ -249,7 +257,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-interesse">
                 <label for="">INTERESSE</label>
-                <textarea readonly name="interesse" id="txt14" cols="130" rows="10"></textarea>
+                <textarea readonly name="interesse" id="txt14" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-interesse4" id="">
@@ -262,7 +270,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-desejo">
                 <label for="">DESEJO</label>
-                <textarea readonly name="desejo" id="txt15" cols="130" rows="10"></textarea>
+                <textarea readonly name="desejo" id="txt15" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-desejo4" id="">
@@ -275,7 +283,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-acao">
                 <label for="">AÇÃO</label>
-                <textarea readonly name="acao" id="txt16" cols="130" rows="10"></textarea>
+                <textarea readonly name="acao" id="txt16" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
             <div class="btns-radios">
                 <input value="1" type="radio" name="radio-acao4" id="">
@@ -288,7 +296,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
             <div class="container-feedback">
                 <label for="">FEEDBACK</label>
-                <textarea name="feedback4" id="feedback4" cols="130" rows="10" -></textarea>
+                <textarea name="feedback4" id="feedback4" cols="130" rows="10"><?php if (!empty($linha)) echo $linha['grupo']; ?></textarea>
             </div>
 
         </div>
