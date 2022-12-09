@@ -77,7 +77,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
             <div class="card-titulo-respostas">
                 <h1>RESPOSTAS</h1>
             </div>
-            EM BREVE
+            <?php $sql = ""; ?>
         </div>
     </div>
 
