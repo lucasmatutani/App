@@ -14,8 +14,10 @@ $spin = $_REQUEST['spin'];
 $metodo_cesar = $_REQUEST['metodo-cesar'];
 $petscan = $_REQUEST['petscan'];
 $triade = $_REQUEST['triade'];
+$plano_de_acao_5w2h = $_REQUEST['plano_de_acao_5w2h'];
+$diario_de_bordo = $_REQUEST['diario_de_bordo'];
 
-$sql = "INSERT INTO usuarios (nome, email, empresa, senha, grupo, representacional, comportamental, conquiste_clientes, aida, spin, metodo_cesar, petscan, triade) VALUES ('$nome', '$email', '$empresa', '$senha',  '$grupo', '$representacional', '$comportamental', '$conquiste_clientes', '$aida', '$spin', '$metodo_cesar', '$petscan', '$triade')";
+$sql = "INSERT INTO usuarios (nome, email, empresa, senha, grupo, representacional, comportamental, conquiste_clientes, aida, spin, metodo_cesar, petscan, triade, plano_de_acao, diario_de_bordo) VALUES ('$nome', '$email', '$empresa', '$senha',  '$grupo', '$representacional', '$comportamental', '$conquiste_clientes', '$aida', '$spin', '$metodo_cesar', '$petscan', '$triade', '$plano_de_acao_5w2h', '$diario_de_bordo')";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");

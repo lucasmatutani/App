@@ -24,109 +24,81 @@ if (!isset($_SESSION['usuarioEmail'])) {
         <img class="img-logo" src="../assets/img/logo-sem-fundo-azul.png" alt="">
     </div>
     <div class="container-testes">
-
-        <div class="first-column">
-            <div class="dropdown">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Comportamental</a>
-                    <?php endif; ?>
-                    <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Representacional</a>
-                    <?php endif; ?>
-                    <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Aida</a>
-                    <?php endif; ?>
-                </div>
+        <div class="btns-testes">
+            <button onclick="mostrarTestes()" class="btn-testes">TESTES</button>
+            <button onclick="mostrarRespostas()" class="btn-respostas">RESPOSTAS</button>
+        </div>
+        <div id="card-testes" class="card-testes">
+            <div class="card-titulo-testes">
+                <h1>TESTES</h1>
             </div>
+            <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-comportamental/">Comportamental</a>
+            <?php endif; ?>
 
-            <div class="dropdown" style="margin-top: 180px;">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Conquiste <br> Clientes</a>
-                    <?php endif; ?>
-                    <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Spin</a>
-                    <?php endif; ?>
-                    <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Método Cesar</a>
-                    <?php endif; ?>
-                </div>
-            </div>
+            <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-representacional/">Representacional</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-aida/">Aida</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/">Conquiste Clientes</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-spin/">Spin</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-metodo-cesar/">Método Cesar</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/">Petscan do Cliente</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-triade-do-tempo/">Tríade do Tempo</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['diario_de_bordo'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/diario_de_bordo/">Diário de bordo</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['plano_de_acao'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/plano_de_acao_5w2h/">Plano de ação 5W2H</a>
+            <?php endif; ?>
         </div>
 
-        <div class="second-column">
-            <div class="dropdown">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Petscan do Cliente</a>
-                    <?php endif; ?>
-                    <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                        <a href="#">Tríade do Tempo</a>
-                    <?php endif; ?>
-                    <!-- <a href="#">Teste 3</a> -->
-                </div>
+        <div id="card-respostas" class="card-respostas" style="display: none;">
+            <div class="card-titulo-respostas">
+                <h1>RESPOSTAS</h1>
             </div>
-
-            <!-- <div class="dropdown" style="margin-top: 180px;">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
-                </div>
-            </div> -->
+            EM BREVE
         </div>
-
-        <!-- <div class="third-column">
-            <div class="dropdown">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown" style="margin-top: 180px;">
-                <div class="btn-teste">
-                    <img src="../assets/img/btn-icon.png" class="img-btn-teste" alt="">
-                    <a href="" class="btn btn2">Categoria de teste</a>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Teste 1</a>
-                    <a href="#">Teste 2</a>
-                    <a href="#">Teste 3</a>
-                </div>
-            </div>
-        </div> -->
-
     </div>
 
 </body>
-<!-- 
-<footer>
-    © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-</footer> -->
-
 
 </html>
+
+<script>
+    function mostrarTestes() {
+        var cardTestes = document.getElementById("card-testes");
+        var cardRespostas = document.getElementById("card-respostas");
+
+        cardTestes.style.display = 'flex';
+        cardRespostas.style.display = 'none';
+    }
+
+    function mostrarRespostas() {
+        var cardTestes = document.getElementById("card-testes");
+        var cardRespostas = document.getElementById("card-respostas");
+
+        cardRespostas.style.display = 'flex';
+        cardTestes.style.display = 'none';
+    }
+</script>

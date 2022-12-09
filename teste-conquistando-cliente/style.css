@@ -1,0 +1,97 @@
+.container-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.container-titulo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-perguntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-1a5 {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 50px;
+  width: 95%;
+}
+
+.container-1a5 input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 27px;
+  margin-left: 10px;
+}
+
+.container-1a5 div {
+  display: flex;
+  padding: 15px;
+}
+
+.container-5a10 {
+  border: 1px solid #000;
+  padding: 15px;
+  width: 95%;
+}
+
+.container-5a10 input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 27px;
+  margin-left: 10px;
+}
+
+.container-5a10 div {
+  display: flex;
+  padding: 15px;
+}
+
+.botao {
+  background: #0066a2;
+  color: white;
+  border-style: outset;
+  border-color: #0066a2;
+  height: 50px;
+  width: 200px;
+  font: bold 15px arial, sans-serif;
+  text-shadow: none;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nome {
+  display: flex;
+  flex-direction: row;
+
+  margin: 35px 0px 0px;
+  justify-content: space-around;
+}
+
+.container-cadastro label {
+  margin: 0px 10px;
+}
+
+@media (max-width: 750px) {
+  .nome {
+    display: flex;
+    flex-direction: column;
+  }
+}

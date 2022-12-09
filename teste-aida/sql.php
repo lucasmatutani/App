@@ -1,6 +1,7 @@
 <?php
 include_once  "../includes/connection.php";
 
+$usuario_id = $_REQUEST['usuario_id'];
 $grupo = $_REQUEST['grupo'];
 $nm1 = $_REQUEST['nm1'];
 $txt1 = $_REQUEST['txt1'];
@@ -24,11 +25,16 @@ $txt15 = $_REQUEST['txt15'];
 $txt16 = $_REQUEST['txt16'];
 
 
-$sql = "INSERT INTO teste_aida (grupo, nm1, txt1, txt2, txt3, txt4, nm2, txt5, txt6, txt7, txt8, nm3, txt9, txt10, txt11, txt12, nm4, txt13, txt14, txt15, txt16) VALUES ('$grupo', '$nm1', '$txt1', '$txt2', '$txt3', '$txt4', '$nm2', '$txt5', '$txt6', '$txt7', '$txt8', '$nm3', '$txt9', '$txt10', '$txt11', '$txt12', '$nm4', '$txt13', '$txt14', '$txt15', '$txt16')";
-
-if (mysqli_query($conn, $sql)) {
-    echo "respostas gravadas com sucesso";
+$data = $conn->query('SELECT * FROM teste_spin');
+$linha = mysqli_fetch_assoc($data);
+if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
+    $sql = "UPDATE teste_aida set usuario_id='$usuario_id', grupo='$grupo', nm1='$nm1', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', nm2='$nm2', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', nm3='$nm3', txt9='$txt9', txt10='$txt10', txt11='$txt11', txt12='$txt12', nm4='$nm4', txt13='$txt13', txt14='$txt14', txt15='$txt15', txt16='$txt16' WHERE usuario_id= $usuario_id";
 } else {
-    echo "Error" . $sql . mysqli_error($conn);
+    $sql = "INSERT INTO teste_aida set usuario_id='$usuario_id', grupo='$grupo', nm1='$nm1', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', nm2='$nm2', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', nm3='$nm3', txt9='$txt9', txt10='$txt10', txt11='$txt11', txt12='$txt12', nm4='$nm4', txt13='$txt13', txt14='$txt14', txt15='$txt15', txt16='$txt16'";
+}
+if (mysqli_query($conn, $sql)) {
+    echo "RESPOSTA GRAVADA COM SUCESSO!";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 mysqli_close($conn);
