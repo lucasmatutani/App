@@ -13,10 +13,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
 $usuario_id = $_SESSION['usuarioId'];
 
-$data = $conn->query("SELECT * FROM teste_aida WHERE usuario_id = $usuario_id");
-if (!empty($data)) {
-    $linha = mysqli_fetch_assoc($data);
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -35,6 +31,7 @@ if (!empty($data)) {
     <form action="./respostas.php" method="POST">
 
         <input type="hidden" id="usuario_id" name="usuario_id" value="<?php $usuario_id ?>">
+        <input type="hidden" id="user_id" name="user_id" value="">
         <input type="hidden" id="valor_total" name="valor_total" value="">
         <input type="hidden" id="radio_total" name="radio_total" value="">
 
