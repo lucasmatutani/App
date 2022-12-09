@@ -27,6 +27,8 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['metodo_cesar'] = $resultado['metodo_cesar'];
         $_SESSION['petscan'] = $resultado['petscan'];
         $_SESSION['triade'] = $resultado['triade'];
+        $_SESSION['plano_de_acao'] = $resultado['plano_de_acao'];
+        $_SESSION['diario_de_bordo'] = $resultado['diario_de_bordo'];
 
         if ($resultado['email'] == "admin") {
             header("Location: ../admin");
