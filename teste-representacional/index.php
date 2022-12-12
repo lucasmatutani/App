@@ -227,7 +227,7 @@ $usuario_id = $_SESSION['usuarioId'];
     </div>
     <div class="resultados">
         <form action="./sql.php" method="POST" name="form">
-            <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+            <input type="text" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
             <h3 style="color: red;">SEUS RESULTADOS :</h3>
             <label for="">A </label>
             <input type="number" name="A" id="result-a" readonly>
