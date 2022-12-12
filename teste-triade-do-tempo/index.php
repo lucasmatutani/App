@@ -1,3 +1,9 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+$usuario_id = $_SESSION['usuarioId'];
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,7 +28,7 @@
         <p>5 Sempre</p>
     </div>
     <form action="./sql.php" method="POST">
-
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <div class="container-pergunta">
             <div>
                 <p>1 - Costumo ir a eventos, mesmo sem ter muita vontade, para <br> agradar meu chefe, meus amigos ou minha familia.</p>
