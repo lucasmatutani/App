@@ -1,4 +1,5 @@
 <?php
+include_once "../includes/connection.php";
 session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
@@ -66,11 +67,11 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if ($_SESSION['diario_de_bordo'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/diario_de_bordo/">Diário de bordo</a>
+                <a href="http://focustradeapp.com.br/diario-de-bordo/">Diário de bordo</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['plano_de_acao'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/plano_de_acao_5w2h/">Plano de ação 5W2H</a>
+                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/">Plano de ação 5W2H</a>
             <?php endif; ?>
         </div>
 
@@ -90,10 +91,11 @@ $usuario_id = $_SESSION['usuarioId'];
             // $teste_spin = "SELECT * FROM teste_spin WHERE usuario_id = $usuario_id";
             // $teste_triade_tempo = "SELECT * FROM teste_triade_tempo WHERE usuario_id = $usuario_id";
 
-            $sql = "SELECT diario_de_bordo.usuario_id, plano_de_acao_5w2h.usuario_id, teste_aida.usuario_id, teste_comportamental1.usuario_id, teste_conquiste_clientes.usuario_id, teste_metodo_cesar.usuario_id, teste_petscan_do_cliente.usuario_id, teste_representacional.usuario_id, teste_spin.usuario_id, teste_triade_tempo.usuario_id
-                    FROM diario_de_bordo, plano_de_acao_5w2h, teste_aida, teste_comportamental1, teste_conquiste_clientes, teste_metodo_cesar, teste_petscan_do_cliente, teste_representacional, teste_spin, teste_triade_tempo
-                    WHERE student.branch = branch_details.branch_name AND 
-                    branch_details.branch_name = credit_details.branch;";
+            $sql = $conn->query("SELECT * FROM plano_de_acao_5w2h, teste_comportamental1, teste_conquiste_clientes, teste_metodo_cesar, teste_petscan_do_cliente, teste_representacional, teste_spin, teste_triade_tempo
+            WHERE  diario_de_bordo.usuario_id = 3");
+
+            $linha = mysqli_fetch_assoc($sql);
+            echo "LINHAS" . var_dump($linha);
             ?>
         </div>
     </div>
