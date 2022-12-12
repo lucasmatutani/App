@@ -1,9 +1,7 @@
 <?php
 include_once "../includes/connection.php";
 
-$nome = $_REQUEST['nome'];
-$empresa = $_REQUEST['empresa'];
-$email = $_REQUEST['email'];
+$usuario_id = $_REQUEST['usuario_id'];
 $A = $_REQUEST['A'];
 $C = $_REQUEST['C'];
 $V = $_REQUEST['V'];
