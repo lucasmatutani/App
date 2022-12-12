@@ -80,23 +80,11 @@ $usuario_id = $_SESSION['usuarioId'];
                 <h1>RESPOSTAS</h1>
             </div>
             <?php
-            // $diario_de_bordo = "SELECT * FROM diario_de_bordo WHERE usuario_id = $usuario_id";
-            // $plano_de_acao = "SELECT * FROM plano_de_acao WHERE usuario_id = $usuario_id";
-            // $teste_aida = "SELECT * FROM teste_aida WHERE usuario_id = $usuario_id";
-            // $teste_comportamental = "SELECT * FROM teste_comportamental1 WHERE usuario_id = $usuario_id";
-            // $teste_conquiste_clientes = "SELECT * FROM teste_conquiste_clientes WHERE usuario_id = $usuario_id";
-            // $teste_metodo_cesar = "SELECT * FROM teste_metodo_cesar WHERE usuario_id = $usuario_id";
-            // $teste_petscan_do_cliente = "SELECT * FROM teste_petscan_do_cliente WHERE usuario_id = $usuario_id";
-            // $teste_representacional = "SELECT * FROM teste_representacional WHERE usuario_id = $usuario_id";
-            // $teste_spin = "SELECT * FROM teste_spin WHERE usuario_id = $usuario_id";
-            // $teste_triade_tempo = "SELECT * FROM teste_triade_tempo WHERE usuario_id = $usuario_id";
-
-            $sql = $conn->query("SELECT * FROM plano_de_acao_5w2h, teste_comportamental1, teste_conquiste_clientes, teste_metodo_cesar, teste_petscan_do_cliente, teste_representacional, teste_spin, teste_triade_tempo
-            WHERE  diario_de_bordo.usuario_id = 3");
-
+            $sql = $conn->query("SELECT * FROM teste_comportamental1, teste_representacional, teste_triade_tempo 
+            WHERE  teste_comportamental1.usuario_id = $usuario_id OR teste_representacional.usuario_id = $usuario_id OR teste_triade_tempo.usuario_id = $usuario_id");
             $linha = mysqli_fetch_assoc($sql);
-            echo "LINHAS" . var_dump($linha);
             ?>
+
         </div>
     </div>
 
