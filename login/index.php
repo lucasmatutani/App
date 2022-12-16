@@ -26,9 +26,10 @@ session_start();
                 <div class="container-senha">
                     <input type="password" name="senha" placeholder="Senha" style="font-size: 0.8em;">
                 </div>
-                <div class="container-entrar">
-                    <a href="javascript:login.submit()" class="btn btn2">Entrar</a>
-                </div>
+                <!-- <div class="container-entrar"> -->
+                <input type="submit" value="ENTRAR" class="btn-login">
+                <!-- <a href="javascript:login.submit()" class="btn btn2">Entrar</a> -->
+                <!-- </div> -->
                 <p style="display: hidden; text-align: center; color: red; font-size: 0.6em;">
                     <?php
                     //Recuperando o valor da variável global, os erro de login.
@@ -50,5 +51,13 @@ session_start();
     </div>
 </body>
 
-
 </html>
+<script>
+    document.getElementById('senha')
+        .addEventListener('keyup', function(event) {
+            if (event.code === 'Enter') {
+                event.preventDefault();
+                document.querySelector('form').submit();
+            }
+        });
+</script>
