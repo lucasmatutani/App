@@ -33,7 +33,11 @@ $usuario_id = $_SESSION['usuarioId'];
         <div id="card-testes" class="card-testes">
             <div class="card-titulo-testes">
                 <h1>TESTES</h1>
-                <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Pesquisar Teste">
+                <div class="container-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Pesquisar">
+                </div>
+                <span style="z-index: 999;"></span>
             </div>
             <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-comportamental/" class="teste">Comportamental</a>
