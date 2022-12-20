@@ -35,133 +35,179 @@ $usuario_id = $_SESSION['usuarioId'];
                 <h1>TESTES</h1>
                 <div class="container-search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Pesquisar">
+                    <input id="searchbar-testes" onkeyup="searchTestes()" type="text" name="search" placeholder="Pesquisar">
                 </div>
                 <span style="z-index: 999;"></span>
             </div>
             <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-comportamental/" class="teste">Comportamental</a>
+                <a href="http://focustradeapp.com.br/teste-comportamental/" class="teste" target="_blank">Comportamental</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-representacional/" class="teste">Representacional</a>
+                <a href="http://focustradeapp.com.br/teste-representacional/" class="teste" target="_blank">Representacional</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
+                <a href="http://focustradeapp.com.br/teste-aida/" class="teste" target="_blank">Aida</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="teste">Conquiste Clientes</a>
+                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="teste" target="_blank">Conquiste Clientes</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-spin/" class="teste">Spin</a>
+                <a href="http://focustradeapp.com.br/teste-spin/" class="teste" target="_blank">Spin</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="teste">Método Cesar</a>
+                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="teste" target="_blank">Método Cesar</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="teste">Petscan do Cliente</a>
+                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="teste" target="_blank">Petscan do Cliente</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste">Tríade do Tempo</a>
+                <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste" target="_blank">Tríade do Tempo</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['diario_de_bordo'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="teste">Diário de bordo</a>
+                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="teste" target="_blank">Diário de bordo</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['plano_de_acao'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste">Plano de ação 5W2H</a>
+                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste" target="_blank">Plano de ação 5W2H</a>
             <?php endif; ?>
         </div>
 
         <div id="card-respostas" class="card-respostas" style="display: none;">
             <div class="card-titulo-respostas">
                 <h1>RESPOSTAS</h1>
+                <div class="container-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchbar-respostas" onkeyup="searchRespostas()" type="text" name="search" placeholder="Pesquisar">
+                </div>
+                <span style="z-index: 999;"></span>
             </div>
             <?php
-            $query = "SELECT d.usuario_id, c.usuario_id, r.usuario_id, t.usuario_id
-                    FROM diario_de_bordo d, teste_comportamental1 c, teste_representacional r, teste_triade_tempo t
-                    WHERE 
-                    d.usuario_id = $usuario_id and
-                    c.usuario_id = $usuario_id and
-                    r.usuario_id = $usuario_id and
-                    t.usuario_id = $usuario_id";
+            $sql_comportamental = $conn->query("SELECT * FROM teste_comportamental1 WHERE  teste_comportamental1.usuario_id = $usuario_id");
+            $teste_comportamental = mysqli_fetch_assoc($sql_comportamental);
 
-            if ($res = mysqli_query($conn, $query)) {
-                while ($col = $res->fetch_field())
-                    $colName[] = $col->name;
-                while ($row = mysqli_fetch_array($res)) {
-                    var_dump($row);
-                }
-            }
-            // $linha = mysqli_fetch_assoc($sql);
-            // echo $linha;
-            // $sql_comportamental = $conn->query("SELECT * FROM teste_comportamental1 WHERE  teste_comportamental1.usuario_id = $usuario_id");
-            // $teste_comportamental = mysqli_fetch_assoc($sql_comportamental);
+            $sql_representacional = $conn->query("SELECT * FROM teste_representacional WHERE  teste_representacional.usuario_id = $usuario_id");
+            $teste_representacional = mysqli_fetch_assoc($sql_representacional);
 
-            // $sql_representacional = $conn->query("SELECT * FROM teste_representacional WHERE  teste_representacional.usuario_id = $usuario_id");
-            // $teste_representacional = mysqli_fetch_assoc($sql_representacional);
+            $sql_triade_tempo = $conn->query("SELECT * FROM teste_triade_tempo WHERE  teste_triade_tempo.usuario_id = $usuario_id");
+            $teste_triade_tempo = mysqli_fetch_assoc($sql_triade_tempo);
 
-            // $sql_triade_tempo = $conn->query("SELECT * FROM teste_triade_tempo WHERE  teste_triade_tempo.usuario_id = $usuario_id");
-            // $teste_triade_tempo = mysqli_fetch_assoc($sql_triade_tempo);
+            $sql_diario_de_bordo = $conn->query("SELECT * FROM diario_de_bordo WHERE  diario_de_bordo.usuario_id = $usuario_id");
+            $diario_de_bordo = mysqli_fetch_assoc($sql_diario_de_bordo);
+
+            $sql_plano_de_acao = $conn->query("SELECT * FROM plano_de_acao_5w2h WHERE  plano_de_acao_5w2h.usuario_id = $usuario_id");
+            $plano_de_acao = mysqli_fetch_assoc($sql_plano_de_acao);
+
+            $sql_teste_aida = $conn->query("SELECT * FROM teste_aida WHERE  teste_aida.usuario_id = $usuario_id");
+            $teste_aida = mysqli_fetch_assoc($sql_teste_aida);
+
+            $sql_conquiste_clientes = $conn->query("SELECT * FROM teste_conquiste_clientes WHERE  teste_conquiste_clientes.usuario_id = $usuario_id");
+            $teste_conquiste_clientes = mysqli_fetch_assoc($sql_conquiste_clientes);
+
+            $sql_teste_metodo_cesar = $conn->query("SELECT * FROM teste_metodo_cesar WHERE  teste_metodo_cesar.usuario_id = $usuario_id");
+            $teste_metodo_cesar = mysqli_fetch_assoc($sql_teste_metodo_cesar);
+
+            $sql_teste_petscan_do_cliente = $conn->query("SELECT * FROM teste_petscan_do_cliente WHERE  teste_petscan_do_cliente.usuario_id = $usuario_id");
+            $teste_petscan_do_cliente = mysqli_fetch_assoc($sql_teste_petscan_do_cliente);
+
+            $sql_teste_spin = $conn->query("SELECT * FROM teste_spin WHERE  teste_spin.usuario_id = $usuario_id");
+            $teste_spin = mysqli_fetch_assoc($sql_teste_spin);
             ?>
 
             <?php if (!empty($teste_comportamental)) : ?>
-                <h3>Comportamental</h3>
-                <table>
-                    <tr>
-                        <td>Águia</td>
-                        <td>Gato</td>
-                        <td>Tubarão</td>
-                        <td>Lobo</td>
-                    </tr>
-                    <tr>
-                        <td><?php echo $teste_comportamental['aguia'] ?></td>
-                        <td><?php echo $teste_comportamental['gato'] ?></td>
-                        <td><?php echo $teste_comportamental['tubarao'] ?></td>
-                        <td><?php echo $teste_comportamental['lobo'] ?></td>
-                    </tr>
-                </table>
+                <a href="javascript:void(0)" onclick="modalComportamental()" class="resposta">Comportamental</a>
+                <div id="modal-comportamental" class="modal-respostas" style="display: none;">
+                    <h3>Comportamental</h3>
+                    <table>
+                        <tr>
+                            <td>Águia</td>
+                            <td>Gato</td>
+                            <td>Tubarão</td>
+                            <td>Lobo</td>
+                        </tr>
+                        <tr>
+                            <td><?php echo $teste_comportamental['aguia'] ?></td>
+                            <td><?php echo $teste_comportamental['gato'] ?></td>
+                            <td><?php echo $teste_comportamental['tubarao'] ?></td>
+                            <td><?php echo $teste_comportamental['lobo'] ?></td>
+                        </tr>
+                    </table>
+                </div>
             <?php endif; ?>
 
             <?php if (!empty($teste_representacional)) : ?>
-                <h3>Representacional</h3>
-                <table>
-                    <tr>
-                        <td>A</td>
-                        <td>C</td>
-                        <td>V</td>
-                        <td>AD</td>
-                    </tr>
-                    <tr>
-                        <td><?php echo $teste_representacional['A'] ?></td>
-                        <td><?php echo $teste_representacional['C'] ?></td>
-                        <td><?php echo $teste_representacional['V'] ?></td>
-                        <td><?php echo $teste_representacional['AD'] ?></td>
-                    </tr>
-                </table>
+                <a href="javascript:void(0)" onclick="modalRepresentacional()" class="resposta">Representacional</a>
+                <div id="modal-representacional" class="modal-respostas" style="display: none;">
+                    <h3>Representacional</h3>
+                    <table>
+                        <tr>
+                            <td>A</td>
+                            <td>C</td>
+                            <td>V</td>
+                            <td>AD</td>
+                        </tr>
+                        <tr>
+                            <td><?php echo $teste_representacional['A'] ?></td>
+                            <td><?php echo $teste_representacional['C'] ?></td>
+                            <td><?php echo $teste_representacional['V'] ?></td>
+                            <td><?php echo $teste_representacional['AD'] ?></td>
+                        </tr>
+                    </table>
+                </div>
             <?php endif; ?>
 
             <?php if (!empty($teste_triade_tempo)) : ?>
-                <h3>Triade do Tempo</h3>
-                <table>
-                    <tr>
-                        <td>Importância</td>
-                        <td>Urgência</td>
-                        <td>Circunstância</td>
-                    </tr>
-                    <tr>
-                        <td><?php echo $teste_triade_tempo['importancia'] ?></td>
-                        <td><?php echo $teste_triade_tempo['urgencia'] ?></td>
-                        <td><?php echo $teste_triade_tempo['circunstancia'] ?></td>
-                    </tr>
-                </table>
+                <a href="javascript:void(0)" onclick="modalTriade()" class="resposta">Tríade do Tempo</a>
+                <div id="modal-triade" class="modal-respostas" style="display: none;">
+                    <h3>Tríade do Tempo</h3>
+                    <table>
+                        <tr>
+                            <td>Importância</td>
+                            <td>Urgência</td>
+                            <td>Circunstância</td>
+                        </tr>
+                        <tr>
+                            <td><?php echo $teste_triade_tempo['importancia'] ?></td>
+                            <td><?php echo $teste_triade_tempo['urgencia'] ?></td>
+                            <td><?php echo $teste_triade_tempo['circunstancia'] ?></td>
+                        </tr>
+                    </table>
+                </div>
+            <?php endif; ?>
+
+            <?php if (!empty($diario_de_bordo)) : ?>
+                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="resposta" target="_blank">Diário de Bordo</a>
+            <?php endif; ?>
+
+            <?php if (!empty($plano_de_acao)) : ?>
+                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="resposta" target="_blank">Plano de Ação 5w2h</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_aida)) : ?>
+                <a href="http://focustradeapp.com.br/teste-aida/" class="resposta" target="_blank">Aida</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_conquiste_clientes)) : ?>
+                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="resposta" target="_blank">Conquiste Clientes</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_metodo_cesar)) : ?>
+                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="resposta" target="_blank">Método Cesar</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_petscan_do_cliente)) : ?>
+                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="resposta" target="_blank">Petscan do cliente</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_spin)) : ?>
+                <a href="http://focustradeapp.com.br/teste-spin/" class="resposta" target="_blank">Spin</a>
             <?php endif; ?>
         </div>
     </div>
@@ -187,8 +233,8 @@ $usuario_id = $_SESSION['usuarioId'];
         cardTestes.style.display = 'none';
     }
 
-    function search() {
-        let input = document.getElementById('searchbar').value
+    function searchTestes() {
+        let input = document.getElementById('searchbar-testes').value
         input = input.toLowerCase();
         let x = document.getElementsByClassName('teste');
 
@@ -198,6 +244,53 @@ $usuario_id = $_SESSION['usuarioId'];
             } else {
                 x[i].style.display = "list-item";
             }
+        }
+    }
+
+    function searchRespostas() {
+        let input = document.getElementById('searchbar-respostas').value
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('resposta');
+
+        for (i = 0; i < x.length; i++) {
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display = "none";
+            } else {
+                x[i].style.display = "list-item";
+            }
+        }
+    }
+
+    function modalComportamental() {
+        var modal = document.getElementById("modal-comportamental");
+        var styleModal = modal.style.display;
+
+        if (styleModal == "flex") {
+            modal.style.display = 'none';
+        } else {
+            modal.style.display = 'flex';
+        }
+    }
+
+    function modalRepresentacional() {
+        var modal = document.getElementById("modal-representacional");
+        var styleModal = modal.style.display;
+
+        if (styleModal == "flex") {
+            modal.style.display = 'none';
+        } else {
+            modal.style.display = 'flex';
+        }
+    }
+
+    function modalTriade() {
+        var modal = document.getElementById("modal-triade");
+        var styleModal = modal.style.display;
+
+        if (styleModal == "flex") {
+            modal.style.display = 'none';
+        } else {
+            modal.style.display = 'flex';
         }
     }
 </script>
