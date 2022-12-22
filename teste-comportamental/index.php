@@ -101,7 +101,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
             <label for="">Unidos venceremos, divididos perderemos
                 <input value="c" name=6 type="radio"> <br></label>
 
-            <label for="">ataque é melhor que a defesa
+            <label for="">O ataque é melhor que a defesa
                 <input value="a" name=6 type="radio"> <br></label>
 
             <label for=""> É bom ser manso, mas andar com um porrete
@@ -245,7 +245,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 <input value="o" name=16 type="radio"> <br></label>
 
             <P>17. Eu gosto de buscar conselhos de... </P>
-            <label for=""> Pessoas bemsucedidas
+            <label for=""> Pessoas bem sucedidas
                 <input value="a" name=17 type="radio"> <br></label>
 
             <label for=""> Anciões e conselheiros
@@ -310,7 +310,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 <input value="a" name=21 type="radio"> <br></label>
 
             <P>22. Eu acredito que...</P>
-            <label for=""> destino é mais importante que a jornada
+            <label for="">O destino é mais importante que a jornada
                 <input value="a" name=22 type="radio"> <br></label>
 
             <label for=""> jornada é mais importante que o destino
@@ -329,7 +329,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
             <label for=""> De grão em grão a galinha enche o papo
                 <input value="o" name=23 type="radio"> <br></label>
 
-            <label for=""> que vai, volta
+            <label for="">O que vai, volta
                 <input value="c" name=23 type="radio"> <br></label>
 
             <label for=""> Um sorriso ou uma careta é o mesmo para quem é cego
@@ -339,13 +339,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
             <label for=""> É melhor prudência do que arrependimento
                 <input value="o" name=24 type="radio"> <br></label>
 
-            <label for=""> autoridade deve ser desafiada
+            <label for="">A autoridade deve ser desafiada
                 <input value="i" name=24 type="radio"> <br></label>
 
             <label for=""> Ganhar é fundamental
                 <input value="a" name=24 type="radio"> <br></label>
 
-            <label for=""> coletivo é mais importante do que o individual
+            <label for="">O coletivo é mais importante do que o individual
                 <input value="c" name=24 type="radio"> <br></label>
 
             <p>25. Eu penso que...</p>

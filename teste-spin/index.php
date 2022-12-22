@@ -92,6 +92,7 @@ if (!empty($data)) {
                 <textarea name="txt20" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt20']; ?></textarea>
                 <textarea name="txt21" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt21']; ?></textarea>
             </div>
+
         </div>
         <input id="botao-enviar" type="submit" value="ENVIAR">
     </form>
