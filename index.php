@@ -13,7 +13,7 @@
 
 <body style="font-family: 'Ubuntu' , sans-serif;">
     <section class=" container-header">
-        <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="">
+        <img class="img-logo" src="./assets/img/logo-sem-fundo-azul.png" alt="" style="z-index: 999;">
 
         <nav class="menu">
             <a class="btn-login" href="./login/index.php" style="color: #fff;">LOGIN</a>
@@ -27,11 +27,5 @@
     </section>
 
 </body>
-
-<!-- <footer>
-    © 2022 Focus Trade Consultoria e Desenvolvimento – Todos os direitos reservados. <br>
-    Rua Bom Pastor 2224 sala 1002 – Ipiranga – São Paulo/SP
-
-</footer> -->
 
 </html>

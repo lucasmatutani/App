@@ -1,3 +1,9 @@
+<?php
+session_start();
+$usuario_id = $_SESSION['usuarioId'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" style="margin: 0;">
 
@@ -219,6 +225,7 @@
     </div>
     <div class="resultados">
         <form action="./sql.php" method="POST" name="form">
+            <input type="text" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
             <h3 style="color: red;">SEUS RESULTADOS :</h3>
             <label for="">A </label>
             <input type="number" name="A" id="result-a" readonly>
@@ -236,7 +243,7 @@
 <script>
     function submitInput() {
 
-        alert("DIGITE SEU NOME, SOBRENOME E CONFIRA OS DADOS NA TABELA ANTES DE ENVIAR")
+        alert("CONFIRA OS DADOS NA TABELA ANTES DE ENVIAR")
 
         a = document.getElementsByClassName('a');
         c = document.getElementsByClassName('c');

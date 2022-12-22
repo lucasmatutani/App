@@ -25,7 +25,7 @@ $txt15 = $_REQUEST['txt15'];
 $txt16 = $_REQUEST['txt16'];
 
 
-$data = $conn->query('SELECT * FROM teste_spin');
+$data = $conn->query('SELECT * FROM teste_aida');
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "UPDATE teste_aida set usuario_id='$usuario_id', grupo='$grupo', nm1='$nm1', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', nm2='$nm2', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', nm3='$nm3', txt9='$txt9', txt10='$txt10', txt11='$txt11', txt12='$txt12', nm4='$nm4', txt13='$txt13', txt14='$txt14', txt15='$txt15', txt16='$txt16' WHERE usuario_id= $usuario_id";
