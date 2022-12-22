@@ -29,15 +29,18 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
 
         <div class="container-input">
+            <h4 class="subtitulo">Grupo</h4>
             <input name="grupo" type="text" placeholder="Grupo" required value="<?php if (!empty($linha)) echo $linha['grupo']; ?>">
+            <h4 class="subtitulo">Avaliador</h4>
             <input name="avaliador" type="text" placeholder="Avaliador" required value="<?php if (!empty($linha)) echo $linha['avaliador']; ?>">
+            <h4 class="subtitulo">Case</h4>
             <input name="caso" type="text" placeholder="Case" required value="<?php if (!empty($linha)) echo $linha['caso']; ?>">
         </div>
         <div class="container-table">
             <div class="item">Situação</div>
             <div class="item">Problemas</div>
             <div class="item">Implicações</div>
-            <div class="item">Ncessidade/Solução</div>
+            <div class="item">Necessidade/Solução</div>
             <div class="item" style="padding: 20px 0 0 0px;">Perguntas</div>
             <div class="item subgrid">
                 <div>Perguntas</div>
@@ -92,7 +95,32 @@ if (!empty($data)) {
                 <textarea name="txt20" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt20']; ?></textarea>
                 <textarea name="txt21" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt21']; ?></textarea>
             </div>
-
+            <textarea name="txt22" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt22']; ?></textarea>
+            <div class="subgrid-txt">
+                <textarea name="txt23" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt23']; ?></textarea>
+                <textarea name="txt24" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt24']; ?></textarea>
+            </div>
+            <div class="subgrid-txt">
+                <textarea name="txt25" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt25']; ?></textarea>
+                <textarea name="txt26" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt26']; ?></textarea>
+            </div>
+            <div class="subgrid-txt">
+                <textarea name="txt27" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt27']; ?></textarea>
+                <textarea name="txt28" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt28']; ?></textarea>
+            </div>
+            <textarea name="txt29" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt29']; ?></textarea>
+            <div class="subgrid-txt">
+                <textarea name="txt30" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt30']; ?></textarea>
+                <textarea name="txt31" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt31']; ?></textarea>
+            </div>
+            <div class="subgrid-txt">
+                <textarea name="txt32" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt32']; ?></textarea>
+                <textarea name="txt33" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt33']; ?></textarea>
+            </div>
+            <div class="subgrid-txt">
+                <textarea name="txt34" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt34']; ?></textarea>
+                <textarea name="txt35" id="" cols="20" rows="20"><?php if (!empty($linha)) echo $linha['txt35']; ?></textarea>
+            </div>
         </div>
         <input id="botao-enviar" type="submit" value="ENVIAR">
     </form>
