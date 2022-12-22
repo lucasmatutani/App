@@ -29,8 +29,11 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
 
         <div class="container-input">
+            <h4 class="subtitulo">Grupo</h4>
             <input name="grupo" type="text" placeholder="Grupo" required value="<?php if (!empty($linha)) echo $linha['grupo']; ?>">
+            <h4 class="subtitulo">Avaliador</h4>
             <input name="avaliador" type="text" placeholder="Avaliador" required value="<?php if (!empty($linha)) echo $linha['avaliador']; ?>">
+            <h4 class="subtitulo">Case</h4>
             <input name="caso" type="text" placeholder="Case" required value="<?php if (!empty($linha)) echo $linha['caso']; ?>">
         </div>
         <div class="container-table">

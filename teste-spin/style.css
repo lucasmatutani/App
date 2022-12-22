@@ -24,6 +24,10 @@
   width: 20%;
 }
 
+.container-input h4 {
+  margin-right: 10px;
+}
+
 .container-table {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr;
