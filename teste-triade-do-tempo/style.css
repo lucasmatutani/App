@@ -103,3 +103,13 @@ p {
   background-color: green;
   cursor: pointer;
 }
+
+@media (max-width: 750px) {
+  .container-pergunta {
+    flex-direction: column;
+  }
+  .container-subtitulo {
+    flex-direction: column;
+    text-align: center;
+  }
+}

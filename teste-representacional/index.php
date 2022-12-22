@@ -23,9 +23,7 @@ $usuario_id = $_SESSION['usuarioId'];
 
     <div class="container-titulo">
         <h1>Teste dos Sistemas Representacionais</h1>
-        <h4>Para as seguintes declarações, coloque uma nota avaliando cada uma das quatro alternativas. <br>
-            Disponha os números na ordem que melhor descrevem sua bagagem comportamental. Use o <br>
-            seguinte sistema para indicar suas preferências:</h4>
+        <h4>Para as seguintes questões, coloque uma nota avaliando cada uma das quatro alternativas e elas não podem se repetir. Coloque os números na ordem que melhor te descreve de forma comportamental, use esse sistema de notas para indicar:</h4>
     </div>
     <div class="container-tabela">
         <div>
@@ -186,7 +184,7 @@ $usuario_id = $_SESSION['usuarioId'];
             </label>
 
             <h3>Questão 9</h3>
-            <label for=""> Eu fico imaginando as vantagens de ser nrais racional.
+            <label for=""> Eu fico imaginando as vantagens de ser mais racional.
                 <input max="4" min="1" type="number" name="9" class="ad">
             </label>
 

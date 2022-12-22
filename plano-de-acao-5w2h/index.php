@@ -30,7 +30,7 @@ if (!empty($data)) {
 
         <div class="container-titulo">
             <div class="container-1">
-                <p>Objetivo:</p>
+                <h3>Objetivo:</h3>
                 <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
                 <p>Consultor:</p> <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
                 <p>Setor:</p> <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
