@@ -5,6 +5,15 @@
   justify-content: center;
 }
 
+.btn-voltar {
+  margin: 0 0 0 20px;
+  position: absolute;
+  z-index: 999;
+  color: #000;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
 .container-perguntas {
   display: flex;
   justify-content: center;

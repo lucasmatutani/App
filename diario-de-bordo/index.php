@@ -21,6 +21,7 @@ if (!empty($data)) {
 </head>
 
 <body>
+    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-header">
         <img src="../assets/img/logo-focustrade.jpeg" alt="">
         <h1>Diário de Bordo</h1>

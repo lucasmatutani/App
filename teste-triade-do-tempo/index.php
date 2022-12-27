@@ -16,6 +16,8 @@ $usuario_id = $_SESSION['usuarioId'];
 </head>
 
 <body>
+
+    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-header">
         <img class="img-logo" src="../assets/img/logo-focustrade.jpeg" alt="">
         <h1>Teste - Tríade do Tempo</h1>
