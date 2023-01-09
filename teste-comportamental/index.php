@@ -391,14 +391,6 @@ $email = $_SESSION['usuarioEmail'];
                 <label for="lobo">Lobo %</label>
                 <input type="text" name="lobo" id="lobo" readonly style="width: 50px; height: 30px;">
             </div>
-            <!-- <div class="container-infos">
-                <label for="nome">Nome e Sobrenome</label>
-                <input type="text" name="nome" id="nome" required style="height: 30px;">
-                <label for="nome">Empresa</label>
-                <input type="text" name="empresa" id="empresa" required style="height: 30px;">
-                <label for="nome">Email</label>
-                <input type="text" placeholder="Opcional" name="email" id="email" style="height: 30px;">
-            </div> -->
             <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
         </form>
     </div>
