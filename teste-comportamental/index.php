@@ -1,8 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
-    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
-    exit;
+    header('Location: ../login');
 }
 $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
