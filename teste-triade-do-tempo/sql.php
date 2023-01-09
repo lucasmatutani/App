@@ -26,9 +26,9 @@ if (!empty($email)) {
                             <td>Circunstância</td>
                         </tr>
                         <tr>
-                            <td>" . $importancia . "</td>
-                            <td>" . $urgencia . "</td>
-                            <td>" . $circunstancia . "</td>
+                            <td>" . $importancia . "%</td>
+                            <td>" . $urgencia . "%</td>
+                            <td>" . $circunstancia . "%</td>
                         </tr>
                     </table>
                 </div>";
