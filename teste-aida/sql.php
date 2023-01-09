@@ -2,6 +2,7 @@
 include_once  "../includes/connection.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $grupo = $_REQUEST['grupo'];
 $nm1 = $_REQUEST['nm1'];
 $txt1 = $_REQUEST['txt1'];
@@ -37,4 +38,10 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
 mysqli_close($conn);
