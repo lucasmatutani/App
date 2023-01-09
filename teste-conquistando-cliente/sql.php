@@ -24,7 +24,7 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "INSERT INTO teste_conquiste_clientes (a, b, c, d, e, f, g, h, i, j, usuario_id) VALUES ('$a', '$b', '$c', '$d', '$e','$f', '$g', '$h', '$i', '$j', '$usuario_id')";
 }
 if (mysqli_query($conn, $sql)) {
-    echo "RESPOSTA GRAVADA COM SUCESSO!";
+    header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
