@@ -5,6 +5,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
     exit;
 }
 $usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -378,6 +379,7 @@ $usuario_id = $_SESSION['usuarioId'];
     <div class="resultados">
         <form method="POST" action="./teste-comportamental.php" name="form">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
+            <input type="hidden" name="email" value="<?php echo $email ?>">
             <h3 style="color: red;">SEUS RESULTADOS :</h3>
             <div class="container-resultados">
                 <label for="aguia">Águia %</label>
