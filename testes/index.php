@@ -20,69 +20,64 @@ $usuario_id = $_SESSION['usuarioId'];
 </head>
 
 <body style="margin: 0; font-family: 'Ubuntu', sans-serif;">
-
-    <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <div class="container-logo">
         <img class="img-logo" src="../assets/img/logo-sem-fundo-azul.png" alt="">
     </div>
     <div class="container-testes">
-        <div class="btns-testes">
-            <button onclick="mostrarTestes()" class="btn-testes">TESTES</button>
-            <button onclick="mostrarRespostas()" class="btn-respostas">RESPOSTAS</button>
-        </div>
         <div id="card-testes" class="card-testes">
             <div class="card-titulo-testes">
-                <h1>TESTES</h1>
+                <!-- <h1>TESTES</h1> -->
                 <div class="container-search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input id="searchbar-testes" onkeyup="searchTestes()" type="text" name="search" placeholder="Pesquisar">
                 </div>
                 <span style="z-index: 999;"></span>
             </div>
-            <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-comportamental/" class="teste" target="_blank">Comportamental</a>
-            <?php endif; ?>
-
-            <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-representacional/" class="teste" target="_blank">Representacional</a>
-            <?php endif; ?>
-
             <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-aida/" class="teste" target="_blank">Aida</a>
+                <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="teste" target="_blank">Conquiste Clientes</a>
-            <?php endif; ?>
-
-            <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-spin/" class="teste" target="_blank">Spin</a>
-            <?php endif; ?>
-
-            <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="teste" target="_blank">Método Cesar</a>
-            <?php endif; ?>
-
-            <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="teste" target="_blank">Petscan do Cliente</a>
-            <?php endif; ?>
-
-            <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste" target="_blank">Tríade do Tempo</a>
+                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="teste">Conquiste Clientes</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['diario_de_bordo'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="teste" target="_blank">Diário de bordo</a>
+                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="teste">Diário de bordo</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="teste">Método Cesar</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="teste">Petscan do Cliente</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-comportamental/" class="teste">Perfil Comportamental</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['plano_de_acao'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste" target="_blank">Plano de ação 5W2H</a>
+                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste">Plano de ação 5W2H</a>
             <?php endif; ?>
+
+            <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-representacional/" class="teste">Sistemas Representacionais</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-spin/" class="teste">Spin</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste">Tríade do Tempo</a>
+            <?php endif; ?>
+
         </div>
 
         <div id="card-respostas" class="card-respostas" style="display: none;">
             <div class="card-titulo-respostas">
-                <h1>RESPOSTAS</h1>
+                <!-- <h1>RESULTADOS</h1> -->
                 <div class="container-search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input id="searchbar-respostas" onkeyup="searchRespostas()" type="text" name="search" placeholder="Pesquisar">
@@ -120,11 +115,13 @@ $usuario_id = $_SESSION['usuarioId'];
             $sql_teste_spin = $conn->query("SELECT * FROM teste_spin WHERE  teste_spin.usuario_id = $usuario_id");
             $teste_spin = mysqli_fetch_assoc($sql_teste_spin);
             ?>
+            <?php if (!empty($teste_aida)) : ?>
+                <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
+            <?php endif; ?>
 
             <?php if (!empty($teste_comportamental)) : ?>
-                <a href="javascript:void(0)" onclick="modalComportamental()" class="resposta">Comportamental</a>
+                <a href="javascript:void(0)" onclick="modalComportamental()" class="resposta">Perfil Comportamental</a>
                 <div id="modal-comportamental" class="modal-respostas" style="display: none;">
-                    <h3>Comportamental</h3>
                     <table>
                         <tr>
                             <td>Águia</td>
@@ -142,10 +139,29 @@ $usuario_id = $_SESSION['usuarioId'];
                 </div>
             <?php endif; ?>
 
+            <?php if (!empty($teste_conquiste_clientes)) : ?>
+                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="resposta">Conquiste Clientes</a>
+            <?php endif; ?>
+
+            <?php if (!empty($diario_de_bordo)) : ?>
+                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="resposta">Diário de Bordo</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_metodo_cesar)) : ?>
+                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="resposta">Método Cesar</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_petscan_do_cliente)) : ?>
+                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="resposta">Petscan do cliente</a>
+            <?php endif; ?>
+
+            <?php if (!empty($plano_de_acao)) : ?>
+                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="resposta">Plano de Ação 5w2h</a>
+            <?php endif; ?>
+
             <?php if (!empty($teste_representacional)) : ?>
                 <a href="javascript:void(0)" onclick="modalRepresentacional()" class="resposta">Representacional</a>
                 <div id="modal-representacional" class="modal-respostas" style="display: none;">
-                    <h3>Representacional</h3>
                     <table>
                         <tr>
                             <td>A</td>
@@ -163,10 +179,13 @@ $usuario_id = $_SESSION['usuarioId'];
                 </div>
             <?php endif; ?>
 
+            <?php if (!empty($teste_spin)) : ?>
+                <a href="http://focustradeapp.com.br/teste-spin/" class="resposta">Spin</a>
+            <?php endif; ?>
+
             <?php if (!empty($teste_triade_tempo)) : ?>
                 <a href="javascript:void(0)" onclick="modalTriade()" class="resposta">Tríade do Tempo</a>
                 <div id="modal-triade" class="modal-respostas" style="display: none;">
-                    <h3>Tríade do Tempo</h3>
                     <table>
                         <tr>
                             <td>Importância</td>
@@ -181,35 +200,11 @@ $usuario_id = $_SESSION['usuarioId'];
                     </table>
                 </div>
             <?php endif; ?>
-
-            <?php if (!empty($diario_de_bordo)) : ?>
-                <a href="http://focustradeapp.com.br/diario-de-bordo/" class="resposta" target="_blank">Diário de Bordo</a>
-            <?php endif; ?>
-
-            <?php if (!empty($plano_de_acao)) : ?>
-                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="resposta" target="_blank">Plano de Ação 5w2h</a>
-            <?php endif; ?>
-
-            <?php if (!empty($teste_aida)) : ?>
-                <a href="http://focustradeapp.com.br/teste-aida/" class="resposta" target="_blank">Aida</a>
-            <?php endif; ?>
-
-            <?php if (!empty($teste_conquiste_clientes)) : ?>
-                <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="resposta" target="_blank">Conquiste Clientes</a>
-            <?php endif; ?>
-
-            <?php if (!empty($teste_metodo_cesar)) : ?>
-                <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="resposta" target="_blank">Método Cesar</a>
-            <?php endif; ?>
-
-            <?php if (!empty($teste_petscan_do_cliente)) : ?>
-                <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="resposta" target="_blank">Petscan do cliente</a>
-            <?php endif; ?>
-
-            <?php if (!empty($teste_spin)) : ?>
-                <a href="http://focustradeapp.com.br/teste-spin/" class="resposta" target="_blank">Spin</a>
-            <?php endif; ?>
         </div>
+    </div>
+    <div class="btns-testes">
+        <button onclick="mostrarTestes()" class="btn-testes">TESTES</button>
+        <button onclick="mostrarRespostas()" class="btn-respostas">RESULTADOS</button>
     </div>
 
 </body>
