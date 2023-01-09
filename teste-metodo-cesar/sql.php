@@ -28,7 +28,7 @@ if (mysqli_query($conn, $sql)) {
 
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "";
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
 }
 $mail->send();
 mysqli_close($conn);
