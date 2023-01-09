@@ -20,6 +20,8 @@ if (!empty($data)) {
 </head>
 
 <body>
+    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+
     <div class="container-titulo">
         <img class="img-logo" src="../assets/img/logo-focustrade.jpeg" alt="">
         <img class="img-titulo" src="../assets/img/logo-spin-semfundo2.png" alt="">
