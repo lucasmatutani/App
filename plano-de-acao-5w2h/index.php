@@ -8,7 +8,6 @@ $data = $conn->query("SELECT * FROM plano_de_acao_5w2h WHERE usuario_id = $usuar
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
-echo "LINHA ::" . var_dump($linha);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
