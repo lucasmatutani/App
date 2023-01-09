@@ -8,6 +8,7 @@ $data = $conn->query("SELECT * FROM plano_de_acao_5w2h WHERE usuario_id = $usuar
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
+echo "LINHA ::" . var_dump($linha);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -35,12 +36,16 @@ if (!empty($data)) {
             <div class="container-1">
                 <h3>Objetivo:</h3>
                 <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
-                <p>Consultor:</p> <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
-                <p>Setor:</p> <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
+                <p>Consultor:</p>
+                <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
+                <p>Setor:</p>
+                <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
             </div>
             <div class="container-2">
-                <p>Data de Elaboração:</p> <input type="text" name="elaboracao" value="<?php if (!empty($linha)) echo $linha['elaboracao']; ?>">
-                <p>Última Atualização:</p> <input type="text" name="atualizacao" value="<?php if (!empty($linha)) echo $linha['atualizacao']; ?>">
+                <p>Data de Elaboração:</p>
+                <input type="text" name="elaboracao" value="<?php if (!empty($linha)) echo $linha['elaboracao']; ?>">
+                <p>Última Atualização:</p>
+                <input type="text" name="atualizacao" value="<?php if (!empty($linha)) echo $linha['atualizacao']; ?>">
             </div>
         </div>
 
