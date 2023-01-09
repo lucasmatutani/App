@@ -1,6 +1,5 @@
 <?php
 include_once "../includes/connection.php";
-include_once "../vendor/envio.php";
 session_start();
 
 $email = $_SESSION['usuarioEmail'];
