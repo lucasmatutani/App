@@ -417,7 +417,6 @@ $usuario_id = $_SESSION['usuarioId'];
 
         for (i = 0; i < 90; i++) {
             if (input[i].checked) {
-                total = document.getElementById("total").innerHTML += input[i].value;
 
                 if (input[i].name == "radio1" || input[i].name == "radio3" || input[i].name == "radio6" || input[i].name == "radio9" || input[i].name == "radio12" || input[i].name == "radio15") {
                     grupoA = document.getElementById("grupoA").innerHTML += input[i].value;
@@ -431,13 +430,6 @@ $usuario_id = $_SESSION['usuarioId'];
                     grupoC = document.getElementById("grupoC").innerHTML += input[i].value;
                 }
             }
-        }
-
-        toNumberTotal = parseInt(total);
-        arrTotal = Array.from(String(toNumberTotal), Number);
-        var somaTotal = 0;
-        for (var i = 0; i < arrTotal.length; i++) {
-            somaTotal += arrTotal[i];
         }
 
         toNumberGrupoA = parseInt(grupoA);
@@ -460,6 +452,8 @@ $usuario_id = $_SESSION['usuarioId'];
         for (var i = 0; i < arrGrupoC.length; i++) {
             somaGrupoC += arrGrupoC[i];
         }
+
+        somaTotal = somaGrupoA + somaGrupoB + somaGrupoC;
 
         importancia = ((somaGrupoB / somaTotal) * 100).toFixed();
         urgencia = ((somaGrupoC / somaTotal) * 100).toFixed();

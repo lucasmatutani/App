@@ -212,3 +212,10 @@ input:focus {
     flex-direction: column;
     margin-bottom: 25px;
 }
+
+@media (max-width: 750px) {
+    .card-testes {
+        width: 80%;
+        height: 900px;
+    }
+}

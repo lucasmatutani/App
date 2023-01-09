@@ -46,7 +46,7 @@ if (!empty($data)) {
                 <textarea name="confianca" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['confianca'] ?></textarea>
                 <div class="container-resposta">
                     <h2>Empatia</h2>
-                    <textarea name="empatia" id="" cols=" 113" rows="12" required><?php if (!empty($linha)) echo $linha['empatia'] ?></textarea>
+                    <textarea name="empatia" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['empatia'] ?></textarea>
                 </div>
                 <div class="container-resposta">
                     <h2>Segurança</h2>
