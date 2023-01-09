@@ -219,6 +219,10 @@ input:focus {
         font-size: 2em;
     }
 
+    .img-logo {
+        width: 25%;
+    }
+
     .card-testes {
         width: 85%;
         height: 1000px;
