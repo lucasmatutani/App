@@ -214,10 +214,21 @@ input:focus {
 }
 
 @media (max-width: 1000px) {
-    #card-testes {
+
+    body {
+        font-size: 2em;
+    }
+
+    .card-testes {
         width: 85%;
         height: 1000px;
-        font-size: 2em;
         margin-top: 100px;
     }
+
+    .card-respostas {
+        width: 85%;
+        height: 1000px;
+        margin-top: 100px;
+    }
+
 }
