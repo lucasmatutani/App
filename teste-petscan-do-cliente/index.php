@@ -2,6 +2,11 @@
 include_once "../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
 
 $data = $conn->query("SELECT * FROM teste_petscan_do_cliente WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -32,6 +37,7 @@ if (!empty($data)) {
 
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
 
         <div class="container-principal">
 
