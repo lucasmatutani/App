@@ -17,7 +17,9 @@ if (!empty($data)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Petscan Do Cliente</title>
+
 </head>
 
 <body>
@@ -33,10 +35,10 @@ if (!empty($data)) {
 
         <div class="container-principal">
 
-            <div class="container-processos">
+            <div class="tabela" id="tabela-menu">
                 <div></div>
                 <div></div>
-                <div>
+                <div id="pessoas">
                     <h2>Pessoas</h2>
                 </div>
                 <div>
@@ -48,16 +50,21 @@ if (!empty($data)) {
                 <div>
                     <h2>Competências</h2>
                 </div>
+                <div></div>
+            </div>
+
+            <div class="container-processos">
+
 
                 <div class="name-processos"> Stakeholders</div>
-                <div class="name-processos"> Marketing </div>
+                <div class="name-processos" id="marketing"> Marketing </div>
                 <textarea name="txt1" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
                 <textarea name="txt2" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
                 <textarea name="txt3" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
                 <textarea name="txt4" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
 
                 <div class="name-processos"> Stakeholders </div>
-                <div class="name-processos"> Logística </div>
+                <div class="name-processos" id="logistica"> Logística </div>
                 <textarea name="txt5" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
                 <textarea name="txt6" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
                 <textarea name="txt7" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
@@ -95,7 +102,7 @@ if (!empty($data)) {
                 <textarea name="txt24" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt24']; ?></textarea>
 
                 <div class="name-processos"> Stakeholders</div>
-                <div class="name-processos"> Tablóide</div>
+                <div class="name-processos" id="tabloide"> Tablóide</div>
                 <textarea name="txt25" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt25']; ?></textarea>
                 <textarea name="txt26" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt26']; ?></textarea>
                 <textarea name="txt27" id="" cols="20" rows="4"><?php if (!empty($linha)) echo $linha['txt27']; ?></textarea>
@@ -285,10 +292,30 @@ if (!empty($data)) {
     </form>
 </body>
 
-</html>
-
 <script>
     window.addEventListener("load", (event) => {
         alert("UTILIZE NO MODO PAISAGEM");
     });
+
+    // $(window).on('scroll', function() {
+    //     if ($(window).scrollTop() >= $('#tabloide').offset().top + $('#tabloide').outerHeight() - window.innerHeight) {
+
+
+    //         // alert("error");
+    //         document.getElementById('tabela-menu').classList.add("fixed");
+    //     }
+    // });
+
+    var observer = new IntersectionObserver(function(entries) {
+        // isIntersecting is true when element and viewport are overlapping
+        // isIntersecting is false when element and viewport don't overlap
+        if (entries[0].isIntersecting === true)
+            console.log('Element has just become visible in screen');
+    }, {
+        threshold: [0]
+    });
+
+    observer.observe(document.querySelector("#tabloide"));
 </script>
+
+</html>
