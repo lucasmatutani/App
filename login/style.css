@@ -123,4 +123,8 @@ footer {
         height: 300px;
         margin: 450px 0 0px 0px;
     }
+
+    .card input {
+        font-size: 3.5em;
+    }
 }
