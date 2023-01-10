@@ -86,3 +86,21 @@ footer {
   left: 0;
   position: relative;
 }
+
+@media (max-width: 1000px) {
+
+  body {
+    font-size: 2em;
+  }
+
+  .img-logo {
+    width: 50%;
+  }
+
+  .btn-login {
+    font-size: 3em;
+    padding: 40px 75px;
+  }
+
+  .menu {}
+}
