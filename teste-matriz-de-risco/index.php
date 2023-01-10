@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+
     <div class="container-header">
         <img src="../assets/img/logo-focustrade.jpeg" alt="">
         <h1>Matriz de Risco</h1>
@@ -20,9 +22,9 @@
         <h3>Risco Máximo</h3>
     </div>
     <div class="container-txt-inicio">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="number" name="" id="">
+        <input type="number" name="" id="">
+        <input type="number" name="" id="">
     </div>
 
     <div class="h3">
@@ -32,9 +34,9 @@
     </div>
 
     <div class="container-txt-meio">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="number" name="" id="">
+        <input type="number" name="" id="">
+        <input type="number" name="" id="">
     </div>
 
     <div class="h3">
@@ -44,10 +46,25 @@
     </div>
 
     <div class="container-txt-final">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="number" name="" id="">
+        <input type="number" name="" id="">
+        <input type="number" name="" id="">
     </div>
+
+    <div class="container-txt">
+        <h3>Riscos</h3>
+        1<textarea name="" id="" cols="30" rows="2"></textarea>
+        2<textarea name="" id="" cols="30" rows="2"></textarea>
+        3<textarea name="" id="" cols="30" rows="2"></textarea>
+        4<textarea name="" id="" cols="30" rows="2"></textarea>
+        5<textarea name="" id="" cols="30" rows="2"></textarea>
+        6<textarea name="" id="" cols="30" rows="2"></textarea>
+        7<textarea name="" id="" cols="30" rows="2"></textarea>
+        8<textarea name="" id="" cols="30" rows="2"></textarea>
+        9<textarea name="" id="" cols="30" rows="2"></textarea>
+        10<textarea name="" id="" cols="30" rows="2"></textarea>
+    </div>
+    <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
 </body>
 
 </html>
