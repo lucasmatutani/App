@@ -94,13 +94,12 @@ footer {
   }
 
   .img-logo {
-    width: 50%;
+    width: 60%;
   }
 
   .btn-login {
     font-size: 3em;
-    padding: 40px 75px;
+    padding: 50px 95px;
   }
 
-  .menu {}
 }
