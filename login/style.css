@@ -126,5 +126,6 @@ footer {
 
     .card input {
         font-size: 3em;
+        height: 60px;
     }
 }
