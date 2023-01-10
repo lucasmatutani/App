@@ -30,12 +30,10 @@ a {
     align-items: center;
     justify-content: space-between;
     padding-top: 100px;
-    /* width: 100%;
-    height: 100%; */
 }
 
 .container-form {
-    padding: 147px 0;
+    /* padding: 147px 0; */
     position: absolute;
     z-index: 999;
 }
