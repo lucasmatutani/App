@@ -133,4 +133,8 @@ footer {
         font-size: 0.8em;
         height: 60px;
     }
+
+    .btn-login {
+        width: 50%;
+    }
 }
