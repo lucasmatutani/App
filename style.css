@@ -102,4 +102,13 @@ footer {
     padding: 50px 95px;
   }
 
+  .menu-sociais img {
+    max-width: 300px;
+  }
+
+  .btn-site {
+    font-size: 2em;
+    padding: 30px 68px;
+  }
+
 }
