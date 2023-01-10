@@ -37,6 +37,10 @@ a {
     margin: 150px 0 0 0;
     position: absolute;
     z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .img-logo {
