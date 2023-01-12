@@ -1,7 +1,9 @@
 <?php
 include_once "../includes/connection.php";
+include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $objetivo = $_REQUEST['objetivo'];
 $consultor = $_REQUEST['consultor'];
 $setor = $_REQUEST['setor'];
@@ -80,8 +82,15 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "INSERT INTO plano_de_acao_5w2h set usuario_id='$usuario_id', objetivo='$objetivo', consultor='$consultor', setor='$setor', elaboracao='$elaboracao', atualizacao='$atualizacao', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10', txt11='$txt11', txt12='$txt12', txt13='$txt13', txt14='$txt14', txt15='$txt15', txt16='$txt16', txt17='$txt17', txt18='$txt18', txt19='$txt19', txt20='$txt20', txt21='$txt21', txt22='$txt22', txt23='$txt23', txt24='$txt24', txt25='$txt25', txt26='$txt26', txt27='$txt27', txt28='$txt28', txt29='$txt29', txt30='$txt30', txt31='$txt31', txt32='$txt32', txt33='$txt33', txt34='$txt34', txt35='$txt35', txt36='$txt36', txt37='$txt37', txt38='$txt38', txt39='$txt39', txt40='$txt40', txt41='$txt41', txt42='$txt42', txt43='$txt43', txt44='$txt44', txt45='$txt45', txt46='$txt46', txt47='$txt47', txt48='$txt48', txt49='$txt49', txt50='$txt50', txt51='$txt51', txt52='$txt52', txt53='$txt53', txt54='$txt54', txt55='$txt55', txt56='$txt56', txt57='$txt57', txt58='$txt58', txt59='$txt59', txt60='$txt60', txt61='$txt61', txt62='$txt62', txt63='$txt63', txt64='$txt64'";
 }
 if (mysqli_query($conn, $sql)) {
-    echo "RESPOSTA GRAVADA COM SUCESSO!";
+    header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 mysqli_close($conn);

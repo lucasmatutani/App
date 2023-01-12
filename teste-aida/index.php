@@ -1,11 +1,12 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
+
+$email = $_SESSION['usuarioEmail'];
 $usuario_id = $_SESSION['usuarioId'];
 
 if (!isset($_SESSION['usuarioEmail'])) {
-    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
-    exit;
+    header('Location: ../login');
 }
 
 $data = $conn->query("SELECT * FROM teste_aida WHERE usuario_id = $usuario_id");
@@ -41,6 +42,8 @@ if (!empty($data)) {
 
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
+
         <div class="container-table">
 
             <div class="container">

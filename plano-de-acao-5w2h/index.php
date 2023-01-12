@@ -1,7 +1,11 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
 $usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
 
 $data = $conn->query("SELECT * FROM plano_de_acao_5w2h WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -28,6 +32,7 @@ if (!empty($data)) {
 
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
 
         <div class="objetivo">
             <h3>Objetivo:</h3>
@@ -37,10 +42,18 @@ if (!empty($data)) {
             <div class="container-1">
                 <p>Consultor:</p> <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
                 <p>Setor:</p> <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
+                <h3>Objetivo:</h3>
+                <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
+                <p>Consultor:</p>
+                <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
+                <p>Setor:</p>
+                <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
             </div>
             <div class="container-2">
-                <p>Data de Elaboração:</p> <input type="text" name="elaboracao" value="<?php if (!empty($linha)) echo $linha['elaboracao']; ?>">
-                <p>Última Atualização:</p> <input type="text" name="atualizacao" value="<?php if (!empty($linha)) echo $linha['atualizacao']; ?>">
+                <p>Data de Elaboração:</p>
+                <input type="text" name="elaboracao" value="<?php if (!empty($linha)) echo $linha['elaboracao']; ?>">
+                <p>Última Atualização:</p>
+                <input type="text" name="atualizacao" value="<?php if (!empty($linha)) echo $linha['atualizacao']; ?>">
             </div>
         </div>
 

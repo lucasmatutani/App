@@ -2,6 +2,11 @@
 include_once "../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
 
 $data = $conn->query("SELECT * FROM teste_conquiste_clientes WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -33,6 +38,8 @@ if (!empty($data)) {
 
     <form class="container-perguntas" action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
+
         <h4>O que eu faço para conquistar meus clientes</h4>
         <div class="container-1a5">
             <div>

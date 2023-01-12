@@ -1,6 +1,11 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+
+$email = $_SESSION['usuarioEmail'];
 $usuario_id = $_SESSION['usuarioId'];
 
 ?>
@@ -31,6 +36,8 @@ $usuario_id = $_SESSION['usuarioId'];
     </div>
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
+
         <div class="container-pergunta">
             <div>
                 <p>1 - Costumo ir a eventos, mesmo sem ter muita vontade, para <br> agradar meu chefe, meus amigos ou minha familia.</p>
@@ -410,7 +417,6 @@ $usuario_id = $_SESSION['usuarioId'];
 
         for (i = 0; i < 90; i++) {
             if (input[i].checked) {
-                total = document.getElementById("total").innerHTML += input[i].value;
 
                 if (input[i].name == "radio1" || input[i].name == "radio3" || input[i].name == "radio6" || input[i].name == "radio9" || input[i].name == "radio12" || input[i].name == "radio15") {
                     grupoA = document.getElementById("grupoA").innerHTML += input[i].value;
@@ -424,13 +430,6 @@ $usuario_id = $_SESSION['usuarioId'];
                     grupoC = document.getElementById("grupoC").innerHTML += input[i].value;
                 }
             }
-        }
-
-        toNumberTotal = parseInt(total);
-        arrTotal = Array.from(String(toNumberTotal), Number);
-        var somaTotal = 0;
-        for (var i = 0; i < arrTotal.length; i++) {
-            somaTotal += arrTotal[i];
         }
 
         toNumberGrupoA = parseInt(grupoA);
@@ -453,6 +452,8 @@ $usuario_id = $_SESSION['usuarioId'];
         for (var i = 0; i < arrGrupoC.length; i++) {
             somaGrupoC += arrGrupoC[i];
         }
+
+        somaTotal = somaGrupoA + somaGrupoB + somaGrupoC;
 
         importancia = ((somaGrupoB / somaTotal) * 100).toFixed();
         urgencia = ((somaGrupoC / somaTotal) * 100).toFixed();

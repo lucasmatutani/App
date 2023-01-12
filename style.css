@@ -88,3 +88,27 @@ footer {
   left: 0;
   position: relative;
 }
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 2em;
+  }
+
+  .img-logo {
+    width: 60%;
+  }
+
+  .btn-login {
+    font-size: 4em;
+    padding: 50px 95px;
+  }
+
+  .menu-sociais img {
+    max-width: 200px;
+  }
+
+  .btn-site {
+    font-size: 2em;
+    padding: 30px 68px;
+  }
+}

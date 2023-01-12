@@ -1,7 +1,9 @@
 <?php
 include_once  "../includes/connection.php";
+include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $grupo = $_REQUEST['grupo'];
 $nm1 = $_REQUEST['nm1'];
 $txt1 = $_REQUEST['txt1'];
@@ -33,8 +35,14 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "INSERT INTO teste_aida set usuario_id='$usuario_id', grupo='$grupo', nm1='$nm1', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', nm2='$nm2', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', nm3='$nm3', txt9='$txt9', txt10='$txt10', txt11='$txt11', txt12='$txt12', nm4='$nm4', txt13='$txt13', txt14='$txt14', txt15='$txt15', txt16='$txt16'";
 }
 if (mysqli_query($conn, $sql)) {
-    echo "RESPOSTA GRAVADA COM SUCESSO!";
+    header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
 mysqli_close($conn);

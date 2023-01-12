@@ -212,3 +212,32 @@ input:focus {
     flex-direction: column;
     margin-bottom: 25px;
 }
+
+@media (max-width: 1000px) {
+
+    body {
+        font-size: 2em;
+    }
+
+    .img-logo {
+        width: 50%;
+    }
+
+    .card-testes {
+        width: 85%;
+        height: 1000px;
+        margin-top: 100px;
+    }
+
+    .card-respostas {
+        width: 85%;
+        height: 1000px;
+        margin-top: 100px;
+    }
+
+    .btns-testes button {
+        width: 30%;
+        padding: 10px 0;
+    }
+
+}

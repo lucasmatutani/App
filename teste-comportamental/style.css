@@ -20,7 +20,8 @@
 
 .containerPerguntas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   margin: 60px 0 0 0;
 }

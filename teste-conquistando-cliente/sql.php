@@ -1,8 +1,9 @@
 <?php
 include_once "../includes/connection.php";
-
+include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $a = $_REQUEST['a'];
 $b = $_REQUEST['b'];
 $c = $_REQUEST['c'];
@@ -23,8 +24,15 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "INSERT INTO teste_conquiste_clientes (a, b, c, d, e, f, g, h, i, j, usuario_id) VALUES ('$a', '$b', '$c', '$d', '$e','$f', '$g', '$h', '$i', '$j', '$usuario_id')";
 }
 if (mysqli_query($conn, $sql)) {
-    echo "RESPOSTA GRAVADA COM SUCESSO!";
+    header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 mysqli_close($conn);

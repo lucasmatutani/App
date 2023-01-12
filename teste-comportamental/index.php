@@ -1,10 +1,10 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
-    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
-    exit;
+    header('Location: ../login');
 }
 $usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -378,6 +378,7 @@ $usuario_id = $_SESSION['usuarioId'];
     <div class="resultados">
         <form method="POST" action="./teste-comportamental.php" name="form">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
+            <input type="hidden" name="email" value="<?php echo $email ?>">
             <h3 style="color: red;">SEUS RESULTADOS :</h3>
             <div class="container-resultados">
                 <label for="aguia">Águia %</label>
@@ -389,14 +390,6 @@ $usuario_id = $_SESSION['usuarioId'];
                 <label for="lobo">Lobo %</label>
                 <input type="text" name="lobo" id="lobo" readonly style="width: 50px; height: 30px;">
             </div>
-            <!-- <div class="container-infos">
-                <label for="nome">Nome e Sobrenome</label>
-                <input type="text" name="nome" id="nome" required style="height: 30px;">
-                <label for="nome">Empresa</label>
-                <input type="text" name="empresa" id="empresa" required style="height: 30px;">
-                <label for="nome">Email</label>
-                <input type="text" placeholder="Opcional" name="email" id="email" style="height: 30px;">
-            </div> -->
             <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
         </form>
     </div>
