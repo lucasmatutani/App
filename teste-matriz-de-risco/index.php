@@ -21,7 +21,7 @@
         <h3>Risco Alto</h3>
         <h3>Risco Máximo</h3>
     </div>
-    <div class="container-txt-inicio">
+    <div class="container-input">
         <input type="number" name="" id="">
         <input type="number" name="" id="">
         <input type="number" name="" id="">
@@ -33,7 +33,7 @@
         <h3>Risco Alto</h3>
     </div>
 
-    <div class="container-txt-meio">
+    <div class="container-input">
         <input type="number" name="" id="">
         <input type="number" name="" id="">
         <input type="number" name="" id="">
@@ -45,24 +45,37 @@
         <h3>Risco Médio</h3>
     </div>
 
-    <div class="container-txt-final">
+    <div class="container-input">
         <input type="number" name="" id="">
         <input type="number" name="" id="">
         <input type="number" name="" id="">
     </div>
 
-    <div class="container-txt">
+    <div class="probabilidade">
+        <h2>Probabilidade</h2>
+        <h3>Baixa</h3>
+        <h3>Médio</h3>
+        <h3>Alto</h3>
+    </div>
+
+    <div class="impacto">
+        <h3>Baixa</h3>
+        <h3>Médio</h3>
+        <h3>Alto</h3>
+        <h2>Impacto</h2>
+    </div>
+    <div class="container-riscos">
         <h3>Riscos</h3>
-        1<textarea name="" id="" cols="30" rows="2"></textarea>
-        2<textarea name="" id="" cols="30" rows="2"></textarea>
-        3<textarea name="" id="" cols="30" rows="2"></textarea>
-        4<textarea name="" id="" cols="30" rows="2"></textarea>
-        5<textarea name="" id="" cols="30" rows="2"></textarea>
-        6<textarea name="" id="" cols="30" rows="2"></textarea>
-        7<textarea name="" id="" cols="30" rows="2"></textarea>
-        8<textarea name="" id="" cols="30" rows="2"></textarea>
-        9<textarea name="" id="" cols="30" rows="2"></textarea>
-        10<textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>1</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>2</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>3</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>4</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>5</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>6</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>7</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>8</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>9</h4><textarea name="" id="" cols="30" rows="2"></textarea>
+        <h4>10</h4><textarea name="" id="" cols="30" rows="2"></textarea>
     </div>
     <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
 </body>

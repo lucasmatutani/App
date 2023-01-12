@@ -1,3 +1,14 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+$usuario_id = $_SESSION['usuarioId'];
+
+$data = $conn->query("SELECT * FROM analise_swot WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,23 +38,23 @@
                 <tr>
                     <th>Contribui para o crescimento da empresa:
                         <p>S: Pontos fortes?</p>
-                        <textarea name="" id="" cols="50" rows="20"></textarea>
+                        <textarea name="txt1" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
 
                     </th>
                     <th>Dificulta o crescimento da empresa:
                         <p>W: Pontos fracos?</p>
-                        <textarea name="" id="" cols="50" rows="20"></textarea>
+                        <textarea name="txt2" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
                     </th>
 
                 </tr>
                 <tr>
                     <td>
                         <p>O: Oportunidades</p>
-                        <textarea name="" id="" cols="50" rows="20"></textarea>
+                        <textarea name="txt3" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
                     </td>
                     <td>
                         <p>T: Ameaças</p>
-                        <textarea name="" id="" cols="50" rows="20"></textarea>
+                        <textarea name="txt4" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
                     </td>
                 </tr>
             </table>
