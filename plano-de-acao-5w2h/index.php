@@ -34,8 +34,14 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
 
+        <div class="objetivo">
+            <h3>Objetivo:</h3>
+            <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
+        </div>
         <div class="container-titulo">
             <div class="container-1">
+                <p>Consultor:</p> <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
+                <p>Setor:</p> <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
                 <h3>Objetivo:</h3>
                 <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
                 <p>Consultor:</p>
