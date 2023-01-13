@@ -27,7 +27,7 @@ if (!empty($data)) {
         <h1>Análise Swot</h1>
     </div>
 
-    <form action="">
+    <form action="./sql.php" method="POST">
         <div class="container-perguntas">
             <!-- <p class="lateral-1">Aspectos Internos</p>
             <p class="lateral-2">Aspectos Externos</p> -->
