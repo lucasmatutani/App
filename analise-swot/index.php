@@ -29,36 +29,36 @@ if (!empty($data)) {
 
     <form action="">
         <div class="container-perguntas">
-
-
             <!-- <p class="lateral-1">Aspectos Internos</p>
             <p class="lateral-2">Aspectos Externos</p> -->
 
-            <table border="1">
-                <tr>
-                    <th>Contribui para o crescimento da empresa:
-                        <p>S: Pontos fortes?</p>
-                        <textarea name="txt1" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+            <div></div>
+            <div class="titulo">
+                <h2>Contribui para o crescimento <br> da empresa:</h2>
+                <h3>S: Pontos fortes?</h3>
+                <textarea name=" txt1" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+            </div>
 
-                    </th>
-                    <th>Dificulta o crescimento da empresa:
-                        <p>W: Pontos fracos?</p>
-                        <textarea name="txt2" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
-                    </th>
+            <div class="titulo">
+                <h2>Dificulta o crescimento da <br>empresa:</h2>
+                <h3>W: Pontos fracos?</h3>
+                <textarea name="txt2" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+            </div>
 
-                </tr>
-                <tr>
-                    <td>
-                        <p>O: Oportunidades</p>
-                        <textarea name="txt3" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
-                    </td>
-                    <td>
-                        <p>T: Ameaças</p>
-                        <textarea name="txt4" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
-                    </td>
-                </tr>
-            </table>
+            <div></div>
+            <div></div>
+            <div class="titulo">
+                <h3>O: Oportunidades</h3>
+                <textarea name="txt3" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+            </div>
+
+            <div class="titulo">
+                <h3>T: Ameaças</h3>
+                <textarea name="txt4" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+            </div>
+            <div></div>
         </div>
+
         <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
     </form>
 
