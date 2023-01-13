@@ -12,6 +12,11 @@
     <div class="container-header">
         <img src="../assets/img/logo-focustrade.jpeg" alt="">
     </div>
+
+    <form action="">
+
+    </form>
+
 </body>
 
 </html>
