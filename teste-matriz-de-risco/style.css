@@ -22,12 +22,10 @@
   justify-content: space-around;
 }
 
-.container-input {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+/* .probabilidade {
+  transform: rotate(270deg);
+  text-align: start;
+} */
 
 .container-riscos {
   display: flex;
@@ -42,6 +40,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-top: 20px;
 }
 
 #botao-enviar {
