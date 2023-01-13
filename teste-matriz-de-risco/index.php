@@ -31,7 +31,7 @@ if (!empty($data)) {
         <img src="../assets/img/logo-focustrade.jpeg" alt="">
         <h1>Matriz de Risco</h1>
     </div>
-    <form action=" ./sql.php" method="POST">
+    <form action="./sql.php" method="POST">
         <div class=" container-principal">
             <div class="h3">
                 <h3>Risco Médio</h3>
