@@ -19,7 +19,7 @@ switch ($_GET['pag']) {
 
         <form class="pergunta" method="POST" action="./cenario.php">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
-            <input type="hidden" name="usuario_id" value="<?php echo $email ?>">
+            <input type="hidden" name="email" value="<?php echo $email ?>">
             <?php if ($conn) :
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 1";
                 if ($res = mysqli_query($conn, $query)) :
