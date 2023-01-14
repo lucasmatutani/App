@@ -73,6 +73,18 @@ $usuario_id = $_SESSION['usuarioId'];
                 <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste">Tríade do Tempo</a>
             <?php endif; ?>
 
+            <?php if ($_SESSION['fatores_criticos'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/fatores-criticos-de-sucesso/" class="teste">Fatores Críticos de Sucesso</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['analise_swot'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/analise_swot/" class="teste">Análise Swot</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['matriz_predominio'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/matriz-de-predominio/" class="teste">Matriz de Predomínio</a>
+            <?php endif; ?>
+
             <?php if ($_SESSION['testes_jpb'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=cenario" class="teste">Cenário</a>
                 <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=fechamento" class="teste">Fechamento e Compromisso</a>
