@@ -29,6 +29,10 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['triade'] = $resultado['triade'];
         $_SESSION['plano_de_acao'] = $resultado['plano_de_acao'];
         $_SESSION['diario_de_bordo'] = $resultado['diario_de_bordo'];
+        $_SESSION['fatores_criticos'] = $resultado['fatores_criticos'];
+        $_SESSION['analise_swot'] = $resultado['analise_swot'];
+        $_SESSION['matriz_predominio'] = $resultado['matriz_predominio'];
+        $_SESSION['testes_jpb'] = $resultado['testes_jpb'];
 
         if ($resultado['email'] == "admin") {
             header("Location: ../admin");

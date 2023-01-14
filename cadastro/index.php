@@ -139,6 +139,46 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                             <input type="radio" name="diario_de_bordo" value="0">
                         </div>
                     </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Fatores críticos</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="fatores_criticos" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="fatores_criticos" value="0">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Análise Swot</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="analise_swot" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="analise_swot" value="0">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Matriz de predomínio</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="matriz_predominio" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="matriz_predominio" value="0">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Testes JPB</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="testes_jpb" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="testes_jpb" value="0">
+                        </div>
+                    </div>
                 </div>
             </div>
             <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
