@@ -22,6 +22,21 @@
   justify-content: space-around;
 }
 
+.container-principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* .container-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+} */
+
 /* .probabilidade {
   transform: rotate(270deg);
   text-align: start;

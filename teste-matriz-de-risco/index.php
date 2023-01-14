@@ -39,9 +39,9 @@ if (!empty($data)) {
                 <h3>Risco Máximo</h3>
             </div>
             <div class="container-input">
-                <input type="number" name="input1" id="" <?php if (!empty($linha)) echo $linha['input1']; ?>>
-                <input type="number" name="input2" id=""><?php if (!empty($linha)) echo $linha['input2']; ?>>
-                <input type="number" name="input3" id=""><?php if (!empty($linha)) echo $linha['input3']; ?>>
+                <input type="number" name="input1" id="" value="<?php if (!empty($linha)) echo $linha['input1']; ?>">
+                <input type="number" name="input2" id="" value="<?php if (!empty($linha)) echo $linha['input2']; ?>">
+                <input type="number" name="input3" id="" value="<?php if (!empty($linha)) echo $linha['input3']; ?>">
             </div>
 
             <div class="h3">
@@ -51,9 +51,9 @@ if (!empty($data)) {
             </div>
 
             <div class="container-input">
-                <input type="number" name="input4" id="" <?php if (!empty($linha)) echo $linha['input4']; ?>>
-                <input type="number" name="input5" id="" <?php if (!empty($linha)) echo $linha['input5']; ?>>
-                <input type="number" name="input6" id="" <?php if (!empty($linha)) echo $linha['input6']; ?>>
+                <input type="number" name="input4" id="" value=" <?php if (!empty($linha)) echo $linha['input4']; ?>">
+                <input type="number" name="input5" id="" value=" <?php if (!empty($linha)) echo $linha['input5']; ?>">
+                <input type="number" name="input6" id="" value=" <?php if (!empty($linha)) echo $linha['input6']; ?>">
             </div>
 
             <div class="h3">
@@ -63,9 +63,9 @@ if (!empty($data)) {
             </div>
 
             <div class="container-input">
-                <input type="number" name="input7" id="" <?php if (!empty($linha)) echo $linha['input7']; ?>>
-                <input type="number" name="input8" id="" <?php if (!empty($linha)) echo $linha['input8']; ?>>
-                <input type="number" name="input9" id="" <?php if (!empty($linha)) echo $linha['input9']; ?>>
+                <input type="number" name="input7" id="" value=" <?php if (!empty($linha)) echo $linha['input7']; ?>">
+                <input type="number" name="input8" id="" value=" <?php if (!empty($linha)) echo $linha['input8']; ?>">
+                <input type="number" name="input9" id="" value=" <?php if (!empty($linha)) echo $linha['input9']; ?>">
             </div>
         </div>
 
