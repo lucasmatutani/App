@@ -74,12 +74,12 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if ($_SESSION['testes_jpb'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/testes-jpb/switch.php&pag=cenario" class="teste">Cenário</a>
-                <a href="http://focustradeapp.com.br/testes-jpb/switch.php&pag=fechamento" class="teste">Fechamento e Compromisso</a>
-                <a href="http://focustradeapp.com.br/testes-jpb/switch.php&pag=implicacao" class="teste">Implicação</a>
-                <a href="http://focustradeapp.com.br/testes-jpb/switch.php&pag=objetivo" class="teste">Objetivo</a>
-                <a href="http://focustradeapp.com.br/testes-jpb/switch.php&pag=plano-tatico" class="teste">Plano Tático</a>
-                <a href="http://focustradeapp.com.br/testes-jpb/switch.php&pag=problematizacao" class="teste">Problematização e Oportunidades</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=cenario" class="teste">Cenário</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=fechamento" class="teste">Fechamento e Compromisso</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=implicacao" class="teste">Implicação</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=objetivo" class="teste">Objetivo</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=plano-tatico" class="teste">Plano Tático</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=problematizacao" class="teste">Problematização e Oportunidades</a>
             <?php endif; ?>
 
         </div>
