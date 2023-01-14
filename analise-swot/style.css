@@ -14,6 +14,10 @@
   font-size: 1.5em;
 }
 
+.internos {
+  text-align: center;
+}
+
 .container-perguntas {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -25,12 +29,16 @@
   padding: 0 10px 10px 10px;
 }
 
+.externos {
+  text-align: center;
+}
+
 #botao-enviar {
-  background: #0066a2;
+  background: #314b7c;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   color: #fff;
-  margin: 30px 0;
+  padding: 10px 50px;
 }
 
 #botao-enviar:hover {
