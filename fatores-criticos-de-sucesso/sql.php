@@ -2,6 +2,8 @@
 include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
+$usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $input1 = $_REQUEST['input1'];
 $input2 = $_REQUEST['input2'];
 $input3 = $_REQUEST['input3'];
