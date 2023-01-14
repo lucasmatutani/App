@@ -38,37 +38,37 @@ if (!empty($data)) {
         <h1 class="titulo">FCS</h1>
         <div class="container-txt">
             <div class="txt">
-                <textarea name="" id="" cols="20" rows="3"></textarea>
-                <input type="number" name="" id="input1">
-                <progress id="myProgress1" value="" max="100">
+                <textarea name="txt1" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+                <input type="number" name="inpu1" id="input1" value="<?php if (!empty($linha)) echo $linha['input1']; ?>">
+                <progress id=" myProgress1" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
-                <textarea name="" id="" cols="20" rows="3"></textarea>
-                <input type="number" name="" id="input2">
-                <progress id="myProgress2" value="" max="100">
+                <textarea name="txt2" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+                <input type="number" name="input2" id="input2" value="<?php if (!empty($linha)) echo $linha['input2']; ?>">
+                <progress id=" myProgress2" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
-                <textarea name="" id="" cols="20" rows="3"></textarea>
-                <input type="number" name="" id="input3">
-                <progress id="myProgress3" value="" max="100">
+                <textarea name="txt3" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+                <input type="number" name="input3" id="input3" value="<?php if (!empty($linha)) echo $linha['input3']; ?>">
+                <progress id=" myProgress3" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
-                <textarea name="" id="" cols="20" rows="3"></textarea>
-                <input type="number" name="" id="input4">
-                <progress id="myProgress4" value="" max="100">
+                <textarea name="txt4" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+                <input type="number" name="input4" id="input4" value="<?php if (!empty($linha)) echo $linha['input4']; ?>">
+                <progress id=" myProgress4" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
-                <textarea name="" id="" cols="20" rows="3"></textarea>
-                <input type="number" name="" id="input5">
-                <progress id="myProgress5" value="" max="100">
+                <textarea name="txt5" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
+                <input type="number" name="input5" id="input5" value="<?php if (!empty($linha)) echo $linha['input5']; ?>">
+                <progress id=" myProgress5" value="" max="100">
                 </progress>%
             </div>
         </div>
@@ -78,53 +78,53 @@ if (!empty($data)) {
             <h3>Impacto</h3>
             <h3>Ação Corretiva</h3>
             <div>
-                <textarea name="txt1" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt6" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt2" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt7" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt3" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt8" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt8']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt4" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt9" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt9']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt5" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt10" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt10']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt6" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt11" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt11']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt7" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt12" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt12']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt8" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt13" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt13']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt9" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt14" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt14']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt10" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt15" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt15']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt11" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt16" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt16']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt12" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt17" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt17']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt13" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt18" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt18']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt14" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt18" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt19']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt15" id="" cols="30" rows="10"></textarea>
+                <textarea name="txt20" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt20']; ?></textarea>
             </div>
 
         </div>
-
+        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
 
 
     </form>
