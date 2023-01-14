@@ -27,10 +27,9 @@ if (!empty($data)) {
         <h1>Análise Swot</h1>
     </div>
 
-    <form action="">
+    <form action="./sql.php" method="POST">
+        <h2 class="internos">Aspectos Internos</h2>
         <div class="container-perguntas">
-            <!-- <p class="lateral-1">Aspectos Internos</p>
-            <p class="lateral-2">Aspectos Externos</p> -->
 
             <div></div>
             <div class="titulo">
@@ -58,6 +57,7 @@ if (!empty($data)) {
             </div>
             <div></div>
         </div>
+        <h2 class="externos">Aspectos Externos</h2>
 
         <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
     </form>
