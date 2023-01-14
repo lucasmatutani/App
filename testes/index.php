@@ -85,6 +85,10 @@ $usuario_id = $_SESSION['usuarioId'];
                 <a href="http://focustradeapp.com.br/matriz-de-predominio/" class="teste">Matriz de Predomínio</a>
             <?php endif; ?>
 
+            <?php if ($_SESSION['matriz_risco'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-matriz-de-risco/" class="teste">Matriz de Risco</a>
+            <?php endif; ?>
+
             <?php if ($_SESSION['testes_jpb'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=cenario" class="teste">Cenário</a>
                 <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=fechamento" class="teste">Fechamento e Compromisso</a>
