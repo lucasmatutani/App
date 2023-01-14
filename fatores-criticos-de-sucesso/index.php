@@ -39,7 +39,7 @@ if (!empty($data)) {
         <div class="container-txt">
             <div class="txt">
                 <textarea name="txt1" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
-                <input type="number" name="inpu1" id="input1" value="<?php if (!empty($linha)) echo $linha['input1']; ?>" onkeypress="doNothing()">
+                <input type="number" name="input1" id="input1" value="<?php if (!empty($linha)) echo $linha['input1']; ?>" onkeypress="doNothing()">
                 <progress id=" myProgress1" value="" max="100">
                 </progress>%
             </div>
@@ -117,7 +117,7 @@ if (!empty($data)) {
                 <textarea name="txt18" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt18']; ?></textarea>
             </div>
             <div>
-                <textarea name="txt18" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt19']; ?></textarea>
+                <textarea name="txt19" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt19']; ?></textarea>
             </div>
             <div>
                 <textarea name="txt20" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['txt20']; ?></textarea>

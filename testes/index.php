@@ -78,7 +78,7 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if ($_SESSION['analise_swot'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="http://focustradeapp.com.br/analise_swot/" class="teste">Análise Swot</a>
+                <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['matriz_predominio'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
