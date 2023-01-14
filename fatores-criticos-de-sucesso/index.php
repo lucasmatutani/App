@@ -39,35 +39,35 @@ if (!empty($data)) {
         <div class="container-txt">
             <div class="txt">
                 <textarea name="txt1" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
-                <input type="number" name="inpu1" id="input1" value="<?php if (!empty($linha)) echo $linha['input1']; ?>">
+                <input type="number" name="inpu1" id="input1" value="<?php if (!empty($linha)) echo $linha['input1']; ?>" onkeypress="doNothing()">
                 <progress id=" myProgress1" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
                 <textarea name="txt2" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
-                <input type="number" name="input2" id="input2" value="<?php if (!empty($linha)) echo $linha['input2']; ?>">
+                <input type="number" name="input2" id="input2" value="<?php if (!empty($linha)) echo $linha['input2']; ?>" onkeypress="doNothing()">
                 <progress id=" myProgress2" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
                 <textarea name="txt3" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
-                <input type="number" name="input3" id="input3" value="<?php if (!empty($linha)) echo $linha['input3']; ?>">
+                <input type="number" name="input3" id="input3" value="<?php if (!empty($linha)) echo $linha['input3']; ?>" onkeypress="doNothing()">
                 <progress id=" myProgress3" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
                 <textarea name="txt4" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
-                <input type="number" name="input4" id="input4" value="<?php if (!empty($linha)) echo $linha['input4']; ?>">
+                <input type="number" name="input4" id="input4" value="<?php if (!empty($linha)) echo $linha['input4']; ?>" onkeypress="doNothing()">
                 <progress id=" myProgress4" value="" max="100">
                 </progress>%
             </div>
 
             <div class="txt">
                 <textarea name="txt5" id="" cols="20" rows="3"><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
-                <input type="number" name="input5" id="input5" value="<?php if (!empty($linha)) echo $linha['input5']; ?>">
+                <input type="number" name="input5" id="input5" value="<?php if (!empty($linha)) echo $linha['input5']; ?>" onkeypress="doNothing()">
                 <progress id=" myProgress5" value="" max="100">
                 </progress>%
             </div>
@@ -132,6 +132,23 @@ if (!empty($data)) {
 </body>
 
 <script>
+    function doNothing() {
+        var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+        if (keyCode == 13) {
+
+
+            if (!e) var e = window.event;
+
+            e.cancelBubble = true;
+            e.returnValue = false;
+
+            if (e.stopPropagation) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+        }
+    }
+
     document.getElementById("input1").addEventListener("change", myFunction1);
 
     function myFunction1() {
