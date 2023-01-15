@@ -43,7 +43,10 @@ switch ($_GET['pag']) {
 
         <form class="pergunta" method="POST" action="./fechamento.php">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
-            <input type="hidden" name="usuario_id" value="<?php echo $email ?>">
+            
+
+            <input type="hidden" name="email" value="<?php echo $email ?>">
+
 
             <?php if ($conn) :
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 2";
@@ -68,7 +71,9 @@ switch ($_GET['pag']) {
 
         <form class="pergunta" method="POST" action="./implicacao.php">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
-            <input type="hidden" name="usuario_id" value="<?php echo $email ?>">
+
+            <input type="hidden" name="email" value="<?php echo $email ?>">
+
 
             <?php if ($conn) :
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 3";
@@ -93,7 +98,10 @@ switch ($_GET['pag']) {
 
         <form class="pergunta" method="POST" action="./objetivo.php">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
-            <input type="hidden" name="usuario_id" value="<?php echo $email ?>">
+
+            
+
+            <input type="hidden" name="email" value="<?php echo $email ?>">
 
             <?php if ($conn) :
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 4";
@@ -118,7 +126,11 @@ switch ($_GET['pag']) {
 
         <form class="pergunta" method="POST" action="./plano-tatico.php">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
-            <input type="hidden" name="usuario_id" value="<?php echo $email ?>">
+
+            
+
+            <input type="hidden" name="email" value="<?php echo $email ?>">
+
 
             <?php if ($conn) :
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 5";
@@ -143,7 +155,10 @@ switch ($_GET['pag']) {
 
         <form class="pergunta" method="POST" action="./problematizacao.php">
             <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
-            <input type="hidden" name="usuario_id" value="<?php echo $email ?>">
+
+            
+
+            <input type="hidden" name="email" value="<?php echo $email ?>">
 
             <?php if ($conn) :
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 6";

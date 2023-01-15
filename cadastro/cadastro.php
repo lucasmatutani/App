@@ -16,8 +16,13 @@ $petscan = $_REQUEST['petscan'];
 $triade = $_REQUEST['triade'];
 $plano_de_acao_5w2h = $_REQUEST['plano_de_acao_5w2h'];
 $diario_de_bordo = $_REQUEST['diario_de_bordo'];
+$fatores_criticos = $_REQUEST['fatores_criticos'];
+$analise_swot = $_REQUEST['analise_swot'];
+$matriz_predominio = $_REQUEST['matriz_predominio'];
+$testes_jpb = $_REQUEST['testes_jpb'];
+$matriz_risco = $_REQUEST['matriz_risco'];
 
-$sql = "INSERT INTO usuarios (nome, email, empresa, senha, grupo, representacional, comportamental, conquiste_clientes, aida, spin, metodo_cesar, petscan, triade, plano_de_acao, diario_de_bordo) VALUES ('$nome', '$email', '$empresa', '$senha',  '$grupo', '$representacional', '$comportamental', '$conquiste_clientes', '$aida', '$spin', '$metodo_cesar', '$petscan', '$triade', '$plano_de_acao_5w2h', '$diario_de_bordo')";
+$sql = "INSERT INTO usuarios (nome, email, empresa, senha, grupo, representacional, comportamental, conquiste_clientes, aida, spin, metodo_cesar, petscan, triade, plano_de_acao, diario_de_bordo, fatores_criticos, analise_swot, matriz_predominio, testes_jpb, matriz_risco) VALUES ('$nome', '$email', '$empresa', '$senha',  '$grupo', '$representacional', '$comportamental', '$conquiste_clientes', '$aida', '$spin', '$metodo_cesar', '$petscan', '$triade', '$plano_de_acao_5w2h', '$diario_de_bordo', '$fatores_criticos', '$analise_swot', '$matriz_predominio', '$testes_jpb', '$matriz_risco')";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");

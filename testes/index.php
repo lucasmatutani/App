@@ -73,6 +73,31 @@ $usuario_id = $_SESSION['usuarioId'];
                 <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste">Tríade do Tempo</a>
             <?php endif; ?>
 
+            <?php if ($_SESSION['fatores_criticos'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/fatores-criticos-de-sucesso/" class="teste">Fatores Críticos de Sucesso</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['analise_swot'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['matriz_predominio'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/matriz-de-predominio/" class="teste">Matriz de Predomínio</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['matriz_risco'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-matriz-de-risco/" class="teste">Matriz de Risco</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['testes_jpb'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=cenario" class="teste">Cenário</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=fechamento" class="teste">Fechamento e Compromisso</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=implicacao" class="teste">Implicação</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=objetivo" class="teste">Objetivo</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=plano-tatico" class="teste">Plano Tático</a>
+                <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=problematizacao" class="teste">Problematização e Oportunidades</a>
+            <?php endif; ?>
+
         </div>
 
         <div id="card-respostas" class="card-respostas" style="display: none;">
@@ -114,6 +139,15 @@ $usuario_id = $_SESSION['usuarioId'];
 
             $sql_teste_spin = $conn->query("SELECT * FROM teste_spin WHERE  teste_spin.usuario_id = $usuario_id");
             $teste_spin = mysqli_fetch_assoc($sql_teste_spin);
+
+            $sql_fatores_criticos = $conn->query("SELECT * FROM fatores_criticos_de_sucesso WHERE  fatores_criticos_de_sucesso.usuario_id = $usuario_id");
+            $fatores_criticos = mysqli_fetch_assoc($sql_fatores_criticos);
+
+            $sql_analise_swot = $conn->query("SELECT * FROM analise_swot WHERE  analise_swot.usuario_id = $usuario_id");
+            $analise_swot = mysqli_fetch_assoc($sql_analise_swot);
+
+            $sql_matriz_predominio = $conn->query("SELECT * FROM teste_matriz_de_predominio WHERE  teste_matriz_de_predominio.usuario_id = $usuario_id");
+            $matriz_predominio = mysqli_fetch_assoc($sql_matriz_predominio);
             ?>
             <?php if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
@@ -199,6 +233,18 @@ $usuario_id = $_SESSION['usuarioId'];
                         </tr>
                     </table>
                 </div>
+            <?php endif; ?>
+
+            <?php if (!empty($fatores_criticos)) : ?>
+                <a href="http://focustradeapp.com.br/fatores-criticos-de-sucesso/" class="teste">Fatores Críticos de Sucesso</a>
+            <?php endif; ?>
+
+            <?php if (!empty($analise_swot)) : ?>
+                <a href="http://focustradeapp.com.br/analise_swot/" class="teste">Análise Swot</a>
+            <?php endif; ?>
+
+            <?php if (!empty($matriz_predominio)) : ?>
+                <a href="http://focustradeapp.com.br/matriz-de-predominio/" class="teste">Matriz de Predomínio</a>
             <?php endif; ?>
         </div>
     </div>
