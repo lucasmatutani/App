@@ -156,7 +156,7 @@ if (!empty($data)) {
 
     function myFunction1() {
         input1 = document.getElementById("input1").value;
-        document.getElementById("myProgress1").value = input1;
+        document.getElementById("myProgress1").value = 20;
     }
 
     document.getElementById("input2").addEventListener("change", myFunction2);
