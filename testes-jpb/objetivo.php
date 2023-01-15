@@ -1,4 +1,6 @@
 <?php
+
+
 include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
@@ -25,3 +27,4 @@ if (!empty($email)) {
 }
 $mail->send();
 mysqli_close($conn);
+
