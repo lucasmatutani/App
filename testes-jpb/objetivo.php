@@ -23,8 +23,7 @@ if (mysqli_query($conn, $sql)) {
 }
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "Suas repostas sobre o cenário: <br>" . $perg1 . "<br>" . $perg2;
+    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais seriam os seus objetivos quantitativos (Vendas em valor e unidades) para o cliente escolhido?</b><br>" . $perg1 . "<br><b>Quais seriam os seus objetivos qualitativos?</b><br>" . $perg2;
 }
 $mail->send();
 mysqli_close($conn);
-
