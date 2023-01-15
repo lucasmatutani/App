@@ -1,6 +1,8 @@
 <?php
 include_once "../includes/connection.php";
 
+$usuario_id = $_REQUEST['usuario_id'];
+
 $txt1 = $_REQUEST['txt1'];
 $txt2 = $_REQUEST['txt2'];
 $txt3 = $_REQUEST['txt3'];

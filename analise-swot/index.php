@@ -28,6 +28,7 @@ if (!empty($data)) {
     </div>
 
     <form action="./sql.php" method="POST">
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <h2 class="internos">Aspectos Internos</h2>
         <div class="container-perguntas">
 
