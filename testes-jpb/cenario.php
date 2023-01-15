@@ -6,6 +6,7 @@ $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
 $perg1 = $_REQUEST['perg1'];
 $perg2 = $_REQUEST['perg2'];
+$perg3 = $_REQUEST['perg3'];
 
 $data = $conn->query('SELECT * FROM resposta_cenario');
 $linha = mysqli_fetch_assoc($data);
@@ -21,7 +22,7 @@ if (mysqli_query($conn, $sql)) {
 }
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "Suas repostas sobre o cenário: <br>" . $perg1 . "<br>" . $perg2;
+    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais informações (auditorias) você colocaria na apresentação que poderiam ser uteis no atingimento dos objetivos definidos do JBP?</b><br>" . $perg1 . "<br><b>Quais informações de cenário (mercado, concorrência, lançamentos, inovações, tendencias, etc)  você colocaria no cenário do JBP?</b><br>" . $perg2 . "<br><b>Quais informações do negócio da Torrent você colocaria no seu JBP?</b><br>" . $perg3;
 }
 $mail->send();
 mysqli_close($conn);
