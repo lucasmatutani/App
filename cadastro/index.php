@@ -179,6 +179,17 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                             <input type="radio" name="testes_jpb" value="0">
                         </div>
                     </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Matriz de Risco</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="matriz_risco" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="matriz_risco" value="0">
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">

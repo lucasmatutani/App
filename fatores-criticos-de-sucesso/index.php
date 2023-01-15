@@ -34,7 +34,10 @@ if (!empty($data)) {
     </div>
 
 
-    <form action="./sql.php">
+    <form action="./sql.php" method="POST">
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
+
         <h1 class="titulo">FCS</h1>
         <div class="container-txt">
             <div class="txt">
