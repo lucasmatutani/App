@@ -152,35 +152,35 @@ if (!empty($data)) {
         }
     }
 
-    document.getElementById("input1").addEventListener("change", myFunction1);
+    document.getElementById("input1").addEventListener("input", myFunction1);
 
     function myFunction1() {
         input1 = document.getElementById("input1").value;
-        document.getElementById("myProgress1").value = 20;
+        document.getElementById("myProgress1").value = input1;
     }
 
-    document.getElementById("input2").addEventListener("change", myFunction2);
+    document.getElementById("input2").addEventListener("input", myFunction2);
 
     function myFunction2() {
         input2 = document.getElementById("input2").value;
         document.getElementById("myProgress2").value = input2;
     }
 
-    document.getElementById("input3").addEventListener("change", myFunction3);
+    document.getElementById("input3").addEventListener("input", myFunction3);
 
     function myFunction3() {
         input3 = document.getElementById("input3").value;
         document.getElementById("myProgress3").value = input3;
     }
 
-    document.getElementById("input4").addEventListener("change", myFunction4);
+    document.getElementById("input4").addEventListener("input", myFunction4);
 
     function myFunction4() {
         input4 = document.getElementById("input4").value;
         document.getElementById("myProgress4").value = input4;
     }
 
-    document.getElementById("input5").addEventListener("change", myFunction5);
+    document.getElementById("input5").addEventListener("input", myFunction5);
 
     function myFunction5() {
         input5 = document.getElementById("input5").value;
