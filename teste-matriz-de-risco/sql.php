@@ -28,7 +28,7 @@ $linha = mysqli_fetch_assoc($data);
 if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "UPDATE teste_matriz_de_risco set usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10',  WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO teste_matriz_de_risco set usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10', ";
+    $sql = "INSERT INTO teste_matriz_de_risco set usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
