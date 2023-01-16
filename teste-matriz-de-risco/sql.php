@@ -1,6 +1,9 @@
 <?php
 include_once "../includes/connection.php";
 
+$usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
+$nome = $_REQUEST['nome'];
 
 $input1 = $_REQUEST['input1'];
 $input2 = $_REQUEST['input2'];
@@ -23,12 +26,12 @@ $txt8 = $_REQUEST['txt8'];
 $txt9 = $_REQUEST['txt9'];
 $txt10 = $_REQUEST['txt10'];
 
-$data = $conn->query('SELECT * FROM teste_matriz_de_risco');
+$data = $conn->query("SELECT * FROM teste_matriz_de_risco WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
-if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
-    $sql = "UPDATE teste_matriz_de_risco set usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10',  WHERE usuario_id= $usuario_id";
+if (!empty($linha)) {
+    $sql = "UPDATE teste_matriz_de_risco set nome='$nome', usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10',  WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO teste_matriz_de_risco set usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10'";
+    $sql = "INSERT INTO teste_matriz_de_risco set nome='$nome', usuario_id='$usuario_id', input1='$input1', input2='$input2', input3='$input3', input4='$input4', input5='$input5', input6='$input6', input7='$input7', input8='$input8', input9='$input9',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
