@@ -7,7 +7,7 @@ $email = utf8_decode($_REQUEST['email']);
 $perg1 = utf8_decode($_REQUEST['perg1']);
 $perg2 = utf8_decode($_REQUEST['perg2']);
 
-$data = $conn->query('SELECT * FROM resposta_implicacao');
+$data = $conn->query("SELECT * FROM resposta_implicacao WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "UPDATE resposta_implicacao set email='$email', perg1='$perg1', perg2='$perg2' WHERE usuario_id = $usuario_id";

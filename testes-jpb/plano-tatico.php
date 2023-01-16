@@ -7,9 +7,9 @@ $email = utf8_decode($_REQUEST['email']);
 $perg1 = utf8_decode($_REQUEST['perg1']);
 $perg2 = utf8_decode($_REQUEST['perg2']);
 
-$data = $conn->query('SELECT * FROM resposta_plano_tatico');
+$data = $conn->query("SELECT * FROM resposta_plano_tatico WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
-if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
+if (!empty($linha)) {
     $sql = "UPDATE resposta_plano_tatico set email='$email', perg1='$perg1', perg2='$perg2' WHERE usuario_id = $usuario_id";
 } else {
     $sql = "INSERT INTO resposta_plano_tatico set email='$email', perg1='$perg1', perg2='$perg2', usuario_id = $usuario_id";

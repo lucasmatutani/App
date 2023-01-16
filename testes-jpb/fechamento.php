@@ -7,9 +7,9 @@ $email = utf8_decode($_REQUEST['email']);
 $perg1 = utf8_decode($_REQUEST['perg1']);
 $perg2 = utf8_decode($_REQUEST['perg2']);
 
-$data = $conn->query('SELECT * FROM resposta_fechamento');
+$data = $conn->query("SELECT * FROM resposta_fechamento WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
-if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
+if (!empty($linha)) {
     $sql = "UPDATE resposta_fechamento set email='$email', perg1='$perg1', perg2='$perg2' WHERE usuario_id = $usuario_id";
 } else {
     $sql = "INSERT INTO resposta_fechamento set email='$email', perg1='$perg1', perg2='$perg2', usuario_id = $usuario_id";
