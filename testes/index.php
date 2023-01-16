@@ -243,7 +243,7 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (!empty($matriz_risco)) : ?>
-                <a href="http://focustradeapp.com.br/teste-matriz-de-risco/" class="teste">Matriz de Predomínio</a>
+                <a href="http://focustradeapp.com.br/teste-matriz-de-risco/" class="teste">Matriz de Risco</a>
             <?php endif; ?>
         </div>
     </div>
