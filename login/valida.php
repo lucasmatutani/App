@@ -33,7 +33,7 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['analise_swot'] = $resultado['analise_swot'];
         $_SESSION['matriz_predominio'] = $resultado['matriz_predominio'];
         $_SESSION['testes_jpb'] = $resultado['testes_jpb'];
-        $_SESSION['matriz_risco'] = $resultado['matriz_de_risco'];
+        $_SESSION['matriz_risco'] = $resultado['matriz_risco'];
 
         if ($resultado['email'] == "admin") {
             header("Location: ../admin");
