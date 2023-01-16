@@ -2,6 +2,7 @@
 include_once "../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
+$nome = $_SESSION['usuarioNome'];
 
 $data = $conn->query("SELECT * FROM analise_swot WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -29,6 +30,8 @@ if (!empty($data)) {
 
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="nome" value="<?php echo $nome ?>">
+
         <h2 class="internos">Aspectos Internos</h2>
         <div class="container-perguntas">
 

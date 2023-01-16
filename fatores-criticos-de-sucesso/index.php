@@ -6,6 +6,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
 }
 $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
+$nome = $_SESSION['usuarioNome'];
 
 $data = $conn->query("SELECT * FROM fatores_criticos_de_sucesso WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -37,6 +38,7 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
+        <input type="hidden" name="nome" value="<?php echo $nome ?>">
 
         <div class="container-principal">
             <div class="container-txt">
