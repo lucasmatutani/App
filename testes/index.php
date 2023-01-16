@@ -146,10 +146,9 @@ $usuario_id = $_SESSION['usuarioId'];
             $sql_analise_swot = $conn->query("SELECT * FROM analise_swot WHERE  analise_swot.usuario_id = $usuario_id");
             $analise_swot = mysqli_fetch_assoc($sql_analise_swot);
 
-            $sql_matriz_predominio = $conn->query("SELECT * FROM teste_matriz_de_predominio WHERE  teste_matriz_de_predominio.usuario_id = $usuario_id");
-            $matriz_predominio = mysqli_fetch_assoc($sql_matriz_predominio);
-            ?>
-            <?php if (!empty($teste_aida)) : ?>
+            // $sql_matriz_predominio = $conn->query("SELECT * FROM teste_matriz_de_predominio WHERE  teste_matriz_de_predominio.usuario_id = $usuario_id");
+            // $matriz_predominio = mysqli_fetch_assoc($sql_matriz_predominio);
+            if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
             <?php endif; ?>
 
@@ -240,7 +239,7 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (!empty($analise_swot)) : ?>
-                <a href="http://focustradeapp.com.br/analise_swot/" class="teste">Análise Swot</a>
+                <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
             <?php endif; ?>
 
             <?php if (!empty($matriz_predominio)) : ?>

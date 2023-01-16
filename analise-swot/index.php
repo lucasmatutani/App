@@ -2,6 +2,7 @@
 include_once "../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
+$nome = $_SESSION['usuarioNome'];
 
 $data = $conn->query("SELECT * FROM analise_swot WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -29,6 +30,8 @@ if (!empty($data)) {
 
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="nome" value="<?php echo $nome ?>">
+
         <h2 class="internos">Aspectos Internos</h2>
         <div class="container-perguntas">
 
@@ -36,25 +39,25 @@ if (!empty($data)) {
             <div class="titulo">
                 <h2>Contribui para o crescimento <br> da empresa:</h2>
                 <h3>S: Pontos fortes?</h3>
-                <textarea name=" txt1" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+                <textarea name=" txt1" id="" cols="70" rows="20"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
             </div>
 
             <div class="titulo">
                 <h2>Dificulta o crescimento da <br>empresa:</h2>
                 <h3>W: Pontos fracos?</h3>
-                <textarea name="txt2" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+                <textarea name="txt2" id="" cols="70" rows="20"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
             </div>
 
             <div></div>
             <div></div>
             <div class="titulo">
                 <h3>O: Oportunidades</h3>
-                <textarea name="txt3" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+                <textarea name="txt3" id="" cols="70" rows="20"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
             </div>
 
             <div class="titulo">
                 <h3>T: Ameaças</h3>
-                <textarea name="txt4" id="" cols="50" rows="20"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+                <textarea name="txt4" id="" cols="70" rows="20"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
             </div>
             <div></div>
         </div>

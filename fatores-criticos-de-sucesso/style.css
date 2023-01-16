@@ -13,25 +13,47 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo {
   position: relative;
-  left: 16%;
+  left: 12%;
 }
 
 .container-txt {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .txt {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+}
+
+#input1,
+#input2,
+#input3,
+#input4,
+#input5 {
+  width: 50px;
+}
+
+.container-titulos {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 2fr;
 }
 
 .container-grid {
