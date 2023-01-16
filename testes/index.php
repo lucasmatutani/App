@@ -240,7 +240,7 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (!empty($analise_swot)) : ?>
-                <a href="http://focustradeapp.com.br/analise_swot/" class="teste">Análise Swot</a>
+                <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
             <?php endif; ?>
 
             <?php if (!empty($matriz_predominio)) : ?>
