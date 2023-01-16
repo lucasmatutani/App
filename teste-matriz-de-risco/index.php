@@ -50,18 +50,18 @@ if (!empty($data)) {
                     <h3>Risco Médio</h3>
                     <input style="border: 3px solid yellow" type=" number" name="input1" id="" value="<?php if (!empty($linha)) echo $linha['input1']; ?>">
                     <h3>Risco Baixo</h3>
-                    <input type="number" name="input5" id="" value=" <?php if (!empty($linha)) echo $linha['input5']; ?>">
+                    <input type="number" name="input5" id="" value="<?php if (!empty($linha)) echo $linha['input5']; ?>">
                     <h3>Risco Mínimo</h3>
-                    <input type="number" name="input7" id="" value=" <?php if (!empty($linha)) echo $linha['input7']; ?>">
+                    <input type="number" name="input7" id="" value="<?php if (!empty($linha)) echo $linha['input7']; ?>">
                     <h3>Baixa</h3>
                 </div>
                 <div class="inicio">
                     <h3>Risco Alto</h3>
                     <input style="border: 3px solid pink" type="number" name="input2" id="" value="<?php if (!empty($linha)) echo $linha['input2']; ?>">
                     <h3>Risco Médio</h3>
-                    <input style="border: 3px solid yellow" type="number" name="input6" id="" value=" <?php if (!empty($linha)) echo $linha['input6']; ?>">
+                    <input style="border: 3px solid yellow" type="number" name="input6" id="" value="<?php if (!empty($linha)) echo $linha['input6']; ?>">
                     <h3>Risco Baixo</h3>
-                    <input type="number" name="input8" id="" value=" <?php if (!empty($linha)) echo $linha['input8']; ?>">
+                    <input type="number" name="input8" id="" value="<?php if (!empty($linha)) echo $linha['input8']; ?>">
                     <h3>Médio</h3>
                     <h2 class="impactos">Impacto</h2>
 
@@ -70,9 +70,9 @@ if (!empty($data)) {
                     <h3>Risco Máximo</h3>
                     <input style="border: 3px solid red" type="number" name="input3" id="" value="<?php if (!empty($linha)) echo $linha['input3']; ?>">
                     <h3>Risco Alto</h3>
-                    <input style="border: 3px solid pink" type="number" name="input4" id="" value=" <?php if (!empty($linha)) echo $linha['input4']; ?>">
+                    <input style="border: 3px solid pink" type="number" name="input4" id="" value="<?php if (!empty($linha)) echo $linha['input4']; ?>">
                     <h3>Risco Médio</h3>
-                    <input style="border: 3px solid yellow" type="number" name="input9" id="" value=" <?php if (!empty($linha)) echo $linha['input9']; ?>">
+                    <input style="border: 3px solid yellow" type="number" name="input9" id="" value="<?php if (!empty($linha)) echo $linha['input9']; ?>">
                     <h3>Alto</h3>
                 </div>
             </div>
