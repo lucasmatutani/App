@@ -21,7 +21,7 @@ if (mysqli_query($conn, $sql)) {
 }
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "Suas repostas sobre o cenário: <br><b>Em relação aos problemas citados anteriormente, o que acontece se nada for feito a respeito? Quais são os impactos? Quem será mais prejudicado e de que forma?</b><br>" . $perg1 . "<br><b>Sobre as oportunidades citadas, quais são as consequências de não aproveita-las?</b><br>" . $perg2;
+    $mail->Body = "Suas repostas sobre o cenário: <br><b>Em relação aos problemas citados anteriormente, o que acontece se nada for feito a respeito? Quais são os impactos? Quem será mais prejudicado e de que forma?</b><br>" . utf8_encode($perg1) . "<br><b>Sobre as oportunidades citadas, quais são as consequências de não aproveita-las?</b><br>" . utf8_encode($perg2);
 }
 $mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();

@@ -21,7 +21,7 @@ if (mysqli_query($conn, $sql)) {
 }
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais ações de promoção de marca, lançamento de produtos ou outros formatos de geração de demanda você considera importante comunicar no seu plano?</b><br>" . $perg1 . "<br><b>O que você precisa para construir o calendário promocional a ser implementado neste cliente?</b><br>" . $perg2;
+    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais ações de promoção de marca, lançamento de produtos ou outros formatos de geração de demanda você considera importante comunicar no seu plano?</b><br>" . utf8_encode($perg1) . "<br><b>O que você precisa para construir o calendário promocional a ser implementado neste cliente?</b><br>" . utf8_encode($perg2);
 }
 $mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();

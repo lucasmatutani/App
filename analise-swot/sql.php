@@ -4,10 +4,10 @@ include_once "../includes/connection.php";
 $usuario_id = $_REQUEST['usuario_id'];
 $nome = $_REQUEST['nome'];
 
-$txt1 = $_REQUEST['txt1'];
-$txt2 = $_REQUEST['txt2'];
-$txt3 = $_REQUEST['txt3'];
-$txt4 = $_REQUEST['txt4'];
+$txt1 = utf8_decode($_REQUEST['txt1']);
+$txt2 = utf8_decode($_REQUEST['txt2']);
+$txt3 = utf8_decode($_REQUEST['txt3']);
+$txt4 = utf8_decode($_REQUEST['txt4']);
 
 
 $data = $conn->query("SELECT * FROM analise_swot WHERE usuario_id = $usuario_id");

@@ -22,7 +22,7 @@ if (mysqli_query($conn, $sql)) {
 }
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais situações de problema você traria a luz durante a sua apresentação?</b><br>" . $perg1 . "<br><b>Quais são as oportunidades potenciais conectadas a estes problemas?</b><br>" . $perg2 . "<br><b>Quais outras oportunidades você enxerga hoje para este cliente?</b><br>" . $perg3;
+    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais situações de problema você traria a luz durante a sua apresentação?</b><br>" . utf8_encode($perg1) . "<br><b>Quais são as oportunidades potenciais conectadas a estes problemas?</b><br>" . utf8_encode($perg2) . "<br><b>Quais outras oportunidades você enxerga hoje para este cliente?</b><br>" . utf8_encode($perg3);
 }
 $mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();
