@@ -22,7 +22,7 @@ if (mysqli_query($conn, $sql)) {
 }
 if (!empty($email)) {
     $mail->addAddress($email);
-    $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais informações (auditorias) você colocaria na apresentação que poderiam ser uteis no atingimento dos objetivos definidos do JBP?</b><br>" . $perg1 . "<br><b>Quais informações de cenário (mercado, concorrência, lançamentos, inovações, tendencias, etc)  você colocaria no cenário do JBP?</b><br>" . $perg2 . "<br><b>Quais informações do negócio da Torrent você colocaria no seu JBP?</b><br>" . $perg3;
+    utf8_encode($mail->Body = "Suas repostas sobre o cenário: <br><b>Quais informações (auditorias) você colocaria na apresentação que poderiam ser uteis no atingimento dos objetivos definidos do JBP?</b><br>" . $perg1 . "<br><b>Quais informações de cenário (mercado, concorrência, lançamentos, inovações, tendencias, etc)  você colocaria no cenário do JBP?</b><br>" . $perg2 . "<br><b>Quais informações do negócio da Torrent você colocaria no seu JBP?</b><br>" . $perg3);
 }
 $mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();
