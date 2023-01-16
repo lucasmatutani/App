@@ -3,9 +3,9 @@ include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
-$email = $_REQUEST['email'];
-$perg1 = $_REQUEST['perg1'];
-$perg2 = $_REQUEST['perg2'];
+$email = utf8_decode($_REQUEST['email']);
+$perg1 = utf8_decode($_REQUEST['perg1']);
+$perg2 = utf8_decode($_REQUEST['perg2']);
 
 $data = $conn->query('SELECT * FROM resposta_implicacao');
 $linha = mysqli_fetch_assoc($data);
@@ -23,5 +23,6 @@ if (!empty($email)) {
     $mail->addAddress($email);
     $mail->Body = "Suas repostas sobre o cenário: <br><b>Em relação aos problemas citados anteriormente, o que acontece se nada for feito a respeito? Quais são os impactos? Quem será mais prejudicado e de que forma?</b><br>" . $perg1 . "<br><b>Sobre as oportunidades citadas, quais são as consequências de não aproveita-las?</b><br>" . $perg2;
 }
+$mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();
 mysqli_close($conn);

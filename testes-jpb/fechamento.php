@@ -3,9 +3,9 @@ include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
-$email = $_REQUEST['email'];
-$perg1 = $_REQUEST['perg1'];
-$perg2 = $_REQUEST['perg2'];
+$email = utf8_decode($_REQUEST['email']);
+$perg1 = utf8_decode($_REQUEST['perg1']);
+$perg2 = utf8_decode($_REQUEST['perg2']);
 
 $data = $conn->query('SELECT * FROM resposta_fechamento');
 $linha = mysqli_fetch_assoc($data);
@@ -23,5 +23,6 @@ if (!empty($email)) {
     $mail->addAddress($email);
     $mail->Body = "Suas repostas sobre o cenário: <br><b>Com base no conteúdo trabalhado até o momento, como faria o fechamento na reunião de JBP?</b><br>" . $perg1 . "<br><b>Quais seriam os parâmetros que garantiriam o compromisso do cliente com o fechamento realizado?</b><br>" . $perg2;
 }
+$mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();
 mysqli_close($conn);

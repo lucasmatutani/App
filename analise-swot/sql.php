@@ -18,7 +18,7 @@ if (!empty($linha)) {
     $sql = "INSERT INTO analise_swot set usuario_id='$usuario_id', nome='$nome', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4'";
 }
 if (mysqli_query($conn, $sql)) {
-    echo "RESPOSTA GRAVADA COM SUCESSO!";
+    header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

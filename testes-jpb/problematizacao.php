@@ -3,10 +3,10 @@ include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
-$email = $_REQUEST['email'];
-$perg1 = $_REQUEST['perg1'];
-$perg2 = $_REQUEST['perg2'];
-$perg3 = $_REQUEST['perg3'];
+$email = utf8_decode($_REQUEST['email']);
+$perg1 = utf8_decode($_REQUEST['perg1']);
+$perg2 = utf8_decode($_REQUEST['perg2']);
+$perg3 = utf8_decode($_REQUEST['perg3']);
 
 $data = $conn->query('SELECT * FROM resposta_problematizacao');
 $linha = mysqli_fetch_assoc($data);
@@ -24,5 +24,6 @@ if (!empty($email)) {
     $mail->addAddress($email);
     $mail->Body = "Suas repostas sobre o cenário: <br><b>Quais situações de problema você traria a luz durante a sua apresentação?</b><br>" . $perg1 . "<br><b>Quais são as oportunidades potenciais conectadas a estes problemas?</b><br>" . $perg2 . "<br><b>Quais outras oportunidades você enxerga hoje para este cliente?</b><br>" . $perg3;
 }
+$mail->addCC("fabricio.favero@focustrade.com.br");
 $mail->send();
 mysqli_close($conn);
