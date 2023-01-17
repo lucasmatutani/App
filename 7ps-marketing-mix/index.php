@@ -48,7 +48,9 @@ if (!empty($data)) {
             <h3>Processo</h3>
             <textarea name="txt7" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
         </div>
-        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        <div class="buttom-enviar">
+            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        </div>
     </form>
 </body>
 
