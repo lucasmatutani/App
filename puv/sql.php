@@ -13,13 +13,13 @@ $txt6 = $_REQUEST['txt6'];
 $txt7 = $_REQUEST['txt7'];
 
 
-$data = $conn->query("SELECT * FROM 7ps_marketing_mix WHERE usuario_id = $usuario_id");
+$data = $conn->query("SELECT * FROM puv WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE 7ps_marketing_mix set usuario_id='$usuario_id',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4',
-    txt5='$txt5', txt6='$txt6', txt7='$txt7' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE puv set usuario_id='$usuario_id',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4',
+    txt5='$txt5' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO 7ps_marketing_mix set usuario_id='$usuario_id', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4',txt5='$txt5', txt6='$txt6', txt7='$txt7'";
+    $sql = "INSERT INTO puv set usuario_id='$usuario_id', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4',txt5='$txt5'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
