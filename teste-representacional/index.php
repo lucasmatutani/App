@@ -94,7 +94,7 @@ $email = $_SESSION['usuarioEmail'];
                 <input max="4" min="1" type="number" name="3" class="v">
             </label>
 
-            <label for=""> É facil para mim analisar as situações, do ponto de vista lógico.
+            <label for=""> É facil para eu analisar as situações, do ponto de vista lógico.
                 <input max="4" min="1" type="number" name="3" class="ad">
             </label>
 
@@ -139,7 +139,7 @@ $email = $_SESSION['usuarioEmail'];
 
         <div class="perguntas-6a10">
             <h3>Questão 6</h3>
-            <label for=""> Sou vulnerável a demonstraçoes de afeto.
+            <label for=""> Sou vulnerável a demonstrações de afeto.
                 <input max="4" min="1" type="number" name="6" class="c">
             </label>
 
@@ -147,7 +147,7 @@ $email = $_SESSION['usuarioEmail'];
                 <input max="4" min="1" type="number" name="6" class="a">
             </label>
 
-            <label for=""> O meu escritório e eníeitado com flores e quadros.
+            <label for=""> O meu escritório e enfeitado com flores e quadros.
                 <input max="4" min="1" type="number" name="6" class="v">
             </label>
 
@@ -156,7 +156,7 @@ $email = $_SESSION['usuarioEmail'];
             </label>
 
             <h3>Questão 7</h3>
-            <label for=""> Gosto de estudar lendo minhas anotaçôes em voz alta.
+            <label for=""> Gosto de estudar lendo minhas anotações em voz alta.
                 <input max="4" min="1" type="number" name="7" class="a">
             </label>
 
