@@ -1,0 +1,41 @@
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-principal {
+  display: grid;
+  grid-template-areas:
+    "sidenav item sidenav item sidenav"
+    "sidenav item sidenav item sidenav"
+    "footer footer footer footer footer";
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+}
+
+.sidenav {
+  width: 300px;
+  height: 700px;
+  grid-area: "sidenav";
+  grid-row: sidenav;
+}
+
+.item {
+  grid-area: "item";
+  width: 300px;
+  height: 300px;
+}
+
+.footer {
+  width: 600px;
+  height: 200px;
+  grid-area: "footer";
+  grid-column: footer;
+}

@@ -1,0 +1,87 @@
+.btn-voltar {
+  margin: 0 0 0 20px;
+  position: absolute;
+  z-index: 999;
+  color: #000;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-total {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-total input {
+  width: 30%;
+  height: 30%;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.papel {
+  display: flex;
+  flex-direction: column;
+}
+
+.representante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-totalmente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-parcialmente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-nao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.buttom-enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#botao-enviar {
+  background: #314b7c;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+#botao-enviar:hover {
+  background-color: green;
+  cursor: pointer;
+}
