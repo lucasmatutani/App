@@ -11,42 +11,38 @@
 .container-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.planejamento {
+.container-subtitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grupo {
   background-color: #ff8c00;
   padding: 20px 40px;
   border-radius: 500px;
   margin-bottom: 50px;
 }
 
-.container-subtitulo {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.rodada {
+  background-color: #314b7c;
+  padding: 10px 40px;
+  border-radius: 500px;
+  margin-bottom: 15px;
 }
-
-.container-inicio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.txt-inicio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.rep {
+  margin: 20px 0 20px 0;
 }
 
 .container-principal {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  align-items: center;
   text-align: center;
 }
 
