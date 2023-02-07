@@ -29,7 +29,7 @@
             <i class="icon icon-cube">Resposta Teste AIDA</i>
         </a>
 
-        <a href="#" class="btn-3d" title="Cadastro de usuário" target="_blank">
+        <a href="../teste-spin/index.php" class="btn-3d" title="Cadastro de usuário" target="_blank">
             <i class="icon icon-cube">Resposta Teste Spin</i>
         </a>
 
