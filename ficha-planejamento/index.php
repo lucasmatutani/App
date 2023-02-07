@@ -14,29 +14,30 @@
     <form action="">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
+            <h1 class="planejamento">Planejamento</h1>
         </div>
         <div class="container-subtitulo">
             <div class="container-inicio">
                 <h3>Representante</h3>
-                <h3>Grupo</h3>
+                <input placeholder="Insira seu Nome" type="text" name="" id="">
             </div>
             <div class="txt-inicio">
-                <textarea name="" id="" cols="15" rows="2"></textarea>
-                <textarea name="" id="" cols="15" rows="2"></textarea>
+                <h3>Grupo</h3>
+                <input type="text" name="" id="">
             </div>
         </div>
         <div class="container-principal">
             <div class="obj">
                 <h3>Objetivo Revisado</h3>
-                <textarea name="" id="" cols="60" rows="10"></textarea>
+                <textarea name="" id="" cols="90" rows="15"></textarea>
             </div>
             <div class="pauta">
                 <h3>Pauta da Reunião</h3>
-                <textarea name="" id="" cols="60" rows="10"></textarea>
+                <textarea name="" id="" cols="90" rows="15"></textarea>
             </div>
             <div class="proposta">
                 <h3>Proposta/Ações para atingir o objetivo</h3>
-                <textarea name="" id="" cols="60" rows="10"></textarea>
+                <textarea name="" id="" cols="90" rows="15"></textarea>
             </div>
         </div>
         <div class="buttom-enviar">
