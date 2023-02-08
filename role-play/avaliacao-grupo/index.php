@@ -1,5 +1,5 @@
 <?php
-include_once "../includes/connection.php";
+include_once "../../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
