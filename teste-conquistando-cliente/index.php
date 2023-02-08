@@ -9,9 +9,12 @@ if (!isset($_SESSION['usuarioEmail'])) {
 }
 
 $data = $conn->query("SELECT * FROM teste_conquiste_clientes WHERE usuario_id = $usuario_id");
+
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

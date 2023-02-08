@@ -12,22 +12,64 @@
 <body>
     <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <form action="./sql.php" method="POST">
-        <input type="hidden" name="grupo" value="1">
+        <input type="hidden" name="grupo" value="<?php echo $_GET['grupo'] ?>">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
         </div>
 
         <div class="container-subtitulo">
 
-            <h1 class="grupo">Grupo 1</h1>
-            <label class="rodada" for="">
+            <h1 class="grupo">Grupo <?php echo $_GET['grupo'] ?></h1>
+            <div class="container-select">
+
                 <h3>Rodada</h3>
-            </label>
-            <input type="number" name="rodada" id="" value="<?php if (!empty($linha)) echo $linha['rodada']; ?>">
-            <label class="rep" for="">
+                <select name="rodada" id="select-rodada">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
                 <h3>Representante</h3>
-            </label>
-            <input type="number" name="representante" id="" value="<?php if (!empty($linha)) echo $linha['representante']; ?>">
+                <select name="representante" id="select-rep">
+                    <option value="1.1">1.1</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.3">1.3</option>
+                    <option value="1.4">1.4</option>
+                    <option value="1.5">1.5</option>
+
+                    <option value="2.1">2.1</option>
+                    <option value="2.2">2.2</option>
+                    <option value="2.3">2.3</option>
+                    <option value="2.4">2.4</option>
+                    <option value="2.5">2.5</option>
+
+                    <option value="3.1">3.1</option>
+                    <option value="3.2">3.2</option>
+                    <option value="3.3">3.3</option>
+                    <option value="3.4">3.4</option>
+                    <option value="3.5">3.5</option>
+
+                    <option value="4.1">4.1</option>
+                    <option value="4.2">4.2</option>
+                    <option value="4.3">4.3</option>
+                    <option value="4.4">4.4</option>
+                    <option value="4.5">4.5</option>
+
+                    <option value="5.1">5.1</option>
+                    <option value="5.2">5.2</option>
+                    <option value="5.3">5.3</option>
+                    <option value="5.4">5.4</option>
+                    <option value="5.5">5.5</option>
+
+                    <option value="6.1">6.1</option>
+                    <option value="6.2">6.2</option>
+                    <option value="6.3">6.3</option>
+                    <option value="6.4">6.4</option>
+                    <option value="6.5">6.5</option>
+                </select>
+            </div>
         </div>
         <div class="container-principal">
 
@@ -52,13 +94,13 @@
                         <p>Contrução e planejamento</p>
                     </td>
                     <td>
-                        <input type="radio" name="cp1" id="" value="<?php if (!empty($linha)) echo $linha['cp1']; ?>">
+                        <input type="radio" name="cp" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="cp2" id="" value="<?php if (!empty($linha)) echo $linha['cp2']; ?>">
+                        <input type="radio" name="cp" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="cp3" id="" value="<?php if (!empty($linha)) echo $linha['cp3']; ?>">
+                        <input type="radio" name="cp" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -68,15 +110,14 @@
                         <p>Apresentação do planejamento</p>
                     </td>
                     <td>
-                        <input type="radio" name="ap1" id="" value="<?php if (!empty($linha)) echo $linha['ap1']; ?>">
+                        <input type="radio" name="ap" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="ap2" id="" value="<?php if (!empty($linha)) echo $linha['ap2']; ?>">
+                        <input type="radio" name="ap" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="ap3" id="" value="<?php if (!empty($linha)) echo $linha['ap3']; ?>">
+                        <input type="radio" name="ap" id="" value="3">
                     </td>
-                </tr>
                 </tr>
 
                 <tr>
@@ -87,13 +128,13 @@
                         <p>Rapport</p>
                     </td>
                     <td>
-                        <input type="radio" name="rap1" id="" value="<?php if (!empty($linha)) echo $linha['rap1']; ?>">
+                        <input type="radio" name="rap" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="rap2" id="" value="<?php if (!empty($linha)) echo $linha['rap2']; ?>">
+                        <input type="radio" name="rap" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="rap3" id="" value="<?php if (!empty($linha)) echo $linha['rap3']; ?>">
+                        <input type="radio" name="rap" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -102,13 +143,13 @@
                         <p>Abertura</p>
                     </td>
                     <td>
-                        <input type="radio" name="abe1" id="" value="<?php if (!empty($linha)) echo $linha['abe1']; ?>">
+                        <input type="radio" name="abe" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="abe2" id="" value="<?php if (!empty($linha)) echo $linha['abe2']; ?>">
+                        <input type="radio" name="abe" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="abe3" id="" value="<?php if (!empty($linha)) echo $linha['abe3']; ?>">
+                        <input type="radio" name="abe" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -117,13 +158,13 @@
                         <p>Apresentação e Desenvolvimento</p>
                     </td>
                     <td>
-                        <input type="radio" name="ad1" id="" value="<?php if (!empty($linha)) echo $linha['ad1']; ?>">
+                        <input type="radio" name="ad" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="ad2" id="" value="<?php if (!empty($linha)) echo $linha['ad2']; ?>">
+                        <input type="radio" name="ad" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="ad3" id="" value="<?php if (!empty($linha)) echo $linha['ad3']; ?>">
+                        <input type="radio" name="ad" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -132,13 +173,13 @@
                         <p>Negociação</p>
                     </td>
                     <td>
-                        <input type="radio" name="neg1" id="" value="<?php if (!empty($linha)) echo $linha['neg1']; ?>">
+                        <input type="radio" name="neg" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="neg2" id="" value="<?php if (!empty($linha)) echo $linha['neg2']; ?>">
+                        <input type="radio" name="neg" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="neg3" id="" value="<?php if (!empty($linha)) echo $linha['neg3']; ?>">
+                        <input type="radio" name="neg" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -147,13 +188,13 @@
                         <p>Fechamento e Compromisso</p>
                     </td>
                     <td>
-                        <input type="radio" name="fc1" id="" value="<?php if (!empty($linha)) echo $linha['fc1']; ?>">
+                        <input type="radio" name="fc" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="fc2" id="" value="<?php if (!empty($linha)) echo $linha['fc2']; ?>">
+                        <input type="radio" name="fc" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="fc3" id="" value="<?php if (!empty($linha)) echo $linha['fc3']; ?>">
+                        <input type="radio" name="fc" id="" value="3">
                     </td>
                 </tr>
 
@@ -165,13 +206,13 @@
                         <p>Registro da Visita</p>
                     </td>
                     <td>
-                        <input type="radio" name="rv1" id="" value="<?php if (!empty($linha)) echo $linha['rv1']; ?>">
+                        <input type="radio" name="rv" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="rv2" id="" value="<?php if (!empty($linha)) echo $linha['rv2']; ?>">
+                        <input type="radio" name="rv" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="rv3" id="" value="<?php if (!empty($linha)) echo $linha['rv3']; ?>">
+                        <input type="radio" name="rv" id="" value="3">
                     </td>
                 <tr>
                     <td></td>
@@ -179,13 +220,13 @@
                         <p>OPV</p>
                     </td>
                     <td>
-                        <input type="radio" name="opv1" id="" value="<?php if (!empty($linha)) echo $linha['opv1']; ?>">
+                        <input type="radio" name="opv" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="opv2" id="" value="<?php if (!empty($linha)) echo $linha['opv2']; ?>">
+                        <input type="radio" name="opv" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="opv3" id="" value="<?php if (!empty($linha)) echo $linha['opv3']; ?>">
+                        <input type="radio" name="opv" id="" value="3">
                     </td>
                 </tr>
                 </tr>
@@ -194,13 +235,13 @@
                     <th>Outros</th>
                     <td>Cumpriu o Tempo</td>
                     <td>
-                        <input type="radio" name="ct1" id="" value="<?php if (!empty($linha)) echo $linha['ct1']; ?>">
+                        <input type="radio" name="ct" id="" value="">
                     </td>
                     <td>
-                        <input type="radio" name="ct2" id="" value="<?php if (!empty($linha)) echo $linha['ct2']; ?>">
+                        <input type="radio" name="ct" id="" value="">
                     </td>
                     <td>
-                        <input type="radio" name="ct3" id="" value="<?php if (!empty($linha)) echo $linha['ct3']; ?>">
+                        <input type="radio" name="ct" id="" value="">
                     </td>
                 </tr>
                 </tr>
