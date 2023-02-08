@@ -19,6 +19,7 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         // $_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
         $_SESSION['usuarioEmail'] = $resultado['email'];
         $_SESSION['usuarioId'] = $resultado['id'];
+        $_SESSION['grupo'] = $resultado['grupo'];
         $_SESSION['comportamental'] = $resultado['comportamental'];
         $_SESSION['representacional'] = $resultado['representacional'];
         $_SESSION['aida'] = $resultado['aida'];

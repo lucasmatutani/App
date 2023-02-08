@@ -1,3 +1,13 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+$usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,14 +22,14 @@
 <body>
     <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <form action="./sql.php" method="POST">
-        <input type="hidden" name="grupo" value="<?php echo $_GET['grupo'] ?>">
+        <input type="hidden" name="grupo" value="<?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?>">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
         </div>
 
         <div class="container-subtitulo">
 
-            <h1 class="grupo">Grupo <?php echo $_GET['grupo'] ?></h1>
+            <h1 class="grupo">Grupo <?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?></h1>
             <div class="container-select">
 
                 <h3>Rodada</h3>
