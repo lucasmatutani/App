@@ -2,6 +2,7 @@
 include_once "../includes/connection.php";
 
 $grupo = $_REQUEST['grupo'];
+$participante = $_REQUEST['participante'];
 $rodada = $_REQUEST['rodada'];
 $representante = $_REQUEST['representante'];
 $cp1 = $_REQUEST['cp'];
@@ -14,7 +15,7 @@ $rv1 = $_REQUEST['rv'];
 $opv1 = $_REQUEST['opv'];
 $ct1 = $_REQUEST['ct'];
 
-$sql = "INSERT INTO role_play ( grupo, rodada, representante, cp, ap, rap, abe, ad, neg, fc, rv, opv, ct ) VALUES ('$grupo', '$rodada', '$representante', '$cp', '$ap', '$rap', '$abe', '$ad', '$neg', '$fc', '$rv', '$opv', '$ct' )";
+$sql = "INSERT INTO role_play ( grupo, participante ,rodada, representante, cp, ap, rap, abe, ad, neg, fc, rv, opv, ct ) VALUES ('$grupo', '$participante',  '$rodada', '$representante', '$cp', '$ap', '$rap', '$abe', '$ad', '$neg', '$fc', '$rv', '$opv', '$ct' )";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");

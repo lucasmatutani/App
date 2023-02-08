@@ -29,7 +29,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
 
         <div class="container-subtitulo">
 
-            <h1 class="grupo">Grupo <?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?></h1>
+            <h1 class="grupo">Avaliador</h1>
             <div class="container-select">
 
                 <h3>Rodada</h3>
