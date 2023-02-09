@@ -29,14 +29,24 @@
   margin-bottom: 50px;
 }
 
-.rodada {
-  background-color: #314b7c;
-  padding: 10px 40px;
-  border-radius: 500px;
-  margin-bottom: 15px;
+.container-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.rep {
-  margin: 20px 0 20px 0;
+
+#select-rodada {
+  margin: 0 30px;
+  height: 35px;
+  width: 50px;
+  font-size: 1.2em;
+}
+
+#select-rep {
+  margin: 0 30px;
+  height: 35px;
+  width: 70px;
+  font-size: 1.2em;
 }
 
 .container-principal {

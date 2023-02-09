@@ -1,3 +1,13 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+$usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,23 +21,65 @@
 
 <body>
     <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
-    <form action="">
-        <input type="hidden" name="grupo" value="4">
+    <form action="./sql.php" method="POST">
+        <input type="hidden" name="grupo" value="<?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?>">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
         </div>
 
         <div class="container-subtitulo">
 
-            <h1 class="grupo">Grupo 4</h1>
-            <label class="rodada" for="">
+            <h1 class="grupo">Avaliador</h1>
+            <div class="container-select">
+
                 <h3>Rodada</h3>
-            </label>
-            <input type="number" name="rodada" id="">
-            <label class="rep" for="">
+                <select name="rodada" id="select-rodada">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
                 <h3>Representante</h3>
-            </label>
-            <input type="number" name="representante" id="">
+                <select name="representante" id="select-rep">
+                    <option value="1.1">1.1</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.3">1.3</option>
+                    <option value="1.4">1.4</option>
+                    <option value="1.5">1.5</option>
+
+                    <option value="2.1">2.1</option>
+                    <option value="2.2">2.2</option>
+                    <option value="2.3">2.3</option>
+                    <option value="2.4">2.4</option>
+                    <option value="2.5">2.5</option>
+
+                    <option value="3.1">3.1</option>
+                    <option value="3.2">3.2</option>
+                    <option value="3.3">3.3</option>
+                    <option value="3.4">3.4</option>
+                    <option value="3.5">3.5</option>
+
+                    <option value="4.1">4.1</option>
+                    <option value="4.2">4.2</option>
+                    <option value="4.3">4.3</option>
+                    <option value="4.4">4.4</option>
+                    <option value="4.5">4.5</option>
+
+                    <option value="5.1">5.1</option>
+                    <option value="5.2">5.2</option>
+                    <option value="5.3">5.3</option>
+                    <option value="5.4">5.4</option>
+                    <option value="5.5">5.5</option>
+
+                    <option value="6.1">6.1</option>
+                    <option value="6.2">6.2</option>
+                    <option value="6.3">6.3</option>
+                    <option value="6.4">6.4</option>
+                    <option value="6.5">6.5</option>
+                </select>
+            </div>
         </div>
         <div class="container-principal">
 
@@ -52,13 +104,13 @@
                         <p>Contrução e planejamento</p>
                     </td>
                     <td>
-                        <input type="radio" name="cp1" id="">
+                        <input type="radio" name="cp" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="cp2" id="">
+                        <input type="radio" name="cp" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="cp3" id="">
+                        <input type="radio" name="cp" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -68,15 +120,14 @@
                         <p>Apresentação do planejamento</p>
                     </td>
                     <td>
-                        <input type="radio" name="ap1" id="">
+                        <input type="radio" name="ap" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="ap2" id="">
+                        <input type="radio" name="ap" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="ap3" id="">
+                        <input type="radio" name="ap" id="" value="3">
                     </td>
-                </tr>
                 </tr>
 
                 <tr>
@@ -87,13 +138,13 @@
                         <p>Rapport</p>
                     </td>
                     <td>
-                        <input type="radio" name="rap1" id="">
+                        <input type="radio" name="rap" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="rap2" id="">
+                        <input type="radio" name="rap" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="rap3" id="">
+                        <input type="radio" name="rap" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -102,13 +153,13 @@
                         <p>Abertura</p>
                     </td>
                     <td>
-                        <input type="radio" name="abe1" id="">
+                        <input type="radio" name="abe" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="abe2" id="">
+                        <input type="radio" name="abe" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="abe3" id="">
+                        <input type="radio" name="abe" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -117,13 +168,13 @@
                         <p>Apresentação e Desenvolvimento</p>
                     </td>
                     <td>
-                        <input type="radio" name="ad1" id="">
+                        <input type="radio" name="ad" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="ad2" id="">
+                        <input type="radio" name="ad" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="ad3" id="">
+                        <input type="radio" name="ad" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -132,13 +183,13 @@
                         <p>Negociação</p>
                     </td>
                     <td>
-                        <input type="radio" name="neg1" id="">
+                        <input type="radio" name="neg" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="neg2" id="">
+                        <input type="radio" name="neg" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="neg3" id="">
+                        <input type="radio" name="neg" id="" value="3">
                     </td>
                 </tr>
                 <tr>
@@ -147,13 +198,13 @@
                         <p>Fechamento e Compromisso</p>
                     </td>
                     <td>
-                        <input type="radio" name="fc1" id="">
+                        <input type="radio" name="fc" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="fc2" id="">
+                        <input type="radio" name="fc" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="fc3" id="">
+                        <input type="radio" name="fc" id="" value="3">
                     </td>
                 </tr>
 
@@ -165,13 +216,13 @@
                         <p>Registro da Visita</p>
                     </td>
                     <td>
-                        <input type="radio" name="rv1" id="">
+                        <input type="radio" name="rv" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="rv2" id="">
+                        <input type="radio" name="rv" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="rv3" id="">
+                        <input type="radio" name="rv" id="" value="3">
                     </td>
                 <tr>
                     <td></td>
@@ -179,13 +230,13 @@
                         <p>OPV</p>
                     </td>
                     <td>
-                        <input type="radio" name="opv1" id="">
+                        <input type="radio" name="opv" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="opv2" id="">
+                        <input type="radio" name="opv" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="opv3" id="">
+                        <input type="radio" name="opv" id="" value="3">
                     </td>
                 </tr>
                 </tr>
@@ -194,13 +245,13 @@
                     <th>Outros</th>
                     <td>Cumpriu o Tempo</td>
                     <td>
-                        <input type="radio" name="ct1" id="">
+                        <input type="radio" name="ct" id="" value="">
                     </td>
                     <td>
-                        <input type="radio" name="ct2" id="">
+                        <input type="radio" name="ct" id="" value="">
                     </td>
                     <td>
-                        <input type="radio" name="ct3" id="">
+                        <input type="radio" name="ct" id="" value="">
                     </td>
                 </tr>
                 </tr>
