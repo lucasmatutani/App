@@ -15,6 +15,8 @@
         <h1>Respostas</h1>
     </div>
 
+
+    <!-- as td's vazias são para o espaçamento -->
     <table cellpadding="20" border="1px solid #000">
         <tr>
             <td></td>
