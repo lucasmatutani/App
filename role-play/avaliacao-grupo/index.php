@@ -102,25 +102,9 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 </tr>
 
                 <tr>
-                    <th>Pré visita</th>
+                    <th>Planejamento</th>
                     <td>
-                        <p>Contrução e planejamento</p>
-                    </td>
-                    <td>
-                        <input type="radio" name="cp" id="" value="1">
-                    </td>
-                    <td>
-                        <input type="radio" name="cp" id="" value="2">
-                    </td>
-                    <td>
-                        <input type="radio" name="cp" id="" value="3">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <p>Apresentação do planejamento</p>
+                        <p>Apresentação do Planejamento para os Avaliadores</p>
                     </td>
                     <td>
                         <input type="radio" name="ap" id="" value="1">
@@ -135,10 +119,10 @@ if (!isset($_SESSION['usuarioEmail'])) {
 
                 <tr>
                     <th>
-                        Visita
+                        Prospecção
                     </th>
                     <td>
-                        <p>Rapport</p>
+                        <p>Rapport/conexão com o cliente</p>
                     </td>
                     <td>
                         <input type="radio" name="rap" id="" value="1">
@@ -150,21 +134,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <input type="radio" name="rap" id="" value="3">
                     </td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <p>Abertura</p>
-                    </td>
-                    <td>
-                        <input type="radio" name="abe" id="" value="1">
-                    </td>
-                    <td>
-                        <input type="radio" name="abe" id="" value="2">
-                    </td>
-                    <td>
-                        <input type="radio" name="abe" id="" value="3">
-                    </td>
-                </tr>
+
                 <tr>
                     <td></td>
                     <td>
@@ -180,83 +150,70 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <input type="radio" name="ad" id="" value="3">
                     </td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <p>Negociação</p>
-                    </td>
-                    <td>
-                        <input type="radio" name="neg" id="" value="1">
-                    </td>
-                    <td>
-                        <input type="radio" name="neg" id="" value="2">
-                    </td>
-                    <td>
-                        <input type="radio" name="neg" id="" value="3">
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <p>Fechamento e Compromisso</p>
-                    </td>
-                    <td>
-                        <input type="radio" name="fc" id="" value="1">
-                    </td>
-                    <td>
-                        <input type="radio" name="fc" id="" value="2">
-                    </td>
-                    <td>
-                        <input type="radio" name="fc" id="" value="3">
-                    </td>
-                </tr>
 
                 <tr>
                     <th>
-                        Pós Visita
+                        Pedido
                     </th>
                     <td>
-                        <p>Registro da Visita</p>
+                        <p>Falteiro/Demanda</p>
                     </td>
                     <td>
-                        <input type="radio" name="rv" id="" value="1">
+                        <input type="radio" name="fd" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="rv" id="" value="2">
+                        <input type="radio" name="fd" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="rv" id="" value="3">
+                        <input type="radio" name="fd" id="" value="3">
                     </td>
                 <tr>
-                    <td></td>
+                    <th>
+                        <p>Negociação</p>
+                    </th>
                     <td>
-                        <p>OPV</p>
+                        Busca do Objetivo
+                    </td>
+
+                    <td>
+                        <input type="radio" name="bo" id="" value="1">
                     </td>
                     <td>
-                        <input type="radio" name="opv" id="" value="1">
+                        <input type="radio" name="bo" id="" value="2">
                     </td>
                     <td>
-                        <input type="radio" name="opv" id="" value="2">
-                    </td>
-                    <td>
-                        <input type="radio" name="opv" id="" value="3">
+                        <input type="radio" name="bo" id="" value="3">
                     </td>
                 </tr>
                 </tr>
 
                 <tr>
                     <th>Outros</th>
-                    <td>Cumpriu o Tempo</td>
+                    <td>Técnica de Fechamennto Aplicada</td>
                     <td>
-                        <input type="radio" name="ct" id="" value="">
+                        <input type="radio" name="tf" id="" value="">
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="">
+                        <input type="radio" name="tf" id="" value="">
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="">
+                        <input type="radio" name="tf" id="" value="">
                     </td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p>Cumpriu com o Tempo</p>
+                    </td>
+                    <td>
+                        <input type="radio" name="ct" id="" value="1">
+                    </td>
+                    <td>
+                        <input type="radio" name="ct" id="" value="2">
+                    </td>
+                    <td>
+                        <input type="radio" name="ct" id="" value="3">
+                    </td>
                 </tr>
             </table>
         </div>
