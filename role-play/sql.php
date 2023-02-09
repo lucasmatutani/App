@@ -5,18 +5,16 @@ $grupo = $_REQUEST['grupo'];
 $participante = $_REQUEST['participante'];
 $rodada = $_REQUEST['rodada'];
 $representante = $_REQUEST['representante'];
-$cp = $_REQUEST['cp'];
+
 $ap = $_REQUEST['ap'];
 $rap = $_REQUEST['rap'];
-$abe = $_REQUEST['abe'];
 $ad = $_REQUEST['ad'];
-$neg = $_REQUEST['neg'];
-$fc = $_REQUEST['fc'];
-$rv = $_REQUEST['rv'];
-$opv = $_REQUEST['opv'];
+$fd = $_REQUEST['fd'];
+$bo = $_REQUEST['bo'];
+$tf = $_REQUEST['tf'];
 $ct = $_REQUEST['ct'];
 
-$sql = "INSERT INTO role_play ( grupo, participante ,rodada, representante, cp, ap, rap, abe, ad, neg, fc, rv, opv, ct ) VALUES ('$grupo', '$participante',  '$rodada', '$representante', '$cp', '$ap', '$rap', '$abe', '$ad', '$neg', '$fc', '$rv', '$opv', '$ct' )";
+$sql = "INSERT INTO role_play ( grupo, participante ,rodada, representante, ap, rap, ad, fd, bo, tf, ct ) VALUES ('$grupo', '$participante',  '$rodada', '$representante', '$ap', '$rap', '$ad', '$fd', '$bo', '$tf', '$ct' )";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");
