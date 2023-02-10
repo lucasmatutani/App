@@ -224,4 +224,19 @@ if (!isset($_SESSION['usuarioEmail'])) {
     </form>
 </body>
 
+<script>
+    var input = document.getElementsByTagName('input');
+    input.addEventListener("change", sumRadio)
+    
+    function sumRadio() {
+        document.getElementById("result").innerHTML = "";
+
+        for (i = 0; i < 100; i++) {
+            if (input[i].checked) {
+                document.getElementById("result").innerHTML += input[i].value;
+            }
+        }
+    }
+</script>
+
 </html>
