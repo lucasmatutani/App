@@ -15,11 +15,74 @@
         <h1>Respostas</h1>
     </div>
 
-    <table cellpadding="50">
+
+    <!-- as td's vazias são para o espaçamento -->
+    <table cellpadding="20" border="1px solid #000">
         <tr>
-            <td> <strong> Implementou totalmente</td>
-            <td><strong> Implementou Parcialmente</td>
-            <td><strong> Não Implementou</td>
+            <td></td>
+            <td></td>
+            <td>
+                <h2>Nota</h2>
+            </td>
+        </tr>
+        <tr>
+            <th>Planejamento</th>
+            <td>
+                <p>Apresentação do Planejamento para os Avaliadores</p>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>
+                Prospecção
+            </th>
+            <td>
+                <p>Rapport/conexão com o cliente</p>
+            </td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <p>Apresentação e Desenvolvimento</p>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>
+                Pedido
+            </th>
+            <td>
+                <p>Falteiro/Demanda</p>
+            </td>
+            <td></td>
+        <tr>
+            <th>
+                <p>Negociação</p>
+            </th>
+            <td>
+                Busca do Objetivo
+            </td>
+            <td></td>
+
+        </tr>
+        </tr>
+
+        <tr>
+            <th>Outros</th>
+            <td>Técnica de Fechamennto Aplicada</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p>Cumpriu com o Tempo</p>
+            </td>
+            <td></td>
         </tr>
     </table>
 </body>
