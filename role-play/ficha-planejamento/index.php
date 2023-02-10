@@ -1,5 +1,5 @@
 <?php
-include_once "../includes/connection.php";
+include_once "../../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
 
@@ -21,7 +21,7 @@ if (!empty($data)) {
 </head>
 
 <body>
-    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+    <!-- <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a> -->
     <form action="./sql.php" method="POST">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
