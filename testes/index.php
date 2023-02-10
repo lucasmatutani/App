@@ -33,6 +33,9 @@ $usuario_id = $_SESSION['usuarioId'];
                 </div>
                 <span style="z-index: 999;"></span>
             </div>
+
+            <a href="http://focustradeapp.com.br/teste-role-play/" class="teste">Role-Play</a>
+
             <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
             <?php endif; ?>

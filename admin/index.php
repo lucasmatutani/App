@@ -17,6 +17,10 @@
 
     <div class="container-card">
 
+        <a href="../role-play/respostas" class="btn-3d" title="Cadastro de usuário" target="_blank">
+            <i class="icon icon-cube"> Respostas Role Play</i>
+        </a>
+
         <a href="../cadastro/" class="btn-3d" title="Cadastro de usuário" target="_blank">
             <i class="icon icon-cube"> Cadastro de usuário</i>
         </a>

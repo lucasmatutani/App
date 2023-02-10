@@ -12,14 +12,14 @@
     <h1>Grupos</h1>
     <div class="container-grupos">
         <div class="conatiner-grupo">
-            <a href="focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=1"></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=1"></a>
+            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=2"></a>
+            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=3"></a>
         </div>
         <div class="conatiner-grupo">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=4"></a>
+            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=5"></a>
+            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=6"></a>
         </div>
     </div>
 </body>
