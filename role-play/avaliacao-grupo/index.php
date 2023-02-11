@@ -32,8 +32,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
 
         <div class="container-subtitulo">
 
-            <h1 class="grupo">Grupo <?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?></h1>
+            <h1 class="grupo">Grupo <?php if (!empty($_GET['grupo'])) echo $_GET['grupo'];
+                                    if (!empty($_GET['avaliador'])) echo $_GET['avaliador'] ?></h1>
             <div class="container-select">
+                <?php if (@$_GET['avaliador']) : ?>
+                    <h3>Avaliador</h3>
+                    <input type="text" name="avaliador" style="margin: 18px 20px 0 10px; height: 20px;">
+                <?php endif; ?>
 
                 <h3>Rodada</h3>
                 <select name="rodada" id="select-rodada" required>
@@ -107,13 +112,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Apresentação do Planejamento para os Avaliadores</p>
                     </td>
                     <td>
-                        <input type="radio" name="ap" id="" value="1" required>
+                        <input type="radio" name="ap" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="ap" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="ap" id="" value="3" required>
+                        <input type="radio" name="ap" id="" value="1" required>
                     </td>
                 </tr>
 
@@ -125,13 +130,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Rapport/conexão com o cliente</p>
                     </td>
                     <td>
-                        <input type="radio" name="rap" id="" value="1" required>
+                        <input type="radio" name="rap" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="rap" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="rap" id="" value="3" required>
+                        <input type="radio" name="rap" id="" value="1" required>
                     </td>
                 </tr>
 
@@ -147,7 +152,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <input type="radio" name="ad" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="ad" id="" value="3" required>
+                        <input type="radio" name="ad" id="" value="1" required>
                     </td>
                 </tr>
 
@@ -159,13 +164,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Falteiro/Demanda</p>
                     </td>
                     <td>
-                        <input type="radio" name="fd" id="" value="1" required>
+                        <input type="radio" name="fd" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="fd" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="fd" id="" value="3" required>
+                        <input type="radio" name="fd" id="" value="1" required>
                     </td>
                 <tr>
                     <th>
@@ -176,13 +181,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     </td>
 
                     <td>
-                        <input type="radio" name="bo" id="" value="1" required>
+                        <input type="radio" name="bo" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="bo" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="bo" id="" value="3" required>
+                        <input type="radio" name="bo" id="" value="1" required>
                     </td>
                 </tr>
                 </tr>
@@ -191,13 +196,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <th>Outros</th>
                     <td>Técnica de Fechamennto Aplicada</td>
                     <td>
-                        <input type="radio" name="tf" id="" value="1" required>
+                        <input type="radio" name="tf" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="tf" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="tf" id="" value="3" required>
+                        <input type="radio" name="tf" id="" value="1" required>
                     </td>
                 </tr>
                 <tr>
@@ -206,13 +211,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Cumpriu com o Tempo</p>
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="1" required>
+                        <input type="radio" name="ct" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="ct" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="3" required>
+                        <input type="radio" name="ct" id="" value="1" required>
                     </td>
                 </tr>
             </table>

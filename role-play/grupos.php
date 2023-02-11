@@ -20,6 +20,7 @@
         <a href="./avaliacao-grupo/index.php?grupo=4">Grupo 4</a>
         <a href="./avaliacao-grupo/index.php?grupo=5">Grupo 5</a>
         <a href="./avaliacao-grupo/index.php?grupo=6">Grupo 6</a>
+        <a href="./avaliacao-grupo/index.php?avaliador=Avaliador">Avaliador</a>
     </div>
 </body>
 

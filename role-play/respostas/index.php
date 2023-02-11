@@ -25,6 +25,7 @@ include_once "../../includes/connection.php";
             <table cellpadding="40" cellspacing="20" id="table-result">
                 <thead>
                     <tr>
+                        <th>Avaliador</th>
                         <th>Código do Participante</th>
                         <th>Grupo</th>
                         <th>Representante</th>
@@ -39,6 +40,7 @@ include_once "../../includes/connection.php";
                         if ($res = mysqli_query($conn, $query)) :
                             while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
                                 <tr>
+                                    <td><?php if (!empty($row['avaliador'])) echo $row['avaliador'] ?></td>
                                     <td><?php echo $row['participante'] ?></td>
                                     <td><?php echo $row['grupo'] ?></td>
                                     <td><?php echo $row['representante'] ?></td>
