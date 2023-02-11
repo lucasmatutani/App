@@ -14,8 +14,8 @@
 <body>
     <div class="container-principal">
         <h1>Grupos</h1>
-        <a href="focustradeapp.com.br/role-play/avaliacao-grupo?grupo=1">Grupo 1</a>
-        <a href="focustradeapp.com.br/role-play/avaliacao-grupo?grupo=2">Grupo 2</a>
+        <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo?grupo=1">Grupo 1</a>
+        <a href="www.focustradeapp.com.br/role-play/avaliacao-grupo?grupo=2">Grupo 2</a>
         <a href="focustradeapp.com.br/role-play/avaliacao-grupo?grupo=3">Grupo 3</a>
         <a href="focustradeapp.com.br/role-play/avaliacao-grupo?grupo=4">Grupo 4</a>
         <a href="focustradeapp.com.br/role-play/avaliacao-grupo?grupo=5">Grupo 5</a>
