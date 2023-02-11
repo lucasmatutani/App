@@ -22,7 +22,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
 </head>
 
 <body>
-    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+    <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <form action="../sql.php" method="POST">
         <?php if (!empty($_GET['grupo'])) : ?>
             <input type="hidden" name="grupo" value="<?php echo $_GET['grupo'] ?>">
