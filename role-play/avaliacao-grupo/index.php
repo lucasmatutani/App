@@ -39,7 +39,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
             <div class="container-select">
                 <?php if (@$_GET['avaliador']) : ?>
                     <h3>Avaliador</h3>
-                    <input type="text" name="avaliador" style="margin: 18px 20px 0 10px; height: 20px;">
+                    <input type="text" name="avaliador" style="margin: 18px 20px 0 10px; height: 20px;" required>
 
                     <h3>Grupo</h3>
                     <select name="grupo" id="select-rodada" required>
