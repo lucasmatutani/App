@@ -123,27 +123,27 @@ include_once "../../includes/connection.php";
     let sumGrupo6 = 0;
 
     for (let i = 0; i < data.length; i++) {
-        if (data[i].Grupo === "1" && data[i].Avaliador) {
+        if (data[i].Grupo === "1" && data[i].Avaliador === "") {
             sumGrupo1 += parseInt(data[i].Total);
         }
 
-        if (data[i].Grupo === "2") {
+        if (data[i].Grupo === "2" && data[i].Avaliador === "") {
             sumGrupo2 += parseInt(data[i].Total);
         }
 
-        if (data[i].Grupo === "3") {
+        if (data[i].Grupo === "3" && data[i].Avaliador === "") {
             sumGrupo3 += parseInt(data[i].Total);
         }
 
-        if (data[i].Grupo === "4") {
+        if (data[i].Grupo === "4" && data[i].Avaliador === "") {
             sumGrupo4 += parseInt(data[i].Total);
         }
 
-        if (data[i].Grupo === "5") {
+        if (data[i].Grupo === "5" && data[i].Avaliador === "") {
             sumGrupo5 += parseInt(data[i].Total);
         }
 
-        if (data[i].Grupo === "6") {
+        if (data[i].Grupo === "6" && data[i].Avaliador === "") {
             sumGrupo6 += parseInt(data[i].Total);
         }
     }
