@@ -217,20 +217,26 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 </tr>
             </table>
         </div>
-
-        <div class="buttom-enviar">
-            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
-        </div>
+        <input type="hidden" name="total" id="resultado">
     </form>
 </body>
+<div class="buttom-enviar">
+    <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+</div>
 <script>
-    document.getElementById("result").innerHTML = "";
-    var input = document.getElementsByTagName('input');
+    function teste() {
+        const form = document.querySelector("form");
+        var radios = form.querySelectorAll("input[type='radio']");
+        var btn = document.getElementById("botao-enviar");
+        var sum = 0;
 
-    for (i = 0; i <= 21; i++) {
-        if (input[i].checked) {
-            document.getElementById("result").innerHTML += input[i].value;
-        }
+        radios.forEach(radio => {
+            if (radio.checked) {
+                sum += parseInt(radio.value);
+            }
+        });
+        document.getElementById("resultado").value = sum;
+        form.submit();
     }
 </script>
 

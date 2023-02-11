@@ -22,29 +22,33 @@ include_once "../../includes/connection.php";
 
     <div class="container-principal">
         <div class="table1">
-            <table cellpadding="40" cellspacing="20">
-                <tr>
-                    <td>Código do Participante</td>
-                    <td>Grupo</td>
-                    <td>Representante</td>
-                    <td>Total</td>
-                </tr>
+            <table cellpadding="40" cellspacing="20" id="table-result">
+                <thead>
+                    <tr>
+                        <th>Código do Participante</th>
+                        <th>Grupo</th>
+                        <th>Representante</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
                 <span></span>
-                <?php
-                if ($conn) :
-                    $query = "SELECT * FROM role_play";
-                    if ($res = mysqli_query($conn, $query)) :
-                        while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                            <tr>
-                                <td><?php echo $row['participante'] ?></td>
-                                <td><?php echo $row['grupo'] ?></td>
-                                <td><?php echo $row['representante'] ?></td>
-                                <td class="grupo<?php echo $row['grupo'] ?>"><?php echo $row['total'] ?></td>
-                            </tr>
-                            <span></span>
-                        <?php endwhile; ?>
+                <tbody>
+                    <?php
+                    if ($conn) :
+                        $query = "SELECT * FROM role_play ORDER BY representante ASC";
+                        if ($res = mysqli_query($conn, $query)) :
+                            while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
+                                <tr>
+                                    <td><?php echo $row['participante'] ?></td>
+                                    <td><?php echo $row['grupo'] ?></td>
+                                    <td><?php echo $row['representante'] ?></td>
+                                    <td name="grupo<?php echo $row['grupo'] ?>"><?php echo $row['total'] ?></td>
+                                </tr>
+                                <span></span>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     <?php endif; ?>
-                <?php endif; ?>
+                </tbody>
             </table>
         </div>
 
@@ -72,22 +76,59 @@ include_once "../../includes/connection.php";
     </div>
 </body>
 <script>
-    var grupo1 = document.getElementsByClassName("grupo1");
-    var grupo2 = document.getElementsByClassName("grupo2");
-    var grupo3 = document.getElementsByClassName("grupo3");
-    var grupo4 = document.getElementsByClassName("grupo4");
-    var grupo5 = document.getElementsByClassName("grupo5");
-    var grupo6 = document.getElementsByClassName("grupo6");
-    var td = document.getElementsByTagName("td");
-    console.log(td.length);
-    result1 = '';
+    const table = document.getElementById("table-result");
+    const rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+    const headers = table.getElementsByTagName("thead")[0].getElementsByTagName("th");
+    const data = [];
 
-    for (i = 0; i <= td.length; i++) {
-
-        result1 += grupo1.innerHTML;
-        console.log(result1);
-
+    for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+        const rowData = {};
+        for (let j = 0; j < cells.length; j++) {
+            rowData[headers[j].textContent] = cells[j].textContent;
+        }
+        data.push(rowData);
     }
+
+    let sumGrupo1 = 0;
+    let sumGrupo2 = 0;
+    let sumGrupo3 = 0;
+    let sumGrupo4 = 0;
+    let sumGrupo5 = 0;
+    let sumGrupo6 = 0;
+
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].Grupo === "1") {
+            sumGrupo1 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "2") {
+            sumGrupo2 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "3") {
+            sumGrupo3 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "4") {
+            sumGrupo4 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "5") {
+            sumGrupo5 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "6") {
+            sumGrupo6 += parseInt(data[i].Total);
+        }
+    }
+
+    document.getElementById("grupo1").innerHTML = sumGrupo1;
+    document.getElementById("grupo2").innerHTML = sumGrupo2;
+    document.getElementById("grupo3").innerHTML = sumGrupo3;
+    document.getElementById("grupo4").innerHTML = sumGrupo4;
+    document.getElementById("grupo5").innerHTML = sumGrupo5;
+    document.getElementById("grupo6").innerHTML = sumGrupo6;
 </script>
 
 </html>
