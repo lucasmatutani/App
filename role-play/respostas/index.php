@@ -76,7 +76,7 @@ include_once "../../includes/connection.php";
             </table>
         </div>
 
-        <div class="table2">
+        <div class="table2" style="margin-top: 40px;">
             <h3>Total Avaliadores</h3>
             <table cellpadding="30" cellspacing="20">
                 <tr>
@@ -88,12 +88,12 @@ include_once "../../includes/connection.php";
                     <td>Grupo 6</td>
                 </tr>
                 <tr>
-                    <td id="grupo1"></td>
-                    <td id="grupo2"></td>
-                    <td id="grupo3"></td>
-                    <td id="grupo4"></td>
-                    <td id="grupo5"></td>
-                    <td id="grupo6"></td>
+                    <td id="av1"></td>
+                    <td id="av2"></td>
+                    <td id="av3"></td>
+                    <td id="av4"></td>
+                    <td id="av5"></td>
+                    <td id="av6"></td>
                 </tr>
             </table>
         </div>
@@ -122,6 +122,14 @@ include_once "../../includes/connection.php";
     let sumGrupo5 = 0;
     let sumGrupo6 = 0;
 
+    let sumAv1 = 0;
+    let sumAv2 = 0;
+    let sumAv3 = 0;
+    let sumAv4 = 0;
+    let sumAv5 = 0;
+    let sumAv6 = 0;
+
+
     for (let i = 0; i < data.length; i++) {
         if (data[i].Grupo === "1" && data[i].Avaliador === "") {
             sumGrupo1 += parseInt(data[i].Total);
@@ -146,6 +154,30 @@ include_once "../../includes/connection.php";
         if (data[i].Grupo === "6" && data[i].Avaliador === "") {
             sumGrupo6 += parseInt(data[i].Total);
         }
+
+        if (data[i].Grupo === "1" && data[i].Avaliador) {
+            sumAv1 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "2" && data[i].Avaliador) {
+            sumAv2 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "3" && data[i].Avaliador) {
+            sumAv3 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "4" && data[i].Avaliador) {
+            sumAv4 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "5" && data[i].Avaliador) {
+            sumAv5 += parseInt(data[i].Total);
+        }
+
+        if (data[i].Grupo === "6" && data[i].Avaliador) {
+            sumAv6 += parseInt(data[i].Total);
+        }
     }
 
     document.getElementById("grupo1").innerHTML = sumGrupo1;
@@ -154,6 +186,13 @@ include_once "../../includes/connection.php";
     document.getElementById("grupo4").innerHTML = sumGrupo4;
     document.getElementById("grupo5").innerHTML = sumGrupo5;
     document.getElementById("grupo6").innerHTML = sumGrupo6;
+
+    document.getElementById("av1").innerHTML = sumAv1;
+    document.getElementById("av2").innerHTML = sumAv2;
+    document.getElementById("av3").innerHTML = sumAv3;
+    document.getElementById("av4").innerHTML = sumAv4;
+    document.getElementById("av5").innerHTML = sumAv5;
+    document.getElementById("av6").innerHTML = sumAv6;
 </script>
 
 </html>

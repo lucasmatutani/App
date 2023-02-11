@@ -24,7 +24,9 @@ if (!isset($_SESSION['usuarioEmail'])) {
 <body>
     <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <form action="../sql.php" method="POST">
-        <input type="hidden" name="grupo" value="<?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?>">
+        <?php if (!empty($_GET['grupo'])) : ?>
+            <input type="hidden" name="grupo" value="<?php echo $_GET['grupo'] ?>">
+        <?php endif; ?>
         <input type="hidden" name="participante" value="<?php if (!empty($participante)) echo $participante ?>">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
@@ -38,6 +40,16 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 <?php if (@$_GET['avaliador']) : ?>
                     <h3>Avaliador</h3>
                     <input type="text" name="avaliador" style="margin: 18px 20px 0 10px; height: 20px;">
+
+                    <h3>Grupo</h3>
+                    <select name="grupo" id="select-rodada" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
                 <?php endif; ?>
 
                 <h3>Rodada</h3>
