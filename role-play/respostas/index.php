@@ -75,6 +75,28 @@ include_once "../../includes/connection.php";
                 </tr>
             </table>
         </div>
+
+        <div class="table2">
+            <h3>Total Avaliadores</h3>
+            <table cellpadding="30" cellspacing="20">
+                <tr>
+                    <td>Grupo 1</td>
+                    <td>Grupo 2</td>
+                    <td>Grupo 3</td>
+                    <td>Grupo 4</td>
+                    <td>Grupo 5</td>
+                    <td>Grupo 6</td>
+                </tr>
+                <tr>
+                    <td id="grupo1"></td>
+                    <td id="grupo2"></td>
+                    <td id="grupo3"></td>
+                    <td id="grupo4"></td>
+                    <td id="grupo5"></td>
+                    <td id="grupo6"></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 <script>
@@ -91,6 +113,7 @@ include_once "../../includes/connection.php";
         }
         data.push(rowData);
     }
+    console.log(data);
 
     let sumGrupo1 = 0;
     let sumGrupo2 = 0;
@@ -100,7 +123,7 @@ include_once "../../includes/connection.php";
     let sumGrupo6 = 0;
 
     for (let i = 0; i < data.length; i++) {
-        if (data[i].Grupo === "1") {
+        if (data[i].Grupo === "1" && data[i].Avaliador) {
             sumGrupo1 += parseInt(data[i].Total);
         }
 
