@@ -28,7 +28,7 @@ include_once "../../includes/connection.php";
                         <th>Avaliador</th>
                         <th>Código do Participante</th>
                         <th>Grupo</th>
-                        <th>Representante</th>
+                        <th>Vendedor</th>
                         <th>Total</th>
                     </tr>
                 </thead>

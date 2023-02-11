@@ -146,7 +146,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Apresentação e Desenvolvimento</p>
                     </td>
                     <td>
-                        <input type="radio" name="ad" id="" value="1" required>
+                        <input type="radio" name="ad" id="" value="3" required>
                     </td>
                     <td>
                         <input type="radio" name="ad" id="" value="2" required>
