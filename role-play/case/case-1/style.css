@@ -1,0 +1,30 @@
+.titulo {
+  text-align: center;
+}
+
+.subtitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.titulo-cenario {
+  text-align: center;
+}
+
+.cenario {
+  border: 1px solid #000;
+  padding: 30px;
+}
+
+.auditoria {
+  text-align: center;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-collapse: collapse;
+}
