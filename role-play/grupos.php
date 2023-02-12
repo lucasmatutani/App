@@ -2,25 +2,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grupos.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Grupos</h1>
-    <div class="container-grupos">
-        <div class="conatiner-grupo">
-            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=1"></a>
-            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=2"></a>
-            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=3"></a>
-        </div>
-        <div class="conatiner-grupo">
-            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=4"></a>
-            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=5"></a>
-            <a href="http://www.focustradeapp.com.br/role-play/avaliacao-grupo/?grupo=6"></a>
-        </div>
+    <div class="container-principal">
+        <h1>Grupos</h1>
+        <a href="./avaliacao-grupo/index.php?grupo=1">Grupo 1</a>
+        <a href="./avaliacao-grupo/index.php?grupo=2">Grupo 2</a>
+        <a href="./avaliacao-grupo/index.php?grupo=3">Grupo 3</a>
+        <a href="./avaliacao-grupo/index.php?grupo=4">Grupo 4</a>
+        <a href="./avaliacao-grupo/index.php?grupo=5">Grupo 5</a>
+        <a href="./avaliacao-grupo/index.php?grupo=6">Grupo 6</a>
+        <a href="./avaliacao-grupo/index.php?avaliador=Avaliador">Avaliador</a>
     </div>
 </body>
+
 </html>
