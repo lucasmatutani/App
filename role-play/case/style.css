@@ -12,55 +12,73 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.titulo {
-  background-color: #ff8c00;
-  padding: 20px 40px;
+.grupo-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.button1 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 90px;
+  background-color: darkorange;
+  width: 30%;
   border-radius: 500px;
-  margin-bottom: 50px;
 }
 
-.container-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 30px;
-  text-align: center;
+.button2 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+  background-color: darkorange;
+  width: 30%;
+  border-radius: 500px;
 }
 
-.inicio {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: left;
+.button3 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+  background-color: darkorange;
+  width: 30%;
+  border-radius: 500px;
 }
 
-.container-cenario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+.button4 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+  background-color: darkorange;
+  width: 30%;
+  border-radius: 500px;
 }
 
-.buttom-enviar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button5 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+  background-color: darkorange;
+  width: 30%;
+  border-radius: 500px;
 }
 
-#botao-enviar {
-  background: #314b7c;
-  border: none;
-  border-radius: 50px;
-  color: #fff;
-  padding: 10px 50px;
-  margin-top: 20px;
+.button5 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+  background-color: darkorange;
+  width: 30%;
+  border-radius: 500px;
 }
-
-#botao-enviar:hover {
-  background-color: green;
-  cursor: pointer;
+.button6 {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+  background-color: darkorange;
+  width: 30%;
+  border-radius: 500px;
 }

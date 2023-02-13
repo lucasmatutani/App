@@ -40,7 +40,7 @@
 
         <h2 class="auditoria">Auditoria</h2>
         <div class="table">
-            <table cellpadding="30" cellspancing="40">
+            <table>
                 <tr>
                     <td style="color:blue">Share de prateleira atual</td>
                 </tr>

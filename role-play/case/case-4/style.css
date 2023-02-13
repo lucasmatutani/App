@@ -35,5 +35,19 @@ table {
 }
 
 .arrow-up {
-  width: 13%;
+  width: 11%;
+}
+
+@media only screen and (max-width: 400px) {
+  .table {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
 }
