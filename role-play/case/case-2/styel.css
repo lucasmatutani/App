@@ -19,6 +19,7 @@
 
 .auditoria {
   text-align: center;
+  padding-top: 50px;
 }
 
 .table {
@@ -27,4 +28,12 @@
   align-items: center;
   text-align: left;
   border-collapse: collapse;
+}
+
+.arrow-down {
+  width: 10%;
+}
+
+.arrow-up {
+  width: 13%;
 }

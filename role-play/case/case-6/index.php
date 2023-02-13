@@ -47,66 +47,90 @@
                 <tr>
                     <th>Euthyrox</th>
                     <td>2,50%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                     <td>Glifage XR 500</td>
                     <td>92%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                     <td>Concor</td>
                     <td>21,00%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Puran</td>
                     <td>50,70%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                     <td>Outros</td>
                     <td>8%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                     <td>Concardio</td>
                     <td>15,20%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Synthroid</td>
                     <td>7,80%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td>Bisoprolol EMS</td>
                     <td>20,60%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Levoid</td>
                     <td>8,60%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td>Bisoprolol Merck</td>
                     <td>12,50%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Levotiroxina GNX</td>
                     <td>28,70%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td>Bisoprolol Medley</td>
                     <td>24,00%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>Rambaxy</td>
                     <td>0,80%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>Torrent</td>
                     <td>0,70%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
                     <td>Iccor</td>
                     <td>1,70%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
             </table>
         </div>

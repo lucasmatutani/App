@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Case</title>
+    <title>Case 1</title>
 </head>
 
 <body>
@@ -46,72 +46,90 @@
                 <tr>
                     <th>Euthyrox</th>
                     <td>4,20%</td>
-                    <td><img src="../case/role-play/assets/img/arrow-down.png" alt=""></td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                     <td>Glifage XR 500</td>
                     <td>90%</td>
-                    <td><img src="../case/role-play/assets/img/arrow-up.png" alt=""></td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                     <td>Concor</td>
                     <td>25,90%</td>
-                    <td><img src="../case/role-play/assets/img/arrow-down.png" alt=""></td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Puran</td>
                     <td>50,70%</td>
-                    <td><img src="../case/role-play/assets/img/arrow-up.png" alt=""></td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                     <td>Outros</td>
                     <td>10%</td>
-                    <td><img src="../case/role-play/assets/img/arrow-down.png" alt=""></td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                     <td>Concardio</td>
                     <td>15,20%</td>
-                    <td><img src="../case/role-play/assets/img/arrow-down.png" alt=""></td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Synthroid</td>
                     <td>7,80%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td>Bisoprolol EMS</td>
                     <td>20,60%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Levoid</td>
                     <td>7,80%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td>Bisoprolol Merck</td>
                     <td>12,50%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>Levotiroxina GNX</td>
                     <td>28,70%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td>Bisoprolol Medley</td>
                     <td>22,60%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>Rambaxy</td>
                     <td>0,80%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
                 <tr>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>Torrent</td>
                     <td>0,70%</td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
                     <td>Iccor</td>
                     <td>1,70%</td>
+                    <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                 </tr>
             </table>
         </div>
