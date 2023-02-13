@@ -38,11 +38,11 @@ if (!empty($data)) {
         <div class="container-subtitulo">
             <div class="container-inicio">
                 <h3>Representante</h3>
-                <input placeholder="Insira seu Nome" type="text" name="representante" id="">
+                <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="<?php if (!empty($linha)) echo $linha['representante'] ?>">
             </div>
             <div class="txt-inicio">
                 <h3>Grupo</h3>
-                <input type="text" name="grupo" id="">
+                <input type="text" name="grupo" id="" value="<?php if (!empty($linha)) echo $linha['grupo'] ?>">
             </div>
         </div>
         <div class="container-principal">
