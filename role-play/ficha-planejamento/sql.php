@@ -18,7 +18,7 @@ $linha = mysqli_fetch_assoc($data);
 if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "UPDATE ficha_planejamento set representante='$representante',  grupo='$grupo', objetivo='$objetivo', pauta='$pauta', proposta='$proposta' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO ficha_planejamento set representante='$representante',  grupo='$grupo', objetivo='$objetivo', pauta='$pauta', proposta='$proposta'";
+    $sql = "INSERT INTO  ficha_planejamento set usuario_id='$usuario_id', representante='$representante',  grupo='$grupo', objetivo='$objetivo', pauta='$pauta', proposta='$proposta'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../../testes");
