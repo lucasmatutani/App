@@ -10,75 +10,63 @@
 
 .container-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-.grupo-button {
+.container-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  margin-top: 150px;
 }
-.button1 {
+
+.container-principal a {
   text-decoration: none;
+  font-size: 1.5em;
   color: black;
-  padding-bottom: 90px;
-  background-color: darkorange;
-  width: 30%;
+  font-weight: bold;
+}
+
+.button1 {
+  background-color: #ff8c00;
+  padding: 20px 40px;
   border-radius: 500px;
+  margin-bottom: 50px;
 }
 
 .button2 {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 50px;
-  background-color: darkorange;
-  width: 30%;
+  background-color: #ff8c00;
+  padding: 20px 40px;
   border-radius: 500px;
+  margin-bottom: 50px;
 }
 
 .button3 {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 50px;
-  background-color: darkorange;
-  width: 30%;
+  background-color: #ff8c00;
+  padding: 20px 40px;
   border-radius: 500px;
+  margin-bottom: 50px;
 }
 
 .button4 {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 50px;
-  background-color: darkorange;
-  width: 30%;
+  background-color: #ff8c00;
+  padding: 20px 40px;
   border-radius: 500px;
+  margin-bottom: 50px;
 }
 
 .button5 {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 50px;
-  background-color: darkorange;
-  width: 30%;
+  background-color: #ff8c00;
+  padding: 20px 40px;
   border-radius: 500px;
+  margin-bottom: 50px;
 }
 
-.button5 {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 50px;
-  background-color: darkorange;
-  width: 30%;
-  border-radius: 500px;
-}
 .button6 {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 50px;
-  background-color: darkorange;
-  width: 30%;
+  background-color: #ff8c00;
+  padding: 20px 40px;
   border-radius: 500px;
+  margin-bottom: 50px;
 }

@@ -14,7 +14,7 @@
     <div class="container-header">
         <img src="../../assets/img/logo-focustrade.jpeg" alt="">
     </div>
-    <div class="grupo-button">
+    <div class="container-principal">
         <a class="button1" href="http://focustradeapp.com.br/role-play/case/case-1/">Case 1</a>
         <a class="button2" href="http://focustradeapp.com.br/role-play/case/case-2/">Case 2</a>
         <a class="button3" href="http://focustradeapp.com.br/role-play/case/case-3/">Case 3</a>

@@ -5,7 +5,7 @@ $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
 
 if (!isset($_SESSION['usuarioEmail'])) {
-    header('Location: ../login');
+    header('Location: ../../login');
 }
 
 $data = $conn->query("SELECT * FROM ficha_planejamento WHERE usuario_id = $usuario_id");
@@ -48,15 +48,15 @@ if (!empty($data)) {
         <div class="container-principal">
             <div class="obj">
                 <h3>Objetivo Revisado</h3>
-                <textarea name="objetivo" id="" cols="90" rows="15"><?php if (!empty($linha)) echo $linha['objetivo'] ?></textarea>
+                <textarea name="objetivo" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['objetivo'] ?></textarea>
             </div>
             <div class="pauta">
                 <h3>Pauta da Reunião</h3>
-                <textarea name="pauta" id="" cols="90" rows="15"><?php if (!empty($linha)) echo $linha['pauta'] ?></textarea>
+                <textarea name="pauta" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['pauta'] ?></textarea>
             </div>
             <div class="proposta">
                 <h3>Proposta/Ações para atingir o objetivo</h3>
-                <textarea name="proposta" id="" cols="90" rows="15"><?php if (!empty($linha)) echo $linha['proposta'] ?></textarea>
+                <textarea name="proposta" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['proposta'] ?></textarea>
             </div>
         </div>
         <div class="buttom-enviar">
