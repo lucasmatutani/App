@@ -40,7 +40,7 @@
 
         <h2 class="auditoria">Auditoria</h2>
         <div class="table">
-            <table cellpadding="30" cellspancing="40">
+            <table>
                 <tr>
                     <td style="color:blue">Share de prateleira atual</td>
                 </tr>
@@ -102,7 +102,7 @@
                     <td></td>
                     <td>Bisoprolol Medley</td>
                     <td>22,60%</td>
-                    <td></td>
+                    <td><img class="arrow-up" src="../../../assets/img/arrow-up.png" alt=""></td>
                 </tr>
                 <tr>
                     <td></td>
