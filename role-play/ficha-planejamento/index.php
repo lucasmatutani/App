@@ -37,7 +37,7 @@ if (!empty($data)) {
         </div>
         <div class="container-subtitulo">
             <div class="container-inicio">
-                <h3>Representante</h3>
+                <h3>Vendedor</h3>
                 <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="<?php if (!empty($linha)) echo $linha['representante'] ?>">
             </div>
             <div class="txt-inicio">
