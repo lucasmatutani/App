@@ -1,0 +1,53 @@
+.titulo {
+  text-align: center;
+}
+
+.subtitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.titulo-cenario {
+  text-align: center;
+}
+
+.cenario {
+  border: 1px solid #000;
+  padding: 30px;
+}
+
+.auditoria {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.arrow-down {
+  width: 10%;
+}
+
+.arrow-up {
+  width: 11%;
+}
+
+@media only screen and (max-width: 400px) {
+  .table {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}

@@ -22,9 +22,11 @@ if (!isset($_SESSION['usuarioEmail'])) {
 </head>
 
 <body>
-    <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+    <a class="btn-voltar" href="../index.php"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
     <form action="../sql.php" method="POST">
-        <input type="hidden" name="grupo" value="<?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?>">
+        <?php if (!empty($_GET['grupo'])) : ?>
+            <input type="hidden" name="grupo" value="<?php echo $_GET['grupo'] ?>">
+        <?php endif; ?>
         <input type="hidden" name="participante" value="<?php if (!empty($participante)) echo $participante ?>">
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
@@ -32,11 +34,26 @@ if (!isset($_SESSION['usuarioEmail'])) {
 
         <div class="container-subtitulo">
 
-            <h1 class="grupo">Grupo <?php if (!empty($_GET['grupo'])) echo $_GET['grupo'] ?></h1>
+            <h1 class="grupo">Grupo <?php if (!empty($_GET['grupo'])) echo $_GET['grupo'];
+                                    if (!empty($_GET['avaliador'])) echo $_GET['avaliador'] ?></h1>
             <div class="container-select">
+                <?php if (@$_GET['avaliador']) : ?>
+                    <h3>Avaliador</h3>
+                    <input type="text" name="avaliador" style="margin: 18px 20px 0 10px; height: 20px;" required>
+
+                    <h3>Grupo</h3>
+                    <select name="grupo" id="select-rodada" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                <?php endif; ?>
 
                 <h3>Rodada</h3>
-                <select name="rodada" id="select-rodada">
+                <select name="rodada" id="select-rodada" required>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -45,7 +62,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 </select>
 
                 <h3>Vendedor</h3>
-                <select name="representante" id="select-rep">
+                <select name="representante" id="select-rep" required>
                     <option value="1.1">1.1</option>
                     <option value="1.2">1.2</option>
                     <option value="1.3">1.3</option>
@@ -107,13 +124,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Apresentação do Planejamento para os Avaliadores</p>
                     </td>
                     <td>
-                        <input type="radio" name="ap" id="" value="1">
+                        <input type="radio" name="ap" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="ap" id="" value="2">
+                        <input type="radio" name="ap" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="ap" id="" value="3">
+                        <input type="radio" name="ap" id="" value="1" required>
                     </td>
                 </tr>
 
@@ -125,13 +142,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Rapport/conexão com o cliente</p>
                     </td>
                     <td>
-                        <input type="radio" name="rap" id="" value="1">
+                        <input type="radio" name="rap" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="rap" id="" value="2">
+                        <input type="radio" name="rap" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="rap" id="" value="3">
+                        <input type="radio" name="rap" id="" value="1" required>
                     </td>
                 </tr>
 
@@ -141,13 +158,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Apresentação e Desenvolvimento</p>
                     </td>
                     <td>
-                        <input type="radio" name="ad" id="" value="1">
+                        <input type="radio" name="ad" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="ad" id="" value="2">
+                        <input type="radio" name="ad" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="ad" id="" value="3">
+                        <input type="radio" name="ad" id="" value="1" required>
                     </td>
                 </tr>
 
@@ -159,13 +176,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Falteiro/Demanda</p>
                     </td>
                     <td>
-                        <input type="radio" name="fd" id="" value="1">
+                        <input type="radio" name="fd" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="fd" id="" value="2">
+                        <input type="radio" name="fd" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="fd" id="" value="3">
+                        <input type="radio" name="fd" id="" value="1" required>
                     </td>
                 <tr>
                     <th>
@@ -176,13 +193,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     </td>
 
                     <td>
-                        <input type="radio" name="bo" id="" value="1">
+                        <input type="radio" name="bo" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="bo" id="" value="2">
+                        <input type="radio" name="bo" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="bo" id="" value="3">
+                        <input type="radio" name="bo" id="" value="1" required>
                     </td>
                 </tr>
                 </tr>
@@ -191,13 +208,13 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <th>Outros</th>
                     <td>Técnica de Fechamennto Aplicada</td>
                     <td>
-                        <input type="radio" name="tf" id="" value="">
+                        <input type="radio" name="tf" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="tf" id="" value="">
+                        <input type="radio" name="tf" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="tf" id="" value="">
+                        <input type="radio" name="tf" id="" value="1" required>
                     </td>
                 </tr>
                 <tr>
@@ -206,36 +223,37 @@ if (!isset($_SESSION['usuarioEmail'])) {
                         <p>Cumpriu com o Tempo</p>
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="1">
+                        <input type="radio" name="ct" id="" value="3" required>
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="2">
+                        <input type="radio" name="ct" id="" value="2" required>
                     </td>
                     <td>
-                        <input type="radio" name="ct" id="" value="3">
+                        <input type="radio" name="ct" id="" value="1" required>
                     </td>
                 </tr>
             </table>
         </div>
-
-        <div class="buttom-enviar">
-            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
-        </div>
+        <input type="hidden" name="total" id="resultado">
     </form>
 </body>
-
+<div class="buttom-enviar">
+    <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+</div>
 <script>
-    var input = document.getElementsByTagName('input');
-    input.addEventListener("change", sumRadio)
-    
-    function sumRadio() {
-        document.getElementById("result").innerHTML = "";
+    function teste() {
+        const form = document.querySelector("form");
+        var radios = form.querySelectorAll("input[type='radio']");
+        var btn = document.getElementById("botao-enviar");
+        var sum = 0;
 
-        for (i = 0; i < 100; i++) {
-            if (input[i].checked) {
-                document.getElementById("result").innerHTML += input[i].value;
+        radios.forEach(radio => {
+            if (radio.checked) {
+                sum += parseInt(radio.value);
             }
-        }
+        });
+        document.getElementById("resultado").value = sum;
+        form.submit();
     }
 </script>
 
