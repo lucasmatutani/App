@@ -44,7 +44,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                     <option value="5">5</option>
                 </select>
 
-                <h3>Representante</h3>
+                <h3>Vendedor</h3>
                 <select name="representante" id="select-rep">
                     <option value="1.1">1.1</option>
                     <option value="1.2">1.2</option>
