@@ -14,6 +14,13 @@
   justify-content: center;
 }
 
+.habilidade {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .container-flex {
   display: flex;
   align-items: center;
@@ -24,12 +31,10 @@
 .container-principal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px 20px;
-  margin-top: -320px;
 }
 
-.probabilidade {
-  margin-top: -300px;
+.desafio {
+  /* margin-top: 90px; */
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 }
@@ -40,41 +45,19 @@
   flex-direction: column;
 }
 
-.titulo h3 {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-}
-
-.container-principal input {
-  height: 80px;
-}
-
-.container-riscos {
+.buttom-enviar {
   display: flex;
-  flex-direction: column;
-  width: 150px;
-  padding-left: 40px;
-}
-
-.container-riscos textarea {
-  border: 1px solid #000;
-}
-
-.impactos {
-  text-align: center;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 #botao-enviar {
-  background: #0066a2;
+  background: #314b7c;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   color: #fff;
-  margin: 30px 0;
-  position: relative;
-  left: 43%;
+  padding: 10px 50px;
+  margin-top: 20px;
 }
 
 #botao-enviar:hover {
