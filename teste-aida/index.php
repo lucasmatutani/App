@@ -75,7 +75,7 @@ if (!empty($data)) {
             </div>
 
             <div class="container">
-                <input type="text" name="nm2" id="" placeholder="Insira o nome do produto aqui" value="<?php if (!empty($linha)) echo $linha['nm2'] ?>" required>
+                <input type="text" name="nm2" id="" placeholder="Insira o nome do produto aqui" value="<?php if (!empty($linha)) echo $linha['nm2'] ?>">
                 <table cellspacing="40">
                     <tr>
                         <th class="table-text">A - Atenção</th>
@@ -101,7 +101,7 @@ if (!empty($data)) {
             </div>
 
             <div class="container">
-                <input type="text" name="nm3" id="" placeholder="Insira o nome do produto aqui" value="<?php if (!empty($linha)) echo $linha['nm3'] ?>" required>
+                <input type="text" name="nm3" id="" placeholder="Insira o nome do produto aqui" value="<?php if (!empty($linha)) echo $linha['nm3'] ?>">
                 <table cellspacing="40">
                     <tr>
                         <th class="table-text">A - Atenção</th>
@@ -127,7 +127,7 @@ if (!empty($data)) {
 
             <div class="container">
                 <table cellspacing="40">
-                    <input type="text" name="nm4" id="" placeholder="Insira o nome do produto aqui" value="<?php if (!empty($linha)) echo $linha['nm4'] ?>" required>
+                    <input type="text" name="nm4" id="" placeholder="Insira o nome do produto aqui" value="<?php if (!empty($linha)) echo $linha['nm4'] ?>">
                     <tr>
                         <th class="table-text">A - Atenção</th>
                         <th><textarea name="txt13"><?php if (!empty($linha)) echo $linha['txt13'] ?></textarea></th>
