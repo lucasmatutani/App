@@ -1,6 +1,10 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+
 $usuario_id = $_SESSION['usuarioId'];
 $nome = $_SESSION['usuarioNome'];
 
