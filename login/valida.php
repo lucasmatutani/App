@@ -35,6 +35,7 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['matriz_predominio'] = $resultado['matriz_predominio'];
         $_SESSION['testes_jpb'] = $resultado['testes_jpb'];
         $_SESSION['matriz_risco'] = $resultado['matriz_risco'];
+        $_SESSION['teste_hospital'] = $resultado['teste_hospital'];
 
         if ($resultado['email'] == "admin") {
             header("Location: ../admin");

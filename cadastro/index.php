@@ -50,149 +50,160 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         </div>
                     </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Teste Comportamental</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="comportamental" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="comportamental" value="0">
+                    <div class="card-testes">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Role play Hospital</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="teste_hospital" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="teste_hospital" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Teste Conquiste Clientes</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="conquiste_clientes" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="conquiste_clientes" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Teste Comportamental</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="comportamental" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="comportamental" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Teste Aida</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="aida" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="aida" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Teste Conquiste Clientes</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="conquiste_clientes" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="conquiste_clientes" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Teste Spin</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="spin" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="spin" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Teste Aida</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="aida" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="aida" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Método Cesar</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="metodo-cesar" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="metodo-cesar" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Teste Spin</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="spin" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="spin" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Petscan do Cliente</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="petscan" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="petscan" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Método Cesar</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="metodo-cesar" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="metodo-cesar" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Tríade do Tempo</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="triade" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="triade" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Petscan do Cliente</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="petscan" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="petscan" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Plano de Ação</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="plano_de_acao_5w2h" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="plano_de_acao_5w2h" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Tríade do Tempo</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="triade" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="triade" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Diario de Bordo</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="diario_de_bordo" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="diario_de_bordo" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Plano de Ação</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="plano_de_acao_5w2h" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="plano_de_acao_5w2h" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Fatores críticos</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="fatores_criticos" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="fatores_criticos" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Diario de Bordo</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="diario_de_bordo" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="diario_de_bordo" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Análise Swot</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="analise_swot" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="analise_swot" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Fatores críticos</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="fatores_criticos" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="fatores_criticos" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Matriz de predomínio</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="matriz_predominio" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="matriz_predominio" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Análise Swot</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="analise_swot" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="analise_swot" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Testes JPB</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="testes_jpb" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="testes_jpb" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Matriz de predomínio</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="matriz_predominio" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="matriz_predominio" value="0">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="container-row">
-                        <p style="margin-right: 15px;">Matriz de Risco</p>
-                        <div class="input">
-                            <label for="">SIM</label>
-                            <input type="radio" name="matriz_risco" value="1">
-                            <label for="">NÃO</label>
-                            <input type="radio" name="matriz_risco" value="0">
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Testes JPB</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="testes_jpb" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="testes_jpb" value="0">
+                            </div>
                         </div>
-                    </div>
 
+                        <div class="container-row">
+                            <p style="margin-right: 15px;">Matriz de Risco</p>
+                            <div class="input">
+                                <label for="">SIM</label>
+                                <input type="radio" name="matriz_risco" value="1">
+                                <label for="">NÃO</label>
+                                <input type="radio" name="matriz_risco" value="0">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
+                <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
         </form>
     </section>
 </body>

@@ -64,6 +64,10 @@ $usuario_id = $_SESSION['usuarioId'];
                 <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste">Plano de ação 5W2H</a>
             <?php endif; ?>
 
+            <?php if ($_SESSION['teste_hospital'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste">Role play Hospital</a>
+            <?php endif; ?>
+
             <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-representacional/" class="teste">Sistemas Representacionais</a>
             <?php endif; ?>
