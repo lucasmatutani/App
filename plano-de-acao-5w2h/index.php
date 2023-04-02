@@ -219,7 +219,7 @@ if (!empty($data)) {
         });
     });
 
-    $('.subgrid').on('change', function(event) {
+    $('.subgrid').on('click', function(event) {
         console.log("LUCAS");
         const parents = document.querySelectorAll('.subgrid');
         const desiredBackgroundColor = 'rgb(49, 75, 124)'; // #314b7c em formato RGB
