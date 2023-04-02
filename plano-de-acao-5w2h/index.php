@@ -219,9 +219,8 @@ if (!empty($data)) {
         });
     });
 
-    function submitForm() {
-        const form = document.getElementById('formData');
-
+    $('#formData').on('submit', function(event) {
+        event.preventDefault();
         const parents = document.querySelectorAll('.subgrid');
         const desiredBackgroundColor = 'rgb(49, 75, 124)'; // #314b7c em formato RGB
         let resultados = {};
@@ -242,6 +241,13 @@ if (!empty($data)) {
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
 
+            var formData = $(this).serializeArray(); // Serializa os dados do formulário
+            formData.push({
+                name: 'resultado1',
+                value: resultado1,
+                name: 'resultado2',
+                value: resultado2
+            }); // Adiciona a variável JavaScript aos dados do formulário
             $.ajax({
                 url: './sql.php',
                 method: 'POST',
@@ -259,7 +265,7 @@ if (!empty($data)) {
         });
         // console.log(resultados.resultado1);
         // form.submit();
-    }
+    });
 </script>
 
 </html>
