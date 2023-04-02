@@ -251,7 +251,6 @@ if (!empty($data)) {
     });
 
     $('.subgrid').on('click', function(event) {
-        console.log("LUCAS");
         const parents = document.querySelectorAll('.subgrid');
         const desiredBackgroundColor = 'rgb(49, 75, 124)'; // #314b7c em formato RGB
         let resultados = {};
@@ -280,7 +279,6 @@ if (!empty($data)) {
             $('#resultado3').val(resultado3);
             $('#resultado4').val(resultado4);
         });
-        // console.log(resultados.resultado1);
     });
 </script>
 
