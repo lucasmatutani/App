@@ -259,7 +259,7 @@ if (!empty($data)) {
             });
         });
         // console.log(resultados.resultado1);
-        // form.submit();
+        form.submit();
     }
 </script>
 
