@@ -34,7 +34,11 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST" id="formData">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-        <input type="hidden" name="resultado1" value="">
+        <input type="hidden" id="resultado1" name="resultado1" value="">
+        <input type="hidden" id="resultado2" name="resultado2" value="">
+        <input type="hidden" id="resultado3" name="resultado3" value="">
+        <input type="hidden" id="resultado4" name="resultado4" value="">
+
         <div class="objetivo">
             <h3>Objetivo:</h3>
             <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
@@ -241,7 +245,14 @@ if (!empty($data)) {
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
 
-
+            $('#resultado1').val(resultado1);
+            $('#resultado2').val(resultado2);
+            if (resultado3) {
+                $('#resultado3').val(resultado3);
+            }
+            if (resultado4) {
+                $('#resultado4').val(resultado4);
+            }
         });
         // console.log(resultados.resultado1);
     });
