@@ -214,10 +214,11 @@ if (!empty($data)) {
         });
 
         for (let i = 1; i <= 4; i++) {
-            console.log("Lucas666");
             if ($('#resultado' + i) != "") {
+                console.log("Lucas666");
                 if ($('#resultado' + i).val() == 1) {
-                    $('#pontuacao' + i).children(':eq(0)').style.backgroundColor = "#314b7c";
+                    let firstChild = $('#pontuacao' + i).children(':eq(0)');
+                    firstChild.style.backgroundColor = "#314b7c";
                 }
             }
         }
