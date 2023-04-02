@@ -211,19 +211,17 @@ if (!empty($data)) {
                     }
                 });
             });
-
         });
+
+        for (let i = 1; i <= 4; i++) {
+            if ($('#resultado' + i) != "") {
+                if ($('#resultado' + i).val() == 20) {
+                    $('#pontuacao' + i).children(':eq(0)').style.backgroundColor = "#314b7c";
+                }
+            }
+        }
+
     });
-
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     const containers = document.querySelectorAll('.subgrid');
-
-    //     containers.forEach(function(container) {
-    //         const elements = container.querySelectorAll('.pontuacao');
-
-
-    //     });
-    // });
 
     $('.subgrid').on('click', function(event) {
         console.log("LUCAS");
