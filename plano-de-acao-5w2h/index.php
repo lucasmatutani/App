@@ -218,7 +218,8 @@ if (!empty($data)) {
                 console.log("Lucas666");
                 if ($('#resultado' + i).val() == 1) {
                     let firstChild = $('#pontuacao' + i).children(':eq(0)');
-                    firstChild.style.backgroundColor = "#314b7c";
+                    console.log(firstChild);
+                    // firstChild.style.backgroundColor = "#314b7c";
                 }
             }
         }
