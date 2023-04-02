@@ -166,8 +166,8 @@ if (!empty($data)) {
             <textarea name="txt64" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt64']; ?></textarea>
 
         </div>
+        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; position: relative; left: 50%;">
     </form>
-    <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; position: relative; left: 50%;" onclick="submitForm()">
 
 </body>
 
