@@ -2,6 +2,7 @@
 include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
+$resultado1 = $_POST['resultado1'];
 $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
 $objetivo = $_REQUEST['objetivo'];
@@ -73,6 +74,10 @@ $txt61 = $_REQUEST['txt61'];
 $txt62 = $_REQUEST['txt62'];
 $txt63 = $_REQUEST['txt63'];
 $txt64 = $_REQUEST['txt64'];
+
+echo $resultado;
+echo $txt1;
+exit;
 
 $data = $conn->query('SELECT * FROM plano_de_acao_5w2h');
 $linha = mysqli_fetch_assoc($data);

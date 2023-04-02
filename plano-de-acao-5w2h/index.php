@@ -20,6 +20,7 @@ if (!empty($data)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Plano de ação 5W2H</title>
 </head>
 
@@ -237,11 +238,26 @@ if (!empty($data)) {
                 }
             });
 
-            // console.log(`Div pai ${parentIndex + 1}: quantidade de elementos com a cor de fundo #314b7c: ${backgroundColorCount}`);
             resultados[`resultado${parentIndex + 1}`] = backgroundColorCount;
+            let resultado1 = resultados.resultado1;
+            let resultado2 = resultados.resultado2;
+            $.ajax({
+                url: 'sql.php.php',
+                method: 'POST',
+                data: {
+                    resultado1: resultado1,
+                    resultado2: resultado2
+                },
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function() {
+                    console.log('Erro na requisição');
+                }
+            });
         });
-        console.log(resultados.resultado1);
-        // form.submit();
+        // console.log(resultados.resultado1);
+        form.submit();
     }
 </script>
 
