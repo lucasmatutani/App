@@ -244,6 +244,9 @@ if (!empty($data)) {
             resultados[`resultado${parentIndex + 1}`] = backgroundColorCount;
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
+            let resultado3 = resultados.resultado3;
+            let resultado4 = resultados.resultado4;
+
 
             $('#resultado1').val(resultado1);
             $('#resultado2').val(resultado2);
