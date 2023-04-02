@@ -252,7 +252,7 @@ if (!empty($data)) {
 
     $('.subgrid').on('click', function(event) {
         const parents = document.querySelectorAll('.subgrid');
-        const desiredBackgroundColor = 'rgb(49, 75, 124)'; // #314b7c em formato RGB
+        const desiredBackgroundColor = 'rgb(49, 75, 124)';
         let resultados = {};
 
         parents.forEach(function(parent, parentIndex) {
