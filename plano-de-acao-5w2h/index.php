@@ -34,10 +34,10 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST" id="formData">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-        <input type="hidden" id="resultado1" name="resultado1" value="">
-        <input type="hidden" id="resultado2" name="resultado2" value="">
-        <input type="hidden" id="resultado3" name="resultado3" value="">
-        <input type="hidden" id="resultado4" name="resultado4" value="">
+        <input type="hidden" id="resultado1" name="resultado1" value="1">
+        <input type="hidden" id="resultado2" name="resultado2" value="2">
+        <input type="hidden" id="resultado3" name="resultado3" value="4">
+        <input type="hidden" id="resultado4" name="resultado4" value="1">
 
         <div class="objetivo">
             <h3>Objetivo:</h3>
@@ -215,7 +215,7 @@ if (!empty($data)) {
 
         for (let i = 1; i <= 4; i++) {
             if ($('#resultado' + i) != "") {
-                if ($('#resultado' + i).val() == 20) {
+                if ($('#resultado' + i).val() == 1) {
                     $('#pontuacao' + i).children(':eq(0)').style.backgroundColor = "#314b7c";
                 }
             }
