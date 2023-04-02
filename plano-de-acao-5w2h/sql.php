@@ -75,10 +75,6 @@ $txt62 = $_REQUEST['txt62'];
 $txt63 = $_REQUEST['txt63'];
 $txt64 = $_REQUEST['txt64'];
 
-echo $resultado1;
-echo $txt1;
-exit;
-
 $data = $conn->query('SELECT * FROM plano_de_acao_5w2h');
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
