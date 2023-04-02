@@ -247,12 +247,8 @@ if (!empty($data)) {
 
             $('#resultado1').val(resultado1);
             $('#resultado2').val(resultado2);
-            if (resultado3) {
-                $('#resultado3').val(resultado3);
-            }
-            if (resultado4) {
-                $('#resultado4').val(resultado4);
-            }
+            $('#resultado3').val(resultado3);
+            $('#resultado4').val(resultado4);
         });
         // console.log(resultados.resultado1);
     });
