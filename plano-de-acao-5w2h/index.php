@@ -216,9 +216,34 @@ if (!empty($data)) {
         for (let i = 1; i <= 4; i++) {
             if ($('#resultado' + i) != "") {
                 if ($('#resultado' + i).val() == 1) {
-                    console.log("Lucas666");
                     let firstChild = $('#pontuacao' + i).children(':eq(0)');
-                    firstChild.style.backgroundColor = "#314b7c";
+                    firstChild[0].style.backgroundColor = "#314b7c";
+                }
+                if ($('#resultado' + i).val() == 2) {
+                    let bothChilds = $('#pontuacao' + i).children(':lt(2)');
+                    bothChilds[0].style.backgroundColor = "#314b7c";
+                    bothChilds[1].style.backgroundColor = "#314b7c";
+                }
+                if ($('#resultado' + i).val() == 3) {
+                    let bothChilds = $('#pontuacao' + i).children(':lt(3)');
+                    bothChilds[0].style.backgroundColor = "#314b7c";
+                    bothChilds[1].style.backgroundColor = "#314b7c";
+                    bothChilds[2].style.backgroundColor = "#314b7c";
+                }
+                if ($('#resultado' + i).val() == 4) {
+                    let bothChilds = $('#pontuacao' + i).children(':lt(4)');
+                    bothChilds[0].style.backgroundColor = "#314b7c";
+                    bothChilds[1].style.backgroundColor = "#314b7c";
+                    bothChilds[2].style.backgroundColor = "#314b7c";
+                    bothChilds[3].style.backgroundColor = "#314b7c";
+                }
+                if ($('#resultado' + i).val() == 5) {
+                    let bothChilds = $('#pontuacao' + i).children(':lt(5)');
+                    bothChilds[0].style.backgroundColor = "#314b7c";
+                    bothChilds[1].style.backgroundColor = "#314b7c";
+                    bothChilds[2].style.backgroundColor = "#314b7c";
+                    bothChilds[3].style.backgroundColor = "#314b7c";
+                    bothChilds[4].style.backgroundColor = "#314b7c";
                 }
             }
         }
