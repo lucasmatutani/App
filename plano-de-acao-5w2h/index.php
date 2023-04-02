@@ -200,15 +200,6 @@ if (!empty($data)) {
                 });
             });
 
-        });
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const containers = document.querySelectorAll('.subgrid');
-
-        containers.forEach(function(container) {
-            const elements = container.querySelectorAll('.pontuacao');
-
             elements.forEach(function(element) {
                 element.addEventListener('click', function(event) {
                     const clickedElement = event.target;
@@ -220,8 +211,19 @@ if (!empty($data)) {
                     }
                 });
             });
+
         });
     });
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const containers = document.querySelectorAll('.subgrid');
+
+    //     containers.forEach(function(container) {
+    //         const elements = container.querySelectorAll('.pontuacao');
+
+
+    //     });
+    // });
 
     $('.subgrid').on('click', function(event) {
         console.log("LUCAS");
