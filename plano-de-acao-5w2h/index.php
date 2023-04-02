@@ -34,7 +34,7 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST" id="formData">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-
+        <input type="hidden" name="resultado1" value="">
         <div class="objetivo">
             <h3>Objetivo:</h3>
             <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
@@ -219,8 +219,8 @@ if (!empty($data)) {
         });
     });
 
-    $('#formData').on('submit', function(event) {
-        event.preventDefault();
+    $('.subgrid').on('change', function(event) {
+        console.log("LUCAS");
         const parents = document.querySelectorAll('.subgrid');
         const desiredBackgroundColor = 'rgb(49, 75, 124)'; // #314b7c em formato RGB
         let resultados = {};
@@ -241,30 +241,9 @@ if (!empty($data)) {
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
 
-            var formData = $(this).serializeArray(); // Serializa os dados do formulário
-            formData.push({
-                name: 'resultado1',
-                value: resultado1,
-                name: 'resultado2',
-                value: resultado2
-            }); // Adiciona a variável JavaScript aos dados do formulário
-            $.ajax({
-                url: './sql.php',
-                method: 'POST',
-                data: {
-                    result1: resultado1,
-                    result2: resultado2
-                },
-                success: function(response) {
-                    console.log(response);
-                },
-                error: function() {
-                    console.log('Erro na requisição');
-                }
-            });
+
         });
         // console.log(resultados.resultado1);
-        // form.submit();
     });
 </script>
 
