@@ -242,7 +242,7 @@ if (!empty($data)) {
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
             $.ajax({
-                url: 'sql.php.php',
+                url: 'sql.php',
                 method: 'POST',
                 data: {
                     resultado1: resultado1,
