@@ -215,10 +215,10 @@ if (!empty($data)) {
 
         for (let i = 1; i <= 4; i++) {
             if ($('#resultado' + i) != "") {
-                if ($('#resultado1').val() == 1) {
+                if ($('#resultado' + i).val() == 1) {
                     console.log("Lucas666");
                     let firstChild = $('#pontuacao' + i).children(':eq(0)');
-                    // firstChild.style.backgroundColor = "#314b7c";
+                    firstChild.style.backgroundColor = "#314b7c";
                 }
             }
         }
