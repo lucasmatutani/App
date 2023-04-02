@@ -241,7 +241,6 @@ if (!empty($data)) {
             resultados[`resultado${parentIndex + 1}`] = backgroundColorCount;
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
-            console.log(resultado1);
 
             $.ajax({
                 url: './sql.php',
@@ -259,7 +258,7 @@ if (!empty($data)) {
             });
         });
         // console.log(resultados.resultado1);
-        form.submit();
+        // form.submit();
     }
 </script>
 
