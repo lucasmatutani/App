@@ -2,7 +2,7 @@
 include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
-$resultado1 = $_POST['resultado1'];
+$resultado1 = $_POST['result1'];
 $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
 $objetivo = $_REQUEST['objetivo'];

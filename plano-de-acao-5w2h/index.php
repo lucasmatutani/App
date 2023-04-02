@@ -241,12 +241,14 @@ if (!empty($data)) {
             resultados[`resultado${parentIndex + 1}`] = backgroundColorCount;
             let resultado1 = resultados.resultado1;
             let resultado2 = resultados.resultado2;
+            console.log(resultado1);
+
             $.ajax({
-                url: 'sql.php',
+                url: './sql.php',
                 method: 'POST',
                 data: {
-                    resultado1: resultado1,
-                    resultado2: resultado2
+                    result1: resultado1,
+                    result2: resultado2
                 },
                 success: function(response) {
                     console.log(response);
@@ -257,7 +259,7 @@ if (!empty($data)) {
             });
         });
         // console.log(resultados.resultado1);
-        form.submit();
+        // form.submit();
     }
 </script>
 
