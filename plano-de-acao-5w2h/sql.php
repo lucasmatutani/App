@@ -75,7 +75,7 @@ $txt62 = $_REQUEST['txt62'];
 $txt63 = $_REQUEST['txt63'];
 $txt64 = $_REQUEST['txt64'];
 
-echo $resultado;
+echo $resultado1;
 echo $txt1;
 exit;
 
