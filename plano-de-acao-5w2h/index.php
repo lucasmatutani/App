@@ -34,10 +34,10 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST" id="formData">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-        <input type="hidden" id="resultado1" name="resultado1" value="1">
-        <input type="hidden" id="resultado2" name="resultado2" value="2">
-        <input type="hidden" id="resultado3" name="resultado3" value="4">
-        <input type="hidden" id="resultado4" name="resultado4" value="1">
+        <input type="hidden" id="resultado1" name="resultado1" value="<?php if (!empty($linha['resultado1'])) echo $linha['resultado1'] ?>">
+        <input type="hidden" id="resultado2" name="resultado2" value="<?php if (!empty($linha['resultado2'])) echo $linha['resultado2'] ?>">
+        <input type="hidden" id="resultado3" name="resultado3" value="<?php if (!empty($linha['resultado3'])) echo $linha['resultado3'] ?>">
+        <input type="hidden" id="resultado4" name="resultado4" value="<?php if (!empty($linha['resultado4'])) echo $linha['resultado4'] ?>">
 
         <div class="objetivo">
             <h3>Objetivo:</h3>
@@ -215,10 +215,9 @@ if (!empty($data)) {
 
         for (let i = 1; i <= 4; i++) {
             if ($('#resultado' + i) != "") {
-                console.log("Lucas666");
-                if ($('#resultado' + i).val() == 1) {
+                if ($('#resultado1').val() == 1) {
+                    console.log("Lucas666");
                     let firstChild = $('#pontuacao' + i).children(':eq(0)');
-                    console.log(firstChild);
                     // firstChild.style.backgroundColor = "#314b7c";
                 }
             }
