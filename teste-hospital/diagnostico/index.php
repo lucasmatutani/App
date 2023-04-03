@@ -51,7 +51,7 @@ if (!empty($data)) {
                 <textarea name="problemas" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['problemas'] ?></textarea>
             </div>
             <div class="oportunidade">
-                <h3>Oportunidade</h3>
+                <h3>Oportunidades</h3>
                 <textarea name="oportunidade" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['oportunidade'] ?></textarea>
             </div>
             <div class="objetivo">
