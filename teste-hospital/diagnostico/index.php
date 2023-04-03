@@ -28,7 +28,7 @@ if (!empty($data)) {
 
 <body>
     <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
-    <form action="./sql.php" method="POST">
+    <form action="../sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="nome" value="<?php echo $nome ?>">
 
