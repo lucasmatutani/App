@@ -2,6 +2,9 @@
 include_once "../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
 
 $data = $conn->query("SELECT * FROM diario_de_bordo WHERE usuario_id = $usuario_id");
 if (!empty($data)) {

@@ -56,6 +56,15 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.subgrid_numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.pontuacao {
+  border: 1px solid #000;
+}
+
 #botao-enviar {
   background: #0066a2;
   border: none;

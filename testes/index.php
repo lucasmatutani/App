@@ -34,7 +34,7 @@ $usuario_id = $_SESSION['usuarioId'];
                 <span style="z-index: 999;"></span>
             </div>
 
-            <a href="http://focustradeapp.com.br/role-play/" class="teste">Role-Play</a>
+            <!-- <a href="http://focustradeapp.com.br/role-play/" class="teste">Role-Play</a> -->
 
             <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
@@ -62,6 +62,10 @@ $usuario_id = $_SESSION['usuarioId'];
 
             <?php if ($_SESSION['plano_de_acao'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste">Plano de ação 5W2H</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['teste_hospital'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="../teste-hospital/" class="teste">Role play Hospital</a>
             <?php endif; ?>
 
             <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>

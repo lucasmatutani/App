@@ -8,6 +8,7 @@ $senha = $_REQUEST['senha'];
 $grupo = $_REQUEST['grupo'];
 $teste_hospital = $_REQUEST['teste_hospital'];
 $representacional = $_REQUEST['representacional'];
+$teste_hospital = $_REQUEST['teste_hospital'];
 $comportamental = $_REQUEST['comportamental'];
 $conquiste_clientes = $_REQUEST['conquiste_clientes'];
 $aida = $_REQUEST['aida'];

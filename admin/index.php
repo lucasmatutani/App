@@ -17,9 +17,6 @@
 
     <div class="container-card">
 
-        <a href="../role-play/respostas" class="btn-3d" title="Cadastro de usuário" target="_blank">
-            <i class="icon icon-cube">Respostas Role Play</i>
-        </a>
 
         <a href="../cadastro/" class="btn-3d" title="Cadastro de usuário" target="_blank">
             <i class="icon icon-cube">Cadastro de usuário</i>
@@ -31,6 +28,14 @@
 
         <a href="../teste-aida/role-play/" class="btn-3d" title="Cadastro de usuário" target="_blank">
             <i class="icon icon-cube">Resposta Teste AIDA</i>
+        </a>
+
+        <a href="../role-play/respostas" class="btn-3d" title="Cadastro de usuário" target="_blank">
+            <i class="icon icon-cube">Respostas Role Play</i>
+        </a>
+
+        <a href="../teste-hospital/respostas/index.php" class="btn-3d" title="Cadastro de usuário" target="_blank">
+            <i class="icon icon-cube">Respostas Role Play Hospital</i>
         </a>
 
         <a href="../teste-spin/index.php" class="btn-3d" title="Cadastro de usuário" target="_blank">

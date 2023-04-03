@@ -1,0 +1,21 @@
+.btn-voltar {
+  margin: 0 0 0 20px;
+  position: absolute;
+  z-index: 999;
+  color: #000;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.titulo {
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
