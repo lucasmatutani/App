@@ -43,7 +43,7 @@ if (!empty($data)) {
                 <h3>Vendedor</h3>
                 <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="">
                  <h3>Rodada</h3>
-                <input type="text" name="representante" id="" value="">
+                <input type="text" name="rodada" id="" value="">
             </div>
             <div class="txt-inicio">
                 <h3>Grupo <?php echo $grupo ?></h3>
