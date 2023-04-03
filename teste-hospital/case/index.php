@@ -20,7 +20,7 @@
         <a class="button3" href="http://focustradeapp.com.br/teste-hospital/case/case-3/">Case 3</a>
         <a class="button4" href="http://focustradeapp.com.br/teste-hospital/case/case-4/">Case 4</a>
         <a class="button5" href="http://focustradeapp.com.br/teste-hospital/case/case-5/">Case 5</a>
-        <!-- <a class="button6" href="http://focustradeapp.com.br/teste-hospital/case/case-6/">Case 6</a> -->
+        <a class="button6" href="http://focustradeapp.com.br/teste-hospital/case/case-6/">Case 6</a>
     </div>
 </body>
 
