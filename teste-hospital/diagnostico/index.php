@@ -3,6 +3,7 @@ include_once "../../includes/connection.php";
 session_start();
 $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
+$grupo = $_SESSION['grupo'];
 
 if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../../login');
@@ -41,8 +42,7 @@ if (!empty($data)) {
                 <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="<?php if (!empty($linha)) echo $linha['representante'] ?>">
             </div>
             <div class="txt-inicio">
-                <h3>Grupo</h3>
-                <input type="text" name="grupo" id="" value="<?php if (!empty($linha)) echo $linha['grupo'] ?>">
+                <h3>Grupo <?php echo $grupo ?></h3>
             </div>
         </div>
         <div class="container-principal">
