@@ -4,6 +4,7 @@ include_once "../includes/connection.php";
 $usuario_id = $_REQUEST['usuario_id'];
 $representante = $_REQUEST['representante'];
 $nome = $_REQUEST['nome'];
+$grupo = $_REQUEST['grupo'];
 $problemas = $_REQUEST['problemas'];
 $oportunidade = $_REQUEST['oportunidade'];
 $objetivo = $_REQUEST['objetivo'];
