@@ -3,7 +3,7 @@ include_once "../includes/connection.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
 $representante = $_REQUEST['representante'];
-$grupo = $_REQUEST['grupo'];
+$nome = $_REQUEST['nome'];
 $problemas = $_REQUEST['problemas'];
 $oportunidade = $_REQUEST['oportunidade'];
 $objetivo = $_REQUEST['objetivo'];
@@ -12,12 +12,10 @@ $objetivo = $_REQUEST['objetivo'];
 $data = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE diagnostico set usuario_id='$usuario_id',representante='$representante', grupo='$grupo', problema='$problemas', oportunidade='$oportunidade', objetivo='$objetivo' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE diagnostico set usuario_id='$usuario_id', representante='$representante', nome='$nome', problema='$problemas', oportunidade='$oportunidade', objetivo='$objetivo' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO diagnostico set usuario_id= '$usuario_id', representante='$representante', grupo='$grupo', problema='$problemas', oportunidade='$oportunidade', objetivo='$objetivo'";
+    $sql = "INSERT INTO diagnostico set usuario_id= '$usuario_id', representante='$representante', nome='$nome', problema='$problemas', oportunidade='$oportunidade', objetivo='$objetivo'";
 }
-
-// $sql = "INSERT INTO diagnostico (representante, grupo, problemas, oportunidade, objetivo) VALUES ('$representante', '$grupo', '$problemas', '$oportunidade', '$objetivo')";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");
