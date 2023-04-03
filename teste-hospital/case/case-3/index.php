@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <a class="btn-voltar" href="http://focustradeapp.com.br/teste-hospital/case/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
+
     <h1 class="titulo">Case 3</h1>
 
     <div class="container-principal">
