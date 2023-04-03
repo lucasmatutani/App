@@ -37,3 +37,18 @@ include_once "../../includes/connection.php";
         </table>
     </div>
 </div>
+<style>
+    td {
+        border-bottom: 1px solid #000;
+    }
+
+    th {
+        font-size: 1.2em;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+</style>
