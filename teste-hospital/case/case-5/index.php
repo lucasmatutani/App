@@ -14,12 +14,17 @@
     <h1 class="titulo">Case 5</h1>
 
     <div class="container-principal">
-        <h2>Hospital Filantrópico (Santas Casas)</h2>
-        <p>• Hospital com recursos públicos, doações e setor privado com plano de saúde próprio;
-        </p>
-        <p>• 300 leitos, sendo 30 leitos para UTI Geral e para UCO;</p>
-        <p>• Hospital porta aberta para o SUS;</p>
-        <p>• Acesso livre às Unidades Hospitalar, Emergência, Ambulatorial e Enfermaria.</p>
+         <div class="conteiner-diagnostico" style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div class="container-info">
+                <h2>Hospital Filantrópico (Santas Casas)</h2>
+                <p>• Hospital com recursos públicos, doações e setor privado com plano de saúde próprio;
+                </p>
+                <p>• 300 leitos, sendo 30 leitos para UTI Geral e para UCO;</p>
+                <p>• Hospital porta aberta para o SUS;</p>
+                <p>• Acesso livre às Unidades Hospitalar, Emergência, Ambulatorial e Enfermaria.</p>
+            </div>
+            <a class="planejamento" href="../../diagnostico/index.php?case=5" style="text-decoration: none; background-color: orangered; padding: 10px 20px; height: 20px; color: #fff; border-radius: 100px;">Diagnóstico</a>
+        </div>
 
         <h2>Cenário</h2>
         <p>Corpo clínico aberto, com ambulatório de ICC. Dr. Carlos, chefe do departamento, possui vasta experiência na rede pública de saúde, e

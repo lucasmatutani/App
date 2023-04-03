@@ -14,16 +14,20 @@
     <h1 class="titulo">Case 1</h1>
 
     <div class="container-principal">
-        <h2>Hospital Público (HCRP/Unicamp/HCSP)</h2>
-        <p>• Hospital Público vinculado à Secretaria Estadual de Saúde;
-        </p>
-        <p>• 250 leitos, sendo 20 leitos para UTI Geral e 5 pra UCO;
-        </p>
-        <p>• Hospital Geral;
-        </p>
-        <p>• Ambulatório de ICC;</p>
-        <p>• STKs formadores de opinião são líderes da Cardiologia.</p>
-
+        <div class="conteiner-diagnostico" style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div class="container-info">
+                <h2>Hospital Público (HCRP/Unicamp/HCSP)</h2>
+                <p>• Hospital Público vinculado à Secretaria Estadual de Saúde;
+                </p>
+                <p>• 250 leitos, sendo 20 leitos para UTI Geral e 5 pra UCO;
+                </p>
+                <p>• Hospital Geral;
+                </p>
+                <p>• Ambulatório de ICC;</p>
+                <p>• STKs formadores de opinião são líderes da Cardiologia.</p>
+            </div>
+            <a class="planejamento" href="../../diagnostico/index.php?case=1" style="text-decoration: none; background-color: orangered; padding: 10px 20px; height: 20px; color: #fff; border-radius: 100px;">Diagnóstico</a>
+        </div>
         <h2>Cénario</h2>
 
         <p>Hospital vinculado à Secretaria de Saúde de São Paulo. O Dr. Valter Silva é o chefe do ambulatório de ICC e responsável pela

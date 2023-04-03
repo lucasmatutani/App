@@ -6,9 +6,9 @@ include_once "../../includes/connection.php";
         <table cellpadding="40" cellspacing="20" id="table-result">
             <thead>
                 <tr>
-                    <th>Autor do teste</th>
-                    <th>Vendedor</th>
                     <th>Grupo</th>
+                    <th>Vendedor</th>
+                    <th>Case</th>
                     <th>Problemas</th>
                     <th>Oportunidades</th>
                     <th>Objetivos</th>
@@ -22,9 +22,9 @@ include_once "../../includes/connection.php";
                     if ($res = mysqli_query($conn, $query)) :
                         while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
                             <tr>
-                                <td><?php echo $row['nome'] ?></td>
-                                <td><?php echo $row['representante'] ?></td>
                                 <td><?php echo $row['grupo'] ?></td>
+                                <td><?php echo $row['representante'] ?></td>
+                                <td><?php echo $row['case_diag'] ?></td>
                                 <td><?php echo $row['problemas'] ?></td>
                                 <td><?php echo $row['oportunidade'] ?></td>
                                 <td><?php echo $row['objetivo'] ?></td>

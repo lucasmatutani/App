@@ -19,7 +19,6 @@
 
     <div class="container-principal">
         <a class="case" href="./case">Case</a>
-        <a class="planejamento" href="./diagnostico/index.php">Diagnóstico</a>
         <a class="avaliacao" href="../plano-de-acao-5w2h/">Plano de Ação</a>
     </div>
 </body>
