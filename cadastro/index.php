@@ -39,6 +39,17 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                     <input type="text" name="grupo" placeholder="Grupo (opcional)">
                 </div>
 
+                 <div class="card-testes">
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Role Play Hospital</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="teste_hospital" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="teste_hospital" value="0">
+                        </div>
+                    </div>
+
                 <div class="card-testes">
                     <div class="container-row">
                         <p style="margin-right: 15px;">Teste Representacional</p>
