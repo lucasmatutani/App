@@ -31,6 +31,7 @@ if (!empty($data)) {
     <form action="../sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="nome" value="<?php echo $nome ?>">
+        <input type="hidden" name="grupo" value="<?php echo $grupo ?>">
 
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
