@@ -26,7 +26,7 @@ include_once "../../includes/connection.php";
                                 <td><?php echo $row['representante'] ?></td>
                                 <td><?php echo $row['grupo'] ?></td>
                                 <td><?php echo $row['problemas'] ?></td>
-                                <td><?php echo $row['oprtunidade'] ?></td>
+                                <td><?php echo $row['oportunidade'] ?></td>
                                 <td><?php echo $row['objetivo'] ?></td>
                             </tr>
                             <span></span>
