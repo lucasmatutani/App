@@ -14,11 +14,11 @@ $objetivo = $_REQUEST['objetivo'];
 
 $data = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
-if (!empty($linha)) {
-    $sql = "UPDATE diagnostico set usuario_id='$usuario_id', representante='$representante', rodada='$rodada', nome='$nome', case_diag='$case_diag', grupo='$grupo', problemas='$problemas', oportunidade='$oportunidade', objetivo='$objetivo' WHERE usuario_id= $usuario_id";
-} 
+// if (!empty($linha)) {
+//     $sql = "UPDATE diagnostico set usuario_id='$usuario_id', representante='$representante', rodada='$rodada', nome='$nome', case_diag='$case_diag', grupo='$grupo', problemas='$problemas', oportunidade='$oportunidade', objetivo='$objetivo' WHERE usuario_id= $usuario_id";
+// } 
 // else {
-//     $sql = "INSERT INTO diagnostico set usuario_id= '$usuario_id', representante='$representante', nome='$nome', case_diag='$case_diag', grupo='$grupo', problemas='$problemas', oportunidade='$oportunidade', objetivo='$objetivo'";
+    $sql = "INSERT INTO diagnostico set usuario_id= '$usuario_id', representante='$representante', nome='$nome', case_diag='$case_diag', grupo='$grupo', problemas='$problemas', oportunidade='$oportunidade', objetivo='$objetivo'";
 // }
 
 if (mysqli_query($conn, $sql)) {
