@@ -158,7 +158,6 @@ $usuario_id = $_SESSION['usuarioId'];
 
             $sql_teste_hospital = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
             $teste_hospital = mysqli_fetch_assoc($sql_teste_hospital);
-            var_dump($teste_hospital);
 
             if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
