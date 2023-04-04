@@ -32,22 +32,21 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="nome" value="<?php echo $nome ?>">
         <input type="hidden" name="grupo" value="<?php echo $grupo ?>">
-         <input type="hidden" name="case_diag" value="<?php echo $_GET['case']  ?>">
+        <input type="hidden" name="case_diag" value="<?php echo $_GET['case']  ?>">
 
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
             <h1 class="diagnostico">Diagnóstico Case - <?php echo $_GET['case'] ?></h1>
         </div>
-        <div class="container-subtitulo">
-            <div class="container-inicio" style="display: flex; Flex-direction: row; justify-content: space-around; margin-left: 100px;">
-                <h3>Vendedor</h3>
-                <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="">
-                 <h3>Rodada</h3>
-                <input type="text" name="rodada" id="" value="">
-            </div>
-            <div class="txt-inicio">
-                <h3>Grupo <?php echo $grupo ?></h3>
-            </div>
+        <div class="container-inicio">
+            <h3>Vendedor</h3>
+            <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="">
+            <h3>Rodada</h3>
+            <select name="rodada" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <h3>Grupo <?php echo $grupo ?></h3>
         </div>
         <div class="container-principal">
             <div class="problemas">
