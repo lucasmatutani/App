@@ -192,7 +192,7 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (!empty($teste_hospital)) : ?>
-                <a href="http://focustradeapp.com.br/teste-hospital/resposta-individual/" class="resposta">Diário de Bordo</a>
+                <a href="http://focustradeapp.com.br/teste-hospital/resposta-individual/" class="resposta">Role Play Hospital</a>
             <?php endif; ?>
 
             <?php if (!empty($teste_metodo_cesar)) : ?>
