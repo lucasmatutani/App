@@ -156,8 +156,9 @@ $usuario_id = $_SESSION['usuarioId'];
             $sql_matriz_risco = $conn->query("SELECT * FROM teste_matriz_de_risco WHERE  teste_matriz_de_risco.usuario_id = $usuario_id");
             $matriz_risco = mysqli_fetch_assoc($sql_matriz_risco);
 
-            $sql_teste_hospital = $conn->query("SELECT * FROM diagnostico WHERE  diagnostico.usuario_id = $usuario_id");
+            $sql_teste_hospital = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
             $teste_hospital = mysqli_fetch_assoc($sql_teste_hospital);
+            var_dump($teste_hospital);
 
             if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
