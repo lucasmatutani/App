@@ -6,6 +6,7 @@ $email = $_REQUEST['email'];
 $empresa = $_REQUEST['empresa'];
 $senha = $_REQUEST['senha'];
 $grupo = $_REQUEST['grupo'];
+$teste_hospital = $_REQUEST['teste_hospital'];
 $representacional = $_REQUEST['representacional'];
 $teste_hospital = $_REQUEST['teste_hospital'];
 $comportamental = $_REQUEST['comportamental'];

@@ -31,7 +31,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.container-inicio h3 {
+  margin: 0 20px;
 }
 
 .txt-inicio {

@@ -15,13 +15,18 @@
     <h1 class="titulo">Case 6</h1>
 
     <div class="container-principal">
-        <h2>Autarquia/Hospitais Militares (IAMSPE/HGE)</h2>
-        <p>• Hospitais com recursos públicos, porém com gestões próprias e autônomas;</p>
-        <p>• 250 leitos, sendo 20 leitos para UTI Geral e 5 pra UCO;</p>
-        <p>• Hospital Geral com unidade ambulatorial;</p>
-        <p>• Ambulatório de ICC;
-        </p>
-        <p>• STKs formadores de opinião são líderes da Cardiologia.</p>
+        <div class="conteiner-diagnostico" style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div class="container-info">
+                <h2>Autarquia/Hospitais Militares (IAMSPE/HGE)</h2>
+                <p>• Hospitais com recursos públicos, porém com gestões próprias e autônomas;</p>
+                <p>• 250 leitos, sendo 20 leitos para UTI Geral e 5 pra UCO;</p>
+                <p>• Hospital Geral com unidade ambulatorial;</p>
+                <p>• Ambulatório de ICC;
+                </p>
+                <p>• STKs formadores de opinião são líderes da Cardiologia.</p>
+            </div>
+            <a class="planejamento" href="../../diagnostico/index.php?case=6" style="text-decoration: none; background-color: orangered; padding: 10px 20px; height: 20px; color: #fff; border-radius: 100px;">Diagnóstico</a>
+        </div>
 
         <h2>Cenário</h2>
         <p>Hospital com recursos públicos próprios. Realiza compras por ATA de Registro de Preços. Possui fluxo próprio de padronização.

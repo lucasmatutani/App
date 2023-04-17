@@ -14,12 +14,17 @@
     <h1 class="titulo">Case 4</h1>
 
     <div class="container-principal">
-        <h2>Medicina de Grupo/Cooperativa (Prevent
-            Senior/Hapvida NDI/Unimed Campinas)</h2>
+        <div class="conteiner-diagnostico" style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div class="container-info">
+                <h2>Medicina de Grupo/Cooperativa (Prevent
+                    Senior/Hapvida NDI/Unimed Campinas)</h2>
 
-        <p>• Hospital com recursos próprios;</p>
-        <p>• 250 leitos, sendo 25 leitos para UTI Geral e 10 leitos pra UCO;</p>
-        <p>• Dificuldade de acesso à unidade hospitalar, por determinação do corporativo.</p>
+                <p>• Hospital com recursos próprios;</p>
+                <p>• 250 leitos, sendo 25 leitos para UTI Geral e 10 leitos pra UCO;</p>
+                <p>• Dificuldade de acesso à unidade hospitalar, por determinação do corporativo.</p>
+            </div>
+            <a class="planejamento" href="../../diagnostico/index.php?case=4" style="text-decoration: none; background-color: orangered; padding: 10px 20px; height: 20px; color: #fff; border-radius: 100px;">Diagnóstico</a>
+        </div>
 
         <h2>Cenário</h2>
         <p>Corpo clínico fechado, com interações sendo realizadas pelo departamento de compras ou farmácia central. Possuem protocolos

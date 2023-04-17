@@ -32,32 +32,34 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="nome" value="<?php echo $nome ?>">
         <input type="hidden" name="grupo" value="<?php echo $grupo ?>">
+        <input type="hidden" name="case_diag" value="<?php echo $_GET['case']  ?>">
 
         <div class="container-header">
             <img src="../assets/img/logo-focustrade.jpeg" alt="">
-            <h1 class="diagnostico">Diagnóstico</h1>
+            <h1 class="diagnostico">Diagnóstico Case - <?php echo $_GET['case'] ?></h1>
         </div>
-        <div class="container-subtitulo">
-            <div class="container-inicio">
-                <h3>Vendedor</h3>
-                <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="<?php if (!empty($linha)) echo $linha['representante'] ?>">
-            </div>
-            <div class="txt-inicio">
-                <h3>Grupo <?php echo $grupo ?></h3>
-            </div>
+        <div class="container-inicio">
+            <h3>Vendedor</h3>
+            <input placeholder="Insira seu Nome" type="text" name="representante" id="" value="">
+            <h3>Rodada</h3>
+            <select name="rodada" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <h3>Grupo <?php echo $grupo ?></h3>
         </div>
         <div class="container-principal">
             <div class="problemas">
                 <h3>Problemas</h3>
-                <textarea name="problemas" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['problemas'] ?></textarea>
+                <textarea name="problemas" id="" cols="90" rows="15" required></textarea>
             </div>
             <div class="oportunidade">
                 <h3>Oportunidades</h3>
-                <textarea name="oportunidade" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['oportunidade'] ?></textarea>
+                <textarea name="oportunidade" id="" cols="90" rows="15" required></textarea>
             </div>
             <div class="objetivo">
                 <h3>Objetivos</h3>
-                <textarea name="objetivo" id="" cols="90" rows="15" required><?php if (!empty($linha)) echo $linha['objetivo'] ?></textarea>
+                <textarea name="objetivo" id="" cols="90" rows="15" required></textarea>
             </div>
         </div>
         <div class="buttom-enviar">

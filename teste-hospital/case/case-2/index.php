@@ -14,13 +14,18 @@
     <h1 class="titulo">Case 2</h1>
 
     <div class="container-principal">
-        <h2>OSS (SPDM/Seconci/Santa Marcelina)</h2>
+        <div class="conteiner-diagnostico" style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div class="container-info">
+                <h2>OSS (SPDM/Seconci/Santa Marcelina)</h2>
 
-        <p>• Hospitais com recursos públicos, administrados pela iniciativa privada;
-        </p>
-        <p>• 1.000 leitos no total;</p>
-        <p>• Hospitais com porta fechada, regulado pelo sistema de agendamento do SUS-CROSS;</p>
-        <p>• Dificuldade de acesso às unidades hospitalares.</p>
+                <p>• Hospitais com recursos públicos, administrados pela iniciativa privada;
+                </p>
+                <p>• 1.000 leitos no total;</p>
+                <p>• Hospitais com porta fechada, regulado pelo sistema de agendamento do SUS-CROSS;</p>
+                <p>• Dificuldade de acesso às unidades hospitalares.</p>
+            </div>
+            <a class="planejamento" href="../../diagnostico/index.php?case=2" style="text-decoration: none; background-color: orangered; padding: 10px 20px; height: 20px; color: #fff; border-radius: 100px;">Diagnóstico</a>
+        </div>
 
         <h2>Cenário</h2>
         <p>Rede de OSS que concentra as demandas da Indústria Farmacêutica no departamento de compras. Murilo, Gestor de Suprimentos, é
