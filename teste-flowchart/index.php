@@ -24,7 +24,10 @@
         <h1>Flowchart</h1>
     </div>
 
-    <form action="">
+    <form action="./sql.php" method="POST">
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $email ?>">
+
         <h2 class="habilidade">Habilidade</h2>
 
         <div class="container-flex">
@@ -39,23 +42,23 @@
                 </div>
                 <div class="incio">
                     <h3>Baixa</h3>
-                    <textarea placeholder="ANSIEDADE" name="" id="" cols="30" rows="10"></textarea>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea placeholder="ANSIEDADE" name="baixa1" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['baixa1']; ?></textarea>
+                    <textarea name="baixa2" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['baixa2']; ?></textarea>
+                    <textarea name="baixa3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['baixa3']; ?></textarea>
 
                 </div>
                 <div class="inicio">
                     <h3>Média</h3>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="media1" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['media1']; ?></textarea>
+                    <textarea name="media2" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['media2']; ?></textarea>
+                    <textarea name="media3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['media3']; ?></textarea>
 
                 </div>
                 <div class="inicio">
                     <h3>Alta</h3>
-                    <textarea placeholder="FLOW" name="" id="" cols="30" rows="10"></textarea>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <textarea placeholder="TÉDIO" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea placeholder="FLOW" name="alta1" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta1']; ?></textarea>
+                    <textarea name="alta2" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta2']; ?></textarea>
+                    <textarea placeholder="TÉDIO" name="alta3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta3']; ?></textarea>
                 </div>
             </div>
         </div>
