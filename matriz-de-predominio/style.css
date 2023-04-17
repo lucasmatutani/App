@@ -21,43 +21,14 @@
   justify-content: center;
 }
 
+.table {
+  width: 50%;
+  padding-top: 10px;
+}
+
 .container-predominio {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   margin: 40px;
 }
-
-/* .grid {
-  display: grid;
-}
-
-.logo {
-  grid-area: logo;
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.content {
-  grid-area: content;
-}
-
-.sidenav {
-  grid-area: sidenav;
-}
-
-.advert {
-  grid-area: advert;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.grid-template-areas-1 {
-  grid-template-areas:
-    "logo nav nav"
-    "sidenav content advert"
-    "sidenav footer footer";
-} */
