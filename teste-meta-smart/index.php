@@ -23,117 +23,39 @@
     <form action="">
         <!-- table meta inicio -->
         <div class="container-table">
-            <table class="table" border="1px">
+            <table class="table table-hover table-bordered" border="1px">
                 <thead>
                     <tr>
                         <th scope="col">Meta</th>
                         <th scope="col">Detalhamento</th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    É Específica?
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">SIM</button>
-                                    <button class="dropdown-item" type="button">NÃO</button>
-                                </div>
-                            </div>
+                        <th scope="col">É Específica?
                         </th>
                         <th scope="col">Metríca KPI</th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    É Mensurável?
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">SIM</button>
-                                    <button class="dropdown-item" type="button">NÃO</button>
-                                </div>
-                            </div>
+                        <th scope="col"> É Mensurável?
                         </th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Probabilidade de Alcançar Êxito
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                        <th scope="col">Probabilidade de alcançar êxito
                         </th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    É Alcançável?
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">SIM</button>
-                                    <button class="dropdown-item" type="button">NÃO</button>
-                                </div>
-                            </div>
+                        <th scope="col">É Alcançável?
                         </th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Impacto no Négocio
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                        <th scope="col">Impacto no negócio
                         </th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    É Relevante?
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">SIM</button>
-                                    <button class="dropdown-item" type="button">NÃO</button>
-                                </div>
-                            </div>
+                        <th scope="col">É Relevante?
                         </th>
                         <th scope="col">
                             <label for="">Início</label>
-                            <input type="date" name="" id="">
+
                         </th>
                         <th scope="col">
                             <label for="">Prazo Limite</label>
-                            <input type="date" name="" id="">
+
                         </th>
                         <th scope="col">
                             <label for="">Prazo em Meses</label>
-                            <input type="date" name="" id="">
+
                         </th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    É Temporal?
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">SIM</button>
-                                    <button class="dropdown-item" type="button">NÃO</button>
-                                </div>
-                            </div>
+                        <th scope="col">É Temporal?
                         </th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    É Smart?
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">SIM</button>
-                                    <button class="dropdown-item" type="button">NÃO</button>
-                                </div>
-                            </div>
+                        <th scope="col">É Smart?
                         </th>
                     </tr>
                 </thead>
@@ -142,86 +64,236 @@
                     <tr>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td><input type="date" name="" id=""></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                     </tr>
 
                     <tr>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td><input type="date" name="" id=""></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                     </tr>
 
                     <tr>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td><input type="date" name="" id=""></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                     </tr>
 
                     <tr>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td><input type="date" name="" id=""></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                     </tr>
 
                     <tr>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                         <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td> <input type="date" name="" id=""></td>
+                        <td><input type="date" name="" id=""></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option value="1">sim</option>
+                                <option value="2">não</option>
+                            </select></td>
                     </tr>
                 </tbody>
             </table>
@@ -231,7 +303,7 @@
         <!-- table objetivo inicio -->
 
         <div class="container-table-obj">
-            <table class="table">
+            <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">Objetivo (valor, unid,%)</th>
@@ -246,18 +318,13 @@
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select>
                         </td>
 
                     </tr>
@@ -266,18 +333,13 @@
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -285,18 +347,13 @@
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select>
                         </td>
                     </tr>
 
@@ -305,18 +362,13 @@
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select>
                         </td>
                     </tr>
 
@@ -325,18 +377,13 @@
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
                         <td scope="col">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item" type="button">MUITO ALTA</button>
-                                    <button class="dropdown-item" type="button">ALTA</button>
-                                    <button class="dropdown-item" type="button">MÉDIA</button>
-                                    <button class="dropdown-item" type="button">BAIXA</button>
-                                    <button class="dropdown-item" type="button">MUITO BAIXA</button>
-                                </div>
-                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select>
                         </td>
                     </tr>
                 </tbody>
