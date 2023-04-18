@@ -22,7 +22,7 @@
 }
 
 .table {
-  width: 50%;
+  width: 50vw;
   padding-top: 10px;
 }
 
@@ -31,4 +31,25 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin: 40px;
+}
+
+.buttom-enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#botao-enviar {
+  background: #314b7c;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+#botao-enviar:hover {
+  background-color: green;
+  cursor: pointer;
 }
