@@ -39,14 +39,14 @@ if (!empty($data)) {
         <input type="hidden" id="resultado3" name="resultado3" value="<?php if (!empty($linha['resultado3'])) echo $linha['resultado3'] ?>">
         <input type="hidden" id="resultado4" name="resultado4" value="<?php if (!empty($linha['resultado4'])) echo $linha['resultado4'] ?>">
 
-        <div class="objetivo">
+        <!-- <div class="objetivo">
             <h3>Objetivo:</h3>
             <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
-        </div>
+            <p>Consultor:</p> <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
+            <p>Setor:</p> <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
+        </div> -->
         <div class="container-titulo">
             <div class="container-1">
-                <p>Consultor:</p> <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">
-                <p>Setor:</p> <input type="text" name="setor" value="<?php if (!empty($linha)) echo $linha['setor']; ?>">
                 <h3>Objetivo:</h3>
                 <input type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
                 <p>Consultor:</p>

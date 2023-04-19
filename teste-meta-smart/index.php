@@ -28,47 +28,34 @@
                     <tr>
                         <th scope="col">Meta</th>
                         <th scope="col">Detalhamento</th>
-                        <th scope="col">É Específica?
-                        </th>
+                        <th scope="col">É Específica?</th>
                         <th scope="col">Metríca KPI</th>
-                        <th scope="col"> É Mensurável?
-                        </th>
-                        <th scope="col">Probabilidade de alcançar êxito
-                        </th>
-                        <th scope="col">É Alcançável?
-                        </th>
-                        <th scope="col">Impacto no negócio
-                        </th>
-                        <th scope="col">É Relevante?
-                        </th>
-                        <th scope="col">
-                            <label for="">Início</label>
-
-                        </th>
-                        <th scope="col">
-                            <label for="">Prazo Limite</label>
-
-                        </th>
-                        <th scope="col">
-                            <label for="">Prazo em Meses</label>
-
-                        </th>
-                        <th scope="col">É Temporal?
-                        </th>
-                        <th scope="col">É Smart?
-                        </th>
+                        <th scope="col"> É Mensurável?</th>
+                        <th scope="col">Probabilidade de alcançar êxito</th>
+                        <th scope="col">É Alcançável?</th>
+                        <th scope="col">Impacto no negócio</th>
+                        <th scope="col">É Relevante?</th>
+                        <th scope="col"> <label for="">Início</label> </th>
+                        <th scope="col"> <label for="">Prazo Limite</label> </th>
+                        <th scope="col"> <label for="">Prazo em Meses</label> </th>
+                        <th scope="col">É Temporal? </th>
+                        <th scope="col">É Smart? </th>
+                        <th scope="col">Objetivo (valor, unid,%)</th>
+                        <th scope="col">Resultado Atual</th>
+                        <th scope="col">Diferença %</th>
+                        <th scope="col">Status</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
@@ -106,16 +93,27 @@
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
+
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Abaixo da meta</option>
+                                <option value="2">Meta alcançada</option>
+                                <option value="2">Acima da meta</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
@@ -153,16 +151,27 @@
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
+
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Abaixo da meta</option>
+                                <option value="2">Meta alcançada</option>
+                                <option value="2">Acima da meta</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
@@ -200,16 +209,27 @@
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
+
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Abaixo da meta</option>
+                                <option value="2">Meta alcançada</option>
+                                <option value="2">Acima da meta</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
@@ -247,16 +267,27 @@
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
+
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Abaixo da meta</option>
+                                <option value="2">Meta alcançada</option>
+                                <option value="2">Acima da meta</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
-                        <td scope="row"><textarea name="" id="" cols="7" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td><select class="form-select" aria-label="Default select example">
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
@@ -294,6 +325,16 @@
                                 <option value="1">sim</option>
                                 <option value="2">não</option>
                             </select></td>
+
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Abaixo da meta</option>
+                                <option value="2">Meta alcançada</option>
+                                <option value="2">Acima da meta</option>
+                            </select>
                     </tr>
                 </tbody>
             </table>
@@ -302,7 +343,7 @@
 
         <!-- table objetivo inicio -->
 
-        <div class="container-table-obj">
+        <!-- <div class="container-table-obj">
             <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -314,9 +355,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td scope="col">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Muito Alto</option>
@@ -329,9 +370,9 @@
 
                     </tr>
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td scope="col">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Muito Alto</option>
@@ -343,24 +384,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="col">
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="1">Muito Alto</option>
-                                <option value="2">Alto</option>
-                                <option value="2">Médio</option>
-                                <option value="2">Baixo</option>
-                                <option value="2">Muito Baixo</option>
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td scope="col">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Muito Alto</option>
@@ -373,9 +399,24 @@
                     </tr>
 
                     <tr>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
-                        <td scope="row"><textarea name="" id="" cols="20" rows="1"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Muito Alto</option>
+                                <option value="2">Alto</option>
+                                <option value="2">Médio</option>
+                                <option value="2">Baixo</option>
+                                <option value="2">Muito Baixo</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
+                        <td scope="row"><textarea name="" id="" cols="30" rows="2"></textarea></td>
                         <td scope="col">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Muito Alto</option>
@@ -388,7 +429,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
     </form>
 
     <div class="buttom-enviar">
