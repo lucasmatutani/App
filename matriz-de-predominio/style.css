@@ -1,10 +1,3 @@
-.container-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn-voltar {
   margin: 0 0 0 20px;
   position: absolute;
@@ -13,24 +6,37 @@
   margin-top: 20px;
   font-size: 1.5em;
 }
-
-.container-principal {
+.container-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.container-principal {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  width: 10vw;
+}
+
 .table {
-  width: 50vw;
   padding-top: 10px;
 }
 
 .container-predominio {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 40px;
+  padding-bottom: 1vb;
+  padding-left: 30px;
+}
+
+.predominio {
+  padding-top: 30px;
+}
+
+.img-fluid {
+  width: 500px;
 }
 
 .buttom-enviar {
@@ -52,4 +58,10 @@
 #botao-enviar:hover {
   background-color: green;
   cursor: pointer;
+}
+
+@media screen and (max-device-width: 900px) {
+  .container-header {
+    width: 100%;
+  }
 }
