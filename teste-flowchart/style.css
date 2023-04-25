@@ -14,35 +14,8 @@
   justify-content: center;
 }
 
-.habilidade {
-  display: flex;
+table {
   text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-flex {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.container-principal {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.desafio {
-  /* margin-top: 90px; */
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-}
-
-.titulo {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
 }
 
 .buttom-enviar {
