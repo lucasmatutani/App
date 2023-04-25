@@ -27,7 +27,40 @@
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
 
-        <h2 class="habilidade">Habilidade</h2>
+        <table class="table table-bordered ">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Baixa</th>
+                    <th scope="col">Média</th>
+                    <th scope="col">Alta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Alto</th>
+                    <td><textarea placeholder="ANSIEADE" name="" id="" cols="20" rows="5"></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                    <td style="background-color: #d3d3d3;"><textarea placeholder="FLOW" style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <th scope="row">Médio</th>
+                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <th scope="row">Baixo</th>
+                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                    <td><textarea placeholder="TÉDIO" name="" id="" cols="20" rows="5"></textarea></td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- <h2 class="habilidade">Habilidade</h2>
 
         <div class="container-flex">
 
@@ -60,7 +93,7 @@
                     <textarea placeholder="TÉDIO" name="alta3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta3']; ?></textarea>
                 </div>
             </div>
-        </div>
+        </div> -->
     </form>
 
     <div class="buttom-enviar">
