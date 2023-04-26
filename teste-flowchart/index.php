@@ -1,3 +1,20 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+
+$email = $_SESSION['usuarioEmail'];
+$usuario_id = $_SESSION['usuarioId'];
+
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+
+$data = $conn->query("SELECT * FROM teste_flowchart WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,14 +45,20 @@
         <input type="hidden" name="email" value="<?php echo $email ?>">
 
         <table class="table table-bordered ">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Baixa</th>
-                    <th scope="col">Média</th>
-                    <th scope="col">Alta</th>
-                </tr>
-            </thead>
+            <tr>
+                <th></th>
+                <th>Habilidade</th>
+                <th>Habilidade</th>
+                <th>Habilidade</th>
+            </tr>
+
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Baixa</th>
+                <th scope="col">Média</th>
+                <th scope="col">Alta</th>
+            </tr>
+
             <tbody>
                 <tr>
                     <th scope="row">Alto</th>
