@@ -156,7 +156,7 @@ if (!empty($data)) {
         </table>
     </form>
     <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
     </div>
 
     <!-- links js bootstrap -->
