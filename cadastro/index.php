@@ -199,6 +199,36 @@ if ($_SESSION['usuarioEmail'] != "admin") {
                         </div>
                     </div>
 
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">7ps Marketing</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="marketing" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="marketing" value="0">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Puv</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="puv" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="puv" value="0">
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <p style="margin-right: 15px;">Cavaben</p>
+                        <div class="input">
+                            <label for="">SIM</label>
+                            <input type="radio" name="cavaben" value="1">
+                            <label for="">NÃO</label>
+                            <input type="radio" name="cavaben" value="0">
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">

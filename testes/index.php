@@ -34,8 +34,6 @@ $usuario_id = $_SESSION['usuarioId'];
                 <span style="z-index: 999;"></span>
             </div>
 
-            <!-- <a href="http://focustradeapp.com.br/role-play/" class="teste">Role-Play</a> -->
-
             <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
             <?php endif; ?>
@@ -105,6 +103,18 @@ $usuario_id = $_SESSION['usuarioId'];
                 <a href="http://focustradeapp.com.br/testes-jpb/switch.php?pag=problematizacao" class="teste">Problematização e Oportunidades</a>
             <?php endif; ?>
 
+            <?php if ($_SESSION['marketing'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/7ps-marketing-mix/" class="teste">7ps Marketing</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['puv'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/puv/" class="teste">Puv</a>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['cavaben'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-cavaben/" class="teste">Cavaben</a>
+            <?php endif; ?>
+
         </div>
 
         <div id="card-respostas" class="card-respostas" style="display: none;">
@@ -155,9 +165,18 @@ $usuario_id = $_SESSION['usuarioId'];
 
             $sql_matriz_risco = $conn->query("SELECT * FROM teste_matriz_de_risco WHERE  teste_matriz_de_risco.usuario_id = $usuario_id");
             $matriz_risco = mysqli_fetch_assoc($sql_matriz_risco);
-
+            
             $sql_teste_hospital = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
             $teste_hospital = mysqli_fetch_assoc($sql_teste_hospital);
+
+            $sql_marketing = $conn->query("SELECT * FROM 7ps_marketing_mix WHERE usuario_id = $usuario_id");
+            $marketing = mysqli_fetch_assoc($sql_marketing);
+
+            $sql_puv = $conn->query("SELECT * FROM puv WHERE usuario_id = $usuario_id");
+            $puv = mysqli_fetch_assoc($sql_puv);
+
+            $sql_teste_cavaben = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
+            $teste_cavaben = mysqli_fetch_assoc($sql_teste_cavaben);
 
             if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
@@ -259,6 +278,18 @@ $usuario_id = $_SESSION['usuarioId'];
 
             <?php if (!empty($matriz_risco)) : ?>
                 <a href="http://focustradeapp.com.br/teste-matriz-de-risco/" class="teste">Matriz de Risco</a>
+            <?php endif; ?>
+
+            <?php if (!empty($marketing)) : ?>
+                <a href="http://focustradeapp.com.br/7ps-marketing-mix/" class="teste">Matriz de Risco</a>
+            <?php endif; ?>
+
+            <?php if (!empty($puv)) : ?>
+                <a href="http://focustradeapp.com.br/puv/" class="teste">Matriz de Risco</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_cavaben)) : ?>
+                <a href="http://focustradeapp.com.br/teste-cavaben/" class="teste">Matriz de Risco</a>
             <?php endif; ?>
         </div>
     </div>
