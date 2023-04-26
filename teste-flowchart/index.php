@@ -1,3 +1,20 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+
+$email = $_SESSION['usuarioEmail'];
+$usuario_id = $_SESSION['usuarioId'];
+
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+
+$data = $conn->query("SELECT * FROM teste_flowchart WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

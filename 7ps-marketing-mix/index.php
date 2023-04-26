@@ -47,7 +47,7 @@ if (!empty($data)) {
             <textarea name="txt4" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
             <h3>Pessoas</h3>
             <textarea name="txt5" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
-            <h3>Evidencias Físicas</h3>
+            <h3>Evidências Físicas</h3>
             <textarea name="txt6" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
             <h3>Processo</h3>
             <textarea name="txt7" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
