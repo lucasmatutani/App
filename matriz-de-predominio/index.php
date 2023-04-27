@@ -1,3 +1,19 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+
+$usuario_id = $_SESSION['usuarioId'];
+$nome = $_SESSION['usuarioNome'];
+
+$data = $conn->query("SELECT * FROM matriz_predominio WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
