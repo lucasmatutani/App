@@ -1,3 +1,19 @@
+<?php
+include_once "../includes/connection.php";
+session_start();
+if (!isset($_SESSION['usuarioEmail'])) {
+    header('Location: ../login');
+}
+
+$usuario_id = $_SESSION['usuarioId'];
+$nome = $_SESSION['usuarioNome'];
+
+$data = $conn->query("SELECT * FROM matriz_predominio WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -65,7 +81,7 @@
     <!-- fim table -->
 
     <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
     </div>
 
 

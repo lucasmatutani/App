@@ -62,65 +62,31 @@ if (!empty($data)) {
             <tbody>
                 <tr>
                     <th scope="row">Alto</th>
-                    <td><textarea placeholder="ANSIEADE" name="" id="" cols="20" rows="5"></textarea></td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
-                    <td style="background-color: #d3d3d3;"><textarea placeholder="FLOW" style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"></textarea></td>
+                    <td><textarea placeholder="ANSIEADE" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['alta1']; ?></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['alta2']; ?></textarea></td>
+                    <td style="background-color: #d3d3d3;"><textarea placeholder="FLOW" style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['alta3']; ?></textarea></td>
                 </tr>
                 <tr>
                     <th scope="row">Médio</th>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
-                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"></textarea></td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['media1']; ?></textarea></td>
+                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['media2']; ?></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['media3']; ?></textarea></td>
                 </tr>
                 <tr>
                     <th scope="row">Baixo</th>
-                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"></textarea></td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
-                    <td><textarea placeholder="TÉDIO" name="" id="" cols="20" rows="5"></textarea></td>
+                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['baixa1']; ?></textarea></td>
+                    <td><textarea name="" id="" cols="20" rows="5"></textarea><?php if (!empty($linha)) echo $linha['baixa2']; ?></td>
+                    <td><textarea placeholder="TÉDIO" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['baixa3']; ?></textarea></td>
 
                 </tr>
             </tbody>
         </table>
 
 
-        <!-- <h2 class="habilidade">Habilidade</h2>
-
-        <div class="container-flex">
-
-            <h2 class="desafio">Desafio</h2>
-
-            <div class=" container-principal">
-                <div class="titulo">
-                    <h3>Alto</h3>
-                    <h3>Médio</h3>
-                    <h3>Baixo</h3>
-                </div>
-                <div class="incio">
-                    <h3>Baixa</h3>
-                    <textarea placeholder="ANSIEDADE" name="baixa1" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['baixa1']; ?></textarea>
-                    <textarea name="baixa2" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['baixa2']; ?></textarea>
-                    <textarea name="baixa3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['baixa3']; ?></textarea>
-
-                </div>
-                <div class="inicio">
-                    <h3>Média</h3>
-                    <textarea name="media1" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['media1']; ?></textarea>
-                    <textarea name="media2" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['media2']; ?></textarea>
-                    <textarea name="media3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['media3']; ?></textarea>
-
-                </div>
-                <div class="inicio">
-                    <h3>Alta</h3>
-                    <textarea placeholder="FLOW" name="alta1" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta1']; ?></textarea>
-                    <textarea name="alta2" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta2']; ?></textarea>
-                    <textarea placeholder="TÉDIO" name="alta3" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['alta3']; ?></textarea>
-                </div>
-            </div>
-        </div> -->
     </form>
 
     <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
     </div>
 
     <!-- link js para bootstrap -->
