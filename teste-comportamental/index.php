@@ -34,333 +34,334 @@ $email = $_SESSION['usuarioEmail'];
         <div>
 
             <P>1. Eu sou. ............. </P>
-            <label for=""> Idealista, criativo e visionário
-                <input value="i" name=1 type="radio"></label><br>
+            <input value="i" name=1 type="radio">
+            <label for=""> Idealista, criativo e visionário</label><br>
 
-            <label for=""> Divertido, espiritual e benéfico
-                <input value="c" name=1 type="radio"></label><br>
+            <input value="c" name=1 type="radio">
+            <label for=""> Divertido, espiritual e benéfico</label><br>
 
-            <label for=""> Confiável, meticuloso e previsível
-                <input value="o" name=1 type="radio"></label><br>
+            <input value="o" name=1 type="radio">
+            <label for=""> Confiável, meticuloso e previsível</label><br>
 
-            <label for=""> Focado, determinado e persistente
-                <input value="a" name=1 type="radio"></label><br>
+            <input value="a" name=1 type="radio">
+            <label for=""> Focado, determinado e persistente</label><br>
 
             <p>2. Eu gosto de. ....</p>
-            <label for=""> Ser piloto
-                <input value="a" name=2 type="radio"> <br></label>
+            <input value="a" name=2 type="radio">
+            <label for=""> Ser piloto <br></label>
 
-            <label for=""> Conversar com os passageiros
-                <input value="c" name=2 type="radio"> <br></label>
+            <input value="c" name=2 type="radio">
+            <label for=""> Conversar com os passageiros<br></label>
 
-            <label for=""> Planejar a viagem
-                <input value="o" name=2 type="radio"> <br></label>
+            <input value="o" name=2 type="radio">
+            <label for=""> Planejar a viagem <br></label>
 
-            <label for=""> Explorar novas rotas
-                <input value="i" name=2 type="radio"> <br></label>
+            <input value="i" name=2 type="radio">
+            <label for=""> Explorar novas rotas<br></label>
 
             <p>3. Se você quiser se dar bem comigo...</p>
-            <label for=""> Me dê liberdade
-                <input value="i" name=3 type="radio"> <br></label>
+            <input value="i" name=3 type="radio">
+            <label for=""> Me dê liberdade<br></label>
 
-            <label for=""> Me deixe saber sua expectativa
-                <input value="o" name=3 type="radio"> <br></label>
+            <input value="o" name=3 type="radio">
+            <label for=""> Me deixe saber sua expectativa<br></label>
 
-            <label for=""> Lidere, siga ou saia do caminho
-                <input value="a" name=3 type="radio"> <br></label>
+            <input value="a" name=3 type="radio">
+            <label for=""> Lidere, siga ou saia do caminho<br></label>
 
-            <label for=""> Seja amigável, carinhoso e compreensivo
-                <input value="c" name=3 type="radio"> <br></label>
+            <input value="c" name=3 type="radio">
+            <label for=""> Seja amigável, carinhoso e compreensivo<br></label>
 
             <p>4. Para conseguir obter bons resultados é preciso...</p>
-            <label for=""> Ter incertezas
-                <input value="i" name=4 type="radio"> <br></label>
+            <input value="i" name=4 type="radio">
+            <label for=""> Ter incertezas<br></label>
 
-            <label for=""> Controlar o essencial
-                <input value="o" name=4 type="radio"> <br></label>
+            <input value="o" name=4 type="radio">
+            <label for=""> Controlar o essencial<br></label>
 
-            <label for=""> Diversão e celebração
-                <input value="c" name=4 type="radio"> <br></label>
+            <input value="c" name=4 type="radio">
+            <label for=""> Diversão e celebração<br></label>
 
-            <label for=""> Planejar e obter recursos
-                <input value="a" name=4 type="radio"> <br></label>
+            <input value="a" name=4 type="radio">
+            <label for=""> Planejar e obter recursos<br></label>
 
             <p>5. Eu me divirto quando...</p>
-            <label for=""> Estou me exercitando
-                <input value="a" name=5 type="radio"> <br></label>
+            <input value="a" name=5 type="radio">
+            <label for=""> Estou me exercitando <br></label>
 
-            <label for=""> Tenho novidades
-                <input value="i" name=5 type="radio"> <br></label>
+            <input value="i" name=5 type="radio">
+            <label for=""> Tenho novidades<br></label>
 
-            <label for=""> Estou com os outros
-                <input value="c" name=5 type="radio"> <br></label>
+            <input value="c" name=5 type="radio">
+            <label for=""> Estou com os outros<br></label>
 
-            <label for=""> Determino as regras
-                <input value="o" name=5 type="radio"> <br></label>
+            <input value="o" name=5 type="radio">
+            <label for=""> Determino as regras <br></label>
 
             <p>6. Eu penso que...</p>
-            <label for="">Unidos venceremos, divididos perderemos
-                <input value="c" name=6 type="radio"> <br></label>
+            <input value="c" name=6 type="radio">
+            <label for="">Unidos venceremos, divididos perderemos <br></label>
 
-            <label for="">O ataque é melhor que a defesa
-                <input value="a" name=6 type="radio"> <br></label>
+            <input value="a" name=6 type="radio">
+            <label for="">O ataque é melhor que a defesa<br></label>
 
-            <label for=""> É bom ser manso, mas andar com um porrete
-                <input value="i" name=6 type="radio"> <br></label>
+            <input value="i" name=6 type="radio">
+            <label for=""> É bom ser manso, mas andar com um porrete<br></label>
 
-            <label for=""> Um homem prevenido vale por dois
-                <input value="o" name=6 type="radio"> <br></label>
+            <input value="o" name=6 type="radio">
+            <label for=""> Um homem prevenido vale por dois<br></label>
 
             <p>7. Minha preocupação é...</p>
-            <label for=""> Gerar a ideia global
-                <input value="i" name=7 type="radio"> <br></label>
+            <input value="i" name=7 type="radio">
+            <label for=""> Gerar a ideia global<br></label>
 
-            <label for=""> Fazer com que as pessoas gostem
-                <input value="c" name=7 type="radio"> <br></label>
+            <input value="c" name=7 type="radio">
+            <label for=""> Fazer com que as pessoas gostem<br></label>
 
-            <label for=""> Fazer com que funcione
-                <input value="o" name=7 type="radio"> <br></label>
+            <input value="o" name=7 type="radio">
+            <label for=""> Fazer com que funcione<br></label>
 
-            <label for=""> Fazer com que aconteça
-                <input value="a" name=7 type="radio"> <br></label>
+            <input value="a" name=7 type="radio">
+            <label for=""> Fazer com que aconteça<br></label>
 
             <P>8. Eu prefiro</P>
-            <label for=""> Perguntas a respostas
-                <input value="i" name=8 type="radio"> <br></label>
+            <input value="i" name=8 type="radio">
+            <label for=""> Perguntas a respostas<br></label>
 
-            <label for=""> Ter todos os detalhes
-                <input value="o" name=8 type="radio"> <br></label>
+            <input value="o" name=8 type="radio">
+            <label for=""> Ter todos os detalhes <br></label>
 
-            <label for=""> Vantagens a meu favor
-                <input value="a" name=8 type="radio"> <br></label>
+            <input value="a" name=8 type="radio">
+            <label for=""> Vantagens a meu favor<br></label>
 
-            <label for=""> Que todos tenham a chance de serem ouvidos
-                <input value="c" name=8 type="radio"> <br></label>
+            <input value="c" name=8 type="radio">
+            <label for=""> Que todos tenham a chance de serem ouvidos<br></label>
 
             <p>9. Eu gosto de...</p>
-            <label for=""> Fazer progesso
-                <input value="a" name=9 type="radio"> <br></label>
+            <input value="a" name=9 type="radio">
+            <label for=""> Fazer progesso<br></label>
 
-            <label for=""> Construir memórias
-                <input value="i" name=9 type="radio"> <br></label>
+            <input value="i" name=9 type="radio">
+            <label for=""> Construir memórias<br></label>
 
-            <label for=""> Fazer sentido
-                <input value="o" name=9 type="radio"> <br></label>
+            <input value="o" name=9 type="radio">
+            <label for=""> Fazer sentido<br></label>
 
-            <label for=""> Tornar as pessoas confortáveis
-                <input value="c" name=9 type="radio"> <br></label>
+            <input value="c" name=9 type="radio">
+            <label for=""> Tornar as pessoas confortáveis<br></label>
 
             <p>10. Eu gosto de chegar...</p>
-            <label for=""> Na frente
-                <input value="a" name=10 type="radio"> <br></label>
+            <input value="a" name=10 type="radio">
+            <label for=""> Na frente <br></label>
 
-            <label for=""> Junto
-                <input value="c" name=10 type="radio"> <br></label>
+            <input value="c" name=10 type="radio">
+            <label for=""> Junto <br></label>
 
-            <label for=""> Na hora
-                <input value="o" name=10 type="radio"> <br></label>
+            <input value="o" name=10 type="radio">
+            <label for=""> Na hora<br></label>
 
-            <label for=""> Em outro lugar
-                <input value="i" name=10 type="radio"> <br></label>
+            <input value="i" name=10 type="radio">
+            <label for=""> Em outro lugar<br></label>
 
             <p>11. Um ótimo dia para mim é quando...</p>
-            <label for=""> Consigo fazer muitas coisas
-                <input value="a" name=11 type="radio"> <br></label>
+            <input value="a" name=11 type="radio">
+            <label for=""> Consigo fazer muitas coisas<br></label>
 
-            <label for=""> Me divirto com meus amigos
-                <input value="c" name=11 type="radio"> <br></label>
+            <input value="c" name=11 type="radio">
+            <label for=""> Me divirto com meus amigos<br></label>
 
-            <label for=""> Tudo segue conforme planejado
-                <input value="o" name=11 type="radio"> <br></label>
+            <input value="o" name=11 type="radio">
+            <label for=""> Tudo segue conforme planejado<br></label>
 
-            <label for=""> Desfruto de coisas novas e estimulantes
-                <input value="i" name=11 type="radio"> <br></label>
+            <input value="i" name=11 type="radio">
+            <label for=""> Desfruto de coisas novas e estimulantes<br></label>
 
             <p>12. Eu vejo a morte como...</p>
-            <label for=""> Uma grande aventura misteriosa
-                <input value="i" name=12 type="radio"> <br></label>
+            <input value="i" name=12 type="radio">
+            <label for=""> Uma grande aventura misteriosa<br></label>
 
-            <label for=""> Oportunidade para rever os falecidos
-                <input value="c" name=12 type="radio"> <br></label>
+            <input value="c" name=12 type="radio">
+            <label for=""> Oportunidade para rever os falecidos<br></label>
 
-            <label for=""> Um modo de receber recompensas
-                <input value="o" name=12 type="radio"> <br></label>
+            <input value="o" name=12 type="radio">
+            <label for=""> Um modo de receber recompensas<br></label>
 
-            <label for=""> Algo que sempre chega muito cedo
-                <input value="a" name=12 type="radio"> <br></label>
+            <input value="a" name=12 type="radio">
+            <label for=""> Algo que sempre chega muito cedo<br></label>
 
             <p>13. Minha filosofia de vida é...</p>
-            <label for=""> Há ganhadores e perdedores, e eu acredito ser um ganhador
-                <input value="a" name=13 type="radio"> <br></label>
+            <input value="a" name=13 type="radio">
+            <label for=""> Há ganhadores e perdedores, e eu acredito ser um ganhador<br></label>
 
-            <label for=""> Para eu ganhar, ninguém precisa perder
-                <input value="c" name=13 type="radio"> <br></label>
+            <input value="c" name=13 type="radio">
+            <label for=""> Para eu ganhar, ninguém precisa perder<br></label>
 
-            <label for=""> Para ganhar, é preciso seguir as regras
-                <input value="o" name=13 type="radio"> <br></label>
+            <input value="o" name=13 type="radio">
+            <label for=""> Para ganhar, é preciso seguir as regras<br></label>
 
-            <label for=""> Para ganhar, é necessário inventar novas regras
-                <input value="i" name=13 type="radio"> <br></label>
+            <input value="i" name=13 type="radio">
+            <label for=""> Para ganhar, é necessário inventar novas regras<br></label>
 
         </div>
 
         <div>
 
             <P>14. Eu sempre gostei de...</P>
-            <label for=""> Explorar
-                <input value="i" name=14 type="radio"> <br></label>
+            <input value="i" name=14 type="radio">
+            <label for=""> Explorar<br></label>
 
-            <label for=""> Evitar surpresas
-                <input value="o" name=14 type="radio"> <br></label>
+            <input value="o" name=14 type="radio">
+            <label for=""> Evitar surpresas<br></label>
 
-            <label for=""> Focalizar a meta
-                <input value="a" name=14 type="radio"> <br></label>
+            <input value="a" name=14 type="radio">
+            <label for=""> Focalizar a meta<br></label>
 
-            <label for=""> Realizar uma abordagem natural
-                <input value="c" name=14 type="radio"> <br></label>
+            <input value="c" name=14 type="radio">
+            <label for=""> Realizar uma abordagem natural<br></label>
 
             <p>15. Eu gosto de mudanças se</p>
-            <label for=""> Me der uma vantagem competitiva
-                <input value="a" name=15 type="radio"> <br></label>
+            <input value="a" name=15 type="radio">
+            <label for=""> Me der uma vantagem competitiva<br></label>
 
-            <label for=""> For divertido e puder ser compartilhado
-                <input value="c" name=15 type="radio"> <br></label>
+            <input value="c" name=15 type="radio">
+            <label for=""> For divertido e puder ser compartilhado<br></label>
 
-            <label for=""> Me der mais liberdade e variedade
-                <input value="i" name=15 type="radio"> <br></label>
+            <input value="i" name=15 type="radio">
+            <label for=""> Me der mais liberdade e variedade<br></label>
 
-            <label for=""> Melhorar ou me der mais controle
-                <input value="o" name=15 type="radio"> <br></label>
+            <input value="o" name=15 type="radio">
+            <label for=""> Melhorar ou me der mais controle<br></label>
 
             <P>16. Não existe nada de errado em... </P>
-            <label for=""> Se colocar na frente
-                <input value="a" name=16 type="radio"> <br></label>
+            <input value="a" name=16 type="radio">
+            <label for=""> Se colocar na frente<br></label>
 
-            <label for=""> Colocar os outros na frente
-                <input value="c" name=16 type="radio"> <br></label>
+            <input value="c" name=16 type="radio">
+            <label for=""> Colocar os outros na frente<br></label>
 
-            <label for=""> Mudar de ideia
-                <input value="i" name=16 type="radio"> <br></label>
+            <input value="i" name=16 type="radio">
+            <label for=""> Mudar de ideia<br></label>
 
-            <label for=""> Ser consistente
-                <input value="o" name=16 type="radio"> <br></label>
+            <input value="o" name=16 type="radio">
+            <label for=""> Ser consistente<br></label>
 
             <P>17. Eu gosto de buscar conselhos de... </P>
-            <label for=""> Pessoas bem sucedidas
-                <input value="a" name=17 type="radio"> <br></label>
+            <input value="a" name=17 type="radio">
+            <label for=""> Pessoas bem sucedidas <br></label>
 
-            <label for=""> Anciões e conselheiros
-                <input value="c" name=17 type="radio"> <br></label>
+            <input value="c" name=17 type="radio">
+            <label for=""> Anciões e conselheiros<br></label>
 
-            <label for=""> Autoridades no assunto
-                <input value="o" name=17 type="radio"> <br></label>
+            <input value="o" name=17 type="radio">
+            <label for=""> Autoridades no assunto<br></label>
 
-            <label for=""> Lugares, os mais estranhos
-                <input value="i" name=17 type="radio"> <br></label>
+            <input value="i" name=17 type="radio">
+            <label for=""> Lugares, os mais estranhos<br></label>
 
             <p>18. Meu lema é... </p>
-            <label for=""> Fazer o que precisa ser feito
-                <input value="i" name=18 type="radio"> <br></label>
+            <input value="i" name=18 type="radio">
+            <label for=""> Fazer o que precisa ser feito <br></label>
 
-            <label for=""> Fazer bem feito
-                <input value="o" name=18 type="radio"> <br></label>
+            <input value="o" name=18 type="radio">
+            <label for=""> Fazer bem feito<br></label>
 
-            <label for=""> Fazer junto com o grupo
-                <input value="c" name=18 type="radio"> <br></label>
+            <input value="c" name=18 type="radio">
+            <label for=""> Fazer junto com o grupo<br></label>
 
-            <label for=""> Simplesmente fazer
-                <input value="a" name=18 type="radio"> <br></label>
+            <input value="a" name=18 type="radio">
+            <label for=""> Simplesmente fazer<br></label>
 
             <p>19. Eu gosto de...</p>
-            <label for=""> Complexidade, mesmo se confuso
-                <input value="i" name=19 type="radio"> <br></label>
+            <input value="i" name=19 type="radio">
+            <label for=""> Complexidade, mesmo se confuso<br></label>
 
-            <label for=""> Ordem e sistematização
-                <input value="o" name=19 type="radio"> <br></label>
+            <input value="o" name=19 type="radio">
+            <label for=""> Ordem e sistematização<br></label>
 
-            <label for=""> Calor humano e animação
-                <input value="c" name=19 type="radio"> <br></label>
 
-            <label for=""> Coisas claras e simples
-                <input value="a" name=19 type="radio"> <br></label>
+            <input value="c" name=19 type="radio">
+            <label for=""> Calor humano e animação<br></label>
+
+            <input value="a" name=19 type="radio">
+            <label for=""> Coisas claras e simples<br></label>
 
             <p>20. Tempo para mim é...</p>
-            <label for=""> Algo que detesto desperdiçar
-                <input value="a" name="20" type="radio"> <br></label>
+            <input value="a" name="20" type="radio">
+            <label for=""> Algo que detesto desperdiçar <br></label>
 
-            <label for=""> Um grande ciclo
-                <input value="c" name=20 type="radio"> <br></label>
+            <input value="c" name=20 type="radio">
+            <label for=""> Um grande ciclo<br></label>
 
-            <label for=""> Uma flecha que leva ao inevitável
-                <input value="o" name=20 type="radio"> <br></label>
+            <input value="o" name=20 type="radio">
+            <label for=""> Uma flecha que leva ao inevitável<br></label>
 
-            <label for=""> Irrelevante
-                <input value="i" name=20 type="radio"> <br></label>
+            <input value="i" name=20 type="radio">
+            <label for=""> Irrelevante<br></label>
 
             <p>21. Se eu fosse bilionário...</p>
-            <label for=""> Faria doações para muitas entidades
-                <input value="c" name=21 type="radio"> <br></label>
+            <input value="c" name=21 type="radio">
+            <label for=""> Faria doações para muitas entidades<br></label>
 
-            <label for=""> Criaria uma poupança avantajada
-                <input value="o" name=21 type="radio"> <br></label>
+            <input value="o" name=21 type="radio">
+            <label for=""> Criaria uma poupança avantajada<br></label>
 
-            <label for=""> Faria o que desse na cabeça
-                <input value="i" name=21 type="radio"> <br></label>
+            <input value="i" name=21 type="radio">
+            <label for=""> Faria o que desse na cabeça <br></label>
 
-            <label for=""> Me exibiria bastante para algumas pessoas
-                <input value="a" name=21 type="radio"> <br></label>
+            <input value="a" name=21 type="radio">
+            <label for=""> Me exibiria bastante para algumas pessoas<br></label>
 
             <P>22. Eu acredito que...</P>
-            <label for="">O destino é mais importante que a jornada
-                <input value="a" name=22 type="radio"> <br></label>
+            <input value="a" name=22 type="radio">
+            <label for="">O destino é mais importante que a jornada<br></label>
 
-            <label for=""> jornada é mais importante que o destino
-                <input value="c" name=22 type="radio"> <br></label>
+            <input value="c" name=22 type="radio">
+            <label for=""> jornada é mais importante que o destino<br></label>
 
-            <label for=""> Um centavo economizado é um centavo ganho
-                <input value="o" name=22 type="radio"> <br></label>
+            <input value="o" name=22 type="radio">
+            <label for=""> Um centavo economizado é um centavo ganho<br></label>
 
-            <label for=""> Bastam um navio e uma estrela para navegar
-                <input value="i" name=22 type="radio"> <br></label>
+            <input value="i" name=22 type="radio">
+            <label for=""> Bastam um navio e uma estrela para navegar<br></label>
 
             <P>23. Eu acredito também que... </P>
-            <label for=""> Aquele que hesita está perdido
-                <input value="a" name=23 type="radio"> <br></label>
+            <input value="a" name=23 type="radio">
+            <label for=""> Aquele que hesita está perdido<br></label>
 
-            <label for=""> De grão em grão a galinha enche o papo
-                <input value="o" name=23 type="radio"> <br></label>
+            <input value="o" name=23 type="radio">
+            <label for=""> De grão em grão a galinha enche o papo<br></label>
 
-            <label for="">O que vai, volta
-                <input value="c" name=23 type="radio"> <br></label>
+            <input value="c" name=23 type="radio">
+            <label for="">O que vai, volta<br></label>
 
-            <label for=""> Um sorriso ou uma careta é o mesmo para quem é cego
-                <input value="i" name=23 type="radio"> <br></label>
+            <input value="i" name=23 type="radio">
+            <label for=""> Um sorriso ou uma careta é o mesmo para quem é cego<br></label>
 
             <P>24. Eu acredito ainda que...</P>
-            <label for=""> É melhor prudência do que arrependimento
-                <input value="o" name=24 type="radio"> <br></label>
+            <input value="o" name=24 type="radio">
+            <label for=""> É melhor prudência do que arrependimento<br></label>
 
-            <label for="">A autoridade deve ser desafiada
-                <input value="i" name=24 type="radio"> <br></label>
+            <input value="i" name=24 type="radio">
+            <label for="">A autoridade deve ser desafiada<br></label>
 
-            <label for=""> Ganhar é fundamental
-                <input value="a" name=24 type="radio"> <br></label>
+            <input value="a" name=24 type="radio">
+            <label for=""> Ganhar é fundamental<br></label>
 
-            <label for="">O coletivo é mais importante do que o individual
-                <input value="c" name=24 type="radio"> <br></label>
+            <input value="c" name=24 type="radio">
+            <label for="">O coletivo é mais importante do que o individual<br></label>
 
             <p>25. Eu penso que...</p>
-            <label for=""> Não é fácil ficar encurralado
-                <input value="i" name=25 type="radio"> <br></label>
+            <input value="i" name=25 type="radio">
+            <label for=""> Não é fácil ficar encurralado<br></label>
 
-            <label for=""> É preferível olhar, antes de pular
-                <input value="o" name=25 type="radio"> <br></label>
+            <input value="o" name=25 type="radio">
+            <label for=""> É preferível olhar, antes de pular<br></label>
 
-            <label for=""> Duas cabeças pensam melhor do que uma
-                <input value="c" name=25 type="radio"> <br></label>
+            <input value="c" name=25 type="radio">
+            <label for=""> Duas cabeças pensam melhor do que uma<br></label>
 
-            <label for=""> Se você não tem condições de competir, não compita
-                <input value="a" name=25 type="radio"> <br></label>
+            <input value="a" name=25 type="radio">
+            <label for=""> Se você não tem condições de competir, não compita<br></label>
 
         </div>
     </div>
