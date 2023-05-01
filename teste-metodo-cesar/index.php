@@ -38,9 +38,9 @@ if (!empty($data)) {
             <textarea name="case" id="" cols="30" rows="10" required><?php if (!empty($linha)) echo $linha['caso'] ?></textarea>
         </div>
 
-        <h1 class="atitudes">Atitudes</h1>
 
         <div class="container-atitudes">
+            <h1>Atitudes</h1>
             <div class="container-resposta">
                 <h2>Confiança</h2>
                 <textarea name="confianca" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['confianca'] ?></textarea>
@@ -68,8 +68,8 @@ if (!empty($data)) {
             <textarea name="observacoes" id="" cols="30" rows="10"><?php if (!empty($linha)) echo $linha['observacoes'] ?></textarea>
         </div>
 
-        <div class="btn-enviar">
-            <input id="botao-enviar" type="submit" value="ENVIAR">
+        <div class="buttom-enviar">
+            <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
         </div>
     </form>
 </body>
