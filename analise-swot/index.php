@@ -41,13 +41,13 @@ if (!empty($data)) {
             <div></div>
             <div class="titulo">
                 <h2>Contribui para o crescimento <br> da empresa:</h2>
-                <h3>S: Pontos fortes?</h3>
+                <h3>S: Pontos fortes</h3>
                 <textarea name=" txt1" id="" cols="70" rows="20"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
             </div>
 
             <div class="titulo">
                 <h2>Dificulta o crescimento da <br>empresa:</h2>
-                <h3>W: Pontos fracos?</h3>
+                <h3>W: Pontos fracos</h3>
                 <textarea name="txt2" id="" cols="70" rows="20"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
             </div>
 
