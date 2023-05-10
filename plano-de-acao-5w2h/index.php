@@ -164,7 +164,65 @@ if (!empty($data)) {
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
             </div>
-            <textarea name="txt64" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt64']; ?></textarea>
+            
+            <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt59']; ?></textarea>
+            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt60']; ?></textarea>
+            <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt51']; ?></textarea>
+            <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt62']; ?></textarea>
+            <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt63']; ?></textarea>
+            <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt64']; ?></textarea>
+            <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt65']; ?></textarea>
+            <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt66']; ?></textarea>
+            <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt67']; ?></textarea>
+            <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt68']; ?></textarea>
+            <textarea name="txt58" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt69']; ?></textarea>
+            <div class="subgrid" id="pontuacao5">
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+            </div>
+           
+
+            <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt70']; ?></textarea>
+            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt71']; ?></textarea>
+            <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt72']; ?></textarea>
+            <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt73']; ?></textarea>
+            <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt74']; ?></textarea>
+            <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt75']; ?></textarea>
+            <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt76']; ?></textarea>
+            <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt77']; ?></textarea>
+            <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt78']; ?></textarea>
+            <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt79']; ?></textarea>
+            <textarea name="txt58" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt80']; ?></textarea>
+            <div class="subgrid" id="pontuacao6">
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+            </div>
+
+            <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt81']; ?></textarea>
+            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt82']; ?></textarea>
+            <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt83']; ?></textarea>
+            <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt84']; ?></textarea>
+            <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt85']; ?></textarea>
+            <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt86']; ?></textarea>
+            <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt87']; ?></textarea>
+            <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt88']; ?></textarea>
+            <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt89']; ?></textarea>
+            <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt90']; ?></textarea>
+            <textarea name="txt58" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt91']; ?></textarea>
+            <div class="subgrid" id="pontuacao7">
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+                <div class="pontuacao" id=""></div>
+            </div>
+            <textarea name="txt64" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt92']; ?></textarea>
 
         </div>
         <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; position: relative; left: 50%;">
@@ -242,8 +300,30 @@ if (!empty($data)) {
                     bothChilds[3].style.backgroundColor = "#314b7c";
                     bothChilds[4].style.backgroundColor = "#314b7c";
                 }
+            
+                if ($('#resultado' + i).val() == 6) {
+                    let bothChilds = $('#pontuacao' + i).children(':lt(6)');
+                    bothChilds[0].style.backgroundColor = "#314b7c";
+                    bothChilds[1].style.backgroundColor = "#314b7c";
+                    bothChilds[2].style.backgroundColor = "#314b7c";
+                    bothChilds[3].style.backgroundColor = "#314b7c";
+                    bothChilds[4].style.backgroundColor = "#314b7c";
+                    bothChilds[5].style.backgroundColor = "#314b7c";
+                
+            }
+            if ($('#resultado' + i).val() == 7) {
+                    let bothChilds = $('#pontuacao' + i).children(':lt(7)');
+                    bothChilds[0].style.backgroundColor = "#314b7c";
+                    bothChilds[1].style.backgroundColor = "#314b7c";
+                    bothChilds[2].style.backgroundColor = "#314b7c";
+                    bothChilds[3].style.backgroundColor = "#314b7c";
+                    bothChilds[4].style.backgroundColor = "#314b7c";
+                    bothChilds[5].style.backgroundColor = "#314b7c";
+                    bothChilds[6].style.backgroundColor = "#314b7c";
+                    
             }
         }
+    }
 
     });
 
