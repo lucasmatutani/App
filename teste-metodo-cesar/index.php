@@ -36,30 +36,28 @@ if (!empty($data)) {
         <div class="container-case">
             <h2>Escolha um case de atendimento do dia a dia</h2>
             <textarea name="case" id="" cols="30" rows="10" required><?php if (!empty($linha)) echo $linha['caso'] ?></textarea>
+            <h1 style="margin-top: 100px;">Atitudes</h1>
         </div>
-
-
         <div class="container-atitudes">
-            <h1>Atitudes</h1>
             <div class="container-resposta">
                 <h2>Confiança</h2>
-                <textarea name="confianca" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['confianca'] ?></textarea>
-                <div class="container-resposta">
-                    <h2>Empatia</h2>
-                    <textarea name="empatia" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['empatia'] ?></textarea>
-                </div>
-                <div class="container-resposta">
-                    <h2>Segurança</h2>
-                    <textarea name="seguranca" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['seguranca'] ?></textarea>
-                </div>
+                <textarea name="confianca" id="" cols="30" rows="12" required><?php if (!empty($linha)) echo $linha['confianca'] ?></textarea>
+            </div>
+            <div class="container-resposta">
+                <h2>Empatia</h2>
+                <textarea name="empatia" id="" cols="30" rows="12" required><?php if (!empty($linha)) echo $linha['empatia'] ?></textarea>
+            </div>
+            <div class="container-resposta">
+                <h2>Segurança</h2>
+                <textarea name="seguranca" id="" cols="30" rows="12" required><?php if (!empty($linha)) echo $linha['seguranca'] ?></textarea>
             </div>
             <div class="container-resposta">
                 <h2>Aparência</h2>
-                <textarea name="aparencia" id="" cols="113" rows="12" required><?php if (!empty($linha)) echo $linha['aparencia'] ?></textarea>
+                <textarea name="aparencia" id="" cols="30" rows="12" required><?php if (!empty($linha)) echo $linha['aparencia'] ?></textarea>
             </div>
             <div class="container-resposta">
                 <h2>Resposta</h2>
-                <textarea name="resposta" id="" cols=" 113" rows="12" required><?php if (!empty($linha)) echo $linha['resposta'] ?></textarea>
+                <textarea name="resposta" id="" cols="30" rows="12" required><?php if (!empty($linha)) echo $linha['resposta'] ?></textarea>
             </div>
         </div>
 
@@ -78,4 +76,5 @@ if (!empty($data)) {
         alert("Por favor, utilize no modo paisagem");
     }
 </script>
+
 </html>
