@@ -133,5 +133,9 @@ if (!empty($data)) {
         <input id="botao-enviar" type="submit" value="ENVIAR">
     </form>
 </body>
-
+<script>
+    if (window.innerHeight > window.innerWidth) {
+        alert("Por favor, utilize no modo paisagem");
+    }
+</script>
 </html>

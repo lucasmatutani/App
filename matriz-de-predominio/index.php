@@ -92,5 +92,9 @@ if (!empty($data)) {
     <!-- fim links js -->
 
 </body>
-
+<script>
+    if (window.innerHeight > window.innerWidth) {
+        alert("Por favor, utilize no modo paisagem");
+    }
+</script>
 </html>

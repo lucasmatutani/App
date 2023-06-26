@@ -73,5 +73,9 @@ if (!empty($data)) {
         </div>
     </form>
 </body>
-
+<script>
+    if (window.innerHeight > window.innerWidth) {
+        alert("Por favor, utilize no modo paisagem");
+    }
+</script>
 </html>

@@ -121,4 +121,7 @@ p {
     flex-direction: column;
     text-align: center;
   }
+  .container-resposta{
+    flex-direction: column;
+  }
 }
