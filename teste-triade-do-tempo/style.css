@@ -123,6 +123,6 @@ p {
   }
   .container-respostas {
     flex-direction: column;
-    left: 35%;
+    left: 30%;
   }
 }
