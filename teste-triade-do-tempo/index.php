@@ -401,7 +401,9 @@ if (!empty($data)) {
             <label for="">Circunstância %</label>
             <input name="circunstancia" id="circunstancia" type="text" value="<?php if (!empty($linha)) echo $linha['circunstancia']; ?>">
         </div>
-        <input class="btn-submit" type="submit">
+        <div class="container-submit">
+            <input class="btn-submit" type="submit">
+        </div>
         <div id="grupoA" style="display: none;"></div>
         <div id="grupoB" style="display: none;"></div>
         <div id="grupoC" style="display: none;"></div>

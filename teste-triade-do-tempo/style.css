@@ -93,10 +93,13 @@ p {
   height: 30px;
 }
 
+.container-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-submit {
-  position: relative;
-  left: 47.5%;
-  margin-top: 25px;
   background: #0066a2;
   color: white;
   border-style: outset;
@@ -123,6 +126,5 @@ p {
   }
   .container-respostas {
     flex-direction: column;
-    left: 30%;
   }
 }
