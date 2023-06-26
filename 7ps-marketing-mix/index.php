@@ -59,4 +59,19 @@ if (!empty($data)) {
     </form>
 </body>
 
+<script>
+    // Função para verificar a orientação da tela
+    function checkOrientation() {
+        // Se a altura for maior que a largura, estamos em modo retrato (vertical)
+        if (window.innerHeight > window.innerWidth) {
+            alert("Por favor, utilize no modo paisagem");
+        }
+    }
+
+    // Verifica a orientação inicial
+    checkOrientation();
+
+    // Adiciona um listener para o evento de mudança de orientação
+    window.addEventListener("resize", checkOrientation);
+</script>
 </html>
