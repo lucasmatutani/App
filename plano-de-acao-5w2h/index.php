@@ -20,6 +20,7 @@ if (!empty($data)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Plano de ação 5W2H</title>
 </head>
@@ -39,12 +40,11 @@ if (!empty($data)) {
         <input type="hidden" id="resultado3" name="resultado3" value="<?php if (!empty($linha['resultado3'])) echo $linha['resultado3'] ?>">
         <input type="hidden" id="resultado4" name="resultado4" value="<?php if (!empty($linha['resultado4'])) echo $linha['resultado4'] ?>">
 
-        <div class="objetivo">
+        <div class="objetivo mt-5">
             <h3>Objetivo:</h3>
-            <input style="width: 100%;" type="text" name="objetivo" value="<?php if (!empty($linha)) echo $linha['objetivo']; ?>">
-
+            <textarea name="objetivo" class="col-8"  rows="4"><?php if (!empty($linha)) echo $linha['objetivo']; ?></textarea>
         </div>
-        <div class="container-titulo">
+        <div class="container-titulo mt-3">
             <div class="container-1">
                 <p>Consultor:</p>
                 <input type="text" name="consultor" value="<?php if (!empty($linha)) echo $linha['consultor']; ?>">

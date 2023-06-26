@@ -43,9 +43,12 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-
+        
+        <div class="container-grupo">
+            <h3 style="margin-right: 10px;">Grupo : </h3>
+            <input type="text" name="grupo" style="height: 30px;">
+        </div>
         <div class="container-table">
-
             <div class="container">
                 <input type="text" name="nm1" id="" value="<?php if (!empty($linha)) echo $linha['nm1'] ?>" placeholder="Insira o nome do produto aqui" required>
                 <table style="margin: 0;" cellspacing="30">
@@ -151,7 +154,6 @@ if (!empty($data)) {
             </div>
         </div>
         <div class="container-submit">
-            <input type="text" style="margin-right: 30px;" name="grupo" placeholder="Nome do Grupo" value="<?php if (!empty($linha)) echo $linha['grupo'] ?>" required>
             <input type="submit" name="" id="submit" value="ENVIAR">
         </div>
     </form>

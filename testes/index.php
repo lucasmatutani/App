@@ -281,7 +281,7 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (!empty($marketing)) : ?>
-                <a href="http://focustradeapp.com.br/7ps-marketing-mix/" class="teste">Matriz de Risco</a>
+                <a href="http://focustradeapp.com.br/7ps-marketing-mix/" class="teste">7ps Marketing</a>
             <?php endif; ?>
 
             <?php if (!empty($puv)) : ?>

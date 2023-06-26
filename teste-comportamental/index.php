@@ -422,8 +422,6 @@ $email = $_SESSION['usuarioEmail'];
             document.getElementById("gato").value = c * 4;
             document.getElementById("tubarao").value = a * 4;
             document.getElementById("lobo").value = o * 4;
-
-            alert("DIGITE SEU NOME, SOBRENOME E CONFIRA OS DADOS NA TABELA ANTES DE ENVIAR")
         }
     }
 </script>

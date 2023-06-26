@@ -21,6 +21,7 @@ if (!empty($data)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>7 P's Marketing Mix</title>
 </head>
@@ -36,24 +37,24 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="nome" value="<?php echo $nome ?>">
 
-        <div class="container-principal">
-            <h3>Produto</h3>
-            <textarea name="txt1" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
-            <h3>Preço</h3>
-            <textarea name="txt2" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
-            <h3>Praça</h3>
-            <textarea name="txt3" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
-            <h3>Promoção</h3>
-            <textarea name="txt4" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
-            <h3>Pessoas</h3>
-            <textarea name="txt5" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
-            <h3>Evidências Físicas</h3>
-            <textarea name="txt6" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
-            <h3>Processo</h3>
-            <textarea name="txt7" id="" cols="70" rows="10"><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
+        <div class="container-principal container">
+            <h3 class="mt-5">Produto</h3>
+            <textarea name="txt1" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+            <h3 class="mt-5">Preço</h3>
+            <textarea name="txt2" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+            <h3 class="mt-5">Praça</h3>
+            <textarea name="txt3" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+            <h3 class="mt-5">Promoção</h3>
+            <textarea name="txt4" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+            <h3 class="mt-5">Pessoas</h3>
+            <textarea name="txt5" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
+            <h3 class="mt-5">Evidências Físicas</h3>
+            <textarea name="txt6" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
+            <h3 class="mt-5">Processo</h3>
+            <textarea name="txt7" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
         </div>
-        <div class="buttom-enviar">
-            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS" style="height: 30px; margin-left: 15px;">
+        <div class="buttom-enviar mb-3">
+            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
         </div>
     </form>
 </body>
