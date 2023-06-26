@@ -1,0 +1,45 @@
+.btn-voltar {
+    margin: 0 0 0 20px;
+    position: absolute;
+    z-index: 999;
+    color: #000;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-table {
+    display: flex;
+    justify-content: center;
+}
+
+.container-table table {
+    width: 80%;
+}
+
+.buttom-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao-enviar {
+    background: #314b7c;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 50px;
+    margin-top: 20px;
+  }
+  
+  #botao-enviar:hover {
+    background-color: green;
+    cursor: pointer;
+  }
