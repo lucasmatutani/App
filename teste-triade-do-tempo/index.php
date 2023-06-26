@@ -8,6 +8,10 @@ if (!isset($_SESSION['usuarioEmail'])) {
 $email = $_SESSION['usuarioEmail'];
 $usuario_id = $_SESSION['usuarioId'];
 
+$data = $conn->query("SELECT * FROM teste_triade_tempo WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -76,7 +80,7 @@ $usuario_id = $_SESSION['usuarioId'];
                     </div>
                 </div>
 
-                <p>3 - Quando recebo um novo e-mail, costumo dar uma olhada para<br> checar o conteúdo.</p>
+                <p>3 - Quando recebo um novo e-mail, costumo dar uma olhada para <br> checar o conteúdo.</p>
 
                 <div class="container-radios">
                     <div class="container-input">
@@ -391,11 +395,11 @@ $usuario_id = $_SESSION['usuarioId'];
         </div>
         <div class="container-respostas">
             <label for="">Importância %</label>
-            <input name="importancia" id="importancia" type="text">
+            <input name="importancia" id="importancia" type="text" value="<?php if (!empty($linha)) echo $linha['importancia']; ?>">
             <label for="">Urgência %</label>
-            <input name="urgencia" id="urgencia" type="text">
+            <input name="urgencia" id="urgencia" type="text" value="<?php if (!empty($linha)) echo $linha['urgencia']; ?>">
             <label for="">Circunstância %</label>
-            <input name="circunstancia" id="circunstancia" type="text">
+            <input name="circunstancia" id="circunstancia" type="text" value="<?php if (!empty($linha)) echo $linha['circunstancia']; ?>">
         </div>
         <input class="btn-submit" type="submit">
         <div id="grupoA" style="display: none;"></div>

@@ -25,7 +25,7 @@ switch ($_GET['pag']) {
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 1";
                 if ($res = mysqli_query($conn, $query)) :
                     while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                        <h3 style="margin-top: 60px;"><?php echo utf8_encode($row['pergunta']) ?></h3>
+                        <h3 style="margin-top: 60px;"><?php echo $row['pergunta'] ?></h3>
                         <textarea name="<?php echo $row['nome'] ?>" id="" cols="100" rows="10" style="font-size: 1.5em"></textarea>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -50,7 +50,7 @@ switch ($_GET['pag']) {
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 2";
                 if ($res = mysqli_query($conn, $query)) :
                     while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                        <h3 style="margin-top: 60px;"><?php echo utf8_encode($row['pergunta']) ?></h3>
+                        <h3 style="margin-top: 60px;"><?php echo $row['pergunta'] ?></h3>
                         <textarea name="<?php echo $row['nome'] ?>" id="" cols="100" rows="10" style="font-size: 1.5em"></textarea>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -75,7 +75,7 @@ switch ($_GET['pag']) {
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 3";
                 if ($res = mysqli_query($conn, $query)) :
                     while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                        <h3 style="margin-top: 60px;"><?php echo utf8_encode($row['pergunta']) ?></h3>
+                        <h3 style="margin-top: 60px;"><?php echo $row['pergunta'] ?></h3>
                         <textarea name="<?php echo $row['nome'] ?>" id="" cols="100" rows="10" style="font-size: 1.5em"></textarea>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -100,7 +100,7 @@ switch ($_GET['pag']) {
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 4";
                 if ($res = mysqli_query($conn, $query)) :
                     while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                        <h3 style="margin-top: 60px;"><?php echo utf8_encode($row['pergunta']) ?></h3>
+                        <h3 style="margin-top: 60px;"><?php echo $row['pergunta'] ?></h3>
                         <textarea name="<?php echo $row['nome'] ?>" id="" cols="100" rows="10" style="font-size: 1.5em"></textarea>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -125,7 +125,7 @@ switch ($_GET['pag']) {
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 5";
                 if ($res = mysqli_query($conn, $query)) :
                     while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                        <h3 style="margin-top: 60px;"><?php echo utf8_encode($row['pergunta']) ?></h3>
+                        <h3 style="margin-top: 60px;"><?php echo $row['pergunta'] ?></h3>
                         <textarea name="<?php echo $row['nome'] ?>" id="" cols="100" rows="10" style="font-size: 1.5em"></textarea>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -150,7 +150,7 @@ switch ($_GET['pag']) {
                 $query = "SELECT * FROM testes_jpb WHERE categoria = 6";
                 if ($res = mysqli_query($conn, $query)) :
                     while ($row = $res->fetch_array(MYSQLI_ASSOC)) : ?>
-                        <h3 style="margin-top: 60px;"><?php echo utf8_encode($row['pergunta']) ?></h3>
+                        <h3 style="margin-top: 60px;"><?php echo $row['pergunta'] ?></h3>
                         <textarea name="<?php echo $row['nome'] ?>" id="" cols="100" rows="10" style="font-size: 1.5em"></textarea>
                     <?php endwhile; ?>
                 <?php endif; ?>

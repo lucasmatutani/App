@@ -56,7 +56,7 @@ if (!empty($data)) {
             </div>
             <div class="item subgrid">
                 <div>Perguntas</div>
-                <div style="margin-left: 120px;">Necessidades Exlícitas</div>
+                <div style="margin-left: 120px;">Necessidades Explícitas</div>
             </div>
             <div class="item subgrid">
                 <div>Perguntas</div>

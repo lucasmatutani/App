@@ -3,9 +3,9 @@ include_once "../includes/connection.php";
 include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
-$email = utf8_decode($_REQUEST['email']);
-$perg1 = utf8_decode($_REQUEST['perg1']);
-$perg2 = utf8_decode($_REQUEST['perg2']);
+$email = $_REQUEST['email'];
+$perg1 = $_REQUEST['perg1'];
+$perg2 = $_REQUEST['perg2'];
 
 $data = $conn->query("SELECT * FROM resposta_implicacao WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
