@@ -43,51 +43,50 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-
-        <table class="table table-bordered ">
-            <tr>
-                <th></th>
-                <th>Habilidade</th>
-                <th>Habilidade</th>
-                <th>Habilidade</th>
-            </tr>
-
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Baixa</th>
-                <th scope="col">Média</th>
-                <th scope="col">Alta</th>
-            </tr>
-
-            <tbody>
+        <div class="container-table mt-5">
+            <table class="table table-bordered" style="width: 95vw;">
                 <tr>
-                    <th scope="row">Alto</th>
-                    <td><textarea placeholder="ANSIEADE" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['alta1']; ?></textarea></td>
-                    <td><textarea name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['alta2']; ?></textarea></td>
-                    <td style="background-color: #d3d3d3;"><textarea placeholder="FLOW" style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['alta3']; ?></textarea></td>
+                    <th></th>
+                    <th>Habilidade</th>
+                    <th>Habilidade</th>
+                    <th>Habilidade</th>
                 </tr>
+
                 <tr>
-                    <th scope="row">Médio</th>
-                    <td><textarea name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['media1']; ?></textarea></td>
-                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['media2']; ?></textarea></td>
-                    <td><textarea name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['media3']; ?></textarea></td>
+                    <th scope="col"></th>
+                    <th scope="col">Baixa</th>
+                    <th scope="col">Média</th>
+                    <th scope="col">Alta</th>
                 </tr>
-                <tr>
-                    <th scope="row">Baixo</th>
-                    <td style="background-color: #d3d3d3;"><textarea style="background-color: #d3d3d3;" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['baixa1']; ?></textarea></td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea><?php if (!empty($linha)) echo $linha['baixa2']; ?></td>
-                    <td><textarea placeholder="TÉDIO" name="" id="" cols="20" rows="5"><?php if (!empty($linha)) echo $linha['baixa3']; ?></textarea></td>
 
-                </tr>
-            </tbody>
-        </table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Alto</th>
+                        <td><textarea placeholder="ANSIEADE" name="alta1" class="col-10" rows="5"><?php if (!empty($linha)) echo $linha['alta1']; ?></textarea></td>
+                        <td><textarea name="alta2" class="col-10" id="" rows="5"><?php if (!empty($linha)) echo $linha['alta2']; ?></textarea></td>
+                        <td style="background-color: #d3d3d3;"><textarea class="col-10" placeholder="FLOW" style="background-color: #d3d3d3;" name="alta3" id="" rows="5"><?php if (!empty($linha)) echo $linha['alta3']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Médio</th>
+                        <td><textarea name="media1" id="" class="col-10" rows="5"><?php if (!empty($linha)) echo $linha['media1']; ?></textarea></td>
+                        <td style="background-color: #d3d3d3;"><textarea class="col-10" style="background-color: #d3d3d3;" name="media2" id="" rows="5"><?php if (!empty($linha)) echo $linha['media2']; ?></textarea></td>
+                        <td><textarea name="media3" id="" class="col-10" rows="5"><?php if (!empty($linha)) echo $linha['media3']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Baixo</th>
+                        <td style="background-color: #d3d3d3;"><textarea class="col-10" style="background-color: #d3d3d3;" name="baixa1" id="" rows="5"><?php if (!empty($linha)) echo $linha['baixa1']; ?></textarea></td>
+                        <td><textarea name="baixa2" id="" class="col-10" rows="5"><?php if (!empty($linha)) echo $linha['baixa2']; ?></textarea></td>
+                        <td><textarea placeholder="TÉDIO" class="col-10" name="baixa3" id="" rows="5"><?php if (!empty($linha)) echo $linha['baixa3']; ?></textarea></td>
 
-
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttom-enviar">
+            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
+        </div>
     </form>
 
-    <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
-    </div>
 
     <!-- link js para bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

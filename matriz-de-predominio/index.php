@@ -41,48 +41,47 @@ if (!empty($data)) {
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
 
-        <div class="container-principal">
+        <div class="container-principal mt-5">
+            <div class="container-table">
+                <table class="table table-striped table-sm" border="1" style="width: 35vw;">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Total</th>
+                    </tr>
 
-            <table class="table table-striped table-sm" border="1">
-                <tr>
-                    <th>Tipo</th>
-                    <th>Total</th>
-                </tr>
-
-                <tr>
-                    <td>Ponto Fraco</td>
-                    <td><textarea name="fraco" id="" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['fraco']; ?></textarea></td>
-                </tr>
-                <tr>
-                    <td>Ponto Forte</td>
-                    <td><textarea name="forte" id="" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['forte']; ?></textarea></td>
-                </tr>
-                <tr>
-                    <td>Ameaça</td>
-                    <td><textarea name="ameaca" id="" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['ameaca']; ?></textarea></td>
-                </tr>
-                <tr>
-                    <td>Oportunidade</td>
-                    <td><textarea name="oportunidade" id="" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['oportunidade']; ?></textarea></td>
-                </tr>
-            </table>
-
-        </div>
-
-        <div class="container-predominio">
-            <div class="predominio">
-                <textarea placeholder="Predomínio" name="pred" id="" cols="30" rows="7"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
-                <textarea placeholder="Direção" name="direcao" id="" cols="30" rows="7"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
+                    <tr>
+                        <td>Ponto Fraco</td>
+                        <td><textarea name="fraco" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['fraco']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Ponto Forte</td>
+                        <td><textarea name="forte" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['forte']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Ameaça</td>
+                        <td><textarea name="ameaca" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['ameaca']; ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Oportunidade</td>
+                        <td><textarea name="oportunidade" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['oportunidade']; ?></textarea></td>
+                    </tr>
+                </table>
+                <div class="predominio">
+                    <textarea placeholder="Predomínio" name="pred" cols="40" rows="7"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
+                    <textarea placeholder="Direção" name="direcao" cols="40" rows="7"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
+                </div>
             </div>
 
-            <img src="../assets/img/img-matriz-predominio.jpg" class="img-fluid" alt="Responsive image">
+            <div class="container-predominio ml-5">
+                <img src="../assets/img/img-matriz-predominio.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="buttom-enviar">
+            <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
         </div>
     </form>
     <!-- fim table -->
 
-    <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
-    </div>
 
 
     <!-- links javascript bootstrap -->
@@ -97,4 +96,5 @@ if (!empty($data)) {
         alert("Por favor, utilize no modo paisagem");
     }
 </script>
+
 </html>
