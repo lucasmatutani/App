@@ -66,6 +66,10 @@ $usuario_id = @$_SESSION['usuarioId'];
                 <a href="../teste-hospital/" class="teste">Role play Hospital</a>
             <?php endif; ?>
 
+            <?php if (@$_SESSION['role_play'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="../role_play/" class="teste">Role play Retail</a>
+            <?php endif; ?>
+
             <?php if (@$_SESSION['representacional'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-representacional/" class="teste">Sistemas Representacionais</a>
             <?php endif; ?>

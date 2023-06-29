@@ -42,6 +42,7 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['cavaben'] = $resultado['cavaben'];
         $_SESSION['crencas'] = $resultado['crencas'];
         $_SESSION['flowchart'] = $resultado['flowchart'];
+        $_SESSION['role_play'] = $resultado['role_play'];
 
 
         if ($resultado['email'] == "admin") {
