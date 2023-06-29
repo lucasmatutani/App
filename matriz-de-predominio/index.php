@@ -71,7 +71,6 @@ if (!empty($data)) {
                     <textarea placeholder="Direção" name="direcao" cols="40" rows="7"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
                 </div>
             </div>
-
             <div class="container-predominio ml-5">
                 <img src="../assets/img/img-matriz-predominio.jpg" class="img-fluid" alt="Responsive image">
             </div>
