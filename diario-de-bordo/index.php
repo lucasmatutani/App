@@ -33,6 +33,10 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <div class="container-perguntas">
+            <div class="container-dia">
+                <h2>Dia :</h2>
+                <input type="text" style="height: 30px; width: 15%; font-size: 1.5em; margin-left: 10px;">
+            </div>
             <div class="pag-1">
                 <p>1. Por que valeu a pena trabalhar e liderar no dia de hoje? </p>
                 <textarea name="perg1" id="perg1" cols="80" rows="10"><?php if (!empty($linha)) echo $linha['perg1'] ?></textarea>

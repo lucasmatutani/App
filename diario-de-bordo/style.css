@@ -33,6 +33,14 @@
   justify-content: center;
   margin-right: 30px;
 }
+
+.container-dia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-txt {
   display: flex;
   flex-direction: row;
