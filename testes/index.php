@@ -5,7 +5,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
     exit;
 }
-$usuario_id = $_SESSION['usuarioId'];
+$usuario_id = @$_SESSION['usuarioId'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -34,80 +34,88 @@ $usuario_id = $_SESSION['usuarioId'];
                 <span style="z-index: 999;"></span>
             </div>
 
-            <?php if ($_SESSION['aida'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['aida'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['conquiste_clientes'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?> 
+            <?php if (@$_SESSION['conquiste_clientes'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?> 
                 <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="teste">Conquiste Clientes</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['diario_de_bordo'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['diario_de_bordo'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/diario-de-bordo/" class="teste">Diário de bordo</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['metodo_cesar'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['metodo_cesar'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-metodo-cesar/" class="teste">Método Cesar</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['petscan'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['petscan'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-petscan-do-cliente/" class="teste">Petscan do Cliente</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['comportamental'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['comportamental'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-comportamental/" class="teste">Perfil Comportamental</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['plano_de_acao'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['plano_de_acao'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/plano-de-acao-5w2h/" class="teste">Plano de ação 5W2H</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['teste_hospital'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['teste_hospital'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="../teste-hospital/" class="teste">Role play Hospital</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['representacional'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['representacional'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-representacional/" class="teste">Sistemas Representacionais</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['spin'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['spin'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-spin/" class="teste">Spin</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['triade'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['triade'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-triade-do-tempo/" class="teste">Tríade do Tempo</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['fatores_criticos'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['fatores_criticos'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/fatores-criticos-de-sucesso/" class="teste">Fatores Críticos de Sucesso</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['analise_swot'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['analise_swot'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['matriz_predominio'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['matriz_predominio'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/matriz-de-predominio/" class="teste">Matriz de Predomínio</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['matriz_risco'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['matriz_risco'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-matriz-de-risco/" class="teste">Matriz de Risco</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['testes_jpb'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['testes_jpb'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="../testes-jpb/index.php">Testes JBP</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['marketing'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['marketing'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/7ps-marketing-mix/" class="teste">7ps Marketing</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['puv'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['puv'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/puv/" class="teste">Puv</a>
             <?php endif; ?>
 
-            <?php if ($_SESSION['cavaben'] == 1 || $_SESSION['usuarioEmail'] == "admin") : ?>
+            <?php if (@$_SESSION['cavaben'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-cavaben/" class="teste">Cavaben</a>
+            <?php endif; ?>
+
+            <?php if (@$_SESSION['crencas'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/crencas/" class="teste">Crenças</a>
+            <?php endif; ?>
+
+            <?php if (@$_SESSION['flowchart'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-flowchart/" class="teste">Flowchart</a>
             <?php endif; ?>
 
         </div>
@@ -170,8 +178,14 @@ $usuario_id = $_SESSION['usuarioId'];
             $sql_puv = $conn->query("SELECT * FROM puv WHERE usuario_id = $usuario_id");
             $puv = mysqli_fetch_assoc($sql_puv);
 
-            $sql_teste_cavaben = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
+            $sql_teste_cavaben = $conn->query("SELECT * FROM teste_cavaben WHERE usuario_id = $usuario_id");
             $teste_cavaben = mysqli_fetch_assoc($sql_teste_cavaben);
+
+            $sql_teste_crencas = $conn->query("SELECT * FROM crencas WHERE usuario_id = $usuario_id");
+            $teste_crencas = mysqli_fetch_assoc($sql_teste_crencas);
+
+            $sql_teste_flowchart = $conn->query("SELECT * FROM teste_flowchart WHERE usuario_id = $usuario_id");
+            $teste_flowchart = mysqli_fetch_assoc($sql_teste_flowchart);
 
             if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
@@ -280,11 +294,19 @@ $usuario_id = $_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (!empty($puv)) : ?>
-                <a href="http://focustradeapp.com.br/puv/" class="teste">Matriz de Risco</a>
+                <a href="http://focustradeapp.com.br/puv/" class="teste">Puv</a>
             <?php endif; ?>
 
             <?php if (!empty($teste_cavaben)) : ?>
-                <a href="http://focustradeapp.com.br/teste-cavaben/" class="teste">Matriz de Risco</a>
+                <a href="http://focustradeapp.com.br/teste-cavaben/" class="teste">Cavaben</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_crencas)) : ?>
+                <a href="http://focustradeapp.com.br/crencas/" class="teste">Crenças</a>
+            <?php endif; ?>
+
+            <?php if (!empty($teste_flowchart)) : ?>
+                <a href="http://focustradeapp.com.br/teste-flowchart/" class="teste">Flowchart</a>
             <?php endif; ?>
         </div>
     </div>

@@ -40,6 +40,9 @@ if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
         $_SESSION['marketing'] = $resultado['marketing'];
         $_SESSION['puv'] = $resultado['puv'];
         $_SESSION['cavaben'] = $resultado['cavaben'];
+        $_SESSION['crencas'] = $resultado['crencas'];
+        $_SESSION['flowchart'] = $resultado['flowchart'];
+
 
         if ($resultado['email'] == "admin") {
             header("Location: ../admin");

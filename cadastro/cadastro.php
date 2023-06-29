@@ -26,8 +26,10 @@ $matriz_risco = $_REQUEST['matriz_risco'];
 $marketing = $_REQUEST['marketing'];
 $puv = $_REQUEST['puv'];
 $cavaben = $_REQUEST['cavaben'];
+$crencas = $_REQUEST['crencas'];
+$flowchart = $_REQUEST['flowchart'];
 
-$sql = "INSERT INTO usuarios (nome, email, empresa, senha, grupo, representacional, comportamental, conquiste_clientes, aida, spin, metodo_cesar, petscan, triade, plano_de_acao, diario_de_bordo, fatores_criticos, analise_swot, matriz_predominio, testes_jpb, matriz_risco, teste_hospital, marketing, puv, cavaben) VALUES ('$nome', '$email', '$empresa', '$senha',  '$grupo', '$representacional', '$comportamental', '$conquiste_clientes', '$aida', '$spin', '$metodo_cesar', '$petscan', '$triade', '$plano_de_acao_5w2h', '$diario_de_bordo', '$fatores_criticos', '$analise_swot', '$matriz_predominio', '$testes_jpb', '$matriz_risco', '$teste_hospital', '$marketing', '$puv', '$cavaben')";
+$sql = "INSERT INTO usuarios (nome, email, empresa, senha, grupo, representacional, comportamental, conquiste_clientes, aida, spin, metodo_cesar, petscan, triade, plano_de_acao, diario_de_bordo, fatores_criticos, analise_swot, matriz_predominio, testes_jpb, matriz_risco, teste_hospital, marketing, puv, cavaben, crencas, flowchart) VALUES ('$nome', '$email', '$empresa', '$senha',  '$grupo', '$representacional', '$comportamental', '$conquiste_clientes', '$aida', '$spin', '$metodo_cesar', '$petscan', '$triade', '$plano_de_acao_5w2h', '$diario_de_bordo', '$fatores_criticos', '$analise_swot', '$matriz_predominio', '$testes_jpb', '$matriz_risco', '$teste_hospital', '$marketing', '$puv', '$cavaben', $crencas, $flowchart)";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");
