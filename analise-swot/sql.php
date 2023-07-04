@@ -2,20 +2,19 @@
 include_once "../includes/connection.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
-$nome = $_REQUEST['nome'];
-
-$txt1 = utf8_decode($_REQUEST['txt1']);
-$txt2 = utf8_decode($_REQUEST['txt2']);
-$txt3 = utf8_decode($_REQUEST['txt3']);
-$txt4 = utf8_decode($_REQUEST['txt4']);
+$email = $_REQUEST['email'];
+$pontos_fortes = $_REQUEST['pontos_fortes'];
+$pontos_fracos = $_REQUEST['pontos_fracos'];
+$oportunidades = $_REQUEST['oportunidades'];
+$ameacas = $_REQUEST['ameacas'];
 
 
 $data = $conn->query("SELECT * FROM analise_swot WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE analise_swot set usuario_id='$usuario_id', nome='$nome', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE analise_swot set usuario_id='$usuario_id', email='$email', pontos_fortes='$pontos_fortes', pontos_fracos='$pontos_fracos', oportunidades='$oportunidades', ameacas='$ameacas' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO analise_swot set usuario_id='$usuario_id', nome='$nome', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4'";
+    $sql = "INSERT INTO analise_swot set usuario_id='$usuario_id', email='$email', pontos_fortes='$pontos_fortes', pontos_fracos='$pontos_fracos', oportunidades='$oportunidades', ameacas='$ameacas'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");

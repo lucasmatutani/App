@@ -29,6 +29,8 @@ if (!empty($data)) {
     </div>
     <form action="./sql.php">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="email" value="<?php echo $_SESSION['usuarioEmail'] ?>">
+
         <div class="container-table mt-5">
             <table>
                 <tr>
@@ -38,13 +40,13 @@ if (!empty($data)) {
                 </tr>
                 <tr>
                     <td style="width:100px;"><b>FUTURO POSITIVO</b></td>
-                    <td><textarea name="txt1" class="form-control" rows="8"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea></td>
-                    <td><textarea name="txt2" class="form-control" rows="8"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea></td>
+                    <td><textarea name="futuro_positivo_presente_negativo" class="form-control" rows="8"><?php if (!empty($linha)) echo $linha['futuro_positivo_presente_negativo']; ?></textarea></td>
+                    <td><textarea name="futuro_positivo_presente_positivo" class="form-control" rows="8"><?php if (!empty($linha)) echo $linha['futuro_positivo_presente_positivo']; ?></textarea></td>
                 </tr>
                 <tr>
                     <td style="width:100px;"><b>FUTURO NEGATIVO</b></td>
-                    <td><textarea name="txt3" rows="8" class="form-control"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea></td>
-                    <td><textarea name="txt4" rows="8" class="form-control"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea></td>
+                    <td><textarea name="futuro_negativo_presente_negativo" rows="8" class="form-control"><?php if (!empty($linha)) echo $linha['futuro_negativo_presente_negativo']; ?></textarea></td>
+                    <td><textarea name="futuro_negativo_presente_positivo" rows="8" class="form-control"><?php if (!empty($linha)) echo $linha['futuro_negativo_presente_positivo']; ?></textarea></td>
                 </tr>
             </table>
         </div>

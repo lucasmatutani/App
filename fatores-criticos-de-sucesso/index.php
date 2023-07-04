@@ -31,8 +31,7 @@ if (!empty($data)) {
     <div class="container-header">
         <img src="../assets/img/logo-focustrade.jpeg" alt="">
         <h1>Fatores Críticos de Sucesso</h1>
-        <h3> Determine os FCS, defina o quanto em % vocês já possui e responda as questões na tabela
-        </h3>
+        <h3> Determine os FCS, defina o quanto em % vocês já possui e responda as questões na tabela</h3>
     </div>
 
 

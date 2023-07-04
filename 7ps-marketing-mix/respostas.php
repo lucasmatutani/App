@@ -5,13 +5,8 @@ if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../login');
 }
 
-$usuario_id = $_SESSION['usuarioId'];
-$email = $_SESSION['usuarioEmail'];
+$data = $conn->query("SELECT * FROM 7ps_marketing_mix ORDER BY email ASC");
 
-$data = $conn->query("SELECT * FROM 7ps_marketing_mix WHERE usuario_id = $usuario_id");
-if (!empty($data)) {
-    $linha = mysqli_fetch_assoc($data);
-}
 ?>
 
 <!DOCTYPE html>
@@ -34,27 +29,30 @@ if (!empty($data)) {
         <h1>7 P's Marketing Mix</h1>
     </div>
     <form action="./sql.php" method="POST">
-        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
-        <input type="hidden" name="email" value="<?php echo $email ?>">
 
         <div class="container-principal container">
+            <select class="form-select col-5 mt-5" name="usuarios" id="usuarios" style="font-size: 2em;">
+                <option>Selecione um usuário</option>
+                <?php if (!empty($data)) { ?>
+                    <?php while ($linha = mysqli_fetch_assoc($data)) { ?>
+                        <option value="<?php echo $linha['usuario_id'] ?>"><?php echo $linha['email'] ?></option>
+                    <?php } ?>
+                <?php } ?>
+            </select>
             <h3 class="mt-5">Produto</h3>
-            <textarea name="txt1" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+            <textarea readonly name="txt1" class="form-control mt-3" id=""></textarea>
             <h3 class="mt-5">Preço</h3>
-            <textarea name="txt2" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+            <textarea readonly name="txt2" class="form-control mt-3" id=""></textarea>
             <h3 class="mt-5">Praça</h3>
-            <textarea name="txt3" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+            <textarea readonly name="txt3" class="form-control mt-3" id=""></textarea>
             <h3 class="mt-5">Promoção</h3>
-            <textarea name="txt4" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+            <textarea readonly name="txt4" class="form-control mt-3" id=""></textarea>
             <h3 class="mt-5">Pessoas</h3>
-            <textarea name="txt5" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
+            <textarea readonly name="txt5" class="form-control mt-3" id=""></textarea>
             <h3 class="mt-5">Evidências Físicas</h3>
-            <textarea name="txt6" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
+            <textarea readonly name="txt6" class="form-control mt-3" id=""></textarea>
             <h3 class="mt-5">Processo</h3>
-            <textarea name="txt7" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
-        </div>
-        <div class="buttom-enviar mb-3">
-            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
+            <textarea readonly name="txt7" class="form-control mt-3 mb-5" id=""></textarea>
         </div>
     </form>
 </body>

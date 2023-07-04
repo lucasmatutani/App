@@ -2,18 +2,19 @@
 include_once "../includes/connection.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
-$txt1 = $_REQUEST['txt1'];
-$txt2 = $_REQUEST['txt2'];
-$txt3 = $_REQUEST['txt3'];
-$txt4 = $_REQUEST['txt4'];
+$email = $_REQUEST['email'];
+$futuro_positivo_presente_negativo = $_REQUEST['futuro_positivo_presente_negativo'];
+$futuro_positivo_presente_positivo = $_REQUEST['futuro_positivo_presente_positivo'];
+$futuro_negativo_presente_negativo = $_REQUEST['futuro_negativo_presente_negativo'];
+$futuro_negativo_presente_positivo = $_REQUEST['futuro_negativo_presente_positivo'];
 
 $data = $conn->query("SELECT * FROM crencas WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 
 if (!empty($linha)) {
-    $sql = "UPDATE crencas set usuario_id='$usuario_id',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE crencas set usuario_id='$usuario_id', email='$email',  futuro_positivo_presente_negativo='$futuro_positivo_presente_negativo', futuro_positivo_presente_positivo='$futuro_positivo_presente_positivo', futuro_negativo_presente_negativo='$futuro_negativo_presente_negativo', futuro_negativo_presente_positivo='$futuro_negativo_presente_positivo' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO crencas set usuario_id='$usuario_id', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4'";
+    $sql = "INSERT INTO crencas set usuario_id='$usuario_id', email='$email', futuro_positivo_presente_negativo='$futuro_positivo_presente_negativo', futuro_positivo_presente_positivo='$futuro_positivo_presente_positivo', futuro_negativo_presente_negativo='$futuro_negativo_presente_negativo', futuro_negativo_presente_positivo='$futuro_negativo_presente_positivo'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
