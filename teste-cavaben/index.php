@@ -37,12 +37,13 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
+        
 
         <table class="table table-striped">
             <tr>
                 <th>Vendedor:</th>
                 <td>O sistema possui estabilizador de voltagem</td>
-                <td><input type="text" name="input1" value="<?php if (!empty($linha)) echo $linha['input1']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_1" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_1']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -54,7 +55,7 @@ if (!empty($data)) {
                 <td>Ele protege os picos de energia elétrica; assim você
                     não perderá informações valiosas se houver oscilções de
                     voltagem</td>
-                <td><input type=" text" name="input2" value="<?php if (!empty($linha)) echo $linha['input2']; ?>"></td>
+                <td><input type=" text" name="vendedor_perg_2" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_2']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -69,7 +70,7 @@ if (!empty($data)) {
                     arquivos principais sejam apagados, você sempre terá um
                     backup automático e nunca correrá o risco de perder dados
                     importantes</td>
-                <td><input type="text" name="input3" id="" value="<?php if (!empty($linha)) echo $linha['input3']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_3" id="" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_3']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -78,7 +79,7 @@ if (!empty($data)) {
             <tr>
                 <th>Vendedor:</th>
                 <td>O sistema básico custa $ 78 mil</td>
-                <td><input type="text" name="input4" value="<?php if (!empty($linha)) echo $linha['input4']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_4" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_4']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -89,7 +90,7 @@ if (!empty($data)) {
                 <td>Sim, você conseguirá ler os seus dados atuais sem nenhuma
                     conversão, então se você quiser ler diretamente na memória,
                     poderá fazer isso.</td>
-                <td><input type="text" name="input5" value="<?php if (!empty($linha)) echo $linha['input5']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_5" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_5']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -103,7 +104,7 @@ if (!empty($data)) {
                     o sistema tem uma das menores margens de erro do mercado
                     menos de 1 em 1,5milhão, o que é muito compatível com
                     suas necessidades</td>
-                <td><input type="text" name="input6" value="<?php if (!empty($linha)) echo $linha['input6']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_6" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_6']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -114,7 +115,7 @@ if (!empty($data)) {
                 <td>E por causa da baixa margem de erro, você pode usar o
                     sistema para validar as outras fontes de processamento,
                     economizando o custo de um processo de validação separad</td>
-                <td><input type="text" name="input7" id="" value="<?php if (!empty($linha)) echo $linha['input7']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_7" id="" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_7']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -125,7 +126,7 @@ if (!empty($data)) {
                 <th>Vendedor:</th>
                 <td>Em matéria de segurança, esse sistema tem oito níveis
                     possíveis de codificação incorporados</td>
-                <td><input type="text" name="input8" id="" value="<?php if (!empty($linha)) echo $linha['input8']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_8" id="" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_8']; ?>"></td>
             </tr>
             <tr>
                 <th>Comprador:</th>
@@ -135,7 +136,7 @@ if (!empty($data)) {
             <tr>
                 <th>Vendedor:</th>
                 <td>Em 5 níveis, os outros 3 são ramdomizados ou com base no tempo</td>
-                <td><input type="text" name="input9" value="<?php if (!empty($linha)) echo $linha['input9']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_9" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_9']; ?>"></td>
             </tr>
             <tr>
                 <th>
@@ -151,7 +152,7 @@ if (!empty($data)) {
                     e automaticamente códigos entre unidades operacionais - o quê
                     significa que seus operadores não precisam memorizar códigos novos e
                     ainda assim é quase impossível de serem invadidos por hackers</td>
-                <td><input type="text" name="input10" value="<?php if (!empty($linha)) echo $linha['input10']; ?>"></td>
+                <td><input type="text" name="vendedor_perg_10" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_10']; ?>"></td>
             </tr>
         </table>
     </form>
