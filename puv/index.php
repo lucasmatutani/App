@@ -34,15 +34,15 @@ if (!empty($data)) {
 
         <div class="container-principal">
             <h3 class="mt-5">Serviços com Diferenciais</h3>
-            <textarea name="txt1" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+            <textarea name="servicos" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['servicos']; ?></textarea>
             <h3 class="mt-5">Segmento do Cliente</h3>
-            <textarea name="txt2" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+            <textarea name="segmento" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['segmento']; ?></textarea>
             <h3 class="mt-5">Necessidade do Cliente</h3>
-            <textarea name="txt3" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+            <textarea name="necessidade" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['necessidade']; ?></textarea>
             <h3 class="mt-5">Verbos de Aumento - <br> Aumentar, Possibilitar - Ganhos</h3>
-            <textarea name="txt4" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+            <textarea name="verbos" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['verbos']; ?></textarea>
             <h3 class="mt-5">Elementos de Diferenciação e Autoridade</h3>
-            <textarea name="txt5" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
+            <textarea name="elementos" id="" class="col-10 mt-3" rows="5"><?php if (!empty($linha)) echo $linha['elementos']; ?></textarea>
         </div>
         <div class="buttom-enviar mb-3">
             <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
