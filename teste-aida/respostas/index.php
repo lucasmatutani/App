@@ -311,6 +311,7 @@ $usuario_id = $_SESSION['usuarioId'];
 
 <script>
     arrGrupo = $.parseJSON(localStorage.getItem("grupo_escolhido"));
+    console.log(arrGrupo);
     document.getElementById('user_id').value = arrGrupo["id"];
     $("#equipe").html(arrGrupo["grupo"]);
     $("#prod1").html(arrGrupo["nm1"]);
