@@ -146,6 +146,7 @@ if (!empty($data)) {
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
             </div>
+
             <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt48']; ?></textarea>
             <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt49']; ?></textarea>
             <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt50']; ?></textarea>
@@ -166,7 +167,7 @@ if (!empty($data)) {
             </div>
             
             <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt59']; ?></textarea>
-            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt60']; ?></textarea>
+            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['tx t60']; ?></textarea>
             <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt51']; ?></textarea>
             <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt62']; ?></textarea>
             <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt63']; ?></textarea>
@@ -183,26 +184,7 @@ if (!empty($data)) {
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
             </div>
-           
 
-            <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt70']; ?></textarea>
-            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt71']; ?></textarea>
-            <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt72']; ?></textarea>
-            <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt73']; ?></textarea>
-            <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt74']; ?></textarea>
-            <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt75']; ?></textarea>
-            <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt76']; ?></textarea>
-            <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt77']; ?></textarea>
-            <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt78']; ?></textarea>
-            <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt79']; ?></textarea>
-            <textarea name="txt58" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt80']; ?></textarea>
-            <div class="subgrid" id="pontuacao6">
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-            </div>
 
             <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt81']; ?></textarea>
             <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt82']; ?></textarea>

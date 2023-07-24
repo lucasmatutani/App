@@ -60,7 +60,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     function editar($row) {
         localStorage.removeItem('grupo_escolhido');
         localStorage['grupo_escolhido'] = JSON.stringify($row);
-
-        window.location.href = 'http://focustradeapp.com.br/teste-aida/respostas/';
+        console.log(localStorage['grupo_escolhido']);
+        // window.location.href = 'http://focustradeapp.com.br/teste-aida/respostas/';
     }
 </script>
