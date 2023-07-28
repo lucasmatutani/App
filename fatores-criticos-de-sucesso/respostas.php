@@ -41,9 +41,11 @@ $usuario = $_SESSION['usuario'];
         </form>
     </div>
 
-    <?php 
-    $query = $conn->query("SELECT * FROM fatores_criticos_de_sucesso WHERE usuario_id = $usuario");
-    $row = @mysqli_fetch_assoc($query);
+    <?php
+    if (!empty($_SESSION['usuario'])) {
+        @$query = $conn->query("SELECT * FROM fatores_criticos_de_sucesso WHERE usuario_id = $usuario");
+        @$row = @mysqli_fetch_assoc($query);
+    }
     ?>
     <?php if (!empty($row)) { ?>
         <div class="container-principal">

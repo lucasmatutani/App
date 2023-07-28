@@ -1,6 +1,6 @@
 <?php
 include_once "../includes/connection.php";
-include_once $_SERVER['DOCUMENT_ROOT'] . "./vendor/envio.php";
+// include_once $_SERVER['DOCUMENT_ROOT'] . "./vendor/envio.php";
 echo $_SERVER['DOCUMENT_ROOT'];
 
 
