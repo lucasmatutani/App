@@ -23,7 +23,7 @@ $usuario_id = $_SESSION['usuarioId'];
 </head>
 
 <body>
-    <form action="./respostas.php" method="POST">
+    <form action="./respostas.php" method="POST" id="form">
 
         <input type="hidden" id="usuario_id" name="usuario_id" value="<?php $usuario_id ?>">
         <input type="hidden" id="user_id" name="user_id" value="">
@@ -292,13 +292,11 @@ $usuario_id = $_SESSION['usuarioId'];
             </div>
 
         </div>
-
-        <div class="container-btn" style="margin-top: 20px;">
-            <a class="btn-voltar" href="http://focustradeapp.com.br/teste-aida/role-play">Voltar</a>
-            <input value="ENVIAR" id="botao-enviar" type="submit" onclick="registrar()" id="btn-enviar">
-        </div>
-
     </form>
+    <div class="container-btn" style="margin-top: 20px;">
+        <a class="btn-voltar" href="http://focustradeapp.com.br/teste-aida/role-play">Voltar</a>
+        <input value="ENVIAR" id="botao-enviar" type="submit" onclick="registrar()" id="btn-enviar">
+    </div>
     <div id="result"></div>
 </body>
 
@@ -394,12 +392,15 @@ $usuario_id = $_SESSION['usuarioId'];
 
         var naoImp = num1 * 100;
         var parcImp = num2 * 50;
-        rtyujiop
         var imp = num3 * 0;
 
         var somaTotal = (((naoImp + parcImp + imp) * 100) / 1600).toFixed();
         var somaTotalNumber = parseInt(somaTotal);
         document.getElementById("valor_total").value = somaTotalNumber;
         document.getElementById("radio_total").value = total;
+        console.log(somaTotalNumber);
+        console.log(total);
+
+        //document.getElementById("form").submit();
     };
 </script>
