@@ -13,6 +13,7 @@ if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
