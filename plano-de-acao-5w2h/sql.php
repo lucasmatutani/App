@@ -1,8 +1,5 @@
 <?php
 include_once "../includes/connection.php";
-// include_once $_SERVER['DOCUMENT_ROOT'] . "./vendor/envio.php";
-echo $_SERVER['DOCUMENT_ROOT'];
-
 
 $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
@@ -15,6 +12,9 @@ $resultado1 = $_POST['resultado1'];
 $resultado2 = $_POST['resultado2'];
 $resultado3 = $_POST['resultado3'];
 $resultado4 = $_POST['resultado4'];
+$resultado5 = $_POST['resultado5'];
+$resultado6 = $_POST['resultado6'];
+$resultado7 = $_POST['resultado7'];
 $txt1 = $_REQUEST['txt1'];
 $txt2 = $_REQUEST['txt2'];
 $txt3 = $_REQUEST['txt3'];
@@ -25,6 +25,11 @@ $txt7 = $_REQUEST['txt7'];
 $txt8 = $_REQUEST['txt8'];
 $txt9 = $_REQUEST['txt9'];
 $txt10 = $_REQUEST['txt10'];
+$txt11 = $_REQUEST['txt11'];
+$txt12 = $_REQUEST['txt12'];
+$txt13 = $_REQUEST['txt13'];
+$txt14 = $_REQUEST['txt14'];
+$txt15 = $_REQUEST['txt15'];
 $txt16 = $_REQUEST['txt16'];
 $txt17 = $_REQUEST['txt17'];
 $txt18 = $_REQUEST['txt18'];
@@ -36,6 +41,11 @@ $txt23 = $_REQUEST['txt23'];
 $txt24 = $_REQUEST['txt24'];
 $txt25 = $_REQUEST['txt25'];
 $txt26 = $_REQUEST['txt26'];
+$txt27 = $_REQUEST['txt27'];
+$txt28 = $_REQUEST['txt28'];
+$txt29 = $_REQUEST['txt29'];
+$txt30 = $_REQUEST['txt30'];
+$txt31 = $_REQUEST['txt31'];
 $txt32 = $_REQUEST['txt32'];
 $txt33 = $_REQUEST['txt33'];
 $txt34 = $_REQUEST['txt34'];
@@ -47,6 +57,11 @@ $txt39 = $_REQUEST['txt39'];
 $txt40 = $_REQUEST['txt40'];
 $txt41 = $_REQUEST['txt41'];
 $txt42 = $_REQUEST['txt42'];
+$txt43 = $_REQUEST['txt43'];
+$txt44 = $_REQUEST['txt44'];
+$txt45 = $_REQUEST['txt45'];
+$txt46 = $_REQUEST['txt46'];
+$txt47 = $_REQUEST['txt47'];
 $txt48 = $_REQUEST['txt48'];
 $txt49 = $_REQUEST['txt49'];
 $txt50 = $_REQUEST['txt50'];
@@ -78,13 +93,14 @@ $txt75 = $_REQUEST['txt75'];
 $txt76 = $_REQUEST['txt76'];
 $txt77 = $_REQUEST['txt77'];
 
-$data = $conn->query('SELECT * FROM plano_de_acao_5w2h');
+$data = $conn->query("SELECT * FROM plano_de_acao_5w2h WHERE usuario_id = '$usuario_id'");
 $linha = mysqli_fetch_assoc($data);
-if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
-    $sql = "UPDATE plano_de_acao_5w2h set usuario_id='$usuario_id', objetivo='$objetivo', consultor='$consultor', setor='$setor', elaboracao='$elaboracao', atualizacao='$atualizacao', resultado1='$resultado1', resultado2='$resultado2', resultado3='$resultado3', resultado4='$resultado4', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10', txt16='$txt16', txt17='$txt17', txt18='$txt18', txt19='$txt19', txt20='$txt20', txt21='$txt21', txt22='$txt22', txt23='$txt23', txt24='$txt24', txt25='$txt25', txt26='$txt26', txt32='$txt32', txt33='$txt33', txt34='$txt34', txt35='$txt35', txt36='$txt36', txt37='$txt37', txt38='$txt38', txt39='$txt39', txt40='$txt40', txt41='$txt41', txt42='$txt42', txt48='$txt48', txt49='$txt49', txt50='$txt50', txt51='$txt51', txt52='$txt52', txt53='$txt53', txt54='$txt54', txt55='$txt55', txt56='$txt56', txt57='$txt57', txt58='$txt58', txt59='$txt59' txt60='$txt60', txt61='$txt61', txt62='$txt62', txt63='$txt63', txt64='$txt64', txt65='$txt65', txt66='$txt66', txt67='$txt67', txt68='$txt68', txt69='$txt69', txt70='$txt70', txt71='$txt71', txt72='$txt72', txt73='$txt73', txt74='$txt74', txt75='$txt75', txt76='$txt76', txt77='$txt77' WHERE usuario_id= $usuario_id";
+if (!empty($linha)) {
+    $sql = "UPDATE plano_de_acao_5w2h set usuario_id='$usuario_id', objetivo='$objetivo', consultor='$consultor', setor='$setor', elaboracao='$elaboracao', atualizacao='$atualizacao', resultado1='$resultado1', resultado2='$resultado2', resultado3='$resultado3', resultado4='$resultado4', resultado5='$resultado5', resultado6='$resultado6', resultado7='$resultado7', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10', txt11='$txt11',txt12='$txt12',txt13='$txt13',txt14='$txt14',txt15='$txt15', txt16='$txt16', txt17='$txt17', txt18='$txt18', txt19='$txt19', txt20='$txt20', txt21='$txt21', txt22='$txt22', txt23='$txt23', txt24='$txt24', txt25='$txt25', txt26='$txt26', txt27='$txt27', txt28='$txt28', txt29='$txt29', txt30='$txt30', txt31='$txt31', txt32='$txt32', txt33='$txt33', txt34='$txt34', txt35='$txt35', txt36='$txt36', txt37='$txt37', txt38='$txt38', txt39='$txt39', txt40='$txt40', txt41='$txt41', txt42='$txt42', txt43='$txt43', txt44='$txt44', txt45='$txt45', txt46='$txt46', txt47='$txt47', txt48='$txt48', txt49='$txt49', txt50='$txt50', txt51='$txt51', txt52='$txt52', txt53='$txt53', txt54='$txt54', txt55='$txt55', txt56='$txt56', txt57='$txt57', txt58='$txt58', txt59='$txt59', txt60='$txt60', txt61='$txt61', txt62='$txt62', txt63='$txt63', txt64='$txt64', txt65='$txt65', txt66='$txt66', txt67='$txt67', txt68='$txt68', txt69='$txt69', txt70='$txt70', txt71='$txt71', txt72='$txt72', txt73='$txt73', txt74='$txt74', txt75='$txt75', txt76='$txt76', txt77='$txt77' WHERE usuario_id = $usuario_id";
 } else {
-    $sql = "INSERT INTO plano_de_acao_5w2h set usuario_id='$usuario_id', objetivo='$objetivo', consultor='$consultor', setor='$setor', elaboracao='$elaboracao', atualizacao='$atualizacao', resultado1='$resultado1', resultado2='$resultado2', resultado3='$resultado3', resultado4='$resultado4', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10', txt16='$txt16', txt17='$txt17', txt18='$txt18', txt19='$txt19', txt20='$txt20', txt21='$txt21', txt22='$txt22', txt23='$txt23', txt24='$txt24', txt25='$txt25', txt26='$txt26', txt32='$txt32', txt33='$txt33', txt34='$txt34', txt35='$txt35', txt36='$txt36', txt37='$txt37', txt38='$txt38', txt39='$txt39', txt40='$txt40', txt41='$txt41', txt42='$txt42', txt48='$txt48', txt49='$txt49', txt50='$txt50', txt51='$txt51', txt52='$txt52', txt53='$txt53', txt54='$txt54', txt55='$txt55', txt56='$txt56', txt57='$txt57', txt58='$txt58', txt59='$txt59' txt60='$txt60', txt61='$txt61', txt62='$txt62', txt63='$txt63', txt64='$txt64', txt65='$txt65', txt66='$txt66', txt67='$txt67', txt68='$txt68', txt69='$txt69', txt70='$txt70', txt71='$txt71', txt72='$txt72', txt73='$txt73', txt74='$txt74', txt75='$txt75', txt76='$txt76', txt77='$txt77'";
+    $sql = "INSERT INTO plano_de_acao_5w2h set usuario_id='$usuario_id', objetivo='$objetivo', consultor='$consultor', setor='$setor', elaboracao='$elaboracao', atualizacao='$atualizacao', resultado1='$resultado1', resultado2='$resultado2', resultado3='$resultado3', resultado4='$resultado4', resultado5='$resultado5', resultado6='$resultado6', resultado7='$resultado7', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4', txt5='$txt5', txt6='$txt6', txt7='$txt7', txt8='$txt8', txt9='$txt9', txt10='$txt10', txt11='$txt11',txt12='$txt12',txt13='$txt13',txt14='$txt14',txt15='$txt15', txt16='$txt16', txt17='$txt17', txt18='$txt18', txt19='$txt19', txt20='$txt20', txt21='$txt21', txt22='$txt22', txt23='$txt23', txt24='$txt24', txt25='$txt25', txt26='$txt26', txt27='$txt27', txt28='$txt28', txt29='$txt29', txt30='$txt30', txt31='$txt31', txt32='$txt32', txt33='$txt33', txt34='$txt34', txt35='$txt35', txt36='$txt36', txt37='$txt37', txt38='$txt38', txt39='$txt39', txt40='$txt40', txt41='$txt41', txt42='$txt42', txt43='$txt43', txt44='$txt44', txt45='$txt45', txt46='$txt46', txt47='$txt47', txt48='$txt48', txt49='$txt49', txt50='$txt50', txt51='$txt51', txt52='$txt52', txt53='$txt53', txt54='$txt54', txt55='$txt55', txt56='$txt56', txt57='$txt57', txt58='$txt58', txt59='$txt59', txt60='$txt60', txt61='$txt61', txt62='$txt62', txt63='$txt63', txt64='$txt64', txt65='$txt65', txt66='$txt66', txt67='$txt67', txt68='$txt68', txt69='$txt69', txt70='$txt70', txt71='$txt71', txt72='$txt72', txt73='$txt73', txt74='$txt74', txt75='$txt75', txt76='$txt76', txt77='$txt77'";
 }
+
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {
