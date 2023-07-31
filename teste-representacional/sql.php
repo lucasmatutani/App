@@ -11,7 +11,7 @@ $C = $_REQUEST['C'];
 $V = $_REQUEST['V'];
 $AD = $_REQUEST['AD'];
 
-$sql = "INSERT INTO teste_representacional (A, C, V, AD, usuario_id) VALUES ($A, $C, $V, $AD, $usuario_id)";
+$sql = "INSERT INTO teste_representacional (email, A, C, V, AD, usuario_id) VALUES ($email, $A, $C, $V, $AD, $usuario_id)";
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {

@@ -14,9 +14,9 @@ $direcao = $_REQUEST['direcao'];
 $data = $conn->query("SELECT * FROM matriz_predominio WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE matriz_predominio set usuario_id='$usuario_id', fraco='$fraco', forte='$forte', ameaca='$ameaca', oportunidade='$oportunidade', pred='$pred', direcao='$direcao' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE matriz_predominio set usuario_id='$usuario_id', email='$email', fraco='$fraco', forte='$forte', ameaca='$ameaca', oportunidade='$oportunidade', pred='$pred', direcao='$direcao' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO matriz_predominio set usuario_id='$usuario_id', fraco='$fraco', forte='$forte', ameaca='$ameaca', oportunidade='$oportunidade', pred='$pred', direcao='$direcao'";
+    $sql = "INSERT INTO matriz_predominio set usuario_id='$usuario_id', email='$email', fraco='$fraco', forte='$forte', ameaca='$ameaca', oportunidade='$oportunidade', pred='$pred', direcao='$direcao'";
 }
 
 if (mysqli_query($conn, $sql)) {

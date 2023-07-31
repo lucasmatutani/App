@@ -16,9 +16,9 @@ $elementos = $_REQUEST['elementos'];
 $data = $conn->query("SELECT * FROM puv WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE puv set usuario_id='$usuario_id',  servicos='$servicos', segmento='$segmento', necessidade='$necessidade', verbos='$verbos', elementos='$elementos' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE puv set usuario_id='$usuario_id', email='$email',  servicos='$servicos', segmento='$segmento', necessidade='$necessidade', verbos='$verbos', elementos='$elementos' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO puv set usuario_id='$usuario_id', servicos='$servicos', segmento='$segmento', necessidade='$necessidade', verbos='$verbos', elementos='$elementos'";
+    $sql = "INSERT INTO puv set usuario_id='$usuario_id', email='$email', servicos='$servicos', segmento='$segmento', necessidade='$necessidade', verbos='$verbos', elementos='$elementos'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");

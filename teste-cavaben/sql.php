@@ -21,9 +21,9 @@ $vendedor_perg_10 = $_REQUEST['vendedor_perg_10'];
 $data = $conn->query('SELECT * FROM teste_cavaben ');
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
-    $sql = "UPDATE teste_cavaben set usuario_id='$usuario_id', vendedor_perg_1='$vendedor_perg_1', vendedor_perg_2='$vendedor_perg_2', vendedor_perg_3='$vendedor_perg_3', vendedor_perg_4='$vendedor_perg_4', vendedor_perg_5='$vendedor_perg_5', vendedor_perg_6='$vendedor_perg_6', vendedor_perg_7='$vendedor_perg_7', vendedor_perg_8='$vendedor_perg_8', vendedor_perg_9='$vendedor_perg_9',  WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE teste_cavaben set usuario_id='$usuario_id', email='$email', vendedor_perg_1='$vendedor_perg_1', vendedor_perg_2='$vendedor_perg_2', vendedor_perg_3='$vendedor_perg_3', vendedor_perg_4='$vendedor_perg_4', vendedor_perg_5='$vendedor_perg_5', vendedor_perg_6='$vendedor_perg_6', vendedor_perg_7='$vendedor_perg_7', vendedor_perg_8='$vendedor_perg_8', vendedor_perg_9='$vendedor_perg_9',  WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO teste_cavaben  set usuario_id='$usuario_id', vendedor_perg_1='$vendedor_perg_1', vendedor_perg_2='$vendedor_perg_2', vendedor_perg_3='$vendedor_perg_3', vendedor_perg_4='$vendedor_perg_4', vendedor_perg_5='$vendedor_perg_5', vendedor_perg_6='$vendedor_perg_6', vendedor_perg_7='$vendedor_perg_7', vendedor_perg_8='$vendedor_perg_8', vendedor_perg_9='$vendedor_perg_9',  vendedor_perg_10='$vendedor_perg_10'";
+    $sql = "INSERT INTO teste_cavaben  set usuario_id='$usuario_id', email='$email', vendedor_perg_1='$vendedor_perg_1', vendedor_perg_2='$vendedor_perg_2', vendedor_perg_3='$vendedor_perg_3', vendedor_perg_4='$vendedor_perg_4', vendedor_perg_5='$vendedor_perg_5', vendedor_perg_6='$vendedor_perg_6', vendedor_perg_7='$vendedor_perg_7', vendedor_perg_8='$vendedor_perg_8', vendedor_perg_9='$vendedor_perg_9',  vendedor_perg_10='$vendedor_perg_10'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
