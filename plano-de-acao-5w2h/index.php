@@ -6,7 +6,6 @@ if (!isset($_SESSION['usuarioEmail'])) {
 }
 $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
-
 $data = $conn->query("SELECT * FROM plano_de_acao_5w2h WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
@@ -33,16 +32,19 @@ if (!empty($data)) {
     </div>
 
     <form action="./sql.php" method="POST" id="formData">
-        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
         <input type="hidden" id="resultado1" name="resultado1" value="<?php if (!empty($linha['resultado1'])) echo $linha['resultado1'] ?>">
         <input type="hidden" id="resultado2" name="resultado2" value="<?php if (!empty($linha['resultado2'])) echo $linha['resultado2'] ?>">
         <input type="hidden" id="resultado3" name="resultado3" value="<?php if (!empty($linha['resultado3'])) echo $linha['resultado3'] ?>">
         <input type="hidden" id="resultado4" name="resultado4" value="<?php if (!empty($linha['resultado4'])) echo $linha['resultado4'] ?>">
-
+        <input type="hidden" id="resultado5" name="resultado5" value="<?php if (!empty($linha['resultado5'])) echo $linha['resultado5'] ?>">
+        <input type="hidden" id="resultado6" name="resultado6" value="<?php if (!empty($linha['resultado6'])) echo $linha['resultado6'] ?>">
+        <input type="hidden" id="resultado7" name="resultado7" value="<?php if (!empty($linha['resultado7'])) echo $linha['resultado7'] ?>">
+        
         <div class="objetivo mt-5">
             <h3>Objetivo:</h3>
-            <textarea name="objetivo" class="col-8"  rows="4"><?php if (!empty($linha)) echo $linha['objetivo']; ?></textarea>
+            <textarea name="objetivo" class="col-8" rows="4"><?php if (!empty($linha)) echo $linha['objetivo']; ?></textarea>
         </div>
         <div class="container-titulo mt-3">
             <div class="container-1">
@@ -156,29 +158,7 @@ if (!empty($data)) {
             <textarea name="txt40" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt40']; ?></textarea>
             <textarea name="txt41" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt41']; ?></textarea>
             <textarea name="txt42" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt42']; ?></textarea>
-<<<<<<< HEAD
             <textarea name="txt43" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt43']; ?></textarea>
-=======
-            <div class="subgrid" id="pontuacao3">
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-                <div class="pontuacao" id=""></div>
-            </div>
-
-            <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt48']; ?></textarea>
-            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt49']; ?></textarea>
-            <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt50']; ?></textarea>
-            <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt51']; ?></textarea>
-            <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt52']; ?></textarea>
-            <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt53']; ?></textarea>
-            <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt54']; ?></textarea>
-            <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt55']; ?></textarea>
-            <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt56']; ?></textarea>
-            <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt57']; ?></textarea>
-            <textarea name="txt58" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt58']; ?></textarea>
->>>>>>> 3206979fa6f0096985b475477965f647bb3e0b51
             <div class="subgrid" id="pontuacao4">
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
@@ -186,8 +166,7 @@ if (!empty($data)) {
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
             </div>
-            
-<<<<<<< HEAD
+
             <textarea name="txt44" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt44']; ?></textarea>
             <textarea name="txt45" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt45']; ?></textarea>
             <textarea name="txt46" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt46']; ?></textarea>
@@ -199,19 +178,6 @@ if (!empty($data)) {
             <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt52']; ?></textarea>
             <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt53']; ?></textarea>
             <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt54']; ?></textarea>
-=======
-            <textarea name="txt48" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt59']; ?></textarea>
-            <textarea name="txt49" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['tx t60']; ?></textarea>
-            <textarea name="txt50" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt51']; ?></textarea>
-            <textarea name="txt51" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt62']; ?></textarea>
-            <textarea name="txt52" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt63']; ?></textarea>
-            <textarea name="txt53" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt64']; ?></textarea>
-            <textarea name="txt54" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt65']; ?></textarea>
-            <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt66']; ?></textarea>
-            <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt67']; ?></textarea>
-            <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt68']; ?></textarea>
-            <textarea name="txt58" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt69']; ?></textarea>
->>>>>>> 3206979fa6f0096985b475477965f647bb3e0b51
             <div class="subgrid" id="pontuacao5">
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
@@ -220,7 +186,6 @@ if (!empty($data)) {
                 <div class="pontuacao" id=""></div>
             </div>
 
-<<<<<<< HEAD
             <textarea name="txt55" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt55']; ?></textarea>
             <textarea name="txt56" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt56']; ?></textarea>
             <textarea name="txt57" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt57']; ?></textarea>
@@ -239,8 +204,6 @@ if (!empty($data)) {
                 <div class="pontuacao" id=""></div>
                 <div class="pontuacao" id=""></div>
             </div>
-=======
->>>>>>> 3206979fa6f0096985b475477965f647bb3e0b51
 
             <textarea name="txt66" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt66']; ?></textarea>
             <textarea name="txt67" id="" cols="30" rows="5"><?php if (!empty($linha)) echo $linha['txt67']; ?></textarea>
@@ -306,7 +269,7 @@ if (!empty($data)) {
             });
         });
 
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= 7; i++) {
             if ($('#resultado' + i) != "") {
                 if ($('#resultado' + i).val() == 1) {
                     let firstChild = $('#pontuacao' + i).children(':eq(0)');
@@ -338,7 +301,7 @@ if (!empty($data)) {
                     bothChilds[3].style.backgroundColor = "#314b7c";
                     bothChilds[4].style.backgroundColor = "#314b7c";
                 }
-            
+
                 if ($('#resultado' + i).val() == 6) {
                     let bothChilds = $('#pontuacao' + i).children(':lt(6)');
                     bothChilds[0].style.backgroundColor = "#314b7c";
@@ -347,9 +310,9 @@ if (!empty($data)) {
                     bothChilds[3].style.backgroundColor = "#314b7c";
                     bothChilds[4].style.backgroundColor = "#314b7c";
                     bothChilds[5].style.backgroundColor = "#314b7c";
-                
-            }
-            if ($('#resultado' + i).val() == 7) {
+
+                }
+                if ($('#resultado' + i).val() == 7) {
                     let bothChilds = $('#pontuacao' + i).children(':lt(7)');
                     bothChilds[0].style.backgroundColor = "#314b7c";
                     bothChilds[1].style.backgroundColor = "#314b7c";
@@ -358,10 +321,10 @@ if (!empty($data)) {
                     bothChilds[4].style.backgroundColor = "#314b7c";
                     bothChilds[5].style.backgroundColor = "#314b7c";
                     bothChilds[6].style.backgroundColor = "#314b7c";
-                    
+
+                }
             }
         }
-    }
 
     });
 
@@ -387,12 +350,18 @@ if (!empty($data)) {
             let resultado2 = resultados.resultado2;
             let resultado3 = resultados.resultado3;
             let resultado4 = resultados.resultado4;
+            let resultado5 = resultados.resultado5;
+            let resultado6 = resultados.resultado6;
+            let resultado7 = resultados.resultado7;
 
 
             $('#resultado1').val(resultado1);
             $('#resultado2').val(resultado2);
             $('#resultado3').val(resultado3);
             $('#resultado4').val(resultado4);
+            $('#resultado5').val(resultado5);
+            $('#resultado6').val(resultado6);
+            $('#resultado7').val(resultado7);
         });
     });
 </script>

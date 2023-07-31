@@ -35,7 +35,6 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-        <input type="hidden" name="nome" value="<?php echo $nome ?>">
 
         <div class="container-flex">
             <h2 class="probabilidade">Probabilidade</h2>

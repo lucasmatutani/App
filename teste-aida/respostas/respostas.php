@@ -1,7 +1,7 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'] . "includes/connection.php";
 
-$usuario_id = $_REQUEST['usuario_id_id'];
+$usuario_id = $_REQUEST['usuario_id'];
 $valor_total = $_POST['valor_total'];
 $radio_total = $_POST['radio_total'];
 $feedback1 = $_REQUEST['feedback1'];

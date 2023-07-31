@@ -1,11 +1,6 @@
 <?php
 include_once "../../includes/connection.php";
 session_start();
-if (!isset($_SESSION['usuarioEmail'])) {
-    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
-    exit;
-}
-
 if ($_SESSION['usuarioEmail'] != "admin") {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN COMO ADMIN!";
     exit;
@@ -310,7 +305,7 @@ $usuario_id = $_SESSION['usuarioId'];
 </html>
 
 <script>
-    arrGrupo = $.parseJSON(localStorage.getItem("grupo_escolhido"));
+    arrGrupo = JSON.parse(localStorage.getItem("grupo_escolhido"));
     console.log(arrGrupo);
     document.getElementById('user_id').value = arrGrupo["id"];
     $("#equipe").html(arrGrupo["grupo"]);
