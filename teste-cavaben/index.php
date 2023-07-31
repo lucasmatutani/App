@@ -155,10 +155,10 @@ if (!empty($data)) {
                 <td><input type="text" name="vendedor_perg_10" value="<?php if (!empty($linha)) echo $linha['vendedor_perg_10']; ?>"></td>
             </tr>
         </table>
+        <div class="buttom-enviar">
+            <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">
+        </div>
     </form>
-    <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
-    </div>
 
     <!-- links js bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
