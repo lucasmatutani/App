@@ -2,6 +2,7 @@
 include_once "../includes/connection.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $baixa1 = $_REQUEST['baixa1'];
 $baixa2 = $_REQUEST['baixa2'];
 $baixa3 = $_REQUEST['baixa3'];

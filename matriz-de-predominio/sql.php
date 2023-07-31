@@ -2,6 +2,7 @@
 include_once "../includes/connection.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
+$email = $_REQUEST['email'];
 $fraco = $_REQUEST['fraco'];
 $forte = $_REQUEST['forte'];
 $ameaca = $_REQUEST['ameaca'];
