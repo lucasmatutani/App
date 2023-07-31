@@ -1,20 +1,17 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
-$usuario_id = $_SESSION['usuarioId'];
-$email = $_SESSION['usuarioEmail'];
-
 if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../login');
 }
+$usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+$nome = $_SESSION['usuarioNome'];
 
-$data = $conn->query("SELECT * FROM teste_conquiste_clientes WHERE usuario_id = $usuario_id");
-
+$data = $conn->query("SELECT * FROM teste_conquiste_cliente WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -40,8 +37,9 @@ if (!empty($data)) {
     </div>
 
     <form class="container-perguntas" action="./sql.php" method="POST">
-        <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
+        <input type="hidden" name="nome" value="<?php echo $nome ?>">
 
         <h4>O que eu faço para conquistar meus clientes</h4>
         <div class="container-1a5">

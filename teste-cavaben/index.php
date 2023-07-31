@@ -1,15 +1,14 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
-$usuario_id = $_SESSION['usuarioId'];
-$email = $_SESSION['usuarioEmail'];
-
 if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../login');
 }
+$usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+$nome = $_SESSION['usuarioNome'];
 
 $data = $conn->query("SELECT * FROM teste_cavaben WHERE usuario_id = $usuario_id");
-
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
@@ -37,7 +36,8 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-        
+        <input type="hidden" name="nome" value="<?php echo $nome ?>">
+
 
         <table class="table table-striped">
             <tr>

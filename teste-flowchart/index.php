@@ -1,13 +1,12 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
-
-$email = $_SESSION['usuarioEmail'];
-$usuario_id = $_SESSION['usuarioId'];
-
 if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../login');
 }
+$usuario_id = $_SESSION['usuarioId'];
+$email = $_SESSION['usuarioEmail'];
+$nome = $_SESSION['usuarioNome'];
 
 $data = $conn->query("SELECT * FROM teste_flowchart WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
@@ -43,6 +42,8 @@ if (!empty($data)) {
     <form action="./sql.php" method="POST">
         <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
+        <input type="hidden" name="nome" value="<?php echo $nome ?>">
+
         <div class="container-table mt-5">
             <table class="table table-bordered" style="width: 95vw;">
                 <tr>
