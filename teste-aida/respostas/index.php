@@ -1,11 +1,6 @@
 <?php
 include_once "../../includes/connection.php";
 session_start();
-if (!isset($_SESSION['usuarioEmail'])) {
-    echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN!";
-    exit;
-}
-
 if ($_SESSION['usuarioEmail'] != "admin") {
     echo "SEM ACESSO PARA ESSA PÁGINA, FAÇA O LOGIN COMO ADMIN!";
     exit;
