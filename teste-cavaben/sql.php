@@ -1,6 +1,6 @@
 <?php
 include_once "../includes/connection.php";
-include_once "../vendor/envio.php";
+// include_once "../vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];

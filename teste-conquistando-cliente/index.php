@@ -8,7 +8,7 @@ $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
 $nome = $_SESSION['usuarioNome'];
 
-$data = $conn->query("SELECT * FROM teste_conquiste_cliente WHERE usuario_id = $usuario_id");
+$data = $conn->query("SELECT * FROM teste_conquiste_clientes WHERE usuario_id = $usuario_id");
 if (!empty($data)) {
     $linha = mysqli_fetch_assoc($data);
 }
