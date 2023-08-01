@@ -300,7 +300,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
 
 <script>
     arrGrupo = JSON.parse(localStorage.getItem("grupo_escolhido"));
-    document.getElementById('user_id').value = arrGrupo["id"];
     $("#equipe").html(arrGrupo["grupo"]);
     $("#prod1").html(arrGrupo["nm1"]);
     $("#prod2").html(arrGrupo["nm2"]);
