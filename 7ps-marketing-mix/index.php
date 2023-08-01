@@ -39,19 +39,19 @@ if (!empty($data)) {
 
         <div class="container-principal container">
             <h3 class="mt-5">Produto</h3>
-            <textarea name="txt1" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea>
+            <textarea name="produto" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['produto']; ?></textarea>
             <h3 class="mt-5">Preço</h3>
-            <textarea name="txt2" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea>
+            <textarea name="preco" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['preco']; ?></textarea>
             <h3 class="mt-5">Praça</h3>
-            <textarea name="txt3" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea>
+            <textarea name="praca" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['praca']; ?></textarea>
             <h3 class="mt-5">Promoção</h3>
-            <textarea name="txt4" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt4']; ?></textarea>
+            <textarea name="promocao" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['promocao']; ?></textarea>
             <h3 class="mt-5">Pessoas</h3>
-            <textarea name="txt5" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt5']; ?></textarea>
+            <textarea name="pessoas" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['pessoas']; ?></textarea>
             <h3 class="mt-5">Evidências Físicas</h3>
-            <textarea name="txt6" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea>
+            <textarea name="evidencias" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['evidencias']; ?></textarea>
             <h3 class="mt-5">Processo</h3>
-            <textarea name="txt7" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea>
+            <textarea name="processo" class="form-control mt-3" id=""><?php if (!empty($linha)) echo $linha['processo']; ?></textarea>
         </div>
         <div class="buttom-enviar mb-3">
             <input id="botao-enviar" type="submit" value="ENVIAR RESULTADOS">

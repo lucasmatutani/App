@@ -5,22 +5,23 @@ $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
 // $nome = $_REQUEST['nome'];
 
-$txt1 = $_REQUEST['txt1'];
-$txt2 = $_REQUEST['txt2'];
-$txt3 = $_REQUEST['txt3'];
-$txt4 = $_REQUEST['txt4'];
-$txt5 = $_REQUEST['txt5'];
-$txt6 = $_REQUEST['txt6'];
-$txt7 = $_REQUEST['txt7'];
+$produto = $_REQUEST['produto'];
+$preco = $_REQUEST['preco'];
+$praca = $_REQUEST['praca'];
+$promocao = $_REQUEST['promocao'];
+$pessoas = $_REQUEST['pessoas'];
+$evidencias = $_REQUEST['evidencias'];
+$processo = $_REQUEST['processo'];
 $email = $_REQUEST['email'];
 
 $data = $conn->query("SELECT * FROM 7ps_marketing_mix WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE 7ps_marketing_mix set usuario_id='$usuario_id',  txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4',
-    txt5='$txt5', txt6='$txt6', txt7='$txt7', email='$email' WHERE usuario_id= $usuario_id";
+    $sql = "UPDATE 7ps_marketing_mix set usuario_id='$usuario_id', produto='$produto', preco='$preco', praca='$praca', prmocao='$promocao',
+    pessoas='$pessoas', evidencias='$evidencias', processo='$processo', email='$email' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO 7ps_marketing_mix set usuario_id='$usuario_id', txt1='$txt1', txt2='$txt2', txt3='$txt3', txt4='$txt4',txt5='$txt5', txt6='$txt6', txt7='$txt7', email='$email'";
+    $sql = "INSERT INTO 7ps_marketing_mix set usuario_id='$usuario_id',produto='$produto', preco='$preco', praca='$praca', prmocao='$promocao',
+    pessoas='$pessoas', evidencias='$evidencias', processo='$processo', email='$email'";
 }
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
