@@ -337,9 +337,8 @@ $usuario_id = $_SESSION['usuarioId'];
 
 
     
+    var categories = ["atencao", "interesse", "desejo", "acao"];
     function calculateScore() {
-        console.log("PORAA");
-        var categories = ["atencao", "interesse", "desejo", "acao"];
         var score = 0;
         var totalQuestions = 0;
         var selectedValues = '';
@@ -376,6 +375,8 @@ $usuario_id = $_SESSION['usuarioId'];
 
         document.getElementById("radio_total").value = selectedValues;
         document.getElementById("valor_total").value = averageScore;
+
+        document.getElementById("form").submit();
     }
 
     window.onload = function() {
