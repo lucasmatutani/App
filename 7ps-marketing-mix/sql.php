@@ -17,10 +17,10 @@ $email = $_REQUEST['email'];
 $data = $conn->query("SELECT * FROM 7ps_marketing_mix WHERE usuario_id = $usuario_id");
 $linha = mysqli_fetch_assoc($data);
 if (!empty($linha)) {
-    $sql = "UPDATE 7ps_marketing_mix set usuario_id='$usuario_id', produto='$produto', preco='$preco', praca='$praca', prmocao='$promocao',
+    $sql = "UPDATE 7ps_marketing_mix set usuario_id='$usuario_id', produto='$produto', preco='$preco', praca='$praca', promocao='$promocao',
     pessoas='$pessoas', evidencias='$evidencias', processo='$processo', email='$email' WHERE usuario_id= $usuario_id";
 } else {
-    $sql = "INSERT INTO 7ps_marketing_mix set usuario_id='$usuario_id',produto='$produto', preco='$preco', praca='$praca', prmocao='$promocao',
+    $sql = "INSERT INTO 7ps_marketing_mix set usuario_id='$usuario_id',produto='$produto', preco='$preco', praca='$praca', promocao='$promocao',
     pessoas='$pessoas', evidencias='$evidencias', processo='$processo', email='$email'";
 }
 if (mysqli_query($conn, $sql)) {
