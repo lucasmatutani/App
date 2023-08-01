@@ -325,7 +325,7 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     $("#feedback2").html(arrGrupo['feedback2']);
     $("#feedback3").html(arrGrupo['feedback3']);
     $("#feedback4").html(arrGrupo['feedback4']);
-    $("#usuario_id").html(arrGrupo['usuario_id']);
+    $("#usuario_id").value(arrGrupo['usuario_id']);
 
     document.querySelector('form').addEventListener('submit', function(e) {
         e.preventDefault();
