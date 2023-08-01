@@ -292,11 +292,11 @@ $usuario_id = $_SESSION['usuarioId'];
             </div>
 
         </div>
-        <div class="container-btn" style="margin-top: 20px;">
-            <a class="btn-voltar" href="http://focustradeapp.com.br/teste-aida/role-play">Voltar</a>
-            <input value="ENVIAR" id="botao-enviar" type="submit" id="btn-enviar">
-        </div>
     </form>
+    <div class="container-btn" style="margin-top: 20px;">
+        <a class="btn-voltar" href="http://focustradeapp.com.br/teste-aida/role-play">Voltar</a>
+        <input value="ENVIAR" id="botao-enviar" type="submit" onclick="registrar()" id="btn-enviar">
+    </div>
     <div id="result"></div>
 </body>
 
@@ -332,83 +332,12 @@ $usuario_id = $_SESSION['usuarioId'];
     $("#feedback3").html(arrGrupo['feedback3']);
     $("#feedback4").html(arrGrupo['feedback4']);
 
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        calculateScore();
-    });
-
-
-    var categories = ["atencao", "interesse", "desejo", "acao"];
-
-    function calculateScore() {
-        var score = 0;
-        var totalQuestions = 0;
-        var selectedValues = '';
-
-        // Loop through each category
-        for (var i = 1; i <= 4; i++) {
-            // Loop through each set of responses
-            for (var j = 1; j <= 4; j++) {
-                var radios = document.getElementsByName('radio-' + categories[i - 1] + j);
-
-                for (var k = 0; k < radios.length; k++) {
-                    var radio = radios[k];
-
-                    // If this radio button is selected, add its value to the score
-                    if (radio.checked) {
-                        if (radio.value == "1") {
-                            score += 100;
-                            selectedValues += '1';
-                        } else if (radio.value == "2") {
-                            score += 50;
-                            selectedValues += '2';
-                        } else if (radio.value == "3") {
-                            score += 0;
-                            selectedValues += '3';
-                        }
-                        totalQuestions += 1;
-                    }
-                }
-            }
-        }
-
-        // Calculate the average score
-        var averageScore = score / totalQuestions;
-
-        // Save the selected values
-        console.log(selectedValues);
-        // Display the score (you could modify this to display the score in your own way)
-        console.log(averageScore);
-    }
-
-    window.onload = function() {
-        loadValues();
-    };
-
-    function loadValues() {
-        var selectedValues = ;
-
-        if (selectedValues) {
-            var index = 0;
-
-            // Loop through each category
-            for (var i = 1; i <= 4; i++) {
-                // Loop through each set of responses
-                for (var j = 1; j <= 4; j++) {
-                    var radios = document.getElementsByName('radio-' + categories[i - 1] + j);
-
-                    for (var k = 0; k < radios.length; k++) {
-                        var radio = radios[k];
-
-                        // If this radio button's value matches the saved value, check it
-                        if (radio.value == selectedValues.charAt(index)) {
-                            radio.checked = true;
-                        }
-                    }
-
-                    index++;
-                }
-            }
+    var input = document.getElementsByTagName('input');
+    arrRadioTotal = arrGrupo["radio_total"].split("");
+    for (i = 0; i < 16; i++) {
+        if (arrRadioTotal[i] == input[i].value) {
+            input[i].checked;
+            console.log(input[i].value);
         }
     }
 
@@ -448,4 +377,31 @@ $usuario_id = $_SESSION['usuarioId'];
         container4.style.display = "flex";
         $("#btn-enviar").show();
     }
+
+    function registrar() {
+        document.getElementById("result").innerHTML = "";
+        var numInputs = document.querySelectorAll('input[type="radio"]');
+        for (i = 0; i < numInputs.length; i++) {
+            if (input[i].checked) {
+                document.getElementById("result").innerHTML += input[i].value;
+            }
+        }
+        var total = document.getElementById("result").innerHTML.toString();
+        num1 = (total.match(new RegExp("1", "g")) || []).length;
+        num2 = (total.match(new RegExp("2", "g")) || []).length;
+        num3 = (total.match(new RegExp("3", "g")) || []).length;
+
+        var naoImp = num1 * 100;
+        var parcImp = num2 * 50;
+        var imp = num3 * 0;
+
+        var somaTotal = (((naoImp + parcImp + imp) * 100) / 1600).toFixed();
+        var somaTotalNumber = parseInt(somaTotal);
+        document.getElementById("valor_total").value = somaTotalNumber;
+        document.getElementById("radio_total").value = total;
+        console.log(somaTotalNumber);
+        console.log(total);
+
+        //document.getElementById("form").submit();
+    };
 </script>

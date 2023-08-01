@@ -24,12 +24,8 @@
             Role Play Hospital
         </a>
 
-        <a href="../teste-spin/index.php" class="styled-btn" title="Cadastro de usuário" target="_blank">
+        <a href="../teste-spin/respostas.php" class="styled-btn" title="Cadastro de usuário" target="_blank">
             Spin
-        </a>
-
-        <a href="../7ps-markerting-mix/respostas.php" class="styled-btn" title="Cadastro de usuário" target="_blank">
-            7ps markerting mix
         </a>
 
         <a href="../fatores-criticos-de-sucesso/respostas.php" class="styled-btn" title="Cadastro de usuário" target="_blank">
@@ -46,6 +42,54 @@
 
         <a href="../teste-petscan-do-cliente/respostas.php" class="styled-btn" title="Cadastro de usuário" target="_blank">
             Petscan do cliente
+        </a>
+
+        <a href="./download.php?table=analise_swot">]
+            Analise SWOT
+        </a>
+
+        <a href="./download.php?table=crencas">
+            Crenças
+        </a>
+
+        <a href="./download.php?table=diagnostico">
+            Diagnostico
+        </a>
+
+        <a href="./download.php?table=matriz_predominio" id=buttonExport>
+            Resultado Matriz de Predominio
+        </a>
+
+        <a href="./download.php?table=puv">
+            PUV
+        </a>
+
+        <a href="./download.php?table=teste_cavaben">
+            CA VA BEN
+        </a>
+
+        <a href="./download.php?table=teste_comportamental1">
+            Comportamental
+        </a>
+
+        <a href="./download.php?table=teste_conquiste_cliente">
+            Conquistando Cliente
+        </a>
+
+        <a href="./download.php?table=teste_flowchart">
+            FlowChart
+        </a>
+
+        <a href="./download.php?table=teste_metodo_cesar">
+            Metodo Cesar
+        </a>
+
+        <a href="./download.php?table=teste_representacional">
+            Representacional
+        </a>
+
+        <a href="./download.php?table=teste_triade_tempo">
+            Triade do Tempo
         </a>
     </div>
 </body>

@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
 }
 
 $data = $conn->query("SELECT * FROM fatores_criticos_de_sucesso ORDER BY email ASC");
-$usuario = $_SESSION['usuario'];
+@$usuario = $_SESSION['usuario'];
 ?>
 
 <!DOCTYPE html>

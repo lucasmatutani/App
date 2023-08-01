@@ -1,7 +1,7 @@
 <?php
 include_once "../includes/connection.php";
 session_start();
-$usuario = $_SESSION['usuario'];
+@$usuario = $_SESSION['usuario'];
 
 if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../login');

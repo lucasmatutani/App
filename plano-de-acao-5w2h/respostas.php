@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
 }
 
 $data = $conn->query("SELECT * FROM plano_de_acao_5w2h ORDER BY email ASC");
-$usuario = $_SESSION['usuario'];
+@$usuario = $_SESSION['usuario'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

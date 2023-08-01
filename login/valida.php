@@ -5,7 +5,7 @@ include_once "../includes/connection.php";
 
 //O campo usuário e senha preenchido entra no if para validar
 if ((isset($_REQUEST['email'])) && (isset($_REQUEST['senha']))) {
-    $usuario = mysqli_real_escape_string($conn, $_REQUEST['email']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection
+    @$usuario = mysqli_real_escape_string($conn, $_REQUEST['email']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection
     $senha = mysqli_real_escape_string($conn, $_REQUEST['senha']);
     $senha = $senha;
 

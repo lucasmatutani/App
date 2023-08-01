@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION['usuarioEmail'])) {
     header('Location: ../login');
 }
-$usuario = $_SESSION['usuario'];
+@$usuario = $_SESSION['usuario'];
 
 $data = $conn->query("SELECT * FROM teste_matriz_de_risco ORDER BY email ASC");
 ?>
