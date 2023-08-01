@@ -12,6 +12,10 @@
         <h2>RESPOSTAS</h2>
         <input type="text" id="search-input" onkeyup="filterButtons()" placeholder="Pesquisar...">
 
+        <a href="./download.php?table=7ps_marketing_mix" class="styled-btn">
+            7Ps Marketing Mix
+        </a>
+
         <a href="../teste-aida/role-play/" class="styled-btn" title="Cadastro de usuário" target="_blank">
             AIDA
         </a>
@@ -44,51 +48,51 @@
             Petscan do cliente
         </a>
 
-        <a href="./download.php?table=analise_swot">]
+        <a href="./download.php?table=analise_swot" class="styled-btn">
             Analise SWOT
         </a>
 
-        <a href="./download.php?table=crencas">
+        <a href="./download.php?table=crencas" class="styled-btn">
             Crenças
         </a>
 
-        <a href="./download.php?table=diagnostico">
+        <a href="./download.php?table=diagnostico" class="styled-btn">
             Diagnostico
         </a>
 
-        <a href="./download.php?table=matriz_predominio" id=buttonExport>
+        <a href="./download.php?table=matriz_predominio" id=buttonExport class="styled-btn">
             Resultado Matriz de Predominio
         </a>
 
-        <a href="./download.php?table=puv">
+        <a href="./download.php?table=puv" class="styled-btn">
             PUV
         </a>
 
-        <a href="./download.php?table=teste_cavaben">
+        <a href="./download.php?table=teste_cavaben" class="styled-btn">
             CA VA BEN
         </a>
 
-        <a href="./download.php?table=teste_comportamental1">
+        <a href="./download.php?table=teste_comportamental1" class="styled-btn">
             Comportamental
         </a>
 
-        <a href="./download.php?table=teste_conquiste_cliente">
+        <a href="./download.php?table=teste_conquiste_cliente" class="styled-btn" >
             Conquistando Cliente
         </a>
 
-        <a href="./download.php?table=teste_flowchart">
+        <a href="./download.php?table=teste_flowchart" class="styled-btn">
             FlowChart
         </a>
 
-        <a href="./download.php?table=teste_metodo_cesar">
+        <a href="./download.php?table=teste_metodo_cesar" class="styled-btn">
             Metodo Cesar
         </a>
 
-        <a href="./download.php?table=teste_representacional">
+        <a href="./download.php?table=teste_representacional" class="styled-btn">
             Representacional
         </a>
 
-        <a href="./download.php?table=teste_triade_tempo">
+        <a href="./download.php?table=teste_triade_tempo" class="styled-btn">
             Triade do Tempo
         </a>
     </div>
