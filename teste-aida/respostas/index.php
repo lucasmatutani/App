@@ -381,12 +381,12 @@ $usuario_id = $_SESSION['usuarioId'];
         console.log(averageScore);
     }
 
-    window.onload = function() {
-        loadValues();
-    };
+    // window.onload = function() {
+    //     loadValues();
+    // };
 
     function loadValues() {
-        var selectedValues = ;
+        var selectedValues = "";
 
         if (selectedValues) {
             var index = 0;
