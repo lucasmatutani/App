@@ -12,6 +12,8 @@
 <a class="btn-voltar" href="http://focustradeapp.com.br/testes/"><i style="margin-right: 5px;" class="fa-solid fa-caret-left"></i>Voltar</a>
 
 <div class="links-container">
+    <a href="./download.php?table=7ps_marketing_mix">7Ps Marketing Mix</a>
+
     <a href="./download.php?table=analise_swot">Analise SWOT</a>
 
     <a href="./download.php?table=crencas">Crenças</a>
