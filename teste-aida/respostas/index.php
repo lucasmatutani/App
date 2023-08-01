@@ -6,8 +6,6 @@ if ($_SESSION['usuarioEmail'] != "admin") {
     exit;
 }
 
-$usuario_id = $_SESSION['usuarioId'];
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,8 +23,7 @@ $usuario_id = $_SESSION['usuarioId'];
 <body>
     <form action="./respostas.php" method="POST" id="form">
 
-        <input type="hidden" id="usuario_id" name="usuario_id" value="<?php $usuario_id ?>">
-        <input type="hidden" id="user_id" name="user_id" value="">
+        <input type="hidden" id="usuario_id" name="usuario_id" value="">
         <input type="hidden" id="valor_total" name="valor_total" value="">
         <input type="hidden" id="radio_total" name="radio_total" value="">
 
@@ -329,13 +326,12 @@ $usuario_id = $_SESSION['usuarioId'];
     $("#feedback2").html(arrGrupo['feedback2']);
     $("#feedback3").html(arrGrupo['feedback3']);
     $("#feedback4").html(arrGrupo['feedback4']);
+    $("usuario_id").html(arrGrupo['usuario_id']);
 
     document.querySelector('form').addEventListener('submit', function(e) {
         e.preventDefault();
         calculateScore();
     });
-
-
     
     var categories = ["atencao", "interesse", "desejo", "acao"];
     function calculateScore() {
