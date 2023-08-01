@@ -12,7 +12,7 @@
         <h2>RESPOSTAS</h2>
         <input type="text" id="search-input" onkeyup="filterButtons()" placeholder="Pesquisar...">
 
-        <a href=../respostas/download.php?table=7ps_marketing_mix" class="styled-btn">
+        <a href="../respostas/download.php?table=7ps_marketing_mix" class="styled-btn">
             7Ps Marketing Mix
         </a>
 
@@ -48,35 +48,35 @@
             Petscan do cliente
         </a>
 
-        <a href=../respostas/download.php?table=analise_swot" class="styled-btn">
+        <a href="../respostas/download.php?table=analise_swot" class="styled-btn">
             Analise SWOT
         </a>
 
-        <a href=../respostas/download.php?table=crencas" class="styled-btn">
+        <a href="../respostas/download.php?table=crencas" class="styled-btn">
             Crenças
         </a>
 
-        <a href=../respostas/download.php?table=diagnostico" class="styled-btn">
+        <a href="../respostas/download.php?table=diagnostico" class="styled-btn">
             Diagnostico
         </a>
 
-        <a href=../respostas/download.php?table=matriz_predominio" id=buttonExport class="styled-btn">
+        <a href="../respostas/download.php?table=matriz_predominio" id=buttonExport class="styled-btn">
             Resultado Matriz de Predominio
         </a>
 
-        <a href=../respostas/download.php?table=puv" class="styled-btn">
+        <a href="../respostas/download.php?table=puv" class="styled-btn">
             PUV
         </a>
 
-        <a href=../respostas/download.php?table=teste_cavaben" class="styled-btn">
+        <a href="../respostas/download.php?table=teste_cavaben" class="styled-btn">
             CA VA BEN
         </a>
 
-        <a href=../respostas/download.php?table=teste_comportamental1" class="styled-btn">
+        <a href="../respostas/download.php?table=teste_comportamental1" class="styled-btn">
             Comportamental
         </a>
 
-        <a href=../respostas/download.php?table=teste_conquiste_cliente" class="styled-btn" >
+        <a href="../respostas/download.php?table=teste_conquiste_cliente" class="styled-btn" >
             Conquistando Cliente
         </a>
 
@@ -84,15 +84,15 @@
             FlowChart
         </a>
 
-        <a href=../respostas/download.php?table=teste_metodo_cesar" class="styled-btn">
+        <a href="../respostas/download.php?table=teste_metodo_cesar" class="styled-btn">
             Metodo Cesar
         </a>
 
-        <a href=../respostas/download.php?table=teste_representacional" class="styled-btn">
+        <a href="../respostas/download.php?table=teste_representacional" class="styled-btn">
             Representacional
         </a>
 
-        <a href=../respostas/download.php?table=teste_triade_tempo" class="styled-btn">
+        <a href="../respostas/download.php?table=teste_triade_tempo" class="styled-btn">
             Triade do Tempo
         </a>
     </div>
