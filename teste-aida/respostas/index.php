@@ -303,7 +303,6 @@ $usuario_id = $_SESSION['usuarioId'];
 
 <script>
     arrGrupo = JSON.parse(localStorage.getItem("grupo_escolhido"));
-    console.log(arrGrupo);
     document.getElementById('user_id').value = arrGrupo["id"];
     $("#equipe").html(arrGrupo["grupo"]);
     $("#prod1").html(arrGrupo["nm1"]);
@@ -337,9 +336,10 @@ $usuario_id = $_SESSION['usuarioId'];
     });
 
 
-    var categories = ["atencao", "interesse", "desejo", "acao"];
-
+    
     function calculateScore() {
+        console.log("PORAA");
+        var categories = ["atencao", "interesse", "desejo", "acao"];
         var score = 0;
         var totalQuestions = 0;
         var selectedValues = '';
@@ -384,7 +384,7 @@ $usuario_id = $_SESSION['usuarioId'];
 
     function loadValues() {
         if (arrGrupo['radio_total'] != "") {
-            
+
             var selectedValues = arrGrupo['radio_total'];
 
             if (selectedValues) {
