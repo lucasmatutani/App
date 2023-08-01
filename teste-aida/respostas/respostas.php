@@ -17,6 +17,8 @@ if (!empty($linha)) {
 else{
     $sql = "INSERT INTO teste_aida SET feedback1 = '$feedback1', feedback2 = '$feedback2', feedback3 = '$feedback3', feedback4 = '$feedback4', valor_total = $valor_total, radio_total = '$radio_total'";
 }
+var_dump($sql);
+exit();
 if (mysqli_query($conn, $sql)) {
     header("location: ../role-play");
 } else {
