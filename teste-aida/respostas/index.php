@@ -297,7 +297,6 @@ $usuario_id = $_SESSION['usuarioId'];
             <input value="ENVIAR" id="botao-enviar" type="submit" id="btn-enviar">
         </div>
     </form>
-    <div id="result"></div>
 </body>
 
 </html>
@@ -375,38 +374,39 @@ $usuario_id = $_SESSION['usuarioId'];
         // Calculate the average score
         var averageScore = score / totalQuestions;
 
-        // Save the selected values
-        console.log(selectedValues);
-        // Display the score (you could modify this to display the score in your own way)
-        console.log(averageScore);
+        document.getElementById("radio_total").value = selectedValues;
+        document.getElementById("valor_total").value = averageScore;
     }
 
-    // window.onload = function() {
-    //     loadValues();
-    // };
+    window.onload = function() {
+        loadValues();
+    };
 
     function loadValues() {
-        var selectedValues = "";
+        if (arrGrupo['radio_total'] != "") {
+            
+            var selectedValues = arrGrupo['radio_total'];
 
-        if (selectedValues) {
-            var index = 0;
+            if (selectedValues) {
+                var index = 0;
 
-            // Loop through each category
-            for (var i = 1; i <= 4; i++) {
-                // Loop through each set of responses
-                for (var j = 1; j <= 4; j++) {
-                    var radios = document.getElementsByName('radio-' + categories[i - 1] + j);
+                // Loop through each category
+                for (var i = 1; i <= 4; i++) {
+                    // Loop through each set of responses
+                    for (var j = 1; j <= 4; j++) {
+                        var radios = document.getElementsByName('radio-' + categories[i - 1] + j);
 
-                    for (var k = 0; k < radios.length; k++) {
-                        var radio = radios[k];
+                        for (var k = 0; k < radios.length; k++) {
+                            var radio = radios[k];
 
-                        // If this radio button's value matches the saved value, check it
-                        if (radio.value == selectedValues.charAt(index)) {
-                            radio.checked = true;
+                            // If this radio button's value matches the saved value, check it
+                            if (radio.value == selectedValues.charAt(index)) {
+                                radio.checked = true;
+                            }
                         }
-                    }
 
-                    index++;
+                        index++;
+                    }
                 }
             }
         }
