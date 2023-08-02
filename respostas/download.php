@@ -13,7 +13,7 @@ header('Content-Disposition: attachment; filename=' . $resultado_testes);
 // aqui eh pra abrir o arquivo de saida
 $output = fopen('php://output', 'w');
 
-$query = 'SELECT * FROM ' . $table;
+$query = "SELECT $table.*, usuarios.empresa FROM $table JOIN usuarios ON $table.usuario_id = usuarios.id";
 $result = $conn->query($query);
 
 // aqui escreve os resultados no arquivo csv
