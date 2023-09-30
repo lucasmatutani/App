@@ -7,10 +7,10 @@ if (!isset($_SESSION['usuarioEmail'])) {
 $usuario_id = $_SESSION['usuarioId'];
 $email = $_SESSION['usuarioEmail'];
 
-// $data = $conn->query("SELECT * FROM meta_smart WHERE usuario_id = $usuario_id");
-// if (!empty($data)) {
-//     $linha = mysqli_fetch_assoc($data);
-// }
+$data = $conn->query("SELECT * FROM meta_smart WHERE usuario_id = $usuario_id");
+if (!empty($data)) {
+    $linha = mysqli_fetch_assoc($data);
+}
 ?>
 
 <!DOCTYPE html>
