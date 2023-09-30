@@ -72,7 +72,7 @@ if (!empty($data)) {
                         <td scope="row"><textarea name="txt2" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea></td>
                         <td><select name="especifica1" class="form-select">
                                 <option value="">Selecione</option>
-                                <option value="sim" <?php if ($linha['especifica1'] == "sim") echo 'selected' ?>>sim</option>
+                                <option value="sim" <?php if (!empty($linha) && $linha['especifica1'] == "sim") echo 'selected' ?>>sim</option>
                                 <option value="nao" <?php if ($linha['especifica1'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td scope="row"><textarea name="txt3" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea></td>
@@ -213,7 +213,7 @@ if (!empty($data)) {
                         <td><select name="mensuravel3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
                                 <option value="sim" <?php if ($linha['mensuravel3'] == "sim") echo 'selected' ?>>sim</option>
-                                <option value="nao" <?php if ($linha['mesuravel3'] == "nao") echo 'selected' ?>>não</option>
+                                <option value="nao" <?php if ($linha['mensuravel3'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td><select name="exito3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
