@@ -36,9 +36,9 @@ $email = $_SESSION['usuarioEmail'];
 
 
     <form action="./sql.php" method="POST">
-    <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
+        <input type="hidden" name="usuario_id" value="<?php echo $_SESSION['usuarioId'] ?>">
         <input type="hidden" name="email" value="<?php echo $email ?>">
-        <input type="hidden" name="nome" value="<?php echo $nome ?>">
+
 
         <!-- table meta inicio -->
         <div class="container-table">
@@ -70,19 +70,19 @@ $email = $_SESSION['usuarioEmail'];
                     <tr>
                         <td scope="row"><textarea name="txt1" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt1']; ?></textarea></td>
                         <td scope="row"><textarea name="txt2" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt2']; ?></textarea></td>
-                        <td><select name="especifica1" class="form-select" >
-                            <option value="">Selecione</option>
-                                <option value="sim" <?php if($linha['especifica1'] == "sim") echo 'selected'?>>sim</option>
-                                <option value="nao" <?php if($linha['especifica1'] == "nao") echo 'selected'?>>não</option>
+                        <td><select name="especifica1" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="sim" <?php if ($linha['especifica1'] == "sim") echo 'selected' ?>>sim</option>
+                                <option value="nao" <?php if ($linha['especifica1'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td scope="row"><textarea name="txt3" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt3']; ?></textarea></td>
                         <td><select name="mensuravel1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="exito1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -90,12 +90,12 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="negocio1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -103,7 +103,7 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -111,12 +111,12 @@ $email = $_SESSION['usuarioEmail'];
                         <td> <input type="date" name="limite1" id="" value="<?php if (!empty($linha)) echo $linha['limite1']; ?>"></td>
                         <td><input type="date" name="meses1" id="" value="<?php if (!empty($linha)) echo $linha['meses1']; ?>"></td>
                         <td><select name="temporal1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="smart1" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -126,7 +126,7 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="row"><textarea name="txt6" id="txt6" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt6']; ?></textarea></td>
                         <td scope="col">
                             <select name="status1" class="form-select" aria-label="Default select example">
-                            <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="abaixo meta">Abaixo da meta</option>
                                 <option value="meta alcancada">Meta alcançada</option>
                                 <option value="acima meta">Acima da meta</option>
@@ -137,19 +137,19 @@ $email = $_SESSION['usuarioEmail'];
                     <tr>
                         <td scope="row"><textarea name="txt7" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt7']; ?></textarea></td>
                         <td scope="row"><textarea name="txt8" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt8']; ?></textarea></td>
-                        <td><select name="especifica2" class="form-select" >
-                            <option value="">Selecione</option>
-                                <option value="sim" <?php if($linha['especifica2'] == "sim") echo 'selected'?>>sim</option>
-                                <option value="nao" <?php if($linha['especifica2'] == "nao") echo 'selected'?>>não</option>
+                        <td><select name="especifica2" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="sim" <?php if ($linha['especifica2'] == "sim") echo 'selected' ?>>sim</option>
+                                <option value="nao" <?php if ($linha['especifica2'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td scope="row"><textarea name="txt9" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt9']; ?></textarea></td>
                         <td><select name="mensuravel2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="exito2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -157,12 +157,12 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="negocio2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -170,7 +170,7 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -178,12 +178,12 @@ $email = $_SESSION['usuarioEmail'];
                         <td> <input type="date" name="limite2" id="" value="<?php if (!empty($linha)) echo $linha['limite2']; ?>"></td>
                         <td><input type="date" name="meses2" id="" value="<?php if (!empty($linha)) echo $linha['meses2']; ?>"></td>
                         <td><select name="temporal2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="smart2" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -193,7 +193,7 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="row"><textarea name="txt12" id="txt12" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt12']; ?></textarea></td>
                         <td scope="col">
                             <select name="status2" class="form-select" aria-label="Default select example">
-                            <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="abaixo meta">Abaixo da meta</option>
                                 <option value="meta alcancada">Meta alcançada</option>
                                 <option value="acima meta">Acima da meta</option>
@@ -204,19 +204,19 @@ $email = $_SESSION['usuarioEmail'];
                     <tr>
                         <td scope="row"><textarea name="txt13" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt13']; ?></textarea></td>
                         <td scope="row"><textarea name="txt14" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt14']; ?></textarea></td>
-                        <td><select name="especifica3" class="form-select" >
-                            <option value="">Selecione</option>
-                                <option value="sim" <?php if($linha['especifica3'] == "sim") echo 'selected'?>>sim</option>
-                                <option value="nao" <?php if($linha['especifica3'] == "nao") echo 'selected'?>>não</option>
+                        <td><select name="especifica3" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="sim" <?php if ($linha['especifica3'] == "sim") echo 'selected' ?>>sim</option>
+                                <option value="nao" <?php if ($linha['especifica3'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td scope="row"><textarea name="txt15" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt15']; ?></textarea></td>
                         <td><select name="mensuravel3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="exito3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -224,12 +224,12 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="negocio3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -237,7 +237,7 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -245,12 +245,12 @@ $email = $_SESSION['usuarioEmail'];
                         <td> <input type="date" name="limite3" id="" value="<?php if (!empty($linha)) echo $linha['limite3']; ?>"></td>
                         <td><input type="date" name="meses3" id="" value="<?php if (!empty($linha)) echo $linha['meses3']; ?>"></td>
                         <td><select name="temporal3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="smart3" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -260,7 +260,7 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="row"><textarea name="txt6" id="txt18" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt18']; ?></textarea></td>
                         <td scope="col">
                             <select name="status3" class="form-select" aria-label="Default select example">
-                            <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="abaixo meta">Abaixo da meta</option>
                                 <option value="meta alcancada">Meta alcançada</option>
                                 <option value="acima meta">Acima da meta</option>
@@ -271,19 +271,19 @@ $email = $_SESSION['usuarioEmail'];
                     <tr>
                         <td scope="row"><textarea name="txt19" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt19']; ?></textarea></td>
                         <td scope="row"><textarea name="txt20" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt20']; ?></textarea></td>
-                        <td><select name="especifica4" class="form-select" >
-                            <option value="">Selecione</option>
-                                <option value="sim" <?php if($linha['especifica4'] == "sim") echo 'selected'?>>sim</option>
-                                <option value="nao" <?php if($linha['especifica4'] == "nao") echo 'selected'?>>não</option>
+                        <td><select name="especifica4" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="sim" <?php if ($linha['especifica4'] == "sim") echo 'selected' ?>>sim</option>
+                                <option value="nao" <?php if ($linha['especifica4'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td scope="row"><textarea name="txt21" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt21']; ?></textarea></td>
                         <td><select name="mensuravel4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="exito4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -291,12 +291,12 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="negocio4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -304,7 +304,7 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -312,12 +312,12 @@ $email = $_SESSION['usuarioEmail'];
                         <td> <input type="date" name="limite4" id="" value="<?php if (!empty($linha)) echo $linha['limite4']; ?>"></td>
                         <td><input type="date" name="meses4" id="" value="<?php if (!empty($linha)) echo $linha['meses4']; ?>"></td>
                         <td><select name="temporal4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="smart4" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -327,7 +327,7 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="row"><textarea name="txt24" id="txt24" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt24']; ?></textarea></td>
                         <td scope="col">
                             <select name="status4" class="form-select" aria-label="Default select example">
-                            <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="abaixo meta">Abaixo da meta</option>
                                 <option value="meta alcancada">Meta alcançada</option>
                                 <option value="acima meta">Acima da meta</option>
@@ -338,19 +338,19 @@ $email = $_SESSION['usuarioEmail'];
                     <tr>
                         <td scope="row"><textarea name="txt25" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt25']; ?></textarea></td>
                         <td scope="row"><textarea name="txt25" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt25']; ?></textarea></td>
-                        <td><select name="especifica5" class="form-select" >
-                            <option value="">Selecione</option>
-                                <option value="sim" <?php if($linha['especifica5'] == "sim") echo 'selected'?>>sim</option>
-                                <option value="nao" <?php if($linha['especifica5'] == "nao") echo 'selected'?>>não</option>
+                        <td><select name="especifica5" class="form-select">
+                                <option value="">Selecione</option>
+                                <option value="sim" <?php if ($linha['especifica5'] == "sim") echo 'selected' ?>>sim</option>
+                                <option value="nao" <?php if ($linha['especifica5'] == "nao") echo 'selected' ?>>não</option>
                             </select></td>
                         <td scope="row"><textarea name="txt26" id="" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt26']; ?></textarea></td>
                         <td><select name="mensuravel5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="exito5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -358,12 +358,12 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="negocio5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="muito alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
@@ -371,7 +371,7 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="muito baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -379,12 +379,12 @@ $email = $_SESSION['usuarioEmail'];
                         <td> <input type="date" name="limite5" id="" value="<?php if (!empty($linha)) echo $linha['limite5']; ?>"></td>
                         <td><input type="date" name="meses5" id="" value="<?php if (!empty($linha)) echo $linha['meses5']; ?>"></td>
                         <td><select name="temporal5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
                         <td><select name="smart5" class="form-select" aria-label="Default select example">
-                        <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="sim">sim</option>
                                 <option value="nao">não</option>
                             </select></td>
@@ -394,7 +394,7 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="row"><textarea name="txt29" id="txt6" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt29']; ?></textarea></td>
                         <td scope="col">
                             <select name="status5" class="form-select" aria-label="Default select example">
-                            <option value="">Selecione</option>
+                                <option value="">Selecione</option>
                                 <option value="abaixo meta">Abaixo da meta</option>
                                 <option value="meta alcancada">Meta alcançada</option>
                                 <option value="acima meta">Acima da meta</option>
