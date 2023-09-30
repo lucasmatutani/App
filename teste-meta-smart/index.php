@@ -255,9 +255,9 @@ $email = $_SESSION['usuarioEmail'];
                                 <option value="nao">não</option>
                             </select></td>
 
-                        <td scope="row"><textarea name="txt4" id="txt16" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt16']; ?></textarea></td>
-                        <td scope="row"><textarea name="txt5" id="txt17" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt17']; ?></textarea></td>
-                        <td scope="row"><textarea name="txt6" id="txt18" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt18']; ?></textarea></td>
+                        <td scope="row"><textarea name="txt16" id="txt16" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt16']; ?></textarea></td>
+                        <td scope="row"><textarea name="txt17" id="txt17" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt17']; ?></textarea></td>
+                        <td scope="row"><textarea name="txt18" id="txt18" cols="30" rows="2"><?php if (!empty($linha)) echo $linha['txt18']; ?></textarea></td>
                         <td scope="col">
                             <select name="status3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
