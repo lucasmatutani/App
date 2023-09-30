@@ -29,6 +29,7 @@ if (!isset($_SESSION['usuarioEmail'])) {
                 <option value="diagnostico">Diagnostico</option>
                 <option value="fatores_criticos_de_sucesso">Fatores Críticos de Sucesso</option>
                 <option value="teste_flowchart">Flow Chart</option>
+                <option value="meta_smart">Meta Smart</option>
                 <option value="teste_metodo_cesar">Método Cesar</option>
                 <option value="matriz_predominio">Matriz de Predomínio</option>
                 <option value="teste_petscan_do_cliente">Petscan do Cliente</option>
@@ -80,6 +81,10 @@ if (!isset($_SESSION['usuarioEmail'])) {
 
         <a href="../respostas/download.php?table=teste_flowchart" class="styled-btn">
             FlowChart
+        </a>
+
+        <a href="../teste-meta-smart/respostas.php" class="styled-btn">
+            Meta Smart
         </a>
 
         <a href="../respostas/download.php?table=teste_metodo_cesar" class="styled-btn">

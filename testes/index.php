@@ -38,7 +38,7 @@ $usuario_id = @$_SESSION['usuarioId'];
                 <a href="http://focustradeapp.com.br/teste-aida/" class="teste">Aida</a>
             <?php endif; ?>
 
-            <?php if (@$_SESSION['conquiste_clientes'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?> 
+            <?php if (@$_SESSION['conquiste_clientes'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/teste-conquistando-cliente/" class="teste">Conquiste Clientes</a>
             <?php endif; ?>
 
@@ -88,6 +88,10 @@ $usuario_id = @$_SESSION['usuarioId'];
 
             <?php if (@$_SESSION['analise_swot'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
                 <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
+            <?php endif; ?>
+
+            <?php if (@$_SESSION['meta_smart'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
+                <a href="http://focustradeapp.com.br/teste-meta-smart/" class="teste">Meta Smart</a>
             <?php endif; ?>
 
             <?php if (@$_SESSION['matriz_predominio'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
@@ -172,7 +176,7 @@ $usuario_id = @$_SESSION['usuarioId'];
 
             $sql_matriz_risco = $conn->query("SELECT * FROM teste_matriz_de_risco WHERE  teste_matriz_de_risco.usuario_id = $usuario_id");
             $matriz_risco = mysqli_fetch_assoc($sql_matriz_risco);
-            
+
             $sql_teste_hospital = $conn->query("SELECT * FROM diagnostico WHERE usuario_id = $usuario_id");
             $teste_hospital = mysqli_fetch_assoc($sql_teste_hospital);
 
@@ -190,6 +194,9 @@ $usuario_id = @$_SESSION['usuarioId'];
 
             $sql_teste_flowchart = $conn->query("SELECT * FROM teste_flowchart WHERE usuario_id = $usuario_id");
             $teste_flowchart = mysqli_fetch_assoc($sql_teste_flowchart);
+
+            $sql_meta_smart = $conn->query("SELECT * FROM meta_smart WHERE usuario_id = $usuario_id");
+            $meta_smart = mysqli_fetch_assoc($sql_meta_smart);
 
             if (!empty($teste_aida)) : ?>
                 <a href="http://focustradeapp.com.br/teste-aida/" class="resposta">Aida</a>
@@ -225,6 +232,10 @@ $usuario_id = @$_SESSION['usuarioId'];
 
             <?php if (!empty($teste_hospital)) : ?>
                 <a href="http://focustradeapp.com.br/teste-hospital/resposta-individual/" class="resposta">Role Play Hospital</a>
+            <?php endif; ?>
+
+            <?php if (!empty($meta_smart)) : ?>
+                <a href="http://focustradeapp.com.br/teste-meta-smart/" class="resposta">Meta smart</a>
             <?php endif; ?>
 
             <?php if (!empty($teste_metodo_cesar)) : ?>
