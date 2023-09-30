@@ -83,11 +83,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="exito1" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel1" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -96,11 +96,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="negocio1" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante1" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -127,9 +127,9 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="col">
                             <select name="status1" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="abaixo meta">Abaixo da meta</option>
-                                <option value="meta alcancada">Meta alcançada</option>
-                                <option value="acima meta">Acima da meta</option>
+                                <option value="abaixo_meta">Abaixo da meta</option>
+                                <option value="meta_alcancada">Meta alcançada</option>
+                                <option value="acima_meta">Acima da meta</option>
                             </select>
                         </td>
                     </tr>
@@ -150,11 +150,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="exito2" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel2" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -163,11 +163,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="negocio2" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante2" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -194,9 +194,9 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="col">
                             <select name="status2" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="abaixo meta">Abaixo da meta</option>
-                                <option value="meta alcancada">Meta alcançada</option>
-                                <option value="acima meta">Acima da meta</option>
+                                <option value="abaixo_meta">Abaixo da meta</option>
+                                <option value="meta_alcancada">Meta alcançada</option>
+                                <option value="acima_meta">Acima da meta</option>
                             </select>
                         </td>
                     </tr>
@@ -217,11 +217,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="exito3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -230,11 +230,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="negocio3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -261,9 +261,9 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="col">
                             <select name="status3" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="abaixo meta">Abaixo da meta</option>
-                                <option value="meta alcancada">Meta alcançada</option>
-                                <option value="acima meta">Acima da meta</option>
+                                <option value="abaixo_meta">Abaixo da meta</option>
+                                <option value="meta_alcancada">Meta alcançada</option>
+                                <option value="acima_meta">Acima da meta</option>
                             </select>
                         </td>
                     </tr>
@@ -284,11 +284,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="exito4" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel4" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -297,11 +297,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="negocio4" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante4" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -328,9 +328,9 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="col">
                             <select name="status4" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="abaixo meta">Abaixo da meta</option>
-                                <option value="meta alcancada">Meta alcançada</option>
-                                <option value="acima meta">Acima da meta</option>
+                                <option value="abaixo_meta">Abaixo da meta</option>
+                                <option value="meta_alcancada">Meta alcançada</option>
+                                <option value="acima_meta">Acima da meta</option>
                             </select>
                         </td>
                     </tr>
@@ -351,11 +351,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="exito5" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="alcancavel5" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -364,11 +364,11 @@ $email = $_SESSION['usuarioEmail'];
                             </select></td>
                         <td><select name="negocio5" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="muito alto">Muito Alto</option>
+                                <option value="muito_alto">Muito Alto</option>
                                 <option value="alto">Alto</option>
                                 <option value="medio">Médio</option>
                                 <option value="baixo">Baixo</option>
-                                <option value="muito baixo">Muito Baixo</option>
+                                <option value="muito_baixo">Muito Baixo</option>
                             </select></td>
                         <td><select name="relevante5" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
@@ -395,9 +395,9 @@ $email = $_SESSION['usuarioEmail'];
                         <td scope="col">
                             <select name="status5" class="form-select" aria-label="Default select example">
                                 <option value="">Selecione</option>
-                                <option value="abaixo meta">Abaixo da meta</option>
-                                <option value="meta alcancada">Meta alcançada</option>
-                                <option value="acima meta">Acima da meta</option>
+                                <option value="abaixo_meta">Abaixo da meta</option>
+                                <option value="meta_alcancada">Meta alcançada</option>
+                                <option value="acima_meta">Acima da meta</option>
                             </select>
                         </td>
                     </tr>
