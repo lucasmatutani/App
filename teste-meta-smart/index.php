@@ -405,11 +405,11 @@ $email = $_SESSION['usuarioEmail'];
             </table>
         </div>
         <!-- table meta fim -->
+        <div class="buttom-enviar">
+            <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
+        </div>
     </form>
 
-    <div class="buttom-enviar">
-        <input id="botao-enviar" type="submit" onclick="teste()" value="ENVIAR RESULTADOS">
-    </div>
 
 </body>
 
