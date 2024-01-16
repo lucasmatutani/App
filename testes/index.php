@@ -67,7 +67,7 @@ $usuario_id = @$_SESSION['usuarioId'];
             <?php endif; ?>
 
             <?php if (@$_SESSION['role_play'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
-                <a href="../role_play/" class="teste">Role play Retail</a>
+                <a href="../role-play/" class="teste">Role play Retail</a>
             <?php endif; ?>
 
             <?php if (@$_SESSION['representacional'] == 1 || @$_SESSION['usuarioEmail'] == "admin") : ?>
