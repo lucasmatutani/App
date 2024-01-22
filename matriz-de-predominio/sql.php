@@ -24,4 +24,11 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
 mysqli_close($conn);
