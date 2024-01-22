@@ -25,15 +25,18 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
 } else {
     $sql = "INSERT INTO teste_cavaben  set usuario_id='$usuario_id', email='$email', vendedor_perg_1='$vendedor_perg_1', vendedor_perg_2='$vendedor_perg_2', vendedor_perg_3='$vendedor_perg_3', vendedor_perg_4='$vendedor_perg_4', vendedor_perg_5='$vendedor_perg_5', vendedor_perg_6='$vendedor_perg_6', vendedor_perg_7='$vendedor_perg_7', vendedor_perg_8='$vendedor_perg_8', vendedor_perg_9='$vendedor_perg_9',  vendedor_perg_10='$vendedor_perg_10'";
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-if (!empty($email)) {
-    $mail->addAddress($email);
-    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
-}
-$mail->send();
 mysqli_close($conn);

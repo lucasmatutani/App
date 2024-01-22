@@ -1,5 +1,6 @@
 <?php
 include_once "../includes/connection.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "./vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
 
@@ -29,6 +30,14 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
 } else {
     $sql = "INSERT INTO diario_de_bordo set usuario_id='$usuario_id', perg1='$perg1', perg2='$perg2', perg3='$perg3', perg4='$perg4', perg5='$perg5', perg6='$perg6', perg7='$perg7', perg8='$perg8', perg9='$perg9', perg10='$perg10', perg11='$perg11', perg12='$perg12', perg13='$perg13', perg14='$perg14', perg15='$perg15'";
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     echo "RESPOSTA GRAVADA COM SUCESSO!";
 } else {

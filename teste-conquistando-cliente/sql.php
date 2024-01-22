@@ -24,16 +24,18 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
 } else {
     $sql = "INSERT INTO teste_conquiste_clientes (email, a, b, c, d, e, f, g, h, i, j, usuario_id) VALUES ('$email', '$a', '$b', '$c', '$d', '$e','$f', '$g', '$h', '$i', '$j', '$usuario_id')";
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-
-if (!empty($email)) {
-    $mail->addAddress($email);
-    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
-}
-$mail->send();
 
 mysqli_close($conn);

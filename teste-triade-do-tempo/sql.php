@@ -11,14 +11,9 @@ $circunstancia = $_REQUEST['circunstancia'];
 
 $sql = "INSERT INTO teste_triade_tempo (importancia, urgencia, circunstancia, usuario_id) VALUES ($importancia, $urgencia, $circunstancia, $usuario_id)";
 
-if (mysqli_query($conn, $sql)) {
-    header("location: ../testes");
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-mysqli_close($conn);
 if (!empty($email)) {
     $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
     $mail->Body = "<div style=\"\">
                     <table cellspacing=2>
                         <tr>
@@ -35,3 +30,10 @@ if (!empty($email)) {
                 </div>";
 }
 $mail->send();
+
+if (mysqli_query($conn, $sql)) {
+    header("location: ../testes");
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);

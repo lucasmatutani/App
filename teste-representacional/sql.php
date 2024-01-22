@@ -12,14 +12,18 @@ $V = $_REQUEST['V'];
 $AD = $_REQUEST['AD'];
 
 $sql = "INSERT INTO teste_representacional set usuario_id='$usuario_id', email='$email', A='$A', C='$C', V='$V', AD='$AD'";
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Seus resultados do Sistema Representacional: <br> A :" . $A . "<br> C :" . $C . "<br> V :" . $V  . "<br> AD     :" . $AD;
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-if (!empty($email)) {
-    $mail->addAddress($email);
-    $mail->Body = "Seus resultados do Sistema Representacional: <br> A :" . $A . "<br> C :" . $C . "<br> V :" . $V  . "<br> AD     :" . $AD;
-}
-$mail->send();
+
 mysqli_close($conn);

@@ -1,5 +1,6 @@
 <?php
 include_once "../includes/connection.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "./vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
@@ -16,6 +17,14 @@ if (!empty($linha)) {
 } else {
     $sql = "INSERT INTO crencas set usuario_id='$usuario_id', email='$email', futuro_positivo_presente_negativo='$futuro_positivo_presente_negativo', futuro_positivo_presente_positivo='$futuro_positivo_presente_positivo', futuro_negativo_presente_negativo='$futuro_negativo_presente_negativo', futuro_negativo_presente_positivo='$futuro_negativo_presente_positivo'";
 }
+
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {
