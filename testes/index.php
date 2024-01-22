@@ -174,6 +174,9 @@ $usuario_id = @$_SESSION['usuarioId'];
             $sql_analise_swot = $conn->query("SELECT * FROM analise_swot WHERE  analise_swot.usuario_id = $usuario_id");
             $analise_swot = mysqli_fetch_assoc($sql_analise_swot);
 
+            $sql_matriz_predominio = $conn->query("SELECT * FROM matriz_predominio WHERE  matriz_predominio.usuario_id = $usuario_id");
+            $matriz_predominio = mysqli_fetch_assoc($sql_matriz_predominio);
+
             $sql_matriz_risco = $conn->query("SELECT * FROM teste_matriz_de_risco WHERE  teste_matriz_de_risco.usuario_id = $usuario_id");
             $matriz_risco = mysqli_fetch_assoc($sql_matriz_risco);
 
@@ -298,6 +301,10 @@ $usuario_id = @$_SESSION['usuarioId'];
 
             <?php if (!empty($analise_swot)) : ?>
                 <a href="http://focustradeapp.com.br/analise-swot/" class="teste">Análise Swot</a>
+            <?php endif; ?>
+
+            <?php if (!empty($matriz_predominio)) : ?>
+                <a href="http://focustradeapp.com.br/matriz-de-predominio/" class="teste">Matriz de Predomínio</a>
             <?php endif; ?>
 
             <?php if (!empty($matriz_risco)) : ?>
