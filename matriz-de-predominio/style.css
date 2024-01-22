@@ -30,6 +30,7 @@
 
 .table {
   padding-top: 10px;
+  width: 35vw;
 }
 
 .container-predominio {
@@ -80,5 +81,9 @@
 
   .container-predominio img{
     width: 500px;
+  }
+
+  .table{
+    width: 10vw;
   }
 }
