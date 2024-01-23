@@ -52,24 +52,24 @@ if (!empty($data)) {
 
                     <tr>
                         <td>Ponto Fraco</td>
-                        <td><textarea name="fraco" cols="30" rows="1"><?php if (!empty($linha)) echo $linha['fraco']; ?></textarea></td>
+                        <td><textarea name="fraco"><?php if (!empty($linha)) echo $linha['fraco']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Ponto Forte</td>
-                        <td><textarea name="forte" cols="30" rows="1"><?php if (!empty($linha)) echo $linha['forte']; ?></textarea></td>
+                        <td><textarea name="forte"><?php if (!empty($linha)) echo $linha['forte']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Ameaça</td>
-                        <td><textarea name="ameaca" cols="30" rows="1"><?php if (!empty($linha)) echo $linha['ameaca']; ?></textarea></td>
+                        <td><textarea name="ameaca"><?php if (!empty($linha)) echo $linha['ameaca']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Oportunidade</td>
-                        <td><textarea name="oportunidade" cols="30" rows="1"><?php if (!empty($linha)) echo $linha['oportunidade']; ?></textarea></td>
+                        <td><textarea name="oportunidade"><?php if (!empty($linha)) echo $linha['oportunidade']; ?></textarea></td>
                     </tr>
                 </table>
                 <div class="predominio">
-                    <textarea placeholder="Predomínio" name="pred" cols="35" rows="7"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
-                    <textarea placeholder="Direção" name="direcao" cols="35" rows="7"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
+                    <textarea placeholder="Predomínio" name="pred"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
+                    <textarea placeholder="Direção" name="direcao"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
                 </div>
             </div>
             <div class="container-predominio">
