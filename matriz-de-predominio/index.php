@@ -68,7 +68,7 @@ if (!empty($data)) {
                     </tr>
                 </table>
                 <div class="predominio">
-                    <textarea placeholder="Predomínio" name="pred"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
+                    <textarea placeholder="Predomínio" name="pred" style="margin-bottom: 10px;"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
                     <textarea placeholder="Direção" name="direcao"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
                 </div>
             </div>
