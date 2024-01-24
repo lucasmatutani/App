@@ -23,18 +23,24 @@
                 <p>Número de funcionários</p>
             </div>
             <div>
-                <p>Farmácia Saúde</p>
+                <p>Farmácia Cataratas</p>
                 <p>1</p>
                 <p>Classe A</p>
-                <p>R$ 1.000.000,00</p>
-                <p>10 anos</p>
-                <p>26</p>
+                <p>R$ 1.500.000,00</p>
+                <p>30 anos</p>
+                <p>30</p>
             </div>
         </div>
         <h2 class="titulo-cenario">Cenário</h2>
         <div class="cenario">
-            <p>Este PDV está localizado em um bairro nobre com alto poder aquisitivo, apesar do ticket médio ser alto o faturamento da loja está estável há alguns anos, o comprador é o proprietário da loja, o Sr Fabricio trabalha de forma ética e prioriza a dispensação dos produtos prescritos, porém, não perde venda de maneira alguma, se não tiver o produto solicitado pelos seus clientes ele busca atender a demanda com genéricos.</p>
-            <p>O Sr Fabricio gosta de trabalhar em parceria com as equipes da indústria, buscando principalmente a indicação de sua loja para os médicos, porém, é muito resistente na questão do cadastro de novos produtos e aumento dos estoques.</p>
+            <p>Este PDV está localizado em um bairro comercial na cidade de Foz do Iguaçu, fica próximo ao principal hospital da cidade e tem como vizinhos outras 4 farmácias de concorrentes, o ticket médio é alto porém a competição é acirrada, é uma empresa familiar, porem , bem profissionalizada, as compras são feitos por um dos donos que é muito organizado e controlador. </p>
+            <p>  Na nossas ultimas reuniões, tive que ter algumas conversas difíceis com este cliente, e da parte dele surgiram as seguintes questões:</p>
+            <p>Na percepção dos meus  balconistas tem caído poucas receitas de Contrave, por isso não quero aumentar o estoque base do produto</p>
+            <p>Comparado aos concorrentes a procura pela linha do Euthyrox está baixa, logo não pretendo aumentar o volume em loja, aliás, porque vocês não reduzem o preço para ficar mais competitivo em relação ao Puran?</p>
+            <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
+            <p>Não está interessante trabalhar com o FP porque o repasse está muito baixo, além disso, os clientes não estão querendo o Glifage XR1, estão pegando o Glifage XR 500 por que é grátis no FP</p>
+            <p>Quando vendo a linha de genéricos dou ao consumidor as opções de escolha, se os seus produtos estão mais caros e eles escolhem o outro eu não posso fazer nada, mas tenho que ajustar os estoques conforme a demanda considerando a venda média dos fabricantes </p>
+            <p>A sua linha está muito onerosa, o custo dos produtos Concor e Levotiroxina está alto,isso me obriga a trabalhar com preços mais próximos do PMC e deixa a farmácia menos competitiva</p>
         </div>
 
         <h2 class="auditoria">Auditoria</h2>
@@ -81,7 +87,7 @@
                     </tr>
                     <tr>
                         <td>Levoid</td>
-                        <td>7,80%</td>
+                        <td>8,60%</td>
                         <td><img class="arrow-down" src="../../../assets/img/arrow-down.png" alt=""></td>
                         <td></td>
                         <td></td>
