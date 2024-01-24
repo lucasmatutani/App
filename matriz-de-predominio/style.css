@@ -30,6 +30,7 @@
 
 .table {
   padding-top: 10px;
+  width: 35vw;
 }
 
 .container-predominio {
@@ -57,13 +58,34 @@
   margin-top: 20px;
 }
 
+.predominio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-predominio img{
+  max-width: 600px;
+}
+
 #botao-enviar:hover {
   background-color: green;
   cursor: pointer;
 }
 
-@media screen and (max-device-width: 900px) {
+textarea{
+  width: 100%;
+  height: fit-content;
+}
+
+@media screen and (max-width: 900px) {
   .container-header {
     width: 100%;
+  }
+
+  .container-predominio img{
+    width: 400px;
   }
 }

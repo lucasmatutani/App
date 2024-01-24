@@ -18,6 +18,7 @@ if (mysqli_query($conn, $sql)) {
 
 if (!empty($email)) {
     $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
     $mail->Body = "<div style=\"\">
                     <table cellspacing=2>
                         <tr>

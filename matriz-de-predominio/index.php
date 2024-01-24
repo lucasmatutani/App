@@ -44,7 +44,7 @@ if (!empty($data)) {
 
         <div class="container-principal mt-5">
             <div class="container-table">
-                <table class="table table-striped table-sm" border="1" style="width: 35vw;">
+                <table class="table table-striped table-sm" border="1">
                     <tr>
                         <th>Tipo</th>
                         <th>Total</th>
@@ -52,28 +52,28 @@ if (!empty($data)) {
 
                     <tr>
                         <td>Ponto Fraco</td>
-                        <td><textarea name="fraco" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['fraco']; ?></textarea></td>
+                        <td><textarea name="fraco"><?php if (!empty($linha)) echo $linha['fraco']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Ponto Forte</td>
-                        <td><textarea name="forte" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['forte']; ?></textarea></td>
+                        <td><textarea name="forte"><?php if (!empty($linha)) echo $linha['forte']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Ameaça</td>
-                        <td><textarea name="ameaca" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['ameaca']; ?></textarea></td>
+                        <td><textarea name="ameaca"><?php if (!empty($linha)) echo $linha['ameaca']; ?></textarea></td>
                     </tr>
                     <tr>
                         <td>Oportunidade</td>
-                        <td><textarea name="oportunidade" cols="40" rows="1"><?php if (!empty($linha)) echo $linha['oportunidade']; ?></textarea></td>
+                        <td><textarea name="oportunidade"><?php if (!empty($linha)) echo $linha['oportunidade']; ?></textarea></td>
                     </tr>
                 </table>
                 <div class="predominio">
-                    <textarea placeholder="Predomínio" name="pred" cols="40" rows="7"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
-                    <textarea placeholder="Direção" name="direcao" cols="40" rows="7"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
+                    <textarea placeholder="Predomínio" name="pred" style="margin-bottom: 10px;"><?php if (!empty($linha)) echo $linha['pred']; ?></textarea>
+                    <textarea placeholder="Direção" name="direcao"><?php if (!empty($linha)) echo $linha['direcao']; ?></textarea>
                 </div>
             </div>
-            <div class="container-predominio ml-5">
-                <img src="../assets/img/img-matriz-predominio.jpg" class="img-fluid" alt="Responsive image">
+            <div class="container-predominio">
+                <img src="../assets/img/img-matriz-predominio.jpg" alt="Responsive image">
             </div>
         </div>
         <div class="buttom-enviar">

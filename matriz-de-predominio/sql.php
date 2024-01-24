@@ -1,5 +1,6 @@
 <?php
 include_once "../includes/connection.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "./vendor/envio.php";
 
 $usuario_id = $_REQUEST['usuario_id'];
 $email = $_REQUEST['email'];
@@ -19,10 +20,18 @@ if (!empty($linha)) {
     $sql = "INSERT INTO matriz_predominio set usuario_id='$usuario_id', email='$email', fraco='$fraco', forte='$forte', ameaca='$ameaca', oportunidade='$oportunidade', pred='$pred', direcao='$direcao'";
 }
 
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     header("Location: ../testes/index.php");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
 
 mysqli_close($conn);

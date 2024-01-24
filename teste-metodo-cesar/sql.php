@@ -21,15 +21,17 @@ if (!empty($linha) && $linha['usuario_id'] == $usuario_id) {
     $sql = "INSERT INTO teste_metodo_cesar (email, caso, confianca, empatia, seguranca, aparencia, resposta, observacoes, usuario_id) VALUES ('$email', '$case', '$confianca', '$empatia', '$seguranca', '$aparencia', '$resposta', '$observacoes' , '$usuario_id')";
 }
 
+if (!empty($email)) {
+    $mail->addAddress($email);
+    $mail->CharSet = 'UTF-8';
+    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
+}
+$mail->send();
+
 if (mysqli_query($conn, $sql)) {
     header("location: ../testes");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-if (!empty($email)) {
-    $mail->addAddress($email);
-    $mail->Body = "Você pode ver suas repostas através do link: </br> http://focustradeapp.com.br/testes/index.php";
-}
-$mail->send();
 mysqli_close($conn);
