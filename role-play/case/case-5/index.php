@@ -34,8 +34,14 @@
 
         <h2 class="titulo-cenario">Cenário</h2>
         <div class="cenario">
-            <p>As duas lojas deste cliente são bem grandes, trabalham com um mix extenso, são climatizadas, tem várias vagas para carros e a equipe é bem treinada, estão muito próximas de lojas de redes nacionais e por esse motivo investem na melhor experiência de compra possível para os seus clientes, o proprietário tem vários negócios e trabalha com gestores diferentes para cada um deles, no caso das drogarias o gestor é o Sr Fábio, ele é responsável pela supervisão operacional das lojas e também pelas compras, muito organizado, o Fabio gerencia tudo com base nos indicadores de performance do negócio (dias de estoque, curva abc, índice de rupturas,etc)</p>
-            <p>Este gestor é super aberto a sugestões, gosta muito de treinamentos e recebe todo mundo, talvez por esse motivo esteja sendo muito influenciado por alguns dos nossos concorrentes, e isso esta impactando nos nossos níveis de serviço, ele tem trabalhado com a linha genéricos do Bisoprolol dos concorrentes, está resistente em reativar algumas apresentações do Euthyrox que foram descontinuadas, tem cobrado condições comerciais melhores para Glifage XR </p>
+            <p>Estes PDVs estão localizados em bairros nobres com alto poder aquisitivo, apesar do ticket médio ser alto o faturamento das lojas está estável há alguns anos, o comprador é o proprietário da loja, Ele trabalha de forma ética e prioriza a dispensação dos produtos prescritos, porém, não perde venda de maneira alguma, se não tiver o produto solicitado pelos seus clientes ele busca atender a demanda com genéricos. Apesar da parceria bem estalecida temos tido alguns problemas de nível de serviço nas lojas, preços desalinhados com os acordos feitos, rupturas e até mesmo troca por genéricos.</p>
+            <p>  Nas duas ultimas visitas, tive conversas difíceis com este cliente, e da parte dele surgiram as seguintes questões:</p>
+            <p>Na percepção dos meus  balconistas tem caído poucas receitas de Contrave, por isso não quero aumentar o estoque base do produto</p>
+            <p>Comparado aos concorrentes a procura pela linha do Euthyrox está baixa, logo não pretendo aumentar o volume em loja, aliás, porque vocês não reduzem o preço para ficar mais competitivo em relação ao Puran?</p>
+            <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
+            <p>Não está interessante trabalhar com o FP porque o repasse está muito baixo, além disso, os clientes não estão querendo o Glifage XR1, estão pegando o Glifage XR 500 por que é grátis no FP</p>
+            <p>Não estou comprando alguns itens de você porque o desconto está melhor no distribuidor, no caso do Glifage XR 500 por exemplo preciso comprar com o maior desconto pois o repasse do FP está muito baixo</p>
+            <p>A sua linha está muito onerosa, o custo dos produtos Concor e Levotiroxina está alto,isso me obriga a trabalhar com preços mais próximos do PMC e deixa a farmácia menos competitiva</p>
         </div>
 
         <h2 class="auditoria">Auditoria</h2>

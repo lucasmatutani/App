@@ -26,7 +26,7 @@
                 <p>Drogaria Santos</p>
                 <p>1</p>
                 <p>Classe C</p>
-                <p>R$ 320.000,00</p>
+                <p>R$ 520.000,00</p>
                 <p>35 anos</p>
                 <p>10</p>
             </div>
@@ -34,8 +34,14 @@
 
         <h2 class="titulo-cenario">Cenário</h2>
         <div class="cenario">
-            <p>A Drogaria Santos é uma empresa familiar muito tradicional , os farmacistas conhecem os clientes quase todos pelo nome, pois tem atendido algumas gerações de várias famílias na cidade, os médicos desta cidade de 100 mil habitantes indicam a farmácia pois confiam que lá o receituário será respeitado, por outro lado muita gente procura a farmácia buscando indicação para algum problema específico e o pessoal indica os produtos que mais interessam</p>
-            <p>O Sr Santos que é o fundador da farmácia, é o responsável pelas compras, ele bastante conservador neste sentido, controla os estoques na unha, e fica bem irritado com as perdas de produto por vencimento ou avarias. Ele tem reclamado de algumas unidades de Euthyrox que estão com 6 meses de validade, está cobrando uma ação e talvez por isso esteja resistente em cadastrar o Concor Anlo, por outro lado vende muito bem a Levotiroxina da Merck e também a linha do Glifage XR, a linha Concor tem perdido vendas para os genéricos, segundo ele é porque as receitas estão vindo abertas, isso pode fazer sentido ou não, mas o fato é que ele tem pouquíssimas unidades do Bisoprolol da Merck</p>
+            <p>A Drogaria Santos é uma  empresa familiar muito tradicional , os farmacistas conhecem os clientes quase todos pelo nome, pois tem atendido algumas gerações de várias famílias na cidade, os médicos desta cidade de 100 mil habitantes indicam a farmácia pois confiam que lá o receituário será respeitado, por outro lado muita gente procura a farmácia buscando indicação para algum problema específico e o pessoal indica os produtos que mais interessam, o proprietário e gestor é bastante detalhista, lembra todos os pedidos de cabeça, sabe os descontos e está sempre calculando as margens.Ele tem reclamado bastante do nosso modelo de parceria, e isso tem refletido nas vendas dos nossos produtos de um modo geral</p>
+            <p>  Na nossa ultima reunião, tive uma conversa muito franca com este cliente, e da parte dele surgiram as seguintes questões:</p>
+            <p>Comparado aos concorrentes a procura pela linha do Euthyrox está baixa, logo não pretendo aumentar o volume em loja, aliás, porque vocês não reduzem o preço para ficar mais competitivo em relação ao Puran?</p>
+            <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
+            <p>Não está interessante trabalhar com o FP porque o repasse está muito baixo, além disso, os clientes não estão querendo o Glifage XR1, estão pegando o Glifage XR 500 por que é grátis no FP</p>
+            <p>Nos trabalhamos a venda sugestiva dos genéricos porque as margens são maiores para a farmácia, fazemos isso com todos os produtos e não somente com o Concor , é a nossa estratégia</p>
+            <p>Quando vendo a linha de genéricos dou ao consumidor as opções de escolha, se os seus produtos estão mais caros e eles escolhem o outro eu não posso fazer nada, mas tenho que ajustar os estoques conforme a demanda considerando a venda média dos fabricantes </p>
+            <p>Estou recebendo propostas melhores dos seus concorrentes, são oportunidades que quero aproveitar, só que o meu dinheiro é um só, ou compro deles com maiores descontos ou de você com menos, o que você faria no meu lugar?</p>
         </div>
 
         <h2 class="auditoria">Auditoria</h2>

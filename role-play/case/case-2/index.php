@@ -24,18 +24,23 @@
             </div>
             <div>
                 <p>Drogaria Preço Baixo</p>
-                <p>1</p>
+                <p>25</p>
                 <p>Classe C</p>
-                <p>R$ 380.000,00</p>
-                <p>2 anos</p>
-                <p>7</p>
+                <p>R$600.000,00/loja</p>
+                <p>Entre 5 e 10 anos</p>
+                <p>Entre 10 a 15 /loja</p>
             </div>
         </div>
 
         <h2 class="titulo-cenario">Cenário</h2>
         <div class="cenario">
-            <p>Este PDV está localizado em um bairro popular com grande quantidade de pessoas, o ticket médio é baixo, porém, o faturamento da loja está crescendo devido ao aumento constante no numero de clientes, a equipe de loja trabalha muito forte com venda sugestiva e indicação de produtos, e apesar das filas o atendimento é bem feito .O gerente da loja é bastante dinâmico, falante, e aberto a novas ideias, já os balconistas são muito focados nas campanhas e tem, até certo ponto, autonomia para tomar algumas decisões na loja.</p>
-            <p>O responsável pelas compras é o gerente da loja que atende a todos em sua sala, ele sempre busca por desconto e preço e é bastante suscetível a compra de promoções, arriscando nesses casos comprar volumes maiores. No entanto ele evita ao máximo comprar os itens que não são curva A, só quer saber de Glifage e Levotiroxina genérica, quase não trabalha com a linha do Euthyrox e não tem todas as apresentações da linha Concor.</p>
+            <p>Lojas localizadas em bairros populares da cidade de São Paulo, tem grande fluxo de clientes, trabalha fortemente com linha de genéricos e similares, o Gestor da rede tem 2 compradores subordinados a ele, um com foco maior em marcas, OTC e H&B e outro só para genéricos e similares bonificados, apesar deste posicionamento eles  também vendem bastante marca, e trabalham algumas parcerias pontuais com a industria de prescrição. O principal decisor é o gestor, tudo passa pela aprovação dele, ele bem criativo, gosta de inovações e está sempre aberto a dialogar. </p>
+            <p>Nos ultimos meses, o cenário neste cliente vem piorando bastante, por esse motivo na nossa ultima reunião, tive que ter algumas conversas difíceis com o gestor, e da parte dele surgiram as seguintes questões:</p>
+            <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
+            <p>Não está interessante trabalhar com o FP porque o repasse está muito baixo, além disso, os clientes não estão querendo o Glifage XR1, estão pegando o Glifage XR 500 por que é grátis no FP</p>
+            <p>Não estou comprando alguns itens de você porque o desconto está melhor no distribuidor, no caso do Glifage XR 500 por exemplo preciso comprar com o maior desconto pois o repasse do FP está muito baixo</p>
+            <p>Quando vendo a linha de genéricos dou ao consumidor as opções de escolha, se os seus produtos estão mais caros e eles escolhem o outro eu não posso fazer nada, mas tenho que ajustar os estoques conforme a demanda considerando a venda média dos fabricantes </p>
+            <p>Estou recebendo propostas melhores dos seus concorrentes, são oportunidades que quero aproveitar, só que o meu dinheiro é um só, ou compro deles com maiores descontos ou de você com menos, o que você faria no meu lugar?</p>
         </div>
 
         <h2 class="auditoria">Auditoria</h2>

@@ -24,18 +24,24 @@
             </div>
             <div>
                 <p>Farmácia Centrão</p>
-                <p>3</p>
-                <p>Classe C</p>
+                <p>1</p>
+                <p>Classe B+C</p>
                 <p>R$ 1.250.000,00</p>
-                <p>5 anos</p>
+                <p>3 anos</p>
                 <p>33</p>
             </div>
         </div>
 
         <h2 class="titulo-cenario">Cenário</h2>
         <div class="cenario">
-            <p>Estes PDVs ficam no centro da cidade e recebem um grande numero de clientes durante os dias úteis principalmente em horários de pico, o ticket médio é bom e o faturamento tem crescido muito nos últimos dois anos, o proprietário das lojas é muito objetivo, centralizador e até um pouco autoritário, os balconistas são mais flexíveis, adaptam-se aos clientes e quando podem indicar um produto que é interessante para eles , eles indicam, mas quando percebem que o perfil do cliente é o de levar o que está na receita eles nem tentam, esta loja vende de tudo, marca, similar, genéricos, OTC, perfumaria, é realmente impressionante o seu potencial. </p>
-            <p>O encarregado das compras passa tudo para a aprovação do proprietário das lojas, que dependendo da negociação faz questão de estar presente para negociar, dependendo da linha de produtos ele faz leilão mesmo, mas com algumas industrias ele busca uma parceria de longo prazo, ainda não somos parceiros fortes deste cliente e temos alguns"problemas" para resolver, tais como, produtos vencendo (Euthyrox ), produtos adquiridos com preço mais alto e portanto com margem muito inferior aos concorrentes( levotiroxina ) , produtos com estoque muito acima da demanda média ( Concor ). O dono das lojas já manifestou interesse em conversar sobre uma parceria, mas para isso não abre mão de uma solução para os situações citados.</p>
+            <p>Esta loja fica na região central da cidade de Belo-Horizonte, é uma loja moderna, relativamente nova e bastante espaçosa, tem uma proposta ousada e compete diretamente com as grandes redes. O seu grande diferencial é o atendimento dos funcionários que passam constantemente por treinamentos. Devido ao seu posicionamento competitivo estão cada vez mais buscando privilegiar as linhas de produtos que oferecem maior margem.O gestor e proprietário é um empreendedor agressivo, quando vê vantagens significativas nas ofertas dos fornecedores costuma comprar volumes bem acim da demanda média.</p>
+            <p>  Sempre tivemos um bom relacinamento com esse cliente, mas na nossas ultimas reuniões, tivemos algumas conversas difíceis, questionando as trocas constantes na loja, os níveis de estoque e rupturas, e da parte dele surgiram as seguintes questões:</p>
+            <p>Na percepção dos meus  balconistas tem caído poucas receitas de Contrave, por isso não quero aumentar o estoque base do produto</p>
+            <p>Comparado aos concorrentes a procura pela linha do Euthyrox está baixa, logo não pretendo aumentar o volume em loja, aliás, porque vocês não reduzem o preço para ficar mais competitivo em relação ao Puran?</p>
+            <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
+            <p>Nos trabalhamos a venda sugestiva dos genéricos porque as margens são maiores para a farmácia, fazemos isso com todos os produtos e não somente com o Concor , é a nossa estratégia</p>
+            <p>Quando vendo a linha de genéricos dou ao consumidor as opções de escolha, se os seus produtos estão mais caros e eles escolhem o outro eu não posso fazer nada, mas tenho que ajustar os estoques conforme a demanda considerando a venda média dos fabricantes </p>
+            <p>Estou recebendo propostas melhores dos seus concorrentes, são oportunidades que quero aproveitar, só que o meu dinheiro é um só, ou compro deles com maiores descontos ou de você com menos, o que você faria no meu lugar?</p>
         </div>
 
         <h2 class="auditoria">Auditoria</h2>
