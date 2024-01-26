@@ -38,6 +38,7 @@
             <p> Diante desta situação tive que ter algumas conversas difíceis com este cliente nas ultimas visitas, e da parte dele surgiram as seguintes objeções:</p>
             <p>Na percepção dos meus  balconistas tem caído poucas receitas de Contrave, por isso não quero aumentar o estoque base do produto</p>
             <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
+            <p>Nos trabalhamos a venda sugestiva dos genéricos porque as margens são maiores para a farmácia, fazemos isso com todos os produtos e não somente com o Concor , é a nossa estratégia</p>
             <p>Não estou comprando alguns itens de você porque o desconto está melhor no distribuidor, no caso do Glifage XR 500 por exemplo preciso comprar com o maior desconto pois o repasse do FP está muito baixo</p>
             <p>A sua linha está muito onerosa, o custo dos produtos Concor e Levotiroxina está alto,isso me obriga a trabalhar com preços mais próximos do PMC e deixa a farmácia menos competitiva</p>
             <p>Estou recebendo propostas melhores dos seus concorrentes, são oportunidades que quero aproveitar, só que o meu dinheiro é um só, ou compro deles com maiores descontos ou de você com menos, o que você faria no meu lugar?</p>

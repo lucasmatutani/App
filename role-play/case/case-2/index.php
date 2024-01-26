@@ -38,6 +38,7 @@
             <p>Nos ultimos meses, o cenário neste cliente vem piorando bastante, por esse motivo na nossa ultima reunião, tive que ter algumas conversas difíceis com o gestor, e da parte dele surgiram as seguintes questões:</p>
             <p>Estou com duas apresentações das doses mais altas de Euthyrox vencidas, por isso não vou repor etes itens, pelo menos até que o problema seja solucionado</p>
             <p>Não está interessante trabalhar com o FP porque o repasse está muito baixo, além disso, os clientes não estão querendo o Glifage XR1, estão pegando o Glifage XR 500 por que é grátis no FP</p>
+            <p>Nos trabalhamos a venda sugestiva dos genéricos porque as margens são maiores para a farmácia, fazemos isso com todos os produtos e não somente com o Concor , é a nossa estratégia</p>
             <p>Não estou comprando alguns itens de você porque o desconto está melhor no distribuidor, no caso do Glifage XR 500 por exemplo preciso comprar com o maior desconto pois o repasse do FP está muito baixo</p>
             <p>Quando vendo a linha de genéricos dou ao consumidor as opções de escolha, se os seus produtos estão mais caros e eles escolhem o outro eu não posso fazer nada, mas tenho que ajustar os estoques conforme a demanda considerando a venda média dos fabricantes </p>
             <p>Estou recebendo propostas melhores dos seus concorrentes, são oportunidades que quero aproveitar, só que o meu dinheiro é um só, ou compro deles com maiores descontos ou de você com menos, o que você faria no meu lugar?</p>
